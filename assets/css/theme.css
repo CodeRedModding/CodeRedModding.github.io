@@ -62,13 +62,13 @@ code{
 a.theme-link{
 	color:#302525;
 	text-decoration:underline;
-	-webkit-text-decoration-color:rgba(37,41,48,0.3);
-	text-decoration-color:rgba(37,41,48,0.3)
+	-webkit-text-decoration-color:rgba(48, 37, 37, 0.3);
+	text-decoration-color:rgba(48, 37, 37, 0.3)
 }
 a.theme-link:hover{
 	color:#b72828;
-	-webkit-text-decoration-color:rgba(40,183,107,0.8);
-	text-decoration-color:rgba(40,183,107,0.8)
+	-webkit-text-decoration-color:rgba(183, 40, 40, 0.8);
+	text-decoration-color:rgba(183, 40, 40, 0.8)
 }
 a.text-link{
 	text-decoration:none
