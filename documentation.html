@@ -75,7 +75,7 @@
                     <li class="nav-item"><a class="nav-link scrollto" href="#item-4-10">Session Tracker</a></li>
                     <li class="nav-item"><a class="nav-link scrollto" href="#item-4-11">Trading Utilities</a></li>
                     <li class="nav-item"><a class="nav-link scrollto" href="#item-4-12">Training Enhancements</a></li>
-                    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-5"><span class="theme-icon-holder me-2"><i class="fas fa-id-card"></i></span>Interfaces</a></li>
+                    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-5"><span class="theme-icon-holder me-2"><i class="fas fa-id-card"></i></span>Windows</a></li>
 				    <li class="nav-item"><a class="nav-link scrollto" href="#item-5-1">Changelog</a></li>
 				    <li class="nav-item"><a class="nav-link scrollto" href="#item-5-2">Dashboard</a></li>
 				    <li class="nav-item"><a class="nav-link scrollto" href="#item-5-3">ImGui Demo</a></li>
@@ -1464,15 +1464,15 @@
 
                 <article class="docs-article" id="section-5">
 				    <header class="docs-header">
-					    <h1 class="docs-heading">Interfaces</h1>
+					    <h1 class="docs-heading">Windows</h1>
 					    <section class="docs-intro">
-						    <p>CodeRed has a few built in interfaces that you can access via the console, with either <code>imgui_open &ltinterface-name&gt</code> or <code>imgui_toggle &ltinterface-name&gt</code>.</p>
+						    <p>CodeRed has a few built in windows that you can access via the console, with either <code>imgui_open &ltinterface-name&gt</code> or <code>imgui_toggle &ltwindow-name&gt</code>.</p>
 						</section>
 				    </header>
 
                     <section class="docs-section" id="item-5-1">
                         <h2 class="section-heading">Changelog</h2>
-                        <h4>Interface Name: <code>changelog</code></h4>
+                        <h4>Window Name: <code>changelog</code></h4>
                         <p>The changelog window stores a hardcoded copy of every update that CodeRed has received, this interface also automatically opens after an update is released.</p>	    
 
                         <div class="simplelightbox-gallery row mb-3">
@@ -1484,7 +1484,7 @@
 
                     <section class="docs-section" id="item-5-2">
                         <h2 class="section-heading">Dashboard</h2>
-                        <h4>Interface Name: <code>dashboard</code></h4>
+                        <h4>Window Name: <code>dashboard</code></h4>
                         <h4>Default Keybind: <code>F1</code></h4>
                         <p>The dashboard is the main interface used to control CodeRed, comparable to BakkesMod's settings window, it hosts most of the settings and commands available to the user.</p>	    
 
@@ -1503,7 +1503,7 @@
 
                     <section class="docs-section" id="item-5-3">
                         <h2 class="section-heading">ImGui Demo</h2>
-                        <h4>Interface Name: <code>demo</code></h4>
+                        <h4>Window Name: <code>demo</code></h4>
                         <p>This interface is the default Dear ImGui demo window, used for debugging purposes, it showcases examples of every possible ImGui widget; especially useful when creating custom systles.</p>	    
 
                         <div class="simplelightbox-gallery row mb-3">
@@ -1515,7 +1515,7 @@
 
                     <section class="docs-section" id="item-5-4">
                         <h2 class="section-heading">Post Process Editor</h2>
-                        <h4>Interface Name: <code>effects</code></h4>
+                        <h4>Window Name: <code>effects</code></h4>
                         <p>The post process editor is a powerful tool used for creating real-time visual effects. It has a wide range of features such as blurring, coloring, or lighting overrides, and works in all offline modes as well as in replay files. You'll have to play around with the settings on your own and see what you come up with, there are two examples by default that I created; one is a simple black and white filter and the other one is a green night vision thing.</p>	    
 
                         <div class="simplelightbox-gallery row mb-3">
@@ -1536,7 +1536,7 @@
 
                     <section class="docs-section" id="item-5-5">
                         <h2 class="section-heading">GameState Debugger</h2>
-                        <h4>Interface Name: <code>gamestates</code></h4>
+                        <h4>Window Name: <code>gamestates</code></h4>
                         <p>The gamestate debugger serves one purpose, debuggin which gamestate you are in. It displays your current playlist, active events, and permissions used by CodeRed.</p>	    
 
                         <div class="simplelightbox-gallery row mb-3">
@@ -1548,7 +1548,7 @@
 
                     <section class="docs-section" id="item-5-6">
                         <h2 class="section-heading">Matchmaker</h2>
-                        <h4>Interface Name: <code>matchmaker</code></h4>
+                        <h4>Window Name: <code>matchmaker</code></h4>
                         <p>The matchmaker interface is a helpful little tool that allows you to quickly queue in different game modes at the end of matches.</p>	    
 
                         <div class="simplelightbox-gallery row mb-3">
@@ -1560,7 +1560,7 @@
 
                     <section class="docs-section" id="item-5-7">
                         <h2 class="section-heading">Function Scanner</h2>
-                        <h4>Interface Name: <code>scanner</code></h4>
+                        <h4>Window Name: <code>scanner</code></h4>
                         <p>The function scanner is a useful tool for developers and debugging purposes, it lets you monitor when unreal functions are called in real time. You have the option to filter for certain keywords, as well as blacklist them. You can also browse a full list of all known functions in the game or dump them to a file.</p>	    
 
                         <div class="simplelightbox-gallery row mb-3">
@@ -1575,7 +1575,7 @@
 
                     <section class="docs-section" id="item-5-8">
                         <h2 class="section-heading">Style Editor</h2>
-                        <h4>Interface Name: <code>styles</code></h4>
+                        <h4>Window Name: <code>styles</code></h4>
                         <p>The style editor allows you to fully customize CodeRed's UI, you can change everything from widget rounding, spacing, custom colors, and even use your own custom fonts. If you would like to use your own fonts, they must be in <code>.ttf</code> format and placed in your <code>CodeRed/Fonts</code> folder prior to launching Rocket League.</p>	    
 
                         <div class="simplelightbox-gallery row mb-3">
@@ -1593,7 +1593,7 @@
 
                     <section class="docs-section" id="item-5-9">
                         <h2 class="section-heading">Terminal</h2>
-                        <h4>Interface Name: <code>terminal</code></h4>
+                        <h4>Window Name: <code>terminal</code></h4>
                         <h4>Default Keybind: <code>F5</code></h4>
                         <p>The terminal interface allows you to fully customize CodeRed via changing settings or executing commands, it also displays useful information for debugging purposes.</p>	    
 
@@ -1609,7 +1609,7 @@
 
                     <section class="docs-section" id="item-5-10">
                         <h2 class="section-heading">Thumbnail Renderer</h2>
-                        <h4>Interface Name: <code>thumbnails</code></h4>
+                        <h4>Window Name: <code>thumbnails</code></h4>
                         <p>The thumbnail renderer is an experimental interface used to render custom scenes for products, it also allows you to export them to a file of any format.</p>	    
 
                         <div class="simplelightbox-gallery row mb-3">
@@ -1621,7 +1621,7 @@
 
                     <section class="docs-section" id="item-5-11">
                         <h2 class="section-heading">Playlist Tracker</h2>
-                        <h4>Interface Name: <code>tracker</code></h4>
+                        <h4>Window Name: <code>tracker</code></h4>
                         <p>The tracker interface is a little overlay that you can pin to one of the corners of your screen, it displays your current mmr, mmr needed to rank up/down, and win/loss streaks.</p>	    
 
                         <div class="simplelightbox-gallery row mb-3">
@@ -1664,7 +1664,7 @@
 
                         <h2 class="section-heading">Version 1.1.1 (December 26th 2022)</h2>
                         <h5>- Fixed the searcher tab in function scanner trying to display 30k functions at once.</h5>
-                        <h5>- Fixed some focus issues on ImGui interfaces.</h5>
+                        <h5>- Fixed some focus issues on ImGui windows.</h5>
                         <h5>- Other preparations for future ImGui backend changes.</h5>
 
                         <h2 class="section-heading">Version 1.1.0 (December 25th 2022)</h2>
