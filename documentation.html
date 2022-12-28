@@ -93,7 +93,7 @@
 				    <li class="nav-item"><a class="nav-link scrollto" href="#item-6-3">Custom Titles</a></li>
                     <li class="nav-item"><a class="nav-link scrollto" href="#item-6-4">Bug Reporting</li>
 				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-7"><span class="theme-icon-holder me-2"><i class="fas fa-book"></i></span>Changelog</a></li>
-				    <li class="nav-item"><a class="nav-link scrollto" href="#item-7-1">Version 1.0.9</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-7-1">Version 1.1.3</a></li>
 			    </ul>
 		    </nav>
 	    </div>
@@ -770,12 +770,20 @@
                             <table class="table table-bordered">
                                 <tbody>
                                     <tr>
+                                        <th class="theme-bg-light"><b>garage_apply_both &lttrue-false&gt</b></th>
+                                        <td>Enable applying garage presets from the selected team only (applies to both teams).</td>
+                                    </tr>
+                                    <tr>
                                         <th class="theme-bg-light"><b>garage_apply_loadouts &lttrue-false&gt</b></th>
                                         <td>Enable applying your custom garage presets.</td>
                                     </tr>
                                     <tr>
                                         <th class="theme-bg-light"><b>garage_selected_preset &ltarguments&gt</b></th>
                                         <td>The name of the currently selected garage preset.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>garage_selected_team &lt0-1&gt</b></th>
+                                        <td>The current selected team for your garage preset.</td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -867,7 +875,7 @@
                                     </tr>
                                     <tr>
                                         <th class="theme-bg-light"><b>interface_auto_reset_buffer &lttrue-false&gt</b></th>
-                                        <td>Automatically reset the players input buffer when tabbing in or out of the game.</td>
+                                        <td>Automatically reset the players input buffer when alt-tabbing, as well as before kickoffs.</td>
                                     </tr>
                                     <tr>
                                         <th class="theme-bg-light"><b>interface_autoname_replays &lttrue-false&gt</b></th>
@@ -1657,6 +1665,13 @@
 					    <h1 class="docs-heading">Changelog</h1>
 				    </header>
 				     <section class="docs-section" id="item-7-1">
+                        <h2 class="section-heading">Version 1.1.3 (December 28th 2022)</h2>
+                        <h5>- Added an option to apply your garage preset to both teams! This can be toggled through the new checkbox next to \"Selected Team\" in the dashboard, or via the setting `garage_apply_both`.</h5>
+                        <h5>- The auto reset input buffer setting now also auto resets on goal kickoffs, before it was just when you alt-tabbed.</h5>
+                        <h5>- Set a limit for how long you can set preset names, it is now 128 characters.</h5>
+                        <h5>- Fixed custom keybind sequences not writing properly, causing them to be parsed wrong on next load.</h5>
+                        <h5>- Additional safety checks related to parsing files and settings.</h5>
+
                         <h2 class="section-heading">Version 1.1.2 (December 27th 2022)</h2>
                         <h5>- Fixed the ImGui UI not initializing properly on injection sometimes.</h5>
                         <h5>- Fixed allowing users being able to select the auto tournament playlist with the <code>matchmaking_select_playlist</code> command.</h5>
