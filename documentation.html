@@ -93,7 +93,7 @@
 				    <li class="nav-item"><a class="nav-link scrollto" href="#item-6-3">Custom Titles</a></li>
                     <li class="nav-item"><a class="nav-link scrollto" href="#item-6-4">Bug Reporting</li>
 				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-7"><span class="theme-icon-holder me-2"><i class="fas fa-book"></i></span>Changelog</a></li>
-				    <li class="nav-item"><a class="nav-link scrollto" href="#item-7-1">Version 1.1.3</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-7-1">Version 1.1.4</a></li>
 			    </ul>
 		    </nav>
 	    </div>
@@ -934,12 +934,20 @@
                                         <td>Override your friends list status custom one.</td>
                                     </tr>
                                     <tr>
+                                        <th class="theme-bg-light"><b>interface_disable_ads &lttrue-false&gt</b></th>
+                                        <td>Disable stadium advertisements when viewing replay files.</td>
+                                    </tr>
+                                    <tr>
                                         <th class="theme-bg-light"><b>interface_disable_filter &lttrue-false&gt</b></th>
                                         <td>Disable screen filters used in certain stadiums in-game (like Neo Tokyo Comic).</td>
                                     </tr>
                                     <tr>
                                         <th class="theme-bg-light"><b>interface_disable_itemshop &lttrue-false&gt</b></th>
                                         <td>Hide the item shop button on the main menu.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>interface_disable_rocketpass &lttrue-false&gt</b></th>
+                                        <td>Disable stadium advertisements in replays.</td>
                                     </tr>
                                     <tr>
                                         <th class="theme-bg-light"><b>interface_disable_rocketpass &lttrue-false&gt</b></th>
@@ -1665,6 +1673,14 @@
 					    <h1 class="docs-heading">Changelog</h1>
 				    </header>
 				     <section class="docs-section" id="item-7-1">
+                        <h2 class="section-heading">Version 1.1.4 (December 30th 2022)</h2>
+                        <h5>- Added a new setting <code>interface_disable_ads</code>, which disables the advertisements around the stadium you're in. This setting only works when viewing replay files.</h5>
+                        <h5>- Fixed the create sequence popup window not letting you remove values.</h5>
+                        <h5>- Fixed the keybinds action combobox not resetting properly.</h5>
+                        <h5>- Fixed some issues with the terminals auto complete window regarding keybinds.</h5>
+                        <h5>- Fixed a bug with the trade logger where it didn't log player ids properly.</h5>
+                        <h5>- Other ImGui backend changes, including extra safety checking.</h5>
+
                         <h2 class="section-heading">Version 1.1.3 (December 28th 2022)</h2>
                         <h5>- Added an option to apply your garage preset to both teams! This can be toggled through the new checkbox next to "Selected team" in the dashboard, or via the setting <code>garage_apply_both</code>.</h5>
                         <h5>- The auto reset input buffer setting now also auto resets on goal kickoffs, before it was just when you alt-tabbed.</h5>
