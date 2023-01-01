@@ -93,7 +93,7 @@
 				    <li class="nav-item"><a class="nav-link scrollto" href="#item-6-3">Custom Titles</a></li>
                     <li class="nav-item"><a class="nav-link scrollto" href="#item-6-4">Bug Reporting</li>
 				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-7"><span class="theme-icon-holder me-2"><i class="fas fa-book"></i></span>Changelog</a></li>
-				    <li class="nav-item"><a class="nav-link scrollto" href="#item-7-1">Version 1.1.4</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-7-1">Version 1.1.5</a></li>
 			    </ul>
 		    </nav>
 	    </div>
@@ -407,6 +407,10 @@
                                         <td>Dumps all information about certifications with the given arguments.</td>
                                     </tr>
                                     <tr>
+                                        <th class="theme-bg-light"><b>database_dump_errors</b></th>
+                                        <td>Dumps all error classes the game uses.</td>
+                                    </tr>
+                                    <tr>
                                         <th class="theme-bg-light"><b>database_dump_esports</b></th>
                                         <td>Dumps all information about esports events with the given arguments.</td>
                                     </tr>
@@ -424,7 +428,7 @@
                                     </tr>
                                     <tr>
                                         <th class="theme-bg-light"><b>database_dump_names</b></th>
-                                        <td>Dumps all global name instances</td>
+                                        <td>Dumps all global name instances.</td>
                                     </tr>
                                     <tr>
                                         <th class="theme-bg-light"><b>database_dump_objects</b></th>
@@ -1673,6 +1677,18 @@
 					    <h1 class="docs-heading">Changelog</h1>
 				    </header>
 				     <section class="docs-section" id="item-7-1">
+                        <h2 class="section-heading">Version 1.1.5 (January 1st 2023)</h2>
+                        <h5>- Added a new style pack called "DouTone" inspired by UI designer "simurai", included by default are five new styles!</h5>
+                        <h5>- Added a new dumper command, <code>database_dump_errors</code>, which I forgot to port over from my DeveloperTools plugin.</h5>
+                        <h5>- Changed the default style slightly, improving color contrast to be more eye pleasing.</h5>
+                        <h5>- Changed the custom training map checkboxes in the dashboard to radiobuttons.</h5>
+                        <h5>- Fixed a DirectX rendering issue if you changed your resolution thanks to BattleDash, this was caused by not properly calling ResizeBuffers.</h5>
+                        <h5>- Fixed several issues with the keybinds window regarding not saving and not showing arguments.</h5>
+                        <h5>- Fixed an issue with changing style names and not removing the old style file properly.</h5>
+                        <h5>- Fixed a global ImGui scaling issue with the effects and styles windows.</h5>
+                        <h5>- Fixed the update notification not getting triggered due to a caching issue.</h5>
+                        <h5>- Fixed the mmr streak in the tracker window displaying the wrong mmr.</h5>
+
                         <h2 class="section-heading">Version 1.1.4 (December 30th 2022)</h2>
                         <h5>- Added a new setting <code>interface_disable_ads</code>, which disables the advertisements around the stadium you're in. This setting only works when viewing replay files.</h5>
                         <h5>- Fixed the create sequence popup window not letting you remove values.</h5>
