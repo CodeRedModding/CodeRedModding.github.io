@@ -92,7 +92,7 @@
 				    <li class="nav-item"><a class="nav-link scrollto" href="#item-6-3">Custom Titles</a></li>
                     <li class="nav-item"><a class="nav-link scrollto" href="#item-6-4">Bug Reporting</li>
 				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-7"><span class="theme-icon-holder me-2"><i class="fas fa-book"></i></span>Changelog</a></li>
-				    <li class="nav-item"><a class="nav-link scrollto" href="#item-7-1">Version 1.1.8</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-7-1">Version 1.1.9</a></li>
 			    </ul>
 		    </nav>
 	    </div>
@@ -861,12 +861,12 @@
                                         <td>Enable april fools vegetable rank icons.</td>
                                     </tr>
                                     <tr>
-                                        <th class="theme-bg-light"><b>interface_auto_fps_limit &lt30-144&gt</b></th>
-                                        <td>Value to automatically limit your fps to when not in focus.</td>
-                                    </tr>
-                                    <tr>
                                         <th class="theme-bg-light"><b>interface_auto_limit_fps &lttrue-false&gt</b></th>
                                         <td>Automatically limits your fps to the set value when Rocket League is not in focus.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>interface_auto_fps_limit &lt30-144&gt</b></th>
+                                        <td>Value to automatically limit your fps to when not in focus.</td>
                                     </tr>
                                     <tr>
                                         <th class="theme-bg-light"><b>interface_auto_reset_buffer &lttrue-false&gt</b></th>
@@ -891,6 +891,30 @@
                                     <tr>
                                         <th class="theme-bg-light"><b>interface_autoskip_replays &lttrue-false&gt</b></th>
                                         <td>Automatically skip replays in online matches.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>interface_auto_queue &lttrue-false&gt</b></th>
+                                        <td>Automatically queue the last searched playlist(s) at the end of online matches.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>interface_auto_menu &lttrue-false&gt</b></th>
+                                        <td>Automatically exit to the main menu at the end of online matches.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>interface_auto_freeplay &lttrue-false&gt</b></th>
+                                        <td>Automatically open a freeplay map at the end of online matches.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>interface_auto_training &lttrue-false&gt</b></th>
+                                        <td>Automatically open a custom training pack at the end of online matches.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>interface_auto_freeplay_map &ltarguments&gt</b></th>
+                                        <td>The freeplay map name to open for the auto freeplay setting.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>interface_auto_training_code &ltarguments&gt</b></th>
+                                        <td>The custom training pack code to open for the auto training setting.</td>
                                     </tr>
                                     <tr>
                                         <th class="theme-bg-light"><b>interface_blog_description &ltarguments&gt</b></th>
@@ -1653,6 +1677,19 @@
 					    <h1 class="docs-heading">Changelog</h1>
 				    </header>
 				     <section class="docs-section" id="item-7-1">
+                        <h2 class="section-heading">Version 1.1.9 (January 7th 2023)</h2>
+                        <h5>- Added five new automation settings inspired by ToolB0x's \"Instant Suite\" plugin.</h5>
+                        <h5>- Added the <code>interface_auto_queue</code> setting, when it enabled it automatically re-queues for you at the end of games.</h5>
+                        <h5>- Added the <code>interface_auto_menu</code> setting, when it enabled it automatically exits to the main menu at the end of games.</h5>
+                        <h5>- Added the <code>interface_auto_freeplay</code> setting, when it enabled it automatically puts you in freeplay at the end of games.</h5>
+                        <h5>- Added the <code>interface_auto_training</code> setting, when it enabled it automatically puts you in custom training at end of games.</h5>
+                        <h5>- Added the <code>interface_auto_delay</code> setting, which allows you to set the delay when executing automation settings in seconds.</h5>
+                        <h5>- Upgraded the backend ImGui framework to version 1.89.2.</h5>
+                        <h5>- Fixed the item shop button on the main menu not appearing until you clicked into a different menu.</h5>
+                        <h5>- Fixed the hide your season rewards option sometimes not applying after ranked matches.</h5>
+                        <h5>- Fixed an issue with not locating your downloaded training pack codes.</h5>
+                        <h5>- Other ImGui backend changes.</h5>
+
                         <h2 class="section-heading">Version 1.1.8 (January 5th 2023)</h2>
                         <h5>- Added a new setting <code>interface_disable_roulette</code>, which automatically skips the reveal animation when opening item drops.</h5>
                         <h5>- Added additional safety and range checks for the car and ball rotation/location commands.</h5>
