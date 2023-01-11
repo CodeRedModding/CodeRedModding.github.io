@@ -92,7 +92,7 @@
 				    <li class="nav-item"><a class="nav-link scrollto" href="#item-6-3">Custom Titles</a></li>
                     <li class="nav-item"><a class="nav-link scrollto" href="#item-6-4">Bug Reporting</li>
 				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-7"><span class="theme-icon-holder me-2"><i class="fas fa-book"></i></span>Changelog</a></li>
-				    <li class="nav-item"><a class="nav-link scrollto" href="#item-7-1">Version 1.2.0</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-7-1">Version 1.2.1</a></li>
 			    </ul>
 		    </nav>
 	    </div>
@@ -1277,27 +1277,27 @@
                                 <tbody>
                                     <tr>
                                         <th class="theme-bg-light"><b>stadium_blue_accent &lt#FFFFFF&gt</b></th>
-                                        <td>The blue accent paint colors to apply to your car in online games.</td>
+                                        <td>The blue accent paint colors to apply to your car in online matches.</td>
                                     </tr>
                                     <tr>
                                         <th class="theme-bg-light"><b>stadium_blue_accent_enabled &lttrue-false&gt</b></th>
-                                        <td>Enable using custom accent paint colors on the blue team in online games.</td>
+                                        <td>Enable using custom accent paint colors on the blue team in online matches.</td>
                                     </tr>
                                     <tr>
                                         <th class="theme-bg-light"><b>stadium_blue_enabled &lttrue-false&gt</b></th>
-                                        <td>Override the blue stadium colors in online games.</td>
+                                        <td>Override the blue stadium colors in online matches.</td>
                                     </tr>
                                     <tr>
                                         <th class="theme-bg-light"><b>stadium_blue_primary &lt#FFFFFF&gt</b></th>
-                                        <td>The blue primary paint colors to apply to your car in online games.</td>
+                                        <td>The blue primary paint colors to apply to your car in online matches.</td>
                                     </tr>
                                     <tr>
                                         <th class="theme-bg-light"><b>stadium_blue_primary_enabled &lttrue-false&gt</b></th>
-                                        <td>Enable using custom primary paint colors on the blue team in online games.</td>
+                                        <td>Enable using custom primary paint colors on the blue team in online matches.</td>
                                     </tr>
                                     <tr>
                                         <th class="theme-bg-light"><b>stadium_blue_stadium &lt#1873FF&gt</b></th>
-                                        <td>The stadium colors to override on the blue team in online games.</td>
+                                        <td>The stadium colors to override on the blue team in online matches.</td>
                                     </tr>
                                     <tr>
                                         <th class="theme-bg-light"><b>stadium_exclude_clubs &lttrue-false&gt</b></th>
@@ -1309,27 +1309,27 @@
                                     </tr>
                                     <tr>
                                         <th class="theme-bg-light"><b>stadium_orange_accent &lt#FFFFFF&gt</b></th>
-                                        <td>The orange accent paint colors to apply to your car in online games.</td>
+                                        <td>The orange accent paint colors to apply to your car in online matches.</td>
                                     </tr>
                                     <tr>
                                         <th class="theme-bg-light"><b>stadium_orange_accent_enabled &lttrue-false&gt</b></th>
-                                        <td>Enable using custom accent paint colors on the orange team in online games.</td>
+                                        <td>Enable using custom accent paint colors on the orange team in online matches.</td>
                                     </tr>
                                     <tr>
                                         <th class="theme-bg-light"><b>stadium_orange_enabled &lttrue-false&gt</b></th>
-                                        <td>Override the orange stadium colors in online games.</td>
+                                        <td>Override the orange stadium colors in online matches.</td>
                                     </tr>
                                     <tr>
                                         <th class="theme-bg-light"><b>stadium_orange_primary &lt#FFFFFF&gt</b></th>
-                                        <td>The orange primary paint colors to apply to your car in online games.</td>
+                                        <td>The orange primary paint colors to apply to your car in online matches.</td>
                                     </tr>
                                     <tr>
                                         <th class="theme-bg-light"><b>stadium_orange_primary_enabled &lttrue-false&gt</b></th>
-                                        <td>Enable using custom primary paint colors on the orange team in online games.</td>
+                                        <td>Enable using custom primary paint colors on the orange team in online matches.</td>
                                     </tr>
                                     <tr>
                                         <th class="theme-bg-light"><b>stadium_orange_stadium &lt#C26418&gt</b></th>
-                                        <td>The stadium colors to override on the orange team in online games.</td>
+                                        <td>The stadium colors to override on the orange team in online matches.</td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -1685,7 +1685,17 @@
 					    <h1 class="docs-heading">Changelog</h1>
 				    </header>
 				     <section class="docs-section" id="item-7-1">
-                        <h2 class="section-heading">Version 1.2.0 (January 7th 2023)</h2>
+                        <h2 class="section-heading">Version 1.2.1 (January 10th 2023)</h2>
+                        <h5>- Added extra safety checks and logging for the garage module, as a result removed the need to be on the main menu to customize your profile or presets.</h5>
+                        <h5>- Removed the anonymizers scoreboard_hide_platforms setting which hid all avatar platforms. I made this before Psyonix did this by default so it's pointless now.</h5>
+                        <h5>- Fixed the main menu background sometimes reverting back to the original one if you exited a game too early.</h5>
+                        <h5>- Fixed the chat message commands not displaying text in the games HUD.</h5>
+                        <h5>- Other internal optimizations and extra safety checking.</h5>
+                        <h5>- Fixed a folder not found issue with the launchers installer if you selected a custom install path.</h5>
+                        <h5>- Fixed several message box and logging errors in the launcher.</h5>
+                        <h5>- Added a button that lets you change your install path in the launchers settings, this moves the folder and modifies the registry for you.</h5>
+
+                        <h2 class="section-heading">Version 1.2.0 (January 8th 2023)</h2>
                         <h5>- Added a new <code>interface_auto_claim</code> setting, which automatically checks and claims completed season challenges at the end of matches.</h5>
                         <h5>- Added a new <code>interface_draw_fps</code> setting, which draws an fps counter in corner of your screen.</h5>
                         <h5>- Fixed the session tracker incorrectly displaying knockout damage as damage done from dropshot tiles.</h5>
