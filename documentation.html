@@ -35,7 +35,7 @@
 	                </div>
 					<ul class="social-list list-inline mx-md-3 mx-lg-5 mb-0 d-none d-lg-flex">
 						<li class="list-inline-item"><a href="https://twitter.com/CodeRedModding"><i class="fab fa-twitter fa-fw"></i></a></li>
-			            <li class="list-inline-item"><a href="https://discord.gg/FPP77NxhH9"><i class="fab fa-discord fa-fw"></i></a></li>
+			            <li class="list-inline-item"><a href="https://discord.gg/VenX9kKF5B"><i class="fab fa-discord fa-fw"></i></a></li>
 		                <li class="list-inline-item"><a href="https://github.com/CodeRedModding"><i class="fab fa-github fa-fw"></i></a></li>
 		            </ul>
 		           <a href="https://github.com/CodeRedModding/CodeRed-Launcher/releases" class="btn btn-primary d-none d-lg-flex">Download</a>
@@ -92,7 +92,7 @@
 				    <li class="nav-item"><a class="nav-link scrollto" href="#item-6-3">Custom Titles</a></li>
                     <li class="nav-item"><a class="nav-link scrollto" href="#item-6-4">Bug Reporting</li>
 				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-7"><span class="theme-icon-holder me-2"><i class="fas fa-book"></i></span>Changelog</a></li>
-				    <li class="nav-item"><a class="nav-link scrollto" href="#item-7-1">Version 1.2.1</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-7-1">Version 1.2.2</a></li>
 			    </ul>
 		    </nav>
 	    </div>
@@ -865,6 +865,10 @@
                                         <td>Automatically claims completed challenges at the end of online matches.</td>
                                     </tr>
                                     <tr>
+                                        <th class="theme-bg-light"><b>interface_auto_gg &lttrue-false&gt</b></th>
+                                        <td>Automatically say "gg" in chat at the end of online matches.</td>
+                                    </tr>
+                                    <tr>
                                         <th class="theme-bg-light"><b>interface_auto_limit_fps &lttrue-false&gt</b></th>
                                         <td>Automatically limits your fps to the set value when Rocket League is not in focus.</td>
                                     </tr>
@@ -919,6 +923,14 @@
                                     <tr>
                                         <th class="theme-bg-light"><b>interface_auto_training_code &ltarguments&gt</b></th>
                                         <td>The custom training pack code to open for the auto training setting.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>interface_auto_delay &ltarguments&gt</b></th>
+                                        <td>The automation delay after online matches in seconds.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>interface_gg_delay &ltarguments&gt</b></th>
+                                        <td>The auto gg delay after online matches in seconds.</td>
                                     </tr>
                                     <tr>
                                         <th class="theme-bg-light"><b>interface_blog_description &ltarguments&gt</b></th>
@@ -1359,6 +1371,10 @@
                                         <th class="theme-bg-light"><b>titles_display_menu &lttrue-false&gt</b></th>
                                         <td>Display your loadouts selected title on the main menu.</td>
                                     </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>titles_display_others &lttrue-false&gt</b></th>
+                                        <td>Display other CodeRed users "Special" titles on the scoreboard.</td>
+                                    </tr>
                                 </tbody>
                             </table>
                         </div>
@@ -1685,6 +1701,21 @@
 					    <h1 class="docs-heading">Changelog</h1>
 				    </header>
 				     <section class="docs-section" id="item-7-1">
+                        <h2 class="section-heading">Version 1.2.2 (January 13th 2023)</h2>
+                        <h5>- Added the setting <code>interface_auto_gg</code> which automatically says gg in chat at the end of online matches.</h5>
+                        <h5>- Added the setting <code>interface_gg_delay</code> which sets the delay in seconds for the <code>interface_auto_gg</code> setting.</h5>
+                        <h5>- Added a limit to how many styles and effects you can create, the limit is now 512.</h5>
+                        <h5>- Fixed a crash that could happen if you waited for the game to auto kick you after online matches.</h5>
+                        <h5>- Fixed your title not restoring to its original one if you disabled presets mid-game.</h5>
+                        <h5>- Fixed you title still applying on the scoreboard even if you had presets disabled.</h5>
+                        <h5>- Fixed team mmr sometimes being incorrect in 1v1 private matches.</h5>
+                        <h5>- Fixed inconsistencies related to the \"interface_auto_delay\" setting.</h5>
+                        <h5>- Fixed custom styles and effects not renaming if you copied from a default style/effect originally.</h5>
+                        <h5>- Added extra safety checking in the module if you tried injecting multiple times.</h5>
+                        <h5>- Added extra safety checking regarding the auto replay saver.</h5>
+                        <h5>- Changes to how terminal themes are stored and parsed in custom styles.</h5>
+                        <h5>- Changes to how titles are stored and parsed in presets in preparation for a future update.</h5>
+
                         <h2 class="section-heading">Version 1.2.1 (January 10th 2023)</h2>
                         <h5>- Added extra safety checks and logging for the garage module, as a result removed the need to be on the main menu to customize your profile or presets.</h5>
                         <h5>- Removed the anonymizers scoreboard_hide_platforms setting which hid all avatar platforms. I made this before Psyonix did this by default so it's pointless now.</h5>
@@ -1837,7 +1868,7 @@
 				    <div class="container text-center py-5">
 				        <ul class="social-list list-unstyled pt-4 mb-0">
 							<li class="list-inline-item"><a href="https://twitter.com/CodeRedModding"><i class="fab fa-twitter fa-fw"></i></a></li>
-							<li class="list-inline-item"><a href="https://discord.gg/FPP77NxhH9"><i class="fab fa-discord fa-fw"></i></a></li>
+							<li class="list-inline-item"><a href="https://discord.gg/VenX9kKF5B"><i class="fab fa-discord fa-fw"></i></a></li>
 							<li class="list-inline-item"><a href="https://github.com/CodeRedModding"><i class="fab fa-github fa-fw"></i></a></li>
 				        </ul>
 				    </div>
