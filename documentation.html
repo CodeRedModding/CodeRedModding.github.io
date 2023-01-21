@@ -92,7 +92,7 @@
 				    <li class="nav-item"><a class="nav-link scrollto" href="#item-6-3">Custom Titles</a></li>
                     <li class="nav-item"><a class="nav-link scrollto" href="#item-6-4">Bug Reporting</li>
 				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-7"><span class="theme-icon-holder me-2"><i class="fas fa-book"></i></span>Changelog</a></li>
-				    <li class="nav-item"><a class="nav-link scrollto" href="#item-7-1">Version 1.2.3</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-7-1">Version 1.2.4</a></li>
 			    </ul>
 		    </nav>
 	    </div>
@@ -558,7 +558,7 @@
                                     </tr>
                                     <tr>
                                         <th class="theme-bg-light"><b>freeplay_blue_enabled &lttrue-false&gt</b></th>
-                                        <td>Enable/disable overriding the blue stadium colors in freeplay.</td>
+                                        <td>Enable overriding the blue stadium colors in freeplay.</td>
                                     </tr>
                                     <tr>
                                         <th class="theme-bg-light"><b>freeplay_blue_primary &lt#FFFFFF&gt</b></th>
@@ -571,6 +571,14 @@
                                     <tr>
                                         <th class="theme-bg-light"><b>freeplay_blue_stadium &lt#1873FF&gt</b></th>
                                         <td>The stadium colors to override on the blue team in freeplay.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>freeplay_blue_hud &lt#1873FF&gt</b></th>
+                                        <td>The HUD colors to override on the blue team in freepla</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>freeplay_blue_hud_enabled &lttrue-false&gt</b></th>
+                                        <td>Enable overriding the blue team HUD colors with a custom one in freeplay.</td>
                                     </tr>
                                     <tr>
                                         <th class="theme-bg-light"><b>freeplay_clear_overrides &lttrue-false&gt</b></th>
@@ -655,6 +663,14 @@
                                     <tr>
                                         <th class="theme-bg-light"><b>freeplay_orange_stadium &lt#C26418&gt</b></th>
                                         <td>The stadium colors to override on the orange team in freeplay.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>freeplay_orange_hud &lt#C26418&gt</b></th>
+                                        <td>The HUD colors to override on the orange team in freeplay.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>freeplay_orange_hud_enabled &lttrue-false&gt</b></th>
+                                        <td>Enable overriding the orange team HUD colors with a custom one in freeplay.</td>
                                     </tr>
                                     <tr>
                                         <th class="theme-bg-light"><b>freeplay_pad_cooldown</b></th>
@@ -1009,6 +1025,14 @@
                                         <td>Display a notification when a replay has been automatically saved.</td>
                                     </tr>
                                     <tr>
+                                        <th class="theme-bg-light"><b>interface_join_focus &lttrue-false&gt</b></th>
+                                        <td>Automatically focuses the window upon joining a game.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>interface_kickoff_focus &lttrue-false&gt</b></th>
+                                        <td>Automatically focuses the window at the start of kickoffs.</td>
+                                    </tr>
+                                    <tr>
                                         <th class="theme-bg-light"><b>interface_presence_gamedata &ltarguments&gt</b></th>
                                         <td>Value to override your friends list game data with (for internal use only).</td>
                                     </tr>
@@ -1312,6 +1336,14 @@
                                         <td>The stadium colors to override on the blue team in online matches.</td>
                                     </tr>
                                     <tr>
+                                        <th class="theme-bg-light"><b>stadium_blue_hud &lt#1873FF&gt</b></th>
+                                        <td>The HUD colors to override on the blue team in online matches.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>stadium_blue_hud_enabled &lttrue-false&gt</b></th>
+                                        <td>Enable overriding the blue team HUD colors with a custom one in online matches</td>
+                                    </tr>
+                                    <tr>
                                         <th class="theme-bg-light"><b>stadium_exclude_clubs &lttrue-false&gt</b></th>
                                         <td>Exclude club match colors from being overwritten by custom ones.</td>
                                     </tr>
@@ -1341,6 +1373,14 @@
                                     </tr>
                                     <tr>
                                         <th class="theme-bg-light"><b>stadium_orange_stadium &lt#C26418&gt</b></th>
+                                        <td>The stadium colors to override on the orange team in online matches.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>stadium_orange_hud &lt#C26418&gt</b></th>
+                                        <td>Enable overriding the orange team HUD colors with a custom one in online matches.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>stadium_orange_hud_enabled &lttrue-false&gt</b></th>
                                         <td>The stadium colors to override on the orange team in online matches.</td>
                                     </tr>
                                 </tbody>
@@ -1701,6 +1741,17 @@
 					    <h1 class="docs-heading">Changelog</h1>
 				    </header>
 				     <section class="docs-section" id="item-7-1">
+                        <h2 class="section-heading">Version 1.2.4 (January 21st 2023)</h2>
+                        <h5>- Added support for the missing product slots in the thumbnail renderer, boosts, goal explosions, banners, etc...</h5>
+                        <h5>- Added eight new settings which lets you recolor your HUD independently from your custom stadium colors.</h5>
+                        <h5>- Added two new settings inspired by lchmagKekse's "Window Focus" plugin for BakkesMod.</h5>
+                        <h5>- Added the setting <code>interface_join_focus</code> which auto focuses the window upon joining a match if you were alt-tabbed out.</h5>
+                        <h5>- Added the setting <code>interface_kickoff_focus</code> which auto focuses the window at the start of kickoffs if you were alt-tabbed out.</h5>
+                        <h5>- Fixed a crash that could happen if you waited for the game to auto kick you after online matches.</h5>
+                        <h5>- Fixed needing to go in and out of the main menu if you toggled the <code>interface_disable_rocketpass</code> feature on and off.</h5>
+                        <h5>- Fixed a bug related to the <code>database_paint_colors</code> argument for the database module.</h5>
+                        <h5>- Other various optimizations and improvements.</h5>
+
                         <h2 class="section-heading">Version 1.2.3 (January 16th 2023)</h2>
                         <h5>- Changed how the custom rich presence status group works, its new values are Offline, Online, Away, and Busy.</h5>
                         <h5>- Fixed some specific cases of the auto replay saver crashing (this feature is gonna be the death of me).</h5>
@@ -1712,7 +1763,6 @@
                         <h5>- Added the setting <code>interface_auto_gg</code> which automatically says gg in chat at the end of online matches.</h5>
                         <h5>- Added the setting <code>interface_gg_delay</code> which sets the delay in seconds for the <code>interface_auto_gg</code> setting.</h5>
                         <h5>- Added a limit to how many styles and effects you can create, the limit is now 512.</h5>
-                        <h5>- Fixed a crash that could happen if you waited for the game to auto kick you after online matches.</h5>
                         <h5>- Fixed your title not restoring to its original one if you disabled presets mid-game.</h5>
                         <h5>- Fixed you title still applying on the scoreboard even if you had presets disabled.</h5>
                         <h5>- Fixed team mmr sometimes being incorrect in 1v1 private matches.</h5>
