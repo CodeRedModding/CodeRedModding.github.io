@@ -91,7 +91,7 @@
 				    <li class="nav-item"><a class="nav-link scrollto" href="#item-6-2">BakkesMod</a></li>
                     <li class="nav-item"><a class="nav-link scrollto" href="#item-6-4">Bug Reporting</li>
 				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-7"><span class="theme-icon-holder me-2"><i class="fas fa-book"></i></span>Changelog</a></li>
-				    <li class="nav-item"><a class="nav-link scrollto" href="#item-7-1">Version 1.2.6</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-7-1">Version 1.2.7</a></li>
 			    </ul>
 		    </nav>
 	    </div>
@@ -1723,7 +1723,7 @@
 
                     <section class="docs-section" id="item-6-2">
 						<h4 class="pt-3"><i class="fas fa-question-circle me-1"></i>Can I use CodeRed and BakkesMod at the same time?</h4>
-						<p>Yes, but you might have to manually enable/disable MMR features in the mod you want to use; as if they are both enabled at the same time they WILL conflict with each other. The same goes for hotkeys and training features.</p>
+						<p>Not currently, CodeRed and BakkesMod conflict with each other in a lot of its core features, and has indirectly cause crashes when both are used together.</p>
 					</section>
 
                     <section class="docs-section" id="item-6-3">
@@ -1737,6 +1737,13 @@
 					    <h1 class="docs-heading">Changelog</h1>
 				    </header>
 				     <section class="docs-section" id="item-7-1">
+                        <h2 class="section-heading">Version 1.2.7 (January 28th 2023)</h2>
+                        <h5>- Fixed a bug related to presets not applying if you lost connection to the internet and then reconnected.</h5>
+                        <h5>- Fixed a crash that could happen if you selected a title then clicked "Nothing Selected" after alt tabbing.</h5>
+                        <h5>- Fixed a scaling issue for the searchable comboboxes in ImGui on larger displays.</h5>
+                        <h5>- Fixed a specific directory path error when injecting.</h5>
+                        <h5>- Other internal optimizations and changes with preset titles.</h5>
+
                         <h2 class="section-heading">Version 1.2.6 (January 26th 2023)</h2>
                         <h5>- Added an option in custom styles to use your own color for terminal themes, rather than picking preset colors.</h5>
                         <h5>- Added additional safety checking when parsing colors from presets, styles, and effects.</h5>
