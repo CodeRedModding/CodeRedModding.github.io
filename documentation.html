@@ -92,7 +92,7 @@
                     <li class="nav-item"><a class="nav-link scrollto" href="#item-6-3">Custom Titles</a></li>
                     <li class="nav-item"><a class="nav-link scrollto" href="#item-6-4">Bug Reporting</a></li>
 				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-7"><span class="theme-icon-holder me-2"><i class="fas fa-book"></i></span>Changelog</a></li>
-				    <li class="nav-item"><a class="nav-link scrollto" href="#item-7-1">Version 1.2.7</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-7-1">Version 1.2.8</a></li>
 			    </ul>
 		    </nav>
 	    </div>
@@ -275,6 +275,10 @@
                                         <td>Prints all, categories, and commands for key bindings to the console.</td>
                                     </tr>
                                     <tr>
+                                        <th class="theme-bg-light"><b>keys_rage_quits</b></th>
+                                        <td>Enable the use of "Alt+F4" to close the game.</td>
+                                    </tr>
+                                    <tr>
                                         <th class="theme-bg-light"><b>keys_remove_alias</b></th>
                                         <td>Unbinds a custom alias from a command with the given arguments.</td>
                                     </tr>
@@ -290,6 +294,7 @@
                                         <th class="theme-bg-light"><b>keys_reset_buffer</b></th>
                                         <td>Resets the players current input buffer.</td>
                                     </tr>
+                                    
                                     <tr>
                                         <th class="theme-bg-light"><b>keys_save_changes</b></th>
                                         <td>Saves all changes made to bound keys and aliases.</td>
@@ -814,6 +819,10 @@
                             <table class="table table-bordered">
                                 <tbody>
                                     <tr>
+                                        <th class="theme-bg-light"><b>interface_close_game</b></th>
+                                        <td>Closes the game, thats it, thats all this command does.</td>
+                                    </tr>
+                                    <tr>
                                         <th class="theme-bg-light"><b>interface_chat_all</b></th>
                                         <td>Sends a message to global chat in an online game with the given arguments.</td>
                                     </tr>
@@ -987,10 +996,6 @@
                                     <tr>
                                         <th class="theme-bg-light"><b>interface_draw_fps &lttrue-false&gt</b></th>
                                         <td>Draws an fps counter in the corner of your screen.</td>
-                                    </tr>
-                                    <tr>
-                                        <th class="theme-bg-light"><b>interface_disable_ads &lttrue-false&gt</b></th>
-                                        <td>Disable stadium advertisements when viewing replay files.</td>
                                     </tr>
                                     <tr>
                                         <th class="theme-bg-light"><b>interface_disable_filter &lttrue-false&gt</b></th>
@@ -1743,6 +1748,15 @@
 					    <h1 class="docs-heading">Changelog</h1>
 				    </header>
 				     <section class="docs-section" id="item-7-1">
+                        <h2 class="section-heading">Version 1.2.8 (January 29th 2023)</h2>
+                        <h5>- Added the command <code>interface_close_game</code> that closes the game (pretty fancy right?)."</h5>
+                        <h5>- Added the setting <code>keys_rage_quits</code> that enables the use of "Alt-F4" to close the game (this secretly just calls <code>interface_close_game</code>).</h5>
+                        <h5>- Renamed the <code>interface_disable_ads</code> setting to <code>replay_disable_ads</code>.</h5>
+                        <h5>- Fixed the <code>interface_april_icons</code> setting sometimes restoring itself after a certain period of time</h5>
+                        <h5>- Fixed some inconsistencies related to rendering custom scenes in the thumbnail renderer.</h5>
+                        <h5>- Fixed a crash that could happen if you tried to call <code>unreal_command</code> during a loading screen.</h5>
+                        <h5>- Disabled the command <code>brank_tuna_time</code>, which hired the nearest homeless man to come to your house and make you a tuna salad sandwich. This resulted in the death of ten CodeRed users who had a shellfish allergy, to which I am now involved in earths deadliest tuna-related investigation.</h5>
+
                         <h2 class="section-heading">Version 1.2.7 (January 28th 2023)</h2>
                         <h5>- Fixed a bug related to presets not applying if you lost connection to the internet and then reconnected.</h5>
                         <h5>- Fixed a crash that could happen if you selected a title then clicked "Nothing Selected" after alt tabbing.</h5>
