@@ -92,7 +92,7 @@
                     <li class="nav-item"><a class="nav-link scrollto" href="#item-6-3">Custom Titles</a></li>
                     <li class="nav-item"><a class="nav-link scrollto" href="#item-6-4">Bug Reporting</a></li>
 				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-7"><span class="theme-icon-holder me-2"><i class="fas fa-book"></i></span>Changelog</a></li>
-				    <li class="nav-item"><a class="nav-link scrollto" href="#item-7-1">Version 1.2.8</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-7-1">Version 1.2.89</a></li>
 			    </ul>
 		    </nav>
 	    </div>
@@ -1202,6 +1202,10 @@
                                         <td>Display teams skill rating average on the scoreboard.</td>
                                     </tr>
                                     <tr>
+                                        <th class="theme-bg-light"><b>scoreboard_display_platforms &lttrue-false&gt</b></th>
+                                        <td>Display players platform names in place of club tags on the scoreboard.</td>
+                                    </tr>
+                                    <tr>
                                         <th class="theme-bg-light"><b>scoreboard_hide_avatars &lttrue-false&gt</b></th>
                                         <td>Hide all player avatars on the scoreboard during matches.</td>
                                     </tr>
@@ -1748,14 +1752,26 @@
 					    <h1 class="docs-heading">Changelog</h1>
 				    </header>
 				     <section class="docs-section" id="item-7-1">
+                        <h2 class="section-heading">Version 1.2.9 (February 3rd 2023 2023)</h2>
+                        <h5>- Added the setting <code>scoreboard_display_platforms</code> which displays players platforms in place of club tags.</h5>
+                        <h5>- Fixed the <code>scoreboard_hide_clubs</code> setting not hiding club tags on the scoreboard.</h5>
+                        <h5>- Fixed the <code>garage_apply_both</code> setting in presets using the wrong team sometimes.</h5>
+                        <h5>- Fixed the <code>training_open_freeplay</code> command applying mutators to freeplay if you were in a lan match.</h5>
+                        <h5>- Fixed your title not restoring on the scoreboard if you selected "Nothing selected" during a match."</h5>
+                        <h5>- Fixed team names not restoring if you toggled <code>scoreboard_display_team</code> on and off.</h5>
+                        <h5>- Fixed the products in the Rocket Pass menu applying title attributes to non-title products.</h5>
+                        <h5>- Fixed the title combobox in the dashboard being empty if you opened the menu too early.</h5>
+                        <h5>- Fixed your preset not applying to the right team when you first loaded in private or lan matches.</h5>
+                        <h5>- Other internal changes and improvements with ImGui.</h5>
+
                         <h2 class="section-heading">Version 1.2.8 (January 29th 2023)</h2>
-                        <h5>- Added the command <code>interface_close_game</code> that closes the game (pretty fancy right?)."</h5>
+                        <h5>- Added the command <code>interface_close_game</code> that closes the game (pretty fancy right?).</h5>
                         <h5>- Added the setting <code>keys_rage_quits</code> that enables the use of "Alt-F4" to close the game (this secretly just calls <code>interface_close_game</code>).</h5>
                         <h5>- Renamed the <code>interface_disable_ads</code> setting to <code>replay_disable_ads</code>.</h5>
                         <h5>- Fixed the <code>interface_april_icons</code> setting sometimes restoring itself after a certain period of time</h5>
                         <h5>- Fixed some inconsistencies related to rendering custom scenes in the thumbnail renderer.</h5>
                         <h5>- Fixed a crash that could happen if you tried to call <code>unreal_command</code> during a loading screen.</h5>
-                        <h5>- Disabled the command <code>brank_tuna_time</code>, which hired the nearest homeless man to come to your house and make you a tuna salad sandwich. This resulted in the death of ten CodeRed users who had a shellfish allergy, to which I am now involved in earths deadliest tuna-related investigation.</h5>
+                        <h5>- Disabled the command <code>brank_tuna_time</code>, which hired the nearest homeless man to come to your house and make you a tuna salad sandwich. This resulted in the death of ten CodeRed users who had a fish allergy, to which I am now involved in earths deadliest tuna-related investigation.</h5>
 
                         <h2 class="section-heading">Version 1.2.7 (January 28th 2023)</h2>
                         <h5>- Fixed a bug related to presets not applying if you lost connection to the internet and then reconnected.</h5>
