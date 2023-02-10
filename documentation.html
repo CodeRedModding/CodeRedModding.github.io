@@ -92,7 +92,7 @@
                     <li class="nav-item"><a class="nav-link scrollto" href="#item-6-3">Custom Titles</a></li>
                     <li class="nav-item"><a class="nav-link scrollto" href="#item-6-4">Bug Reporting</a></li>
 				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-7"><span class="theme-icon-holder me-2"><i class="fas fa-book"></i></span>Changelog</a></li>
-				    <li class="nav-item"><a class="nav-link scrollto" href="#item-7-1">Version 1.3.1</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-7-1">Version 1.3.2</a></li>
 			    </ul>
 		    </nav>
 	    </div>
@@ -1234,8 +1234,12 @@
                                         <td>Hide which platform players belong to on the scoreboard.</td>
                                     </tr>
                                     <tr>
-                                        <th class="theme-bg-light"><b>scoreboard_hide_ranks &lttrue-false&gt</b></th>
-                                        <td>Hide all players rank information at the end of ranked matches.</td>
+                                        <th class="theme-bg-light"><b>scoreboard_hide_platforms &lttrue-false&gt</b></th>
+                                        <td>Hide which platform players belong to on the scoreboard.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>scoreboard_hide_privates &lttrue-false&gt</b></th>
+                                        <td>Allows the use of the anonymizer in private matches.</td>
                                     </tr>
                                     <tr>
                                         <th class="theme-bg-light"><b>scoreboard_hide_statistics &lttrue-false&gt</b></th>
@@ -1764,6 +1768,16 @@
 					    <h1 class="docs-heading">Changelog</h1>
 				    </header>
 				     <section class="docs-section" id="item-7-1">
+                        <h2 class="section-heading">Version 1.3.2 (February 10th 2023 2023)</h2>
+                        <h5>- Added the setting <code>scoreboard_hide_privates</code> which allows the anonymizer to work in private matches.</h5>
+                        <h5>- The <code>training_open_freeplay</code> command now applies the proper ball and mutators according to the gamemode (hoops, dropshot, gridiron, and more).</h5>
+                        <h5>- The <code>freeplay_disable_goals</code> setting is now always prioritized over the games new training settings.</h5>
+                        <h5>- Fixed the anonymizer applying to players in private matches by default (it wasn't suppose to do that).</h5>
+                        <h5>- Fixed the mmr and title modules not working in tournaments due to me setting the wrong permissions (oops).</h5>
+                        <h5>- Fixed custom names sometimes not applying during goal replays.</h5>
+                        <h5>- Fixed needing go in and out of the main menu for the custom blog settings to apply.</h5>
+                        <h5>- Fixed the thumbnail renderer acting weird with custom scenes when selecting a new product.</h5>
+
                         <h2 class="section-heading">Version 1.3.1 (February 8th 2023 2023)</h2>
                         <h5>- Added the commands <code>interface_disable_rendering</code> and <code>interface_enable_rendering</code>, which lets you toggle scaleform rendering off and on.</h5>
                         <h5>- Added the <code>training_no_map</code> setting, I forgot to add this option when I changed the custom training map options to radio buttons.</h5>
