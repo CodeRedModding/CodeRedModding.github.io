@@ -93,7 +93,7 @@
                     <li class="nav-item"><a class="nav-link scrollto" href="#item-6-3">Custom Titles</a></li>
                     <li class="nav-item"><a class="nav-link scrollto" href="#item-6-4">Bug Reporting</a></li>
 				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-7"><span class="theme-icon-holder me-2"><i class="fas fa-book"></i></span>Changelog</a></li>
-				    <li class="nav-item"><a class="nav-link scrollto" href="#item-7-1">Version 1.3.2</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-7-1">Version 1.3.3</a></li>
 			    </ul>
 		    </nav>
 	    </div>
@@ -1084,7 +1084,7 @@
                                     </tr>
                                     <tr>
                                         <th class="theme-bg-light"><b>matchmaking_skill_precision &lt0-9&gt</b></th>
-                                        <td>The decimal precision used in displaying skill in the main menu.</td>
+                                        <td>The decimal precision used in displaying skill ratings on the main menu.</td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -1252,7 +1252,7 @@
                                     </tr>
                                     <tr>
                                         <th class="theme-bg-light"><b>scoreboard_skill_precision &lt0-9&gt</b></th>
-                                        <td>Display on the scoreboard either mmr or skill rating.</td>
+                                        <td>The decimal precision used in displaying skill ratings on the scoreboard.</td>
                                     </tr>
                                     <tr>
                                         <th class="theme-bg-light"><b>scoreboard_uncensor_names &lttrue-false&gt</b></th>
@@ -1784,6 +1784,13 @@
 					    <h1 class="docs-heading">Changelog</h1>
 				    </header>
 				     <section class="docs-section" id="item-7-1">
+                        <h2 class="section-heading">Version 1.3.3 (February 13th 2023 2023)</h2>
+                        <h5>- Added the `freeplay_disable_training` setting which disables CodeReds training features that conflict with the games new built in ones (Goal scoring, game speed, etc...).</h5>
+                        <h5>- Fixed titles sometimes not applying or updating during goal replays.</h5>
+                        <h5>- Fixed garage presets restoring to your default items after receiving a new item on the main menu.</h5>
+                        <h5>- Fixed custom blog info not restoring to its original info when toggled on and off.</h5>
+                        <h5>- Various internal changes and optimizations.</h5>
+
                         <h2 class="section-heading">Version 1.3.2 (February 10th 2023 2023)</h2>
                         <h5>- Added the setting <code>scoreboard_hide_privates</code> which allows the anonymizer to work in private matches.</h5>
                         <h5>- The <code>training_open_freeplay</code> command now applies the proper ball and mutators according to the gamemode (hoops, dropshot, gridiron, and more).</h5>
