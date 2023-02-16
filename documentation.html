@@ -93,7 +93,7 @@
                     <li class="nav-item"><a class="nav-link scrollto" href="#item-6-3">Custom Titles</a></li>
                     <li class="nav-item"><a class="nav-link scrollto" href="#item-6-4">Bug Reporting</a></li>
 				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-7"><span class="theme-icon-holder me-2"><i class="fas fa-book"></i></span>Changelog</a></li>
-				    <li class="nav-item"><a class="nav-link scrollto" href="#item-7-1">Version 1.3.4</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-7-1">Version 1.3.5</a></li>
 			    </ul>
 		    </nav>
 	    </div>
@@ -943,8 +943,12 @@
                                         <td>Automatically queue the last searched playlist(s) at the end of online matches.</td>
                                     </tr>
                                     <tr>
-                                        <th class="theme-bg-light"><b>interface_auto_menu &lttrue-false&gt</b></th>
+                                        <th class="theme-bg-light"><b>interface_auto_none &lttrue-false&gt</b></th>
                                         <td>Automatically exit to the main menu at the end of online matches.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>interface_auto_menu &lttrue-false&gt</b></th>
+                                        <td>Don't do any automation at the end of online matches.</td>
                                     </tr>
                                     <tr>
                                         <th class="theme-bg-light"><b>interface_auto_freeplay &lttrue-false&gt</b></th>
@@ -1241,6 +1245,18 @@
                                     <tr>
                                         <th class="theme-bg-light"><b>scoreboard_hide_platforms &lttrue-false&gt</b></th>
                                         <td>Hide which platform players belong to on the scoreboard.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>scoreboard_hide_everyone &lttrue-false&gt</b></th>
+                                        <td>AHide everyone with the anonymizer (besides yourself).</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>scoreboard_hide_opponents &lttrue-false&gt</b></th>
+                                        <td>Hide only your opponents with the anonymizer (besides yourself).</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>scoreboard_hide_nonparty &lttrue-false&gt</b></th>
+                                        <td>Hide everyone that's not in your party with the anonymizer (besides yourself).</td>
                                     </tr>
                                     <tr>
                                         <th class="theme-bg-light"><b>scoreboard_hide_privates &lttrue-false&gt</b></th>
@@ -1788,6 +1804,14 @@
 					    <h1 class="docs-heading">Changelog</h1>
 				    </header>
 				     <section class="docs-section" id="item-7-1">
+                        <h2 class="section-heading">Version 1.3.5 (February 16th 2023)</h2>
+                        <h5>- Added three new options for the anonymizer which allow you to select which players to apply to in-game.</h5>
+                        <h5>- Added the <code>scoreboard_hide_everyone</code> setting, when enabled the anonymizer is applied to all players you encounter.</h5>
+                        <h5>- Added the <code>scoreboard_hide_opponents</code> setting, when enabled the anonymizer is applied to only your opponents.</h5>
+                        <h5>- Added the <code>scoreboard_hide_noneparty</code> setting, when enabled the anonymizer is applied to all players not in your party.</h5>
+                        <h5>- Fixed a bug that could cause garage titles to apply to the wrong one on the main menu.</h5>
+                        <h5>- Possibly fixed a bug that caused crashes when loading into maps.</h5>
+
                         <h2 class="section-heading">Version 1.3.4 (February 15th 2023)</h2>
                         <h5>- Added a new default style inspired by Discord called "Discord Blurple"! (I like makin styles :3)</h5>
                         <h5>- Fixed preset titles sometimes applying to the wrong team on the scoreboard during goal replays, and at the end of matches.</h5>
