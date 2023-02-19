@@ -93,7 +93,7 @@
                     <li class="nav-item"><a class="nav-link scrollto" href="#item-6-3">Custom Titles</a></li>
                     <li class="nav-item"><a class="nav-link scrollto" href="#item-6-4">Bug Reporting</a></li>
 				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-7"><span class="theme-icon-holder me-2"><i class="fas fa-book"></i></span>Changelog</a></li>
-				    <li class="nav-item"><a class="nav-link scrollto" href="#item-7-1">Version 1.3.5</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-7-1">Version 1.3.6</a></li>
 			    </ul>
 		    </nav>
 	    </div>
@@ -585,6 +585,34 @@
                                     <tr>
                                         <th class="theme-bg-light"><b>freeplay_blue_hud_enabled &lttrue-false&gt</b></th>
                                         <td>Enable overriding the blue team HUD colors with a custom one in freeplay.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>freeplay_boost_standard &lttrue-false&gt</b></th>
+                                        <td>Use the typical standard boost meter in freeplay.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>freeplay_boost_unlimited &lttrue-false&gt</b></th>
+                                        <td>Use the unlimited boost meter in freeplay.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>freeplay_boost_refill &lttrue-false&gt</b></th>
+                                        <td>Use the auto-refill boost meter in freeplay.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>freeplay_boost_none &lttrue-false&gt</b></th>
+                                        <td>Disable the boost meter in freeplay.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>freeplay_boost_refill_delay &lttrue-false&gt</b></th>
+                                        <td>The delay in seconds on when the auto-refill boost starts to refill in freeplay.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>freeplay_boost_refill_rate &lttrue-false&gt</b></th>
+                                        <td>The rate the auto-refill boost uses when it starts to refill in freeplay.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>freeplay_boost_refill_ground &lttrue-false&gt</b></th>
+                                        <td>Enable refilling boost when you touch the ground only in freeplay.</td>
                                     </tr>
                                     <tr>
                                         <th class="theme-bg-light"><b>freeplay_clear_overrides &lttrue-false&gt</b></th>
@@ -1807,6 +1835,24 @@
 					    <h1 class="docs-heading">Changelog</h1>
 				    </header>
 				     <section class="docs-section" id="item-7-1">
+                        <h2 class="section-heading">Version 1.3.6 (February 18th 2023)</h2>
+                        <h5>- Added a notification in-game if BakkesMod is injected along with CodeRed, to warn users of compatibility issues.</h5>
+                        <h5>- Added seven new boost settings for freeplay (these override the games settings by default, use `freeplay_disable_training` to disable).</h5>
+                        <h5>- Added the <code>freeplay_boost_standard</code> setting, which forces your boost meter to the standard one.</h5>
+                        <h5>- Added the <code>freeplay_boost_unlimited</code> setting, which forces your boost meter to use unlimited boost.</h5>
+                        <h5>- Added the <code>freeplay_boost_refill</code> setting, which forces your boost meter to use auto-refill boost.</h5>
+                        <h5>- Added the <code>freeplay_boost_none</code> setting, which disables your boost meter entirely.</h5>
+                        <h5>- Added the <code>freeplay_boost_refill_delay</code> setting, which lets you set the delay when the auto-refill is activated.</h5>
+                        <h5>- Added the <code>freeplay_boost_refill_rate</code> setting, which lets you set the speed at which your boost refills at.</h5>
+                        <h5>- Added the <code>freeplay_boost_refill_ground</code> setting, which lets you toggle using auto-refill boost when touching the ground only.</h5>
+                        <h5>- Fixed the <code>scoreboard_hide_titles</code> setting being ignored by the last updates new anonymizer settings.</h5>
+                        <h5>- Fixed radio button settings not updating their shared settings when you changed their value via the terminal.</h5>
+                        <h5>- Fixed color settings not saving their alpha channel value, the alpha channel isn't currently used by anything but will in the future.</h5>
+                        <h5>- Fixed garage presets sometimes not applying the right preset when first injected.</h5>
+                        <h5>- Fixed some freeplay settings applying to exhibition matches when they were not suppose to.</h5>
+                        <h5>- Fixed a rendering thread exception that could happen if you clicked the exit button on the main menu.</h5>
+                        <h5>- Moved the <code>keys_rage_quits</code> setting on the dashboard to the miscellaneous tab.</h5>
+
                         <h2 class="section-heading">Version 1.3.5 (February 16th 2023)</h2>
                         <h5>- Added three new options for the anonymizer which allow you to select which players to apply to in-game.</h5>
                         <h5>- Added the <code>scoreboard_hide_everyone</code> setting, when enabled the anonymizer is applied to all players you encounter.</h5>
