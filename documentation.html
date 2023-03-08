@@ -93,7 +93,7 @@
                     <li class="nav-item"><a class="nav-link scrollto" href="#item-6-3">Custom Titles</a></li>
                     <li class="nav-item"><a class="nav-link scrollto" href="#item-6-4">Bug Reporting</a></li>
 				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-7"><span class="theme-icon-holder me-2"><i class="fas fa-book"></i></span>Changelog</a></li>
-				    <li class="nav-item"><a class="nav-link scrollto" href="#item-7-1">Version 1.3.9</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-7-1">Version 1.4.1</a></li>
 			    </ul>
 		    </nav>
 	    </div>
@@ -1047,10 +1047,6 @@
                                         <td>Draws an fps counter in the corner of your screen.</td>
                                     </tr>
                                     <tr>
-                                        <th class="theme-bg-light"><b>interface_disable_filter &lttrue-false&gt</b></th>
-                                        <td>Disable screen filters used in certain stadiums in-game (like Neo Tokyo Comic).</td>
-                                    </tr>
-                                    <tr>
                                         <th class="theme-bg-light"><b>interface_disable_itemshop &lttrue-false&gt</b></th>
                                         <td>Hide the item shop button on the main menu.</td>
                                     </tr>
@@ -1251,7 +1247,7 @@
                                         <td>Display teams skill rating average on the scoreboard.</td>
                                     </tr>
                                     <tr>
-                                        <th class="theme-bg-light"><b>scoreboard_display_platforms &lttrue-false&gt</b></th>
+                                        <th class="theme-bg-light"><b>scoreboard_platform_clubs &lttrue-false&gt</b></th>
                                         <td>Display players platform names in place of club tags on the scoreboard.</td>
                                     </tr>
                                     <tr>
@@ -1385,6 +1381,10 @@
                         <div class="table-responsive my-4">
                             <table class="table table-bordered">
                                 <tbody>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>stadium_disable_filter &lttrue-false&gt</b></th>
+                                        <td>Disable screen filters used in certain stadiums in-game (like Neo Tokyo Comic and Fire & Ice).</td>
+                                    </tr>
                                     <tr>
                                         <th class="theme-bg-light"><b>stadium_blue_accent &lt#FFFFFF&gt</b></th>
                                         <td>The blue accent paint colors to apply to your car in online matches.</td>
@@ -1839,6 +1839,23 @@
 					    <h1 class="docs-heading">Changelog</h1>
 				    </header>
 				     <section class="docs-section" id="item-7-1">
+                        <h2 class="section-heading">Version 1.4.1 (March 7th 2023)</h2>
+                        <h5>- Added the new season 9 reward titles to garage presets.</h5>
+                        <h5>- Added the new "Deadeye Canyon (Oasis)" map to the main menu background changer.</h5>
+                        <h5>- Fixed some issues calculating skill gains and losses from people with negative mmr.</h5>
+                        <h5>- Fixed playlist mmr not updating after ranked games when selecting different playlists.</h5>
+                        <h5>- Fixed a few specific cases where the fps limiter was setting the wrong fps value when the game closed unexpectedly.</h5>
+                        <h5>- Updated internal SDK to the latest version of Rocket League.</h5>
+
+                        <h2 class="section-heading">Version 1.4.0 (March 4th 2023)</h2>
+                        <h5>- Added custom avatars to garage profiles! To add your own, place an image file in your "CodeRed\Textures\Avatars" folder prior to launching the game. You also have the option to apply a color tint to them, this works best if your image is a greyscale color scheme.</h5>
+                        <h5>- Added the `Fire & Ice` map to the <code>stadium_disable_filters</code> setting which restores normal lighting to the map, oh yeah I also renamed the <code>interface_disable_effects</code> setting to <code>stadium_disable_filters</code>.</h5>
+                        <h5>- Included the "Fire & Ice" normal lighting filter as a default filter in the post process editor, this can be used or modified when viewing/editing replay files.</h5>
+                        <h5>- Renamed the <code>scoreboard_display_platforms</code> setting to <code>scoreboard_platform_clubs</code> for future consistency reasons.</h5>
+                        <h5>- Changed how applying colors to banners and borders works internally, now there is a slight delay when scrubbing through the color picker.</h5>
+                        <h5>- Fixed playlists mmr info not instantly updating if you left early and went right into freeplay (it used to only check if you left to the main menu).</h5>
+                        <h5>- Fixed some boolean settings not saving properly in garage presets.</h5>
+
                         <h2 class="section-heading">Version 1.3.9 (February 25th 2023)</h2>
                         <h5>- Renamed the <code>garage_apply_loadouts</code> setting to <code>garage_apply_presets</code> in preparation for a future update.</h5>
                         <h5>- Fixed mmr not tracking properly on brand new accounts, for some reason Psyonix gives a completely empty API response for them.</h5>
