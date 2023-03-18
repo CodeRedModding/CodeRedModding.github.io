@@ -93,7 +93,7 @@
                     <li class="nav-item"><a class="nav-link scrollto" href="#item-6-3">Custom Titles</a></li>
                     <li class="nav-item"><a class="nav-link scrollto" href="#item-6-4">Bug Reporting</a></li>
 				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-7"><span class="theme-icon-holder me-2"><i class="fas fa-book"></i></span>Changelog</a></li>
-				    <li class="nav-item"><a class="nav-link scrollto" href="#item-7-1">Version 1.4.2</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-7-1">Version 1.4.3</a></li>
 			    </ul>
 		    </nav>
 	    </div>
@@ -579,7 +579,7 @@
                                         <td>The stadium colors to override on the blue team in freeplay.</td>
                                     </tr>
                                     <tr>
-                                        <th class="theme-bg-light"><b>freeplay_blue_hud &lt#1873FF&gt</b></th>
+                                        <th class="theme-bg-light"><b>freeplay_blue_hud &lt#002DBF&gt</b></th>
                                         <td>The HUD colors to override on the blue team in freepla</td>
                                     </tr>
                                     <tr>
@@ -703,7 +703,7 @@
                                         <td>The stadium colors to override on the orange team in freeplay.</td>
                                     </tr>
                                     <tr>
-                                        <th class="theme-bg-light"><b>freeplay_orange_hud &lt#C26418&gt</b></th>
+                                        <th class="theme-bg-light"><b>freeplay_orange_hud &lt#B23D00&gt</b></th>
                                         <td>The HUD colors to override on the orange team in freeplay.</td>
                                     </tr>
                                     <tr>
@@ -1251,6 +1251,14 @@
                                         <td>Display players platform names in place of club tags on the scoreboard.</td>
                                     </tr>
                                     <tr>
+                                        <th class="theme-bg-light"><b>scoreboard_platform_avatars &lttrue-false&gt</b></th>
+                                        <td>Display unique custom platform avatars for players on the scoreboard.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>scoreboard_psynet_avatars &lttrue-false&gt</b></th>
+                                        <td>Display the old "PsyNet" avatar for console players on the scoreboard.</td>
+                                    </tr>
+                                    <tr>
                                         <th class="theme-bg-light"><b>scoreboard_hide_avatars &lttrue-false&gt</b></th>
                                         <td>Hide all player avatars on the scoreboard during matches.</td>
                                     </tr>
@@ -1410,7 +1418,7 @@
                                         <td>The stadium colors to override on the blue team in online matches.</td>
                                     </tr>
                                     <tr>
-                                        <th class="theme-bg-light"><b>stadium_blue_hud &lt#1873FF&gt</b></th>
+                                        <th class="theme-bg-light"><b>stadium_blue_hud &lt#002DBF&gt</b></th>
                                         <td>The HUD colors to override on the blue team in online matches.</td>
                                     </tr>
                                     <tr>
@@ -1450,7 +1458,7 @@
                                         <td>The stadium colors to override on the orange team in online matches.</td>
                                     </tr>
                                     <tr>
-                                        <th class="theme-bg-light"><b>stadium_orange_hud &lt#C26418&gt</b></th>
+                                        <th class="theme-bg-light"><b>stadium_orange_hud &lt#B23D00&gt</b></th>
                                         <td>Enable overriding the orange team HUD colors with a custom one in online matches.</td>
                                     </tr>
                                     <tr>
@@ -1839,6 +1847,15 @@
 					    <h1 class="docs-heading">Changelog</h1>
 				    </header>
 				     <section class="docs-section" id="item-7-1">
+                        <h2 class="section-heading">Version 1.4.3 (March 18th 2023)</h2>
+                        <h5>- Added the setting <code>scoreboard_platform_avatars</code>, which replaces players avatars with new custom ones depending on which platform they are on.</h5>
+                        <h5>- Added the setting <code>scoreboard_psynet_avatars</code>, which just brings back the old "PsyNet" avatars for console players.</h5>
+                        <h5>- Changed the default hud colors in freeplay to match the default in-game ones better.</h5>
+                        <h5>- Fixed custom hud colors sometimes not applying to both teams in online matches.</h5>
+                        <h5>- Fixed custom avatars/textures appearing slightly darker in-game than in their provided image file.</h5>
+                        <h5>- Fixed some issues with not finding file paths for custom avatars.</h5>
+                        <h5>- Upgraded the internal ImGui framework to version 1.89.4.</h5>
+
                         <h2 class="section-heading">Version 1.4.2 (March 12th 2023)</h2>
                         <h5>- Changed the internal skill database for rank up ands down to be completely dynamic between seasons, instead of relying on a "skill range" system thanks to Stev.</h5>
                         <h5>- Changed the tracker windows rank up and down text to go off of the next rank instead of division because Stev only gave me the values for ranks.</h5>
