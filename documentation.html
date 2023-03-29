@@ -93,7 +93,7 @@
                     <li class="nav-item"><a class="nav-link scrollto" href="#item-6-3">Custom Titles</a></li>
                     <li class="nav-item"><a class="nav-link scrollto" href="#item-6-4">Bug Reporting</a></li>
 				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-7"><span class="theme-icon-holder me-2"><i class="fas fa-book"></i></span>Changelog</a></li>
-				    <li class="nav-item"><a class="nav-link scrollto" href="#item-7-1">Version 1.4.4</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-7-1">Version 1.4.5</a></li>
 			    </ul>
 		    </nav>
 	    </div>
@@ -1083,6 +1083,10 @@
                                         <td>Automatically focuses the window at the start of kickoffs.</td>
                                     </tr>
                                     <tr>
+                                        <th class="theme-bg-light"><b>interface_playlist_populations &lttrue-false&gt</b></th>
+                                        <td>Displays population numbers along with the queue time when matchmaking.</td>
+                                    </tr>
+                                    <tr>
                                         <th class="theme-bg-light"><b>interface_presence_gamedata &ltarguments&gt</b></th>
                                         <td>Value to override your friends list game data with (for internal use only).</td>
                                     </tr>
@@ -1850,6 +1854,14 @@
 					    <h1 class="docs-heading">Changelog</h1>
 				    </header>
 				     <section class="docs-section" id="item-7-1">
+                        <h2 class="section-heading">Version 1.4.5 (March 29th 2023)</h2>
+                        <h5>- Added the setting <code>interface_playlist_populations</code>, which adds your selected playlist populations next to the queue timer (It's kinda glitchy ngl).</h5>
+                        <h5>- Updated the title database for garage presets to add the missing ones from Rocket Pass season 10.</h5>
+                        <h5>- Disabled multi-layered avatars in the textures tab temporarily for Epic Games users, as it was causing crashes when loading into maps.</h5>
+                        <h5>- Fixed issues with restoring your original avatar from a custom one for Steam users.</h5>
+                        <h5>- Fixed the avatar picker in garage presets showing duplicate file names after reloading images.</h5>
+                        <h5>- Important internal preparations for a future update.</h5>
+
                         <h2 class="section-heading">Version 1.4.4 (March 26th 2023)</h2>
                         <h5>- Added a new "textures" tab in the dashboard, here you will be able to apply and manage anything custom texture related in the future.</h5>
                         <h5>- Added custom avatars borders and player banners! Each have their own optional paint and color layers to them, place your custom images in their respective folder in "CodeRed\Textures".</h5>
