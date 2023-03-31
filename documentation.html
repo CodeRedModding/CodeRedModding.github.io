@@ -71,10 +71,11 @@
                     <li class="nav-item"><a class="nav-link scrollto" href="#item-4-6">Scoreboard Customizer</a></li>
                     <li class="nav-item"><a class="nav-link scrollto" href="#item-4-7">Settings Manager</a></li>
                     <li class="nav-item"><a class="nav-link scrollto" href="#item-4-8">Stadium Customizer</a></li>
-                    <li class="nav-item"><a class="nav-link scrollto" href="#item-4-9">Title Manager</a></li>
-                    <li class="nav-item"><a class="nav-link scrollto" href="#item-4-10">Session Tracker</a></li>
-                    <li class="nav-item"><a class="nav-link scrollto" href="#item-4-11">Trading Utilities</a></li>
-                    <li class="nav-item"><a class="nav-link scrollto" href="#item-4-12">Training Enhancements</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-4-9">Texture Manager</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-4-10">Title Manager</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-4-11">Session Tracker</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-4-12">Trading Utilities</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-4-13">Training Enhancements</a></li>
                     <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-5"><span class="theme-icon-holder me-2"><i class="fas fa-id-card"></i></span>Windows</a></li>
 				    <li class="nav-item"><a class="nav-link scrollto" href="#item-5-1">Changelog</a></li>
 				    <li class="nav-item"><a class="nav-link scrollto" href="#item-5-2">Dashboard</a></li>
@@ -93,7 +94,7 @@
                     <li class="nav-item"><a class="nav-link scrollto" href="#item-6-3">Custom Titles</a></li>
                     <li class="nav-item"><a class="nav-link scrollto" href="#item-6-4">Bug Reporting</a></li>
 				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-7"><span class="theme-icon-holder me-2"><i class="fas fa-book"></i></span>Changelog</a></li>
-				    <li class="nav-item"><a class="nav-link scrollto" href="#item-7-1">Version 1.4.5</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-7-1">Version 1.4.6</a></li>
 			    </ul>
 		    </nav>
 	    </div>
@@ -1478,6 +1479,53 @@
                     </section>
 
                     <section class="docs-section" id="item-4-9">
+                        <h2 class="section-heading">Texture Manager</h2>
+                    
+                        <h3>Commands</h3>
+                        <div class="table-responsive my-4">
+                            <table class="table table-bordered">
+                                <tbody>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>textures_refresh_images</b></th>
+                                        <td>Finds and loads all available image file paths from the textures folder.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>textures_refresh_textures</b></th>
+                                        <td>Marks all custom unreal textures to be reloaded.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>textures_refresh_tints</b></th>
+                                        <td>Marks all custom unreal textures that require a color tint to be reapplied.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>textures_update_vantities</b></th>
+                                        <td>Updates all current custom avatars, banners, and borders.</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <h3>Settings</h3>
+                        <div class="table-responsive my-4">
+                            <table class="table table-bordered">
+                                <tbody>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>textures_custom_avatars &lttrue-false&gt</b></th>
+                                        <td>Enable the use of custom avatar textures.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>textures_custom_banners &lttrue-false&gt</b></th>
+                                        <td>Enable the use of custom banner textures.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>textures_custom_borders &lttrue-false&gt</b></th>
+                                        <td>Enable the use of custom border textures.</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </section>
+
+                    <section class="docs-section" id="item-4-10">
                         <h2 class="section-heading">Title Manager</h2>
                         <div class="simplelightbox-gallery row mb-3">
                             <div class="col-12 col-md-4 mb-3">
@@ -1509,7 +1557,7 @@
                         </div>
                     </section>
 
-                    <section class="docs-section" id="item-4-10">
+                    <section class="docs-section" id="item-4-11">
                         <h2 class="section-heading">Session Tracker</h2>
                         <div class="simplelightbox-gallery row mb-3">
                             <div class="col-12 col-md-4 mb-3">
@@ -1537,7 +1585,7 @@
                         </div>
                     </section>
 
-                    <section class="docs-section" id="item-4-11">
+                    <section class="docs-section" id="item-4-12">
                         <h2 class="section-heading">Trading Utilities</h2>
                         <div class="simplelightbox-gallery row mb-3">
                             <div class="col-12 col-md-4 mb-3">
@@ -1577,7 +1625,7 @@
                         </div>
                     </section>
 
-                    <section class="docs-section" id="item-4-12">
+                    <section class="docs-section" id="item-4-13">
                         <h2 class="section-heading">Training Enhancements</h2>
                         <div class="simplelightbox-gallery row mb-3">
                             <div class="col-12 col-md-4 mb-3">
@@ -1854,6 +1902,15 @@
 					    <h1 class="docs-heading">Changelog</h1>
 				    </header>
 				     <section class="docs-section" id="item-7-1">
+                        <h2 class="section-heading">Version 1.4.6 (March 30th 2023)</h2>
+                        <h5>- Added three new settings that let you toggle custom avatar, banner, and border textures off and on entirely. These settings are <code>textures_custom_avatars</code>, <code>textures_custom_banners</code>, and <code>textures_custom_borders</code>.</h5>
+                        <h5>- Fixed multi-layered avatar textures not working on Steam (I totally didn't accidently disable them for Steam users as well as Epic last update).</h5>
+                        <h5>- Fixed avatars not restoring to their original ones if you toggled <code>scoreboard_hide_avatars</code> off and on if you were on Steam.</h5>
+                        <h5>- Fixed avatars sometimes restoring to the default avatar for Steam users on the scoreboard.</h5>
+                        <h5>- Fixed custom platform avatars sometimes not applying to certain players at start of a match.</h5>
+                        <h5>- Fixed the skill update notification displaying really long trailing zeros for mmr.</h5>
+                        <h5>- Optimizations and improvements related to custom textures.</h5>
+
                         <h2 class="section-heading">Version 1.4.5 (March 29th 2023)</h2>
                         <h5>- Added the setting <code>interface_playlist_populations</code>, which adds your selected playlist populations next to the queue timer (It's kinda glitchy ngl).</h5>
                         <h5>- Updated the title database for garage presets to add the missing ones from Rocket Pass season 10.</h5>
