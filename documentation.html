@@ -94,7 +94,7 @@
                     <li class="nav-item"><a class="nav-link scrollto" href="#item-6-3">Custom Titles</a></li>
                     <li class="nav-item"><a class="nav-link scrollto" href="#item-6-4">Bug Reporting</a></li>
 				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-7"><span class="theme-icon-holder me-2"><i class="fas fa-book"></i></span>Changelog</a></li>
-				    <li class="nav-item"><a class="nav-link scrollto" href="#item-7-1">Version 1.4.6</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-7-1">Version 1.4.7</a></li>
 			    </ul>
 		    </nav>
 	    </div>
@@ -1916,6 +1916,14 @@
 					    <h1 class="docs-heading">Changelog</h1>
 				    </header>
 				     <section class="docs-section" id="item-7-1">
+                        <h2 class="section-heading">Version 1.4.7 (April 4th 2023)</h2>
+                        <h5>- Added a messagebox popup in the dll itself which allows you to try to inject CodeRed even if it's out of date, this will probably crash but it's nice to have the option.</h5>
+                        <h5>- Fixed a crash related to custom banners when selecting a team in private matches.</h5>
+                        <h5>- Fixed custom banner textures not applying the right color to the color layer in some specific cases.</h5>
+                        <h5>- Fixed the terminals auto-complete window sometimes suggesting wrong arguments for a given command in specific cases. Also improved the sorting of how suggestions are displayed.</h5>
+                        <h5>- Fixed the fade-out animation for ImGui notifications being inconsistent across different refresh rates.</h5>
+                        <h5>- Internal optimizations and improvements.</h5>
+
                         <h2 class="section-heading">Version 1.4.6 (March 30th 2023)</h2>
                         <h5>- Added three new settings that let you toggle custom avatar, banner, and border textures off and on entirely. These settings are <code>textures_custom_avatars</code>, <code>textures_custom_banners</code>, and <code>textures_custom_borders</code>.</h5>
                         <h5>- Fixed multi-layered avatar textures not working on Steam (I totally didn't accidently disable them for Steam users as well as Epic last update).</h5>
