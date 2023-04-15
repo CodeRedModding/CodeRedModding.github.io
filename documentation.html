@@ -94,7 +94,7 @@
                     <li class="nav-item"><a class="nav-link scrollto" href="#item-6-3">Custom Titles</a></li>
                     <li class="nav-item"><a class="nav-link scrollto" href="#item-6-4">Bug Reporting</a></li>
 				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-7"><span class="theme-icon-holder me-2"><i class="fas fa-book"></i></span>Changelog</a></li>
-				    <li class="nav-item"><a class="nav-link scrollto" href="#item-7-1">Version 1.4.8</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-7-1">Version 1.4.9</a></li>
 			    </ul>
 		    </nav>
 	    </div>
@@ -1632,7 +1632,7 @@
                                     </tr>
                                     <tr>
                                         <th class="theme-bg-light"><b>trade_scam_check &lttrue-false&gt</b></th>
-                                        <td>Automatically check the RLTracker.pro scammer database before trading.</td>
+                                        <td>Automatically search TradeDB.net and RLTracker.pro with the person you're trading with.</td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -1916,6 +1916,13 @@
 					    <h1 class="docs-heading">Changelog</h1>
 				    </header>
 				     <section class="docs-section" id="item-7-1">
+                        <h2 class="section-heading">Version 1.4.9 (April 15th 2023)</h2>
+                        <h5>- Added a new "run on startup" feature, put your own commands and arguments in <code>CodeRed\Settings\AutoRun.cr</code> and they will be excecated when CodeRed is injected.</h5>
+                        <h5>- When trading, the scam checker now searches both "TradeDB.net" and "RLTracker.pro" to check if someone is a scammer.</h5>
+                        <h5>- Fixed a crash that could happen when pressing the "exit game" button on the main menu.</h5>
+                        <h5>- Changes and safety improvements related to custom textures.</h5>
+                        <h5>- Upgraded the internal ImGui framework to version 1.89.5.</h5>
+
                         <h2 class="section-heading">Version 1.4.8 (April 10th 2023)</h2>
                         <h5>- Added version and resource info to the dll file itself.</h5>
                         <h5>- Added a notification popup with the trade logger when a trade has been saved.</h5>
