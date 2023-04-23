@@ -94,7 +94,7 @@
                     <li class="nav-item"><a class="nav-link scrollto" href="#item-6-3">Custom Titles</a></li>
                     <li class="nav-item"><a class="nav-link scrollto" href="#item-6-4">Bug Reporting</a></li>
 				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-7"><span class="theme-icon-holder me-2"><i class="fas fa-book"></i></span>Changelog</a></li>
-				    <li class="nav-item"><a class="nav-link scrollto" href="#item-7-1">Version 1.4.9</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-7-1">Version 1.5.2</a></li>
 			    </ul>
 		    </nav>
 	    </div>
@@ -1088,7 +1088,7 @@
                                     </tr>
                                     <tr>
                                         <th class="theme-bg-light"><b>interface_menu_background &lt-1-17&gt</b></th>
-                                        <td>Override the main menu background, some may appear as black or blank due to Psyonix breaking their own code.</td>
+                                        <td>Override the main menu background, some may be disabled for safety reasons due to Psyonix breaking their own code</td>
                                     </tr>
                                     <tr>
                                         <th class="theme-bg-light"><b>interface_notify_replay &lttrue-false&gt</b></th>
@@ -1929,6 +1929,15 @@
 					    <h1 class="docs-heading">Changelog</h1>
 				    </header>
 				     <section class="docs-section" id="item-7-1">
+                        <section class="docs-section">
+                            <h2 class="section-heading">Version 1.5.2 (April 21st 2023)</h2>
+                            <h5>- Safety additions to custom textures to make sure people don't try to load in 8k textures for an object that only supports a resolution of 128x128.</h5>
+                            <h5>- Fixed the <code>interface_auto_queue</code> setting trying to search after a match if you weren't the party leader.</h5>
+                            <h5>- Fixed custom car colors sometimes not applying in freeplay after scrubbing through the color picker.</h5>
+                            <h5>- Fixed custom hud colors still applying in freeplay even if the setting was disabled.</h5>
+                            <h5>- Fixed some inconsistencies with garage titles.</h5>
+                        </section>
+
                         <section class="docs-section">
                             <h2 class="section-heading">Version 1.5.1 (April 18th 2023)</h2>
                             <h5>- Fixed custom styles being incorrectly parsed resulting in invisible windows.</h5>
