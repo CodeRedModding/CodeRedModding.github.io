@@ -94,7 +94,7 @@
                     <li class="nav-item"><a class="nav-link scrollto" href="#item-6-3">Custom Titles</a></li>
                     <li class="nav-item"><a class="nav-link scrollto" href="#item-6-4">Bug Reporting</a></li>
 				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-7"><span class="theme-icon-holder me-2"><i class="fas fa-book"></i></span>Changelog</a></li>
-				    <li class="nav-item"><a class="nav-link scrollto" href="#item-7-1">Version 1.5.2</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-7-1">Version 1.5.3</a></li>
 			    </ul>
 		    </nav>
 	    </div>
@@ -238,7 +238,7 @@
                             <table class="table table-bordered">
                                 <tbody>
                                     <tr>
-                                        <th class="theme-bg-light"><b>imgui_global_scale</b></th>
+                                        <th class="theme-bg-light"><b>imgui_global_scale &lt0.2-4&gt</b></th>
                                         <td>Change the global interface scaling for ImGui.</td>
                                     </tr>
                                     <tr>
@@ -252,6 +252,10 @@
                                     <tr>
                                         <th class="theme-bg-light"><b>imgui_terminal_scroll &lttrue-false&gt</b></th>
                                         <td>Auto scroll to the most recently added text in the terminal.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>imgui_notification_delay &lt1-2560&gt</b></th>
+                                        <td>The delay the fade out animation uses after displaying notifications.</td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -1929,6 +1933,16 @@
 					    <h1 class="docs-heading">Changelog</h1>
 				    </header>
 				     <section class="docs-section" id="item-7-1">
+                        <section class="docs-section">
+                            <h2 class="section-heading">Version 1.5.3 (April 26th 2023)</h2>
+                            <h5>- Added the setting <code>imgui_notification_delay</code>, which allows you to set the delay time for when notifications fade away.</h5>
+                            <h5>- Increased the default delay for the notification fade time because "thethiny" complained about it.</h5>
+                            <h5>- The <code>interface_disable_itemshop</code> setting now also disables the item shop button on the searching playlists menu.</h5>
+                            <h5>- Disabled being able to selected the broken main menu background maps from the dashboard.</h5>
+                            <h5>- Fixed a crash that could happen during the loading screen when going from a game to the main menu.</h5>
+                            <h5>- Updated internal SDK to the latest version of Rocket League.</h5>
+                        </section>
+
                         <section class="docs-section">
                             <h2 class="section-heading">Version 1.5.2 (April 21st 2023)</h2>
                             <h5>- Safety additions to custom textures to make sure people don't try to load in 8k textures for an object that only supports a resolution of 128x128.</h5>
