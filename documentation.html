@@ -94,7 +94,7 @@
                     <li class="nav-item"><a class="nav-link scrollto" href="#item-6-3">Custom Titles</a></li>
                     <li class="nav-item"><a class="nav-link scrollto" href="#item-6-4">Bug Reporting</a></li>
 				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-7"><span class="theme-icon-holder me-2"><i class="fas fa-book"></i></span>Changelog</a></li>
-				    <li class="nav-item"><a class="nav-link scrollto" href="#item-7-1">Version 1.5.4</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-7-1">Version 1.5.5/a></li>
 			    </ul>
 		    </nav>
 	    </div>
@@ -208,7 +208,11 @@
                                     </tr>
                                     <tr>
                                         <th class="theme-bg-light"><b>imgui_console_debug</b></th>
-                                        <td>Print debug text in all colors and styles to the Console.</td>
+                                        <td>Print debug text in all colors and styles to the console.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>imgui_emoji_debug</b></th>
+                                        <td>Prints some colored emojis to the console to test the current loaded font.</td>
                                     </tr>
                                     <tr>
                                         <th class="theme-bg-light"><b>imgui_update_fonts</b></th>
@@ -1941,6 +1945,17 @@
 					    <h1 class="docs-heading">Changelog</h1>
 				    </header>
 				     <section class="docs-section" id="item-7-1">
+                        <section class="docs-section">
+                            <h2 class="section-heading">Version 1.5.5 (May 10th 2023)</h2>
+                            <h5>- Added a full colored emoji font, you'll notice some UI elements now use this feature.</h5>
+                            <h5>- Added the command <code>imgui_emoji_debug</code> which prints emojis to the console, this is to test glpyh ranges in the current font.</h5>
+                            <h5>- Switched the font rendering engine to use FreeType in ImGui, so text should be rendered much clearer and scale better.</h5>
+                            <h5>- Fixed the <code>interface_auto_claim</code> setting not finding challenges to claim at the end of matches.</h5>
+                            <h5>- Fixed a crash that happened when creating or editing custom training packs.</h5>
+                            <h5>- Fixed the trade scam checker not working properly as a result of the last update.</h5>
+                            <h5>- Fixed the console being spammed with window messages from WndProc, this was only suppose to happen in debug mode.</h5>
+                        </section>
+
                         <section class="docs-section">
                             <h2 class="section-heading">Version 1.5.4 (May 4th 2023)</h2>
                             <h5>- Added the `interface_clear_drops` setting which attempts to clear any broken item drop notifications on your screen.</h5>
