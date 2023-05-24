@@ -94,7 +94,7 @@
                     <li class="nav-item"><a class="nav-link scrollto" href="#item-6-3">Custom Titles</a></li>
                     <li class="nav-item"><a class="nav-link scrollto" href="#item-6-4">Bug Reporting</a></li>
 				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-7"><span class="theme-icon-holder me-2"><i class="fas fa-book"></i></span>Changelog</a></li>
-				    <li class="nav-item"><a class="nav-link scrollto" href="#item-7-1">Version 1.5.6</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-7-1">Version 1.5.8</a></li>
 			    </ul>
 		    </nav>
 	    </div>
@@ -345,6 +345,10 @@
                                     <tr>
                                         <th class="theme-bg-light"><b>manager_reset_setting</b></th>
                                         <td>Reset a setting to its default/original value.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>manager_reset_setting</b></th>
+                                        <td>Toggles a boolean setting back and forth to true or false.</td>
                                     </tr>
                                     <tr>
                                         <th class="theme-bg-light"><b>unreal_command</b></th>
@@ -1945,6 +1949,25 @@
 					    <h1 class="docs-heading">Changelog</h1>
 				    </header>
 				     <section class="docs-section" id="item-7-1">
+                        <section class="docs-section">
+                            <h2 class="section-heading">Version 1.5.8 (May 24th 2023)</h2>
+                            <h5>- Added the <code>manager_toggle_setting</code> setting which toggles a boolean setting back and forth from true and false for easier key bindings.</h5>
+                            <h5>- Added a new <code>playlist_name</code> argument for the <code>database_dump_playlists</code> command, which dumps the class name for playlists; example being "UGCTrainingEditor".</h5>
+                            <h5>- Fixed a rare crash that could happen when first injecting if the game was unfocused.</h5>
+                            <h5>- Fixed the fps overlay setting sometimes being toggled off and on the wrong way.</h5>
+                            <h5>- Fixed title presets not applying to your banner in freeplay when viewing goal replays.</h5>
+                            <h5>- Fixed new lines invalidating the json schema in some of the database dumper commands.></h5>
+                        </section>
+
+                        <section class="docs-section">
+                            <h2 class="section-heading">Version 1.5.7 (May 19th 2023)</h2>
+                            <h5>- Fixed a crash that happened when using the chat commands if you had chat disabled in your settings (for real this time).</h5>
+                            <h5>- Fixed a crash that could happen at the start of kickoffs.</h5>
+                            <h5>- Fixed special titles not being displayed on other CodeRed users in-game.</h5>
+                            <h5>- Improvements to alt-tabbing while in fullscreen mode.</h5>
+                            <h5>- Internal optimizations and code refactoring.</h5>
+                        </section>
+
                         <section class="docs-section">
                             <h2 class="section-heading">Version 1.5.6 (May 15th 2023)</h2>
                             <h5>- Slightly adjusted some of the default styles, including the custom terminal themes to be more easily readable.</h5>
