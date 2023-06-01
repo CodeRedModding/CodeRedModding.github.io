@@ -72,7 +72,8 @@
                     <li class="nav-item"><a class="nav-link scrollto" href="#item-4-7">Settings Manager</a></li>
                     <li class="nav-item"><a class="nav-link scrollto" href="#item-4-8">Stadium Customizer</a></li>
                     <li class="nav-item"><a class="nav-link scrollto" href="#item-4-9">Texture Manager</a></li>
-                    <li class="nav-item"><a class="nav-link scrollto" href="#item-4-10">Title Manager</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-4-9-5">Title Manager</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-4-10">Thumbnail XSTR</a></li>
                     <li class="nav-item"><a class="nav-link scrollto" href="#item-4-11">Session Tracker</a></li>
                     <li class="nav-item"><a class="nav-link scrollto" href="#item-4-12">Trading Utilities</a></li>
                     <li class="nav-item"><a class="nav-link scrollto" href="#item-4-13">Training Enhancements</a></li>
@@ -94,7 +95,7 @@
                     <li class="nav-item"><a class="nav-link scrollto" href="#item-6-3">Custom Titles</a></li>
                     <li class="nav-item"><a class="nav-link scrollto" href="#item-6-4">Bug Reporting</a></li>
 				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-7"><span class="theme-icon-holder me-2"><i class="fas fa-book"></i></span>Changelog</a></li>
-				    <li class="nav-item"><a class="nav-link scrollto" href="#item-7-1">Version 1.5.8</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-7-1">Version 1.5.9</a></li>
 			    </ul>
 		    </nav>
 	    </div>
@@ -1576,6 +1577,49 @@
                         </div>
                     </section>
 
+                    <section class="docs-section" id="item-4-9-5">
+                        <h2 class="section-heading">Thumbnail Utilities</h2>
+
+                        <h3>Formats</h3>
+                        <div class="table-responsive my-4">
+                            <table class="table table-bordered">
+                                <tbody>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>[JPG], [PNG], [TGA], [BMP], [HDR], [DDS]</b></th>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <h3>Commands</h3>
+                        <div class="table-responsive my-4">
+                            <table class="table table-bordered">
+                                <tbody>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>thumbnail_render_product &ltproduct-id&gt &ltpaint-id&gt [FORMAT]</b></th>
+                                        <td>Renders a product thumbnail with the given arguments, add [NOOVERWRITE] to skip existing files.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>thumbnail_render_slot &ltproduct-id&gt &ltpaint-id&gt [FORMAT]</b></th>
+                                        <td>Renders all products in a slot thumbnail with the given arguments, add [NOOVERWRITE] to skip existing files.</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <h3>Settings</h3>
+                        <div class="table-responsive my-4">
+                            <table class="table table-bordered">
+                                <tbody>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>thumbnail_buffer_delay &lt1-30000&gt</b></th>
+                                        <td>The delay in milliseconds used when rendering thumbnail scenes.</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </section>
+
                     <section class="docs-section" id="item-4-10">
                         <h2 class="section-heading">Title Manager</h2>
                         <div class="simplelightbox-gallery row mb-3">
@@ -1954,13 +1998,29 @@
 				    </header>
 				     <section class="docs-section" id="item-7-1">
                         <section class="docs-section">
+                            <h2 class="section-heading">Version 1.5.9 (June 1st 2023)</h2>
+                            <h5>- Added documentation for the database dumper arguments to the CodeRed website.</h5>
+                            <h5>- Added a new <code>product_sort_priority</code> argument for the database dumper for offline products</h5>
+                            <h5>- Added a new <code>collect_garbage</code> command, which forces the game to purge all transient and unused objects in memory. It will also call my phone directly and I will come to your house and take out your trash for you (if I'm available)</h5>
+                            <h5>- Added the <code>thumbnail_render_product product-id paint-id\"</code> command, which renders a product thumbnail with an optional paint argument. Example being <code>thumbnail_render_product 23 12</code>.</h5>
+                            <h5>- Added the <code>thumbnail_render_slot slot-id paint-id</code> command, which renders all product thumbnails in the given slot; with an optional paint argument. Example being <code>thumbnail_render_slot 0 12</code>.</h5>
+                            <h5>- Added a new <code>thumbnail_buffer_delay</code> setting, which allows you to customize the render/load delay for thumbnails milliseconds.</h5>
+                            <h5>- Added a "don't overwrite" option to the thumbnail renderer, which will skip files that were already rendered. This is also an optional argument for the new render commands, add "[NOWRITE]" at the end of the command.</h5>
+                            <h5>- Added automation settings in the thumbnail renderer window, which auto exports all products in a given slot.</h5>
+                            <h5>- Product thumbnails now export in separate folders depending on their product slot.</h5>
+                            <h5>- Fixed the thumbnail renderer not working from the last Rocket League update, they changed textures around internally a bit.</h5>
+                            <h5>- Fixed the thumbnail renderer sometimes crashing by selecting different products too fast.</h5>
+                            <h5>- Fixed a crash that happen when receiving items while using custom textures.</h5>
+                        </section>
+
+                        <section class="docs-section">
                             <h2 class="section-heading">Version 1.5.8 (May 24th 2023)</h2>
                             <h5>- Added the <code>manager_toggle_setting</code> setting which toggles a boolean setting back and forth from true and false for easier key bindings.</h5>
                             <h5>- Added a new <code>playlist_name</code> argument for the <code>database_dump_playlists</code> command, which dumps the class name for playlists; example being "UGCTrainingEditor".</h5>
                             <h5>- Fixed a rare crash that could happen when first injecting if the game was unfocused.</h5>
                             <h5>- Fixed the fps overlay setting sometimes being toggled off and on the wrong way.</h5>
                             <h5>- Fixed title presets not applying to your banner in freeplay when viewing goal replays.</h5>
-                            <h5>- Fixed new lines invalidating the json schema in some of the database dumper commands.></h5>
+                            <h5>- Fixed new lines invalidating the json schema in some of the database dumper commands.</h5>
                         </section>
 
                         <section class="docs-section">
