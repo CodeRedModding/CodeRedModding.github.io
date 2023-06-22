@@ -95,7 +95,7 @@
                     <li class="nav-item"><a class="nav-link scrollto" href="#item-6-3">Custom Titles</a></li>
                     <li class="nav-item"><a class="nav-link scrollto" href="#item-6-4">Bug Reporting</a></li>
 				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-7"><span class="theme-icon-holder me-2"><i class="fas fa-book"></i></span>Changelog</a></li>
-				    <li class="nav-item"><a class="nav-link scrollto" href="#item-7-1">Version 1.6.3</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-7-1">Version 1.6.4</a></li>
 			    </ul>
 		    </nav>
 	    </div>
@@ -505,6 +505,10 @@
                                     <tr>
                                         <th class="theme-bg-light"><b>database_dump_tournaments</b></th>
                                         <td>Dumps all information about tournament schedules with the given arguments.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>database_dump_gamemodes</b></th>
+                                        <td>Dumps all information about game modes with the given arguments.</td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -2001,6 +2005,16 @@
 					    <h1 class="docs-heading">Changelog</h1>
 				    </header>
 				     <section class="docs-section" id="item-7-1">
+                        <section class="docs-section">
+                            <h2 class="section-heading">Version 1.6.4 (June 21st 2023)</h2>
+                            <h5>- Added support for the BC3 pixel format for thumbnails, they are now they are exported as ".dds" files.</h5>
+                            <h5>- Added a new texture browser window; which allows you to draw, preview, and export loaded textures in the game. You can open this window with <code>imgui_toggle textures</code>.</h5>
+                            <h5>- Added a new dumper command <code>database_dump_gamemodes</code>, which lets you dump info about game modes; see the wiki for a list of the new arguments.</h5>
+                            <h5>- Fixed an issue with the auto reset input buffer setting being spammed during goal replays.</h5>
+                            <h5>- Fixed a rare crash that could happen when using the database dumper.</h5>
+                            <h5>- Note that textures that use a really small compression format, like BC1 and G8, aren't supported with texture exporter at the moment.</h5>
+                        </section>
+
                         <section class="docs-section">
                             <h2 class="section-heading">Version 1.6.3 (June 16th 2023)</h2>
                             <h5>- Added extra detail to the gamestate debugger window, as well as changed the formatting.</h5>
