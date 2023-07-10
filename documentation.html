@@ -98,7 +98,7 @@
                     <li class="nav-item"><a class="nav-link scrollto" href="#item-6-5">Open Source</a></li>
                     <li class="nav-item"><a class="nav-link scrollto" href="#item-6-6">.NET 7.0</a></li>
 				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-7"><span class="theme-icon-holder me-2"><i class="fas fa-book"></i></span>Changelog</a></li>
-				    <li class="nav-item"><a class="nav-link scrollto" href="#item-7-1">Version 1.6.8</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-7-1">Version 1.6.9</a></li>
 			    </ul>
 		    </nav>
 	    </div>
@@ -836,10 +836,6 @@
                                         <td>Updates the players anthem from the currently selected preset.</td>
                                     </tr>
                                     <tr>
-                                        <th class="theme-bg-light"><b>garage_update_avatar</b></th>
-                                        <td>Updates the players username from the currently selected preset.</td>
-                                    </tr>
-                                    <tr>
                                         <th class="theme-bg-light"><b>garage_update_banner</b></th>
                                         <td>Updates the players banner from the currently selected preset.</td>
                                     </tr>
@@ -1563,6 +1559,18 @@
                                         <th class="theme-bg-light"><b>textures_update_vantities</b></th>
                                         <td>Updates all current custom avatars, banners, and borders.</td>
                                     </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>textures_update_avatar</b></th>
+                                        <td>Updates the current custom avatar.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>textures_update_border</b></th>
+                                        <td>Updates the current custom border.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>textures_update_banner</b></th>
+                                        <td>Updates the current custom banner.</td>
+                                    </tr>
                                 </tbody>
                             </table>
                         </div>
@@ -2037,6 +2045,16 @@
 					    <h1 class="docs-heading">Changelog</h1>
 				    </header>
 				     <section class="docs-section" id="item-7-1">
+                        <section class="docs-section">
+                            <h2 class="section-heading">Version 1.6.9 (June 10th 2023)</h2>
+                            <h5>- Removed avatars from garage presets, now custom avatars can only be changed through the textures tab for consistency reasons.</h5>
+                            <h5>- Fixed some product thumbnails having missing textures on them, which commonly happened on non-painted wheels.</h5>
+                            <h5>- Fixed a crash related to rendering 3D scene products with the thumbnail renderer.</h5>
+                            <h5>- Fixed a crash related to custom banners and borders when loading in and out of games.</h5>
+                            <h5>- Fixed a seemingly random crash that happened right after injection.</h5>
+                            <h5>- Internal optimizations and improvements.</h5>
+                        </section>
+
                         <section class="docs-section">
                             <h2 class="section-heading">Version 1.6.8 (June 7th 2023)</h2>
                             <h5>- Added support for the BC1 and BC5 pixel format for the thumbnail exporter.</h5>
