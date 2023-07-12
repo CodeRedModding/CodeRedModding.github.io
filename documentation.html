@@ -98,7 +98,7 @@
                     <li class="nav-item"><a class="nav-link scrollto" href="#item-6-5">Open Source</a></li>
                     <li class="nav-item"><a class="nav-link scrollto" href="#item-6-6">.NET 7.0</a></li>
 				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-7"><span class="theme-icon-holder me-2"><i class="fas fa-book"></i></span>Changelog</a></li>
-				    <li class="nav-item"><a class="nav-link scrollto" href="#item-7-1">Version 1.6.9</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-7-1">Version 1.7.0</a></li>
 			    </ul>
 		    </nav>
 	    </div>
@@ -982,6 +982,22 @@
                                         <td>Enable april fools vegetable rank icons.</td>
                                     </tr>
                                     <tr>
+                                        <th class="theme-bg-light"><b>interface_april_toppers &lttrue-false&gt</b></th>
+                                        <td>Enable april fools "embiggened mode" toppers.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>interface_april_antennas &lttrue-false&gt</b></th>
+                                        <td>Enable april fools "embiggened mode" antennas.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>interface_topper_scale &lt0.1-25.0&gt</b></th>
+                                        <td>Value to customize the scale of april fools toppers.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>interface_antenna_scale &lt0.1-25.0&gt</b></th>
+                                        <td>Value to customize the scale of april fools antennas.</td>
+                                    </tr>
+                                    <tr>
                                         <th class="theme-bg-light"><b>interface_auto_claim &lttrue-false&gt</b></th>
                                         <td>Automatically claims completed challenges at the end of online matches.</td>
                                     </tr>
@@ -1209,7 +1225,7 @@
                                         <td>Draw the balls alex during prediction.</td>
                                     </tr>
                                     <tr>
-                                        <th class="theme-bg-light"><b>ballprediction_blend_count</b></th>
+                                        <th class="theme-bg-light"><b>ballprediction_blend_count &lt0.001-20.100gt</b></th>
                                         <td>How smooth you want the ball prediction line to be.</td>
                                     </tr>
                                     <tr>
@@ -1225,6 +1241,14 @@
                                         <td>How far you want the ball prediction line to draw.</td>
                                     </tr>
                                     <tr>
+                                        <th class="theme-bg-light"><b>ballprediction_line_size &lt1-25&gt</b></th>
+                                        <td>The size in width of the ball prediction line.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>ballprediction_apex_size &lt1-25&gt</b></th>
+                                        <td>The size in width of the ball prediction apex square.</td>
+                                    </tr>
+                                    <tr>
                                         <th class="theme-bg-light"><b>boostcooldown_enabled &lttrue-false&gt</b></th>
                                         <td>Draw cooldown timers above boost pads.</td>
                                     </tr>
@@ -1233,7 +1257,7 @@
                                         <td>Font color of the boost cooldown timer.</td>
                                     </tr>
                                     <tr>
-                                        <th class="theme-bg-light"><b>boostcooldown_font_size</b></th>
+                                        <th class="theme-bg-light"><b>boostcooldown_font_size &lt0.01-5.0&gt</b></th>
                                         <td>Font size of the boost cooldown timer.</td>
                                     </tr>
                                     <tr>
@@ -1267,6 +1291,10 @@
                                     <tr>
                                         <th class="theme-bg-light"><b>tracers_team_specific &lttrue-false&gt</b></th>
                                         <td>Dynamically change tracer colors based on team color.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>tracers_line_size &lt1-25&gt</b></th>
+                                        <td>The size in width of the lines used by tracers.</td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -2045,6 +2073,23 @@
 					    <h1 class="docs-heading">Changelog</h1>
 				    </header>
 				     <section class="docs-section" id="item-7-1">
+                        <section class="docs-section">
+                            <h2 class="section-heading">Version 1.7.0 (June 12th 2023)</h2>
+                            <h5>- Added a new "April Fools" header under the "Interface" tab in the dashboard.</h5>
+                            <h5>- Added a new <code>interface_april_toppers</code> setting, which lets you enable the "embiggened mode" toppers april fools prank.</h5>
+                            <h5>- Added a new <code>interface_april_antennas</code> setting, which lets you enable the "embiggened mode" antennas april fools prank.</h5>
+                            <h5>- Added a new <code>interface_topper_scale</code> setting, which lets you customize the size of april fools toppers.</h5>
+                            <h5>- Added a new <code>interface_antenna_scale</code> setting, which lets you customize the size of april fools antennas.</h5>
+                            <h5>- Added a new <code>ballprediction_line_size</code> setting, which lets you change the size of the ball prediction line.</h5>
+                            <h5>- Added a new <code>ballprediction_apex_size</code> setting, which lets you change the size of the ball prediction apex square.</h5>
+                            <h5>- Added a new <code>tracers_line_size</code> setting, which lets you change the size of the tracers line.</h5>
+                            <h5>- Fixed the function scanner sometimes not applying a whitelist/blacklist if you put a word that wasn't separated by commas.</h5>
+                            <h5>- Fixed a crash related to the <code>freeplay_disable_hotkeys</code> command in freeplay.</h5>
+                            <h5>- Fixed a crash related to custom textures and leaving in the middle of a game to the main menu.</h5>
+                            <h5>- Fixed a rare crash related to platform avatars when opening the scoreboard.</h5>
+                            <h5>- Improvements to displaying the balls apex in ball prediction.</h5>
+                        </section>
+
                         <section class="docs-section">
                             <h2 class="section-heading">Version 1.6.9 (June 10th 2023)</h2>
                             <h5>- Removed avatars from garage presets, now custom avatars can only be changed through the textures tab for consistency reasons.</h5>
