@@ -98,7 +98,7 @@
                     <li class="nav-item"><a class="nav-link scrollto" href="#item-6-5">Open Source</a></li>
                     <li class="nav-item"><a class="nav-link scrollto" href="#item-6-6">.NET 7.0</a></li>
 				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-7"><span class="theme-icon-holder me-2"><i class="fas fa-book"></i></span>Changelog</a></li>
-				    <li class="nav-item"><a class="nav-link scrollto" href="#item-7-1">Version 1.7.1</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-7-1">Version 1.7.2</a></li>
 			    </ul>
 		    </nav>
 	    </div>
@@ -988,6 +988,10 @@
                                     <tr>
                                         <th class="theme-bg-light"><b>interface_april_antennas &lttrue-false&gt</b></th>
                                         <td>Enable april fools 2018 "embiggened mode" antennas.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>interface_april_chat &lttrue-false&gt</b></th>
+                                        <td>Enable april fools 2023 "eggstra special" quickchat overrides.</td>
                                     </tr>
                                     <tr>
                                         <th class="theme-bg-light"><b>interface_topper_scale &lt0.1-25.0&gt</b></th>
@@ -2073,6 +2077,14 @@
 					    <h1 class="docs-heading">Changelog</h1>
 				    </header>
 				     <section class="docs-section" id="item-7-1">
+                        <section class="docs-section">
+                            <h2 class="section-heading">Version 1.7.2 (June 22nd 2023)</h2>
+                            <h5>- Added a new <code>interface_april_chat</code> setting, which enables the april fools "eggstra special" quickchat overrides.</h5>
+                            <h5>- Fixed ImGui windows not rendering when the game went out of focus, this was only supposed to happen when the game was minimized.</h5>
+                            <h5>- Fixed a rare bug that caused mmr not to display if you were having packet loss or a poor internet connection.</h5>
+                            <h5>- Improvements to the DirectX11 hook, possibly fixing alt tabbing issues when in fullscreen mode.</h5>
+                        </section>
+
                         <section class="docs-section">
                             <h2 class="section-heading">Version 1.7.1 (June 17th 2023)</h2>
                             <h5>- Custom post process effects can now be applied in online games.</h5>
