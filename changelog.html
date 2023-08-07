@@ -1,0 +1,934 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <title>CodeRed - Documentation</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Documentation for CodeRed.">
+    <meta name="author" content="ItsBranK">    
+    <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap" rel="stylesheet">
+    <script defer src="assets/fontawesome/js/all.min.js"></script>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.2/styles/atom-one-dark.min.css">
+    <link rel="stylesheet" href="assets/plugins/simplelightbox/simple-lightbox.min.css">
+    <link id="theme-style" rel="stylesheet" href="assets/css/theme.css">
+</head> 
+<body class="docs">    
+    <header class="header fixed-top">	    
+        <div class="branding docs-branding">
+            <div class="container-fluid position-relative py-2">
+                <div class="docs-logo-wrapper">
+					<button id="docs-sidebar-toggler" class="docs-sidebar-toggler docs-sidebar-visible me-2 d-xl-none" type="button">
+	                    <span></span>
+	                    <span></span>
+	                    <span></span>
+	                </button>
+	                <div class="site-logo"><a class="navbar-brand" href="index.html"><span class="logo-text">CodeRed<span class="text-alt"> - Arguments</span></span></a></div>    
+                </div>
+	            <div class="docs-top-utilities d-flex justify-content-end align-items-center">
+	                <div class="top-search-box d-none d-lg-flex">
+		                <form class="search-form">
+				            <input type="text" placeholder="Search the docs..." name="search" class="form-control search-input">
+				            <button type="submit" class="btn search-btn" value="Search"><i class="fas fa-search"></i></button>
+				        </form>
+	                </div>
+					<ul class="social-list list-inline mx-md-3 mx-lg-5 mb-0 d-none d-lg-flex">
+						<li class="list-inline-item"><a href="https://twitter.com/CodeRedModding"><i class="fab fa-twitter fa-fw"></i></a></li>
+			            <li class="list-inline-item"><a href="https://discord.gg/VenX9kKF5B"><i class="fab fa-discord fa-fw"></i></a></li>
+		                <li class="list-inline-item"><a href="https://github.com/CodeRedModding"><i class="fab fa-github fa-fw"></i></a></li>
+		            </ul>
+		           <a href="https://github.com/CodeRedModding/CodeRed-Launcher/releases" class="btn btn-primary d-none d-lg-flex">Download</a>
+	            </div>
+            </div>
+        </div>
+    </header>
+    <div class="docs-wrapper">
+	    <div id="docs-sidebar" class="docs-sidebar">
+		    <div class="top-search-box d-lg-none p-3">
+                <form class="search-form">
+		            <input type="text" placeholder="Search the docs..." name="search" class="form-control search-input">
+		            <button type="submit" class="btn search-btn" value="Search"><i class="fas fa-search"></i></button>
+		        </form>
+            </div>
+		    <nav id="docs-nav" class="docs-nav navbar">
+			    <ul class="section-items list-unstyled nav flex-column pb-3">
+                    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-1"><span class="theme-icon-holder me-2"><i class="fas fa-book"></i></span>Changelog</a></li>				    
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-7-4">Version 1.7.4</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-7-3">Version 1.7.3</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-7-2">Version 1.7.2</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-7-1">Version 1.7.1</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-7-0">Version 1.7.0</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-6-9">Version 1.6.9</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-6-8">Version 1.6.8</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-6-7">Version 1.6.7</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-6-6">Version 1.6.6</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-6-5">Version 1.6.5</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-6-4">Version 1.6.4</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-6-3">Version 1.6.3</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-6-2">Version 1.6.2</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-6-1">Version 1.6.1</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-6-0">Version 1.6.0</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-5-9">Version 1.5.9</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-5-8">Version 1.5.8</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-5-7">Version 1.5.7</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-5-6">Version 1.5.6</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-5-5">Version 1.5.5</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-5-4">Version 1.5.4</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-5-3">Version 1.5.3</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-5-2">Version 1.5.2</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-5-1">Version 1.5.1</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-5-0">Version 1.5.0</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-4-9">Version 1.4.9</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-4-8">Version 1.4.8</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-4-7">Version 1.4.7</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-4-6">Version 1.4.6</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-4-5">Version 1.4.5</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-4-4">Version 1.4.4</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-4-3">Version 1.4.3</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-4-2">Version 1.4.2</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-4-1">Version 1.4.1</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-4-0">Version 1.4.0</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-3-9">Version 1.3.9</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-3-8">Version 1.3.8</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-3-7">Version 1.3.7</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-3-6">Version 1.3.6</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-3-5">Version 1.3.5</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-3-4">Version 1.3.4</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-3-3">Version 1.3.3</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-3-2">Version 1.3.2</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-3-1">Version 1.3.1</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-3-0">Version 1.3.0</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-2-9">Version 1.2.9</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-2-8">Version 1.2.8</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-2-7">Version 1.2.7</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-2-6">Version 1.2.6</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-2-5">Version 1.2.5</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-2-4">Version 1.2.4</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-2-3">Version 1.2.3</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-2-2">Version 1.2.2</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-2-1">Version 1.2.1</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-2-0">Version 1.2.0</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-1-9">Version 1.1.9</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-1-8">Version 1.1.8</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-1-7">Version 1.1.7</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-1-6">Version 1.1.6</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-1-5">Version 1.1.5</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-1-4">Version 1.1.4</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-1-3">Version 1.1.3</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-1-2">Version 1.1.2</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-1-1">Version 1.1.1</a></li>         
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-1-0">Version 1.1.0</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-0-9">Version 1.0.9</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-0-8">Version 1.0.8</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-0-7">Version 1.0.7</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-0-6">Version 1.0.6</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-0-5">Version 1.0.5</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-0-4">Version 1.0.4</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-0-3">Version 1.0.3</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-0-2">Version 1.0.2</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-0-1">Version 1.0.1</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-0-0">Version 1.0.0</a></li>
+			    </ul>
+		    </nav>
+	    </div>
+
+	    <div class="docs-content">
+		    <div class="container">
+			    <article class="docs-article" id="section-1">
+                    <header class="docs-header">
+					    <h1 class="docs-heading">Changelog</h1>
+				    </header>
+				     <section class="docs-section" id="item-1-7-4">
+                        <section class="docs-section">
+                            <h2 class="section-heading">Version 1.7.4 (August 7th)</h2>
+                            <h5>- Changed custom styles formatting to use hex colors instead of float arrays.</h5>
+                            <h5>- Fixed custom rich presence info not applying when on the main menu.</h5>
+                            <h5>- Fixed both the <code>database_dump_teameditions</code> and <code>database_dump_series</code> commands not working.</h5>
+                            <h5>- Fixed garage titles not applying if you synced your inventory or lost and regained connection to PsyNet.</h5>
+                            <h5>- Fixed special garage titles not applying to other CodeRed users, such as alpha tester and server booster.</h5>
+                            <h5>- Fixed a crash related to custom banners that happened after loading into online games.</h5>
+                            <h5>- Fixed a crash that happened when opening or claiming multiple items at once too fast.</h5>
+                            <h5>- Fixed a rare crash related to applying titles in private matches.</h5>
+                            <h5>- Fixed a random crash on injection due to a bug from the last update.</h5>
+                            <h5>- Internal optimizations and improvements.</h5>
+                        </section>
+
+                        <section class="docs-section" id="item-1-7-3">
+                            <h2 class="section-heading">Version 1.7.3 (August 2nd)</h2>
+                            <h5>- Added multiple options to customize playlist names and textures on the main menu, you can access this feature through the "Textures" tab in the dashboard.</h5>
+                            <h5>- The trade logger now prints the trading players id to the terminal as soon as the trade starts, as opposed to only at the end.</h5>
+                            <h5>- Updated internal SDK to the latest version of Rocket League.</h5>
+                            <h5>- Upgraded the internal ImGui framework to version 1.89.8.</h5>
+                        </section>
+
+                        <section class="docs-section" id="item-1-7-2">
+                            <h2 class="section-heading">Version 1.7.2 (July 22nd 2023)</h2>
+                            <h5>- Added a new <code>interface_april_chat</code> setting, which enables the april fools "eggstra special" quickchat overrides.</h5>
+                            <h5>- Fixed ImGui windows not rendering when the game went out of focus, this was only supposed to happen when the game was minimized.</h5>
+                            <h5>- Fixed a rare bug that caused mmr not to display if you were having packet loss or a poor internet connection.</h5>
+                            <h5>- Fixed a crash related to custom banners when loading in or out of games.</h5>
+                            <h5>- Improvements to the DirectX11 hook, possibly fixing alt tabbing issues when in fullscreen mode.</h5>
+                        </section>
+
+                        <section class="docs-section" id="item-1-7-1">
+                            <h2 class="section-heading">Version 1.7.1 (July 17th 2023)</h2>
+                            <h5>- Custom post process effects can now be applied in online games.</h5>
+                            <h5>- Fixed the <code>scoreboard_uncensor_names</code> setting not applying to names in text chat.</h5>
+                            <h5>- Fixed the <code>scoreboard_hide_names</code> setting not applying to names in text chat.</h5>
+                            <h5>- Fixed a crash that could happen on the loading screen related to custom blog info.</h5>
+                            <h5>- Fixed a rare crash that happened when leaving games related to custom rich presence info.</h5>
+                            <h5>- Fixed your custom name set in the garage tab not applying to the "on goal scored" message.</h5>
+                            <h5>- Stability improvements related to custom textures.</h5>
+                        </section>
+
+                        <section class="docs-section" id="item-1-7-0">
+                            <h2 class="section-heading">Version 1.7.0 (July 12th 2023)</h2>
+                            <h5>- Added a new "April Fools" header under the "Interface" tab in the dashboard.</h5>
+                            <h5>- Added a new <code>interface_april_toppers</code> setting, which lets you enable the "embiggened mode" toppers april fools prank.</h5>
+                            <h5>- Added a new <code>interface_april_antennas</code> setting, which lets you enable the "embiggened mode" antennas april fools prank.</h5>
+                            <h5>- Added a new <code>interface_topper_scale</code> setting, which lets you customize the size of april fools toppers.</h5>
+                            <h5>- Added a new <code>interface_antenna_scale</code> setting, which lets you customize the size of april fools antennas.</h5>
+                            <h5>- Added a new <code>ballprediction_line_size</code> setting, which lets you change the size of the ball prediction line.</h5>
+                            <h5>- Added a new <code>ballprediction_apex_size</code> setting, which lets you change the size of the ball prediction apex square.</h5>
+                            <h5>- Added a new <code>tracers_line_size</code> setting, which lets you change the size of the tracers line.</h5>
+                            <h5>- Fixed the function scanner sometimes not applying a whitelist/blacklist if you put a word that wasn't separated by commas.</h5>
+                            <h5>- Fixed a crash related to the <code>freeplay_disable_hotkeys</code> command in freeplay.</h5>
+                            <h5>- Fixed a crash related to custom textures and leaving in the middle of a game to the main menu.</h5>
+                            <h5>- Fixed a rare crash related to platform avatars when opening the scoreboard.</h5>
+                            <h5>- Improvements to displaying the balls apex in ball prediction.</h5>
+                        </section>
+
+                        <section class="docs-section" id="item-1-6-9">
+                            <h2 class="section-heading">Version 1.6.9 (July 10th 2023)</h2>
+                            <h5>- Removed avatars from garage presets, now custom avatars can only be changed through the textures tab for consistency reasons.</h5>
+                            <h5>- Fixed some product thumbnails having missing textures on them, which commonly happened on non-painted wheels.</h5>
+                            <h5>- Fixed a crash related to rendering 3D scene products with the thumbnail renderer.</h5>
+                            <h5>- Fixed a crash related to custom banners and borders when loading in and out of games.</h5>
+                            <h5>- Fixed a seemingly random crash that happened right after injection.</h5>
+                            <h5>- Internal optimizations and improvements.</h5>
+                        </section>
+
+                        <section class="docs-section" id="item-1-6-8">
+                            <h2 class="section-heading">Version 1.6.8 (July 7th 2023)</h2>
+                            <h5>- Added support for the BC1 and BC5 pixel format for the thumbnail exporter.</h5>
+                            <h5>- Added a search box for the terminal theme picker for the styles window.- Moving away from the `Mtn Dew` theme, some in-game styles have been removed, and others were renamed and improved upon.</h5>
+                            <h5>- Fixed a crash that happened with the slot automation for the thumbnail renderer when pressing cancel and trying to render the same thing again.</h5>
+                            <h5>- Fixed the thumbnail renderer not skipping dds files if you had the `skip existing files` setting enabled.</h5>
+                            <h5>- Fixed a crash that happened if you tabbed out of the game during a loading screen.</h5>
+                            <h5>- Fixed the `imgui_console_debug` bugging out printing random emojis.</h5>
+                            <h5>- Removed the `RLTracker.pro` for scammer searching as its no longer maintained, now CodeRed only uses `TradeDB.net`.</h5>
+                        </section>
+
+                        <section class="docs-section" id="item-1-6-7">
+                            <h2 class="section-heading">Version 1.6.7 (July 5th 2023)</h2>
+                            <h5>- Fixed a crash related to custom avatars when leaving in the middle of games.</h5>
+                            <h5>- Fixed garage presets not applying when first loading into freeplay or training.</h5>
+                            <h5>- Fixed a crash related to leaving an online match early and garage presets, which was due the game to re-authing during a loading screen (thanks Psyonix).</h5>
+                            <h5>- Possibly fixed a random crash that could happen on injection while you were tabbed in the game (needs testing).</h5>
+                            <h5>- Performance improvements and optimizations regarding custom textures.</h5>
+                            <h5>- Upgraded the internal ImGui framework to version 1.89.7.</h5>
+                        </section>
+
+                        <section class="docs-section" id="item-1-6-6">
+                            <h2 class="section-heading">Version 1.6.6 (June 28th 2023)</h2>
+                            <h5>- Updated internal SDK to the latest version of Rocket League.</h5>
+                        </section>
+
+                        <section class="docs-section">
+                            <h2 class="section-heading">Version 1.6.5 (June 27th 2023)</h2>
+                            <h5>- Added a new tracker setting <code>tracker_log_time</code>, which tracks time spent in different game states. Main menu, freeplay, training packs, ranked/casual, etc... This will be utilized more in the future in combination with the session tracker.</h5>
+                            <h5>- Fixed player names that were UTF32 decoding to proper UTF8, resulting in random characters (They're back to being white rectangles like Psyonix intended).</h5>
+                            <h5>- Fixed a crash related to custom avatars if a player left and was replaced in the middle of a match.</h5>
+                            <h5>- Fixed a crash related to titles applying too early before a match started.</h5>
+                            <h5>- Possibly fixed a crash related to using unreal commands to join the main menu/freeplay at the very end of online games.</h5>
+                            <h5>- Changed the layout of the texture browser to display more info.</h5>
+                        </section>
+
+                        <section class="docs-section" id="item-1-6-4">
+                            <h2 class="section-heading">Version 1.6.4 (June 21st 2023)</h2>
+                            <h5>- Added support for the BC3 pixel format for thumbnails, they are now they are exported as ".dds" files.</h5>
+                            <h5>- Added a new texture browser window; which allows you to draw, preview, and export loaded textures in the game. You can open this window with <code>imgui_toggle textures</code>.</h5>
+                            <h5>- Added a new dumper command <code>database_dump_gamemodes</code>, which lets you dump info about game modes; see the wiki for a list of the new arguments.</h5>
+                            <h5>- Fixed an issue with the auto reset input buffer setting being spammed during goal replays.</h5>
+                            <h5>- Fixed a rare crash that could happen when using the database dumper.</h5>
+                            <h5>- Note that textures that use a really small compression format, like BC1 and G8, aren't supported with texture exporter at the moment.</h5>
+                            <h5>The launcher no longer is top most above all other windows when updating.</h5>
+                        </section>
+
+                        <section class="docs-section" id="item-1-6-3">
+                            <h2 class="section-heading">Version 1.6.3 (June 16th 2023)</h2>
+                            <h5>- Added extra detail to the gamestate debugger window, as well as changed the formatting.</h5>
+                            <h5>- Fixed a memory leak issue with the thumbnail render when using the automation modes.</h5>
+                            <h5>- Fixed preset titles not showing in custom training packs when viewing goal replays.</h5>
+                            <h5>- Fixed a crash that could happen between loading screens as of the last Rocket League update.</h5>
+                            <h5>- Fixed the alpha value in custom styles not being loaded in correctly if it was set to fully transparent.</h5>
+                            <h5>- Internal optimizations and code refactoring.</h5>
+                        </section>
+
+                        <section class="docs-section" id="item-1-6-2">
+                            <h2 class="section-heading">Version 1.6.2 (June 14th 2023)</h2>
+                            <h5>- Added an experimental "all" product slot option for the automation settings, which will try render and export every single product thumbnail.</h5>
+                            <h5>- Added the <code>thumbnail_clear_queue</code> command which will stop any current thumbnail queue or render.</h5>
+                            <h5>- Fixed the GUI not appearing if you injected while in fullscreen mode, but the window was out of focus.</h5>
+                            <h5>- Fixed a random crash that could happen on injection.</h5>
+                            <h5>- Fixed some naming mistakes in ImGui.</h5>
+                            <h5>- Implemented an experimental fix for alt tabbing issues.</h5>
+                            <h5>- Updated internal SDK to the latest version of Rocket League.</h5>
+                        </section>
+
+                        <section class="docs-section" id="item-1-6-1">
+                            <h2 class="section-heading">Version 1.6.1 (June 9th 2023)</h2>
+                            <h5>- Fixed the scam checker not working while trading for "TradeDB.net" for steam users.</h5>
+                            <h5>- Fixed the auto replay saver causing crashes, which happened loading in or out of games after a replay was saved.</h5>
+                            <h5>- Fixed a crash that happened in freeplay/training if you reset your car after the game requested a new auth ticket.</h5>
+                            <h5>- Fixed the <code>manager_purge_dumps</code> setting not working because Psyonix decided to change crash dump file names for some reason.</h5>
+                            <h5>- Fixed the main menu background not changing if you injected before the main menu screen.</h5>
+                            <h5>- Fixed some visual glitches with the mmr tracker window for rank ups.</h5>
+                            <h5>- Fixed ImGui text colors being messed up if you manually clicked one of the popup suggestions in the terminal instead of pressing tab.</h5>
+                        </section>
+
+                        <section class="docs-section" id="item-1-6-0">
+                            <h2 class="section-heading">Version 1.6.0 (June 7th 2023)</h2>
+                            <h5>- Changed the description of the injection notification to say what the hotkey is to open the dashboard.</h5>
+                            <h5>- Fixed some issues with the thumbnail auto renderer, also added extra console logging for product ids that failed to export.</h5>
+                            <h5>- Fixed a crash that happened when you tried to use the ball hotkeys if you had them disabled with the <code>freeplay_disable_hotkeys</code> setting.</h5>
+                            <h5>- Fixed the fps overlay not working as of last update.</h5>
+                            <h5>- Updated internal SDK to the latest version of Rocket League.</h5>
+                            <h5>- Upgraded the internal ImGui framework to version 1.89.6.</h5>
+                        </section>
+
+                        <section class="docs-section" id="item-1-5-9">
+                            <h2 class="section-heading">Version 1.5.9 (June 1st 2023)</h2>
+                            <h5>- Added documentation for the database dumper arguments to the CodeRed website.</h5>
+                            <h5>- Added a new <code>product_sort_priority</code> argument for the database dumper for offline products.</h5>
+                            <h5>- Added a new <code>collect_garbage</code> command, which forces the game to purge all transient and unused objects in memory. It will also call my phone directly and I will come to your house and take out your trash for you (if I'm available).</h5>
+                            <h5>- Added the <code>thumbnail_render_product product-id paint-id\"</code> command, which renders a product thumbnail with an optional paint argument. Example being <code>thumbnail_render_product 23 12</code>.</h5>
+                            <h5>- Added the <code>thumbnail_render_slot slot-id paint-id</code> command, which renders all product thumbnails in the given slot; with an optional paint argument. Example being <code>thumbnail_render_slot 0 12</code>.</h5>
+                            <h5>- Added a new <code>thumbnail_buffer_delay</code> setting, which allows you to customize the render/load delay for thumbnails in milliseconds.</h5>
+                            <h5>- Added a "don't overwrite" option to the thumbnail renderer, which will skip files that were already rendered. This is also an optional argument for the new render commands, add "[NOWRITE]" at the end of the command.</h5>
+                            <h5>- Added automation settings in the thumbnail renderer window, which auto exports all products in a given slot.</h5>
+                            <h5>- Product thumbnails now export in separate folders depending on their product slot.</h5>
+                            <h5>- Fixed the thumbnail renderer not working from the last Rocket League update, they changed textures around internally a bit.</h5>
+                            <h5>- Fixed the thumbnail renderer sometimes crashing by selecting different products too fast.</h5>
+                            <h5>- Fixed a crash that happen when receiving items while using custom textures.</h5>
+                        </section>
+
+                        <section class="docs-section" id="item-1-5-8">
+                            <h2 class="section-heading">Version 1.5.8 (May 24th 2023)</h2>
+                            <h5>- Added the <code>manager_toggle_setting</code> setting which toggles a boolean setting back and forth from true and false for easier key bindings.</h5>
+                            <h5>- Added a new <code>playlist_name</code> argument for the <code>database_dump_playlists</code> command, which dumps the class name for playlists; example being "UGCTrainingEditor".</h5>
+                            <h5>- Fixed a rare crash that could happen when first injecting if the game was unfocused.</h5>
+                            <h5>- Fixed the fps overlay setting sometimes being toggled off and on the wrong way.</h5>
+                            <h5>- Fixed title presets not applying to your banner in freeplay when viewing goal replays.</h5>
+                            <h5>- Fixed new lines invalidating the json schema in some of the database dumper commands.</h5>
+                        </section>
+
+                        <section class="docs-section" id="item-1-5-7">
+                            <h2 class="section-heading">Version 1.5.7 (May 19th 2023)</h2>
+                            <h5>- Fixed a crash that happened when using the chat commands if you had chat disabled in your settings (for real this time).</h5>
+                            <h5>- Fixed a crash that could happen at the start of kickoffs.</h5>
+                            <h5>- Fixed special titles not being displayed on other CodeRed users in-game.</h5>
+                            <h5>- Improvements to alt-tabbing while in fullscreen mode.</h5>
+                            <h5>- Internal optimizations and code refactoring.</h5>
+                        </section>
+
+                        <section class="docs-section" id="item-1-5-6">
+                            <h2 class="section-heading">Version 1.5.6 (May 15th 2023)</h2>
+                            <h5>- Slightly adjusted some of the default styles, including the custom terminal themes to be more easily readable.</h5>
+                            <h5>- Added proper UTF16 to UTF8 encoding for the database dumper when using the "[UTF8]" parameter</h5>
+                            <h5>- Fixed a crash that happened when using the chat commands if you had chat disabled in your settings.</h5>
+                            <h5>- Fixed playlist populations sometimes showing zero players online when searching.</h5>
+                            <h5>- Fixed some playlist titles showing as "Unknown" in the console when first injecting.</h5>
+                            <h5>- Fixed some inconsistencies with player titles.</h5>
+                            <h5>- Internal optimizations and improvements.</h5>
+                        </section>
+
+                        <section class="docs-section" id="item-1-5-5">
+                            <h2 class="section-heading">Version 1.5.5 (May 10th 2023)</h2>
+                            <h5>- Added a full colored emoji font, you'll notice some UI elements now use this feature.</h5>
+                            <h5>- Added the command <code>imgui_emoji_debug</code> which prints emojis to the console, this is to test glpyh ranges in the current font.</h5>
+                            <h5>- Switched the font rendering engine to use FreeType in ImGui, so text should be rendered much clearer and scale better.</h5>
+                            <h5>- Fixed the <code>interface_auto_claim</code> setting not finding challenges to claim at the end of matches.</h5>
+                            <h5>- Fixed a crash that happened when creating or editing custom training packs.</h5>
+                            <h5>- Fixed the trade scam checker not working properly as a result of the last update.</h5>
+                            <h5>- Fixed the console being spammed with window messages from WndProc, this was only suppose to happen in debug mode.</h5>
+                            <h5>- Fixed news articles not opening when you clicked them in the launcher.</h5>
+                            <h5>- Other internal optimizations with the launcher.</h5>
+                        </section>
+
+                        <section class="docs-section" id="item-1-5-4">
+                            <h2 class="section-heading">Version 1.5.4 (May 4th 2023)</h2>
+                            <h5>- Added the <code>interface_clear_drops</code> setting which attempts to clear any broken item drop notifications on your screen.</h5>
+                            <h5>- Added full multi-language translation support when selecting and applying products/titles in the garage module.</h5>
+                            <h5>- Changed the default font to "Noto Sans" for better language encoding support; this includes languages such as Chinese, Japanese, Korean, and Russian.</h5>
+                            <h5>- Removed support for custom fonts for custom styles, this is due to the strict requirements of supporting both UTF8 and UTF32 glyph ranges.</h5>
+                            <h5>- The title database system is fully dynamic now and no longer requires a CodeRed update to get the latest titles.</h5>
+                            <h5>- Fixed some UTF16 characters showing up as question marks in ImGui if your game was in French, Italian, Spanish, etc...</h5>
+                            <h5>- Fixed selecting or updating player borders with the garage module causing crashes.</h5>
+                            <h5>- Fixed a crash that could happen when loading into an offline match such as freeplay or custom training.</h5>
+                            <h5>- Fixed your custom player name sometimes not saving and parsing properly if you had json characters in them.</h5>
+                            <h5>- Fixed your chat/qickchat thinking you're sending messages too fast sometimes in online games.</h5>
+                            <h5>- Fixed your title sometimes not restoring to its original one after disabling garage presets.</h5>
+                            <h5>- Internal optimizations and improvements.</h5>
+                        </section>
+
+                        <section class="docs-section" id="item-1-5-3">
+                            <h2 class="section-heading">Version 1.5.3 (April 26th 2023)</h2>
+                            <h5>- Added the setting <code>imgui_notification_delay</code>, which allows you to set the delay time for when notifications fade away.</h5>
+                            <h5>- Increased the default delay for the notification fade time because "thethiny" complained about it.</h5>
+                            <h5>- The <code>interface_disable_itemshop</code> setting now also disables the item shop button on the searching playlists menu.</h5>
+                            <h5>- Disabled being able to selected the broken main menu background maps from the dashboard.</h5>
+                            <h5>- Fixed a crash that could happen during the loading screen when going from a game to the main menu.</h5>
+                            <h5>- Updated internal SDK to the latest version of Rocket League.</h5>
+                        </section>
+
+                        <section class="docs-section" id="item-1-5-2">
+                            <h2 class="section-heading">Version 1.5.2 (April 21st 2023)</h2>
+                            <h5>- Safety additions to custom textures to make sure people don't try to load in 8k textures for an object that only supports a resolution of 128x128.</h5>
+                            <h5>- Fixed the <code>interface_auto_queue</code> setting trying to search after a match if you weren't the party leader.</h5>
+                            <h5>- Fixed custom car colors sometimes not applying in freeplay after scrubbing through the color picker.</h5>
+                            <h5>- Fixed custom hud colors still applying in freeplay even if the setting was disabled.</h5>
+                            <h5>- Fixed some inconsistencies with garage titles.</h5>
+                        </section>
+
+                        <section class="docs-section" id="item-1-5-1">
+                            <h2 class="section-heading">Version 1.5.1 (April 18th 2023)</h2>
+                            <h5>- Fixed custom styles being incorrectly parsed resulting in invisible windows.</h5>
+                            <h5>- Improvements to ImGui notifications.</h5>
+                        </section>
+
+                        <section class="docs-section" id="item-1-5-0">
+                            <h2 class="section-heading">Version 1.5.0 (April 17th 2023)</h2>
+                            <h5>- Added a "Supporters" section under the about tab in the dashboard for people who donate (literally just one person).</h5>
+                            <h5>- Fixed a certain crash related to avatars that happened at the end of goal replays.</h5>
+                            <h5>- Fixed trying to set custom blog info while playing the game offline, resulting the console being spammed with errors.</h5>
+                            <h5>- The "Reset stadium colors" button on the dashboard for freeplay/online now also resets your hud colors to default.</h5>
+                            <h5>- Changed how applying custom car and stadium colors works for performance reasons, there is slight delay when scrubbing through the color picker in ImGui similar to changing colors with banners.</h5>
+                            <h5>- Safety improvements with settings and their supported values.</h5>
+                            <h5>- Internal backwards compatibility preparations for a future update.</h5>
+                        </section>
+
+                        <section class="docs-section" id="item-1-4-9">
+                            <h2 class="section-heading">Version 1.4.9 (April 15th 2023)</h2>
+                            <h5>- Added a new "run on startup" feature, put your own commands and arguments in "CodeRed\Settings\AutoRun.cr" and they will be excecated when CodeRed is injected.</h5>
+                            <h5>- When trading, the scam checker now searches both "TradeDB.net" and "RLTracker.pro" to check if someone is a scammer.</h5>
+                            <h5>- Fixed a crash that could happen when pressing the "exit game" button on the main menu.</h5>
+                            <h5>- Changes and safety improvements related to custom textures.</h5>
+                            <h5>- Upgraded the internal ImGui framework to version 1.89.5.</h5>
+                            <h5>- Fixed the tab buttons on the launcher only recieving input on the little image icon inside them, now its the entire tab button.</h5>
+                            <h5>- Improved and resized the controls for articles in the news tab in the launcher.</h5>
+                        </section>
+
+                        <section class="docs-section" id="item-1-4-8">
+                            <h2 class="section-heading">Version 1.4.8 (April 10th 2023)</h2>
+                            <h5>- Added version and resource info to the dll file itself.</h5>
+                            <h5>- Added a notification popup with the trade logger when a trade has been saved.</h5>
+                            <h5>- Changed the tracker window layout slightly (customization options are planned for the future).</h5>
+                            <h5>- Fixed not being able to add credits to the trade window when trading with other players.</h5>
+                            <h5>- Fixed april fools vegetable icons not working from the last Rocket League update.</h5>
+                            <h5>- Fixed trying to repeatedly send mmr requests while playing the game in offline mode.</h5>
+                            <h5>- Fixed a bug that could have prevented the out of date notification from being displayed.</h5>
+                        </section>
+
+                        <section class="docs-section" id="item-1-4-7">
+                            <h2 class="section-heading">Version 1.4.7 (April 4th 2023)</h2>
+                            <h5>- Added a messagebox popup in the dll itself which allows you to try to inject CodeRed even if it's out of date, this will probably crash but it's nice to have the option.</h5>
+                            <h5>- Fixed a crash related to custom banners when selecting a team in private matches.</h5>
+                            <h5>- Fixed custom banner textures not applying the right color to the color layer in some specific cases.</h5>
+                            <h5>- Fixed the terminals auto-complete window sometimes suggesting wrong arguments for a given command in specific cases. Also improved the sorting of how suggestions are displayed.</h5>
+                            <h5>- Fixed the fade-out animation for ImGui notifications being inconsistent across different refresh rates.</h5>
+                            <h5>- Internal optimizations and improvements.</h5>
+                        </section>
+
+                        <section class="docs-section" id="item-1-4-6">
+                            <h2 class="section-heading">Version 1.4.6 (March 30th 2023)</h2>
+                            <h5>- Added three new settings that let you toggle custom avatar, banner, and border textures off and on entirely. These settings are <code>textures_custom_avatars</code>, <code>textures_custom_banners</code>, and <code>textures_custom_borders</code>.</h5>
+                            <h5>- Fixed multi-layered avatar textures not working on Steam (I totally didn't accidently disable them for Steam users as well as Epic last update).</h5>
+                            <h5>- Fixed avatars not restoring to their original ones if you toggled <code>scoreboard_hide_avatars</code> off and on if you were on Steam.</h5>
+                            <h5>- Fixed avatars sometimes restoring to the default avatar for Steam users on the scoreboard.</h5>
+                            <h5>- Fixed custom platform avatars sometimes not applying to certain players at start of a match.</h5>
+                            <h5>- Fixed the skill update notification displaying really long trailing zeros for mmr.</h5>
+                            <h5>- Optimizations and improvements related to custom textures.</h5>
+                        </section>
+
+                        <section class="docs-section" id="item-1-4-5">
+                            <h2 class="section-heading">Version 1.4.5 (March 29th 2023)</h2>
+                            <h5>- Added the setting <code>interface_playlist_populations</code>, which adds your selected playlist populations next to the queue timer (It's kinda glitchy ngl).</h5>
+                            <h5>- Updated the title database for garage presets to add the missing ones from Rocket Pass season 10.</h5>
+                            <h5>- Disabled multi-layered avatars in the textures tab temporarily for Epic Games users, as it was causing crashes when loading into maps.</h5>
+                            <h5>- Fixed issues with restoring your original avatar from a custom one for Steam users.</h5>
+                            <h5>- Fixed the avatar picker in garage presets showing duplicate file names after reloading images.</h5>
+                            <h5>- Important internal preparations for a future update.</h5>
+                        </section>
+
+                        <section class="docs-section" id="item-1-4-4">
+                            <h2 class="section-heading">Version 1.4.4 (March 26th 2023)</h2>
+                            <h5>- Added a new "textures" tab in the dashboard, here you will be able to apply and manage anything custom texture related in the future.</h5>
+                            <h5>- Added custom avatars borders and player banners! Each have their own optional paint and color layers to them, place your custom images in their respective folder in "CodeRed\Textures".</h5>
+                            <h5>- Note that custom avatars in the textures tab will override any avatars you have set in your garage presets.</h5>
+                            <h5>- Fixed a crash related to platform avatars if you tried to open the scoreboard before a game started.</h5>
+                            <h5>- Fixed some issues applying color tints to custom textures with transparency in them.</h5>
+                            <h5>- Fixed custom blog MotD sometimes not applying after loading into a match.</h5>
+                        </section>
+
+                        <section class="docs-section" id="item-1-4-3">
+                            <h2 class="section-heading">Version 1.4.3 (March 18th 2023)</h2>
+                            <h5>- Added the setting <code>scoreboard_platform_avatars</code>, which replaces players avatars with new custom ones depending on which platform they are on.</h5>
+                            <h5>- Added the setting <code>scoreboard_psynet_avatars</code>, which just brings back the old "PsyNet" avatars for console players.</h5>
+                            <h5>- Changed the default hud colors in freeplay to match the default in-game ones better.</h5>
+                            <h5>- Fixed custom hud colors sometimes not applying to both teams in online matches.</h5>
+                            <h5>- Fixed custom avatars/textures appearing slightly darker in-game than in their provided image file.</h5>
+                            <h5>- Fixed some issues with not finding file paths for custom avatars.</h5>
+                            <h5>- Upgraded the internal ImGui framework to version 1.89.4.</h5>
+                        </section>
+
+                        <section class="docs-section" id="item-1-4-2">
+                            <h2 class="section-heading">Version 1.4.2 (March 12th 2023)</h2>
+                            <h5>- Changed the internal skill database for rank up ands down to be completely dynamic between seasons, instead of relying on a "skill range" system thanks to Stev.</h5>
+                            <h5>- Changed the tracker windows rank up and down text to go off of the next rank instead of division because Stev only gave me the values for ranks.</h5>
+                            <h5>- Fixed custom blog info applying to brand new blog tiles that you haven't seen before so Psyonix doesn't yell at me for making players not see news updates.</h5>
+                            <h5>- Fixed an alt-tabbing issue when in fullscreen mode, both related to resize buffers and the fps limiter.</h5>
+                            <h5>- Fixed some issues with editing keybinds and changing arguments via the dashboard.</h5>
+                            <h5>- Fixed custom hud colors resetting in freeplay after the player sent a new auth request.</h5>
+                            <h5>- Added extra internal safety protection related to api stuff.</h5>
+                        </section>
+
+                        <section class="docs-section" id="item-1-4-1">
+                            <h2 class="section-heading">Version 1.4.1 (March 7th 2023)</h2>
+                            <h5>- Added the new season 9 reward titles to garage presets.</h5>
+                            <h5>- Added the new "Deadeye Canyon (Oasis)" map to the main menu background changer.</h5>
+                            <h5>- Fixed some issues calculating skill gains and losses from people with negative mmr.</h5>
+                            <h5>- Fixed playlist mmr not updating after ranked games when selecting different playlists.</h5>
+                            <h5>- Fixed a few specific cases where the fps limiter was setting the wrong fps value when the game closed unexpectedly.</h5>
+                            <h5>- Updated internal SDK to the latest version of Rocket League.</h5>
+                        </section>
+
+                        <section class="docs-section" id="item-1-4-0">
+                            <h2 class="section-heading">Version 1.4.0 (March 4th 2023)</h2>
+                            <h5>- Added custom avatars to garage profiles! To add your own, place an image file in your "CodeRed\Textures\Avatars" folder prior to launching the game. You also have the option to apply a color tint to them, this works best if your image is a greyscale color scheme.</h5>
+                            <h5>- Added the "Fire & Ice" map to the <code>stadium_disable_filters</code> setting which restores normal lighting to the map, oh yeah I also renamed the <code>interface_disable_effects</code> setting to <code>stadium_disable_filters</code>.</h5>
+                            <h5>- Included the "Fire & Ice" normal lighting filter as a default filter in the post process editor, this can be used or modified when viewing/editing replay files.</h5>
+                            <h5>- Renamed the <code>scoreboard_display_platforms</code> setting to <code>scoreboard_platform_clubs</code> for future consistency reasons.</h5>
+                            <h5>- Changed how applying colors to banners and borders works internally, now there is a slight delay when scrubbing through the color picker.</h5>
+                            <h5>- Fixed playlists mmr info not instantly updating if you left early and went right into freeplay (it used to only check if you left to the main menu).</h5>
+                            <h5>- Fixed some boolean settings not saving properly in garage presets.</h5>
+                        </section>
+
+                        <section class="docs-section" id="item-1-3-9">
+                            <h2 class="section-heading">Version 1.3.9 (February 25th 2023)</h2>
+                            <h5>- Renamed the <code>garage_apply_loadouts</code> setting to <code>garage_apply_presets</code> in preparation for a future update.</h5>
+                            <h5>- Fixed mmr not tracking properly on brand new accounts, for some reason Psyonix gives a completely empty API response for them.</h5>
+                            <h5>- Fixed an ImGui rendering issue when changing resolutions, windows would not reappear after changing focus.</h5>
+                            <h5>- Fixed some custom style inconsistencies with the dashboard and the terminals auto-complete window.</h5>
+                            <h5>- Internal changes and optimizations regarding ImGui and textures.</h5>
+                        </section>
+
+                        <section class="docs-section" id="item-1-3-8">
+                            <h2 class="section-heading">Version 1.3.8 (February 23rd 2023)</h2>
+                            <h5>- Fixed the manual injection mode in the launcher sometimes not appearing.</h5>
+                            <h5>- Fixed scaling issues in the launcher on high dpi displays, also improved some custom controls.</h5>
+                            <h5>- Improved the updater popup in the launcher to indicate an update is in progress.</h5>
+                            <h5>- Improved the news tabs caching system when downloading articles.</h5>
+                        </section>
+
+                        <section class="docs-section" id="item-1-3-7">
+                            <h2 class="section-heading">Version 1.3.7 (February 23rd 2023)</h2>
+                            <h5>- Added support for <code>.otf</code> fonts on top of <code>.ttf</code> for custom styles."</h5>
+                            <h5>- Added the ability to search settings and commands when adding a new keybind on the dashboard.</h5>
+                            <h5>- Changed the window for editing or adding keybinds to include a neat dimmable background.</h5>
+                            <h5>- Fixed letting people unbind the dashboard and terminal bindings completely, making it impossible to open them without editing local files manually.</h5>
+                            <h5>- Fixed some auto-complete arguments for the terminal being case sensitive when they shouldn't be.</h5>
+                            <h5>- Fixed some specific cases of mmr not updating on main menu playlists.</h5>
+                            <h5>- Other internal changes to ImGui.</h5>
+                        </section>
+
+                        <section class="docs-section" id="item-1-3-6">
+                            <h2 class="section-heading">Version 1.3.6 (February 18th 2023)</h2>
+                            <h5>- Added a notification in-game if BakkesMod is injected along with CodeRed, to warn users of compatibility issues.</h5>
+                            <h5>- Added seven new boost settings for freeplay (these override the games settings by default, use <code>freeplay_disable_training</code> to disable).</h5>
+                            <h5>- Added the <code>freeplay_boost_standard</code> setting, which forces your boost meter to the standard one.</h5>
+                            <h5>- Added the <code>freeplay_boost_unlimited</code> setting, which forces your boost meter to use unlimited boost.</h5>
+                            <h5>- Added the <code>freeplay_boost_refill</code> setting, which forces your boost meter to use auto-refill boost.</h5>
+                            <h5>- Added the <code>freeplay_boost_none</code> setting, which disables your boost meter entirely.</h5>
+                            <h5>- Added the <code>freeplay_boost_refill_delay</code> setting, which lets you set the delay when the auto-refill is activated.</h5>
+                            <h5>- Added the <code>freeplay_boost_refill_rate</code> setting, which lets you set the speed at which your boost refills at.</h5>
+                            <h5>- Added the <code>freeplay_boost_refill_ground</code> setting, which lets you toggle using auto-refill boost when touching the ground only.</h5>
+                            <h5>- Fixed the <code>scoreboard_hide_titles</code> setting being ignored by the last updates new anonymizer settings.</h5>
+                            <h5>- Fixed radio button settings not updating their shared settings when you changed their value via the terminal.</h5>
+                            <h5>- Fixed color settings not saving their alpha channel value, the alpha channel isn't currently used by anything but will in the future.</h5>
+                            <h5>- Fixed garage presets sometimes not applying the right preset when first injected.</h5>
+                            <h5>- Fixed some freeplay settings applying to exhibition matches when they were not suppose to.</h5>
+                            <h5>- Fixed a rendering thread exception that could happen if you clicked the exit button on the main menu.</h5>
+                            <h5>- Moved the <code>keys_rage_quits</code> setting on the dashboard to the miscellaneous tab.</h5>
+                        </section>
+
+                        <section class="docs-section" id="item-1-3-5">
+                            <h2 class="section-heading">Version 1.3.5 (February 16th 2023)</h2>
+                            <h5>- Added three new options for the anonymizer which allow you to select which players to apply to in-game.</h5>
+                            <h5>- Added the <code>scoreboard_hide_everyone</code> setting, when enabled the anonymizer is applied to all players you encounter.</h5>
+                            <h5>- Added the <code>scoreboard_hide_opponents</code> setting, when enabled the anonymizer is applied to only your opponents.</h5>
+                            <h5>- Added the <code>scoreboard_hide_noneparty</code> setting, when enabled the anonymizer is applied to all players not in your party.</h5>
+                            <h5>- Fixed a bug that could cause garage titles to apply to the wrong one on the main menu.</h5>
+                            <h5>- Possibly fixed a bug that caused crashes when loading into maps.</h5>
+                        </section>
+
+                        <section class="docs-section" id="item-1-3-4">
+                            <h2 class="section-heading">Version 1.3.4 (February 15th 2023)</h2>
+                            <h5>- Added a new default style inspired by Discord called "Discord Blurple"! (I like makin styles :3)</h5>
+                            <h5>- Fixed preset titles sometimes applying to the wrong team on the scoreboard during goal replays, and at the end of matches.</h5>
+                            <h5>- Fixed the <code>training_open_pack</code> command using your selected freeplay map even if you had the option disabled.</h5>
+                            <h5>- Fixed some issues with renaming custom styles, as well as custom post process effects.</h5>
+                            <h5>- Fixed the matchmakers selected button colors not syncing the selected ImGui styles button colors.</h5>
+                            <h5>- Upgraded the internal ImGui framework to version 1.89.3.</h5>
+                        </section>
+
+                        <section class="docs-section" id="item-1-3-3">
+                            <h2 class="section-heading">Version 1.3.3 (February 13th 2023)</h2>
+                            <h5>- Added the <code>freeplay_disable_training</code> setting which disables CodeReds training features that conflict with the games new built in ones (Goal scoring, game speed, etc...).</h5>
+                            <h5>- Fixed titles sometimes not applying or updating during goal replays.</h5>
+                            <h5>- Fixed garage presets restoring to your default items after receiving a new item on the main menu.</h5>
+                            <h5>- Fixed custom blog info not restoring to its original info when toggled on and off.</h5>
+                            <h5>- Various internal changes and optimizations.</h5>
+                        </section>
+
+                        <section class="docs-section" id="item-1-3-2">
+                            <h2 class="section-heading">Version 1.3.2 (February 10th 2023)</h2>
+                            <h5>- Added the setting <code>scoreboard_hide_privates</code> which allows the anonymizer to work in private matches.</h5>
+                            <h5>- The <code>training_open_freeplay</code> command now applies the proper ball and mutators according to the gamemode (hoops, dropshot, gridiron, and more).</h5>
+                            <h5>- The <code>freeplay_disable_goals</code> setting is now always prioritized over the games new training settings.</h5>
+                            <h5>- Fixed the anonymizer applying to players in private matches by default (it wasn't suppose to do that).</h5>
+                            <h5>- Fixed the mmr and title modules not working in tournaments due to me setting the wrong permissions (oops).</h5>
+                            <h5>- Fixed custom names sometimes not applying during goal replays.</h5>
+                            <h5>- Fixed needing go in and out of the main menu for the custom blog settings to apply.</h5>
+                            <h5>- Fixed the thumbnail renderer acting weird with custom scenes when selecting a new product.</h5>
+                        </section>
+
+                        <section class="docs-section" id="item-1-3-1">
+                            <h2 class="section-heading">Version 1.3.1 (February 8th 2023)</h2>
+                            <h5>- Added the commands <code>interface_disable_rendering</code> and <code>interface_enable_rendering</code>, which lets you toggle scaleform rendering off and on.</h5>
+                            <h5>- Added the <code>training_no_map</code> setting, I forgot to add this option when I changed the custom training map options to radio buttons.</h5>
+                            <h5>- Added fifteen missing player titles from the last Rocket League update.</h5>
+                            <h5>- Fixed mmr not working in tournament matches due to a bug from the last update.</h5>
+                            <h5>- Fixed a possible duplicate name issue with the anonymizer and bot names.</h5>
+                            <h5>- Fixed your boost meter color resetting to white in freeplay if you changed the boost options in settings.</h5>
+                            <h5>- Changed the injection notification color from pink to light red.</h5>
+                        </section>
+
+                        <section class="docs-section" id="item-1-3-0">
+                            <h2 class="section-heading">Version 1.3.0 (February 6th 2023)</h2>
+                            <h5>- Fixed a crash that could happen when interacting with certain ImGui widgets in the dashboard.</h5>
+                            <h5>- Fixed the automation settings not triggering if a match didn't start due to players not joining.</h5>
+                            <h5>- Fixed the automation settings triggering when in tournament and face-it matches.</h5>
+                            <h5>- Fixed the <code>scoreboard_display_platforms</code> and <code>scoreboard_hide_clubs</code> settings not restoring clubs when toggled on and off.</h5>
+                            <h5>- Fixed title syncing issues on the main menu with your selected team.</h5>
+                            <h5>- Fixed some widgets in the dashboard window not having tooltip descriptions next to them.</h5>
+                            <h5>- Fixed having to scroll down to see the search bar in products comoboxes.</h5>
+                            <h5>- Other improvements and optimizations with garage presets.</h5>
+                        </section>
+
+                        <section class="docs-section" id="item-1-2-9">
+                            <h2 class="section-heading">Version 1.2.9 (February 3rd 2023)</h2>
+                            <h5>- Added the setting <code>scoreboard_display_platforms</code> which displays players platforms in place of club tags.</h5>
+                            <h5>- Fixed the <code>scoreboard_hide_clubs</code> setting not hiding club tags on the scoreboard.</h5>
+                            <h5>- Fixed the <code>garage_apply_both</code> setting in presets using the wrong team sometimes.</h5>
+                            <h5>- Fixed the <code>training_open_freeplay</code> command applying mutators to freeplay if you were in a lan match.</h5>
+                            <h5>- Fixed your title not restoring on the scoreboard if you selected "Nothing selected" during a match."</h5>
+                            <h5>- Fixed team names not restoring if you toggled <code>scoreboard_display_team</code> on and off.</h5>
+                            <h5>- Fixed the products in the Rocket Pass menu applying title attributes to non-title products.</h5>
+                            <h5>- Fixed the title combobox in the dashboard being empty if you opened the menu too early.</h5>
+                            <h5>- Fixed your preset not applying to the right team when you first loaded in private or lan matches.</h5>
+                            <h5>- Other internal changes and improvements with ImGui.</h5>
+                        </section>
+
+                        <section class="docs-section" id="item-1-2-8">
+                            <h2 class="section-heading">Version 1.2.8 (January 29th 2023)</h2>
+                            <h5>- Added the command <code>interface_close_game</code> that closes the game (pretty fancy right?).</h5>
+                            <h5>- Added the setting <code>keys_rage_quits</code> that enables the use of "Alt-F4" to close the game (this secretly just calls <code>interface_close_game</code>).</h5>
+                            <h5>- Renamed the <code>interface_disable_ads</code> setting to <code>replay_disable_ads</code>.</h5>
+                            <h5>- Fixed the <code>interface_april_icons</code> setting sometimes restoring itself after a certain period of time</h5>
+                            <h5>- Fixed some inconsistencies related to rendering custom scenes in the thumbnail renderer.</h5>
+                            <h5>- Fixed a crash that could happen if you tried to call <code>unreal_command</code> during a loading screen.</h5>
+                            <h5>- Disabled the command <code>brank_tuna_time</code>, which hired the nearest homeless man to come to your house and make you a tuna salad sandwich. This resulted in the death of ten CodeRed users who had a fish allergy, to which I am now involved in earths deadliest tuna-related investigation.</h5>    
+                        </section>
+
+                        <section class="docs-section" id="item-1-2-7">
+                            <h2 class="section-heading">Version 1.2.7 (January 28th 2023)</h2>
+                            <h5>- Fixed a bug related to presets not applying if you lost connection to the internet and then reconnected.</h5>
+                            <h5>- Fixed a crash that could happen if you selected a title then clicked "Nothing Selected" after alt tabbing.</h5>
+                            <h5>- Fixed a scaling issue for the searchable comboboxes in ImGui on larger displays.</h5>
+                            <h5>- Fixed a specific directory path error when injecting.</h5>
+                            <h5>- Other internal optimizations and changes with preset titles.</h5>
+                        </section>
+
+                        <section class="docs-section" id="item-1-2-6">
+                            <h2 class="section-heading">Version 1.2.6 (January 26th 2023)</h2>
+                            <h5>- Added an option in custom styles to use your own color for terminal themes, rather than picking preset colors.</h5>
+                            <h5>- Added additional safety checking when parsing colors from presets, styles, and effects.</h5>
+                            <h5>- Fixed the end game UI not showing up at the end of ranked matches (yippie!).</h5>
+                            <h5>- Fixed custom HUD colors not applying if you had custom stadium colors disabled.</h5>
+                            <h5>- Moved the main menu map picker from the "Misc" tab to under the "Interface" tab in the dashboard.</h5>
+                        </section>
+
+                        <section class="docs-section" id="item-1-2-5">
+                            <h2 class="section-heading">Version 1.2.5 (January 24th 2023)</h2>
+                            <h5>- Updated internal SDK to the latest version of Rocket League.</h5>
+                            <h5>- Fixed incorrect file name exports for the thumbnail exporter.</h5>
+                            <h5>- Fixed certain terminal themes not applying in custom styles.</h5>
+                            <h5>- Other various DirectX and ImGui related improvements.</h5>
+                            <h5>- Some improvements with scaling the launchers custom controls.</h5>
+                        </section>
+
+                        <section class="docs-section" id="item-1-2-4">
+                            <h2 class="section-heading">Version 1.2.4 (January 21st 2023)</h2>
+                            <h5>- Added support for the missing product slots in the thumbnail renderer, boosts, goal explosions, banners, etc...</h5>
+                            <h5>- Added eight new settings which lets you recolor your HUD independently from your custom stadium colors.</h5>
+                            <h5>- Added two new settings inspired by lchmagKekse's "Window Focus" plugin for BakkesMod.</h5>
+                            <h5>- Added the setting <code>interface_join_focus</code> which auto focuses the window upon joining a match if you were alt-tabbed out.</h5>
+                            <h5>- Added the setting <code>interface_kickoff_focus</code> which auto focuses the window at the start of kickoffs if you were alt-tabbed out.</h5>
+                            <h5>- Fixed a crash that could happen if you waited for the game to auto kick you after online matches.</h5>
+                            <h5>- Fixed needing to go in and out of the main menu if you toggled the <code>interface_disable_rocketpass</code> feature on and off.</h5>
+                            <h5>- Fixed a bug related to the <code>database_paint_colors</code> argument for the database module.</h5>
+                            <h5>- Other various optimizations and improvements.</h5>
+                        </section>
+
+                        <section class="docs-section" id="item-1-2-3">
+                            <h2 class="section-heading">Version 1.2.3 (January 16th 2023)</h2>
+                            <h5>- Changed how the custom rich presence status group works, its new values are Offline, Online, Away, and Busy.</h5>
+                            <h5>- Fixed some specific cases of the auto replay saver crashing (this feature is gonna be the death of me).</h5>
+                            <h5>- Fixed rotator conversion errors related to the thumbnail renderer along with scene settings not applying.</h5>
+                            <h5>- Fixed some titles having a text glow when they shouldn't, also added some missing titles from the last Rocket League update.</h5>
+                            <h5>- Fixed a rendering thread exception if you clicked the exit game button on the main menu.</h5>
+                        </section>
+
+                        <section class="docs-section" id="item-1-2-2">
+                            <h2 class="section-heading">Version 1.2.2 (January 13th 2023)</h2>
+                            <h5>- Added the setting <code>interface_auto_gg</code> which automatically says gg in chat at the end of online matches.</h5>
+                            <h5>- Added the setting <code>interface_gg_delay</code> which sets the delay in seconds for the <code>interface_auto_gg</code> setting.</h5>
+                            <h5>- Added a limit to how many styles and effects you can create, the limit is now 512.</h5>
+                            <h5>- Fixed your title not restoring to its original one if you disabled presets mid-game.</h5>
+                            <h5>- Fixed you title still applying on the scoreboard even if you had presets disabled.</h5>
+                            <h5>- Fixed team mmr sometimes being incorrect in 1v1 private matches.</h5>
+                            <h5>- Fixed inconsistencies related to the \"interface_auto_delay\" setting.</h5>
+                            <h5>- Fixed custom styles and effects not renaming if you copied from a default style/effect originally.</h5>
+                            <h5>- Added extra safety checking in the module if you tried injecting multiple times.</h5>
+                            <h5>- Added extra safety checking regarding the auto replay saver.</h5>
+                            <h5>- Changes to how terminal themes are stored and parsed in custom styles.</h5>
+                            <h5>- Changes to how titles are stored and parsed in presets in preparation for a future update.</h5>
+                        </section>
+
+                        <section class="docs-section" id="item-1-2-1">
+                            <h2 class="section-heading">Version 1.2.1 (January 10th 2023)</h2>
+                            <h5>- Added extra safety checks and logging for the garage module, as a result removed the need to be on the main menu to customize your profile or presets.</h5>
+                            <h5>- Removed the anonymizers scoreboard_hide_platforms setting which hid all avatar platforms. I made this before Psyonix did this by default so it's pointless now.</h5>
+                            <h5>- Fixed the main menu background sometimes reverting back to the original one if you exited a game too early.</h5>
+                            <h5>- Fixed the chat message commands not displaying text in the games HUD.</h5>
+                            <h5>- Other internal optimizations and extra safety checking.</h5>
+                            <h5>- Fixed a folder not found issue with the launchers installer if you selected a custom install path.</h5>
+                            <h5>- Fixed several message box and logging errors in the launcher.</h5>
+                            <h5>- Added a button that lets you change your install path in the launchers settings, this moves the folder and modifies the registry for you.</h5>
+                        </section>
+
+                        <section class="docs-section" id="item-1-2-0">
+                            <h2 class="section-heading">Version 1.2.0 (January 8th 2023)</h2>
+                            <h5>- Added a new <code>interface_auto_claim</code> setting, which automatically checks and claims completed season challenges at the end of matches.</h5>
+                            <h5>- Added a new <code>interface_draw_fps</code> setting, which draws an fps counter in corner of your screen.</h5>
+                            <h5>- Fixed the session tracker incorrectly displaying knockout damage as damage done from dropshot tiles.</h5>
+                            <h5>- Fixed the ImGui radio button for the "don't do automation" option not selecting.</h5>
+                            <h5>- Moved the "auto open matchmaking window" checkbox in the online tab to under the automation header.</h5>
+                        </section>
+
+                        <section class="docs-section" id="item-1-1-9">
+                            <h2 class="section-heading">Version 1.1.9 (January 7th 2023)</h2>
+                            <h5>- Added five new automation settings inspired by ToolB0x's \"Instant Suite\" plugin.</h5>
+                            <h5>- Added the <code>interface_auto_queue</code> setting, when it enabled it automatically re-queues for you at the end of games.</h5>
+                            <h5>- Added the <code>interface_auto_menu</code> setting, when it enabled it automatically exits to the main menu at the end of games.</h5>
+                            <h5>- Added the <code>interface_auto_ reeplay</code> setting, when it enabled it automatically puts you in freeplay at the end of games.</h5>
+                            <h5>- Added the <code>interface_auto_training</code> setting, when it enabled it automatically puts you in custom training at end of games.</h5>
+                            <h5>- Added the <code>interface_auto_delay</code> setting, which allows you to set the delay when executing automation settings in seconds.</h5>
+                            <h5>- Upgraded the backend ImGui framework to version 1.89.2.</h5>
+                            <h5>- Fixed the item shop button on the main menu not appearing until you clicked into a different menu.</h5>
+                            <h5>- Fixed the hide your season rewards option sometimes not applying after ranked matches.</h5>
+                            <h5>- Fixed an issue with not locating your downloaded training pack codes.</h5>
+                            <h5>- Other ImGui backend changes.</h5>
+                        </section>
+
+                        <section class="docs-section" id="item-1-1-8">
+                            <h2 class="section-heading">Version 1.1.8 (January 5th 2023)</h2>
+                            <h5>- Added a new setting <code>interface_disable_roulette</code>, which automatically skips the reveal animation when opening item drops.</h5>
+                            <h5>- Added additional safety and range checks for the car and ball rotation/location commands.</h5>
+                            <h5>- Fixed the anonymizers \"hide your ranks on the main menu\" setting not working properly.</h5>
+                            <h5>- Fixed the anonymizers \"hide your season rewards\" setting not restoring if you toggled it on and off.</h5>
+                            <h5>- Fixed some ImGui tooltip issues in the dashboard window.</h5>
+                        </section>
+
+                        <section class="docs-section" id="item-1-1-7">
+                            <h2 class="section-heading">Version 1.1.7 (January 3rd 2023)</h2>
+                            <h5>- The tracker and gamestate overlays now have the option to change their position, hold down ctrl and double click on them for options.</h5>
+                            <h5>- Fixed an mmr rounding bug on the main menu when your skill updated.</h5>
+                            <h5>- Fixed some rendering issues when alt-tabbing if you were in fullscreen mode. </h5>
+                        </section>
+
+                        <section class="docs-section" id="item-1-1-6">
+                            <h2 class="section-heading">Version 1.1.6 (January 2nd 2023)</h2>
+                            <h5>- Added all individual colors from the "DuoTone" terminal themes to the style color picker.</h5>
+                            <h5>- Changed the custom DuoTone terminal themes from the last update slightly to make text easier to read.</h5>
+                            <h5>- Changed all the other default styles to be more visually appealing and consistent.</h5>
+                            <h5>- Changed the timing of when the auto reset player input was triggered during kickoffs.</h5>
+                            <h5>- Fixed the auto fps limiter not working if you had an ImGui window in focus.</h5>
+                            <h5>- Fixed some issues with parsing style and effect files.</h5>
+                            <h5>- Other backend ImGui rendering optimizations and improvements.</h5>
+                        </section>
+
+                        <section class="docs-section" id="item-1-1-5">
+                            <h2 class="section-heading">Version 1.1.5 (January 1st 2023)</h2>
+                            <h5>- Added a new style pack called "DouTone" inspired by UI designer "simurai", included by default are five new styles!</h5>
+                            <h5>- Added a new dumper command, <code>database_dump_errors</code>, which I forgot to port over from my DeveloperTools plugin.</h5>
+                            <h5>- Changed the default style slightly, improving color contrast to be more eye pleasing.</h5>
+                            <h5>- Changed the custom training map checkboxes in the dashboard to radiobuttons.</h5>
+                            <h5>- Fixed a DirectX rendering issue if you changed your resolution thanks to BattleDash, this was caused by not properly calling ResizeBuffers.</h5>
+                            <h5>- Fixed several issues with the keybinds window regarding not saving and not showing arguments.</h5>
+                            <h5>- Fixed an issue with changing style names and not removing the old style file properly.</h5>
+                            <h5>- Fixed a global ImGui scaling issue with the effects and styles windows.</h5>
+                            <h5>- Fixed the update notification not getting triggered due to a caching issue.</h5>
+                            <h5>- Fixed the mmr streak in the tracker window displaying the wrong mmr.</h5>
+                        </section>
+
+                        <section class="docs-section" id="item-1-1-4">
+                            <h2 class="section-heading">Version 1.1.4 (December 30th 2022)</h2>
+                            <h5>- Added a new setting <code>interface_disable_ads</code>, which disables the advertisements around the stadium you're in. This setting only works when viewing replay files.</h5>
+                            <h5>- Fixed the create sequence popup window not letting you remove values.</h5>
+                            <h5>- Fixed the keybinds action combobox not resetting properly.</h5>
+                            <h5>- Fixed some issues with the terminals auto complete window regarding keybinds.</h5>
+                            <h5>- Fixed a bug with the trade logger where it didn't log player ids properly.</h5>
+                            <h5>- Other ImGui backend changes, including extra safety checking.</h5>
+                        </section>
+
+                        <section class="docs-section" id="item-1-1-3">
+                            <h2 class="section-heading">Version 1.1.3 (December 28th 2022)</h2>
+                            <h5>- Added an option to apply your garage preset to both teams! This can be toggled through the new checkbox next to "Selected team" in the dashboard, or via the setting <code>garage_apply_both</code>.</h5>
+                            <h5>- The auto reset input buffer setting now also auto resets on goal kickoffs, before it was just when you alt-tabbed.</h5>
+                            <h5>- Set a limit for how long you can set preset names, it is now 128 characters.</h5>
+                            <h5>- Fixed custom keybind sequences not writing properly, causing them to be parsed wrong on next load.</h5>
+                            <h5>- Additional safety checks related to parsing files and settings.</h5>
+                            <h5>- Added an extra file path check for the launchers installer.</h5>
+                        </section>
+
+                        <section class="docs-section" id="item-1-1-2">
+                            <h2 class="section-heading">Version 1.1.2 (December 27th 2022)</h2>
+                            <h5>- Fixed the ImGui UI not initializing properly on injection sometimes.</h5>
+                            <h5>- Fixed allowing users being able to select the auto tournament playlist with the <code>matchmaking_select_playlist</code> command.</h5>
+                            <h5>- Delayed the timing for when replays are saved for the auto replay saver, this seems to have fixed the crashing.</h5>
+                        </section>
+
+                        <section class="docs-section" id="item-1-1-1">
+                            <h2 class="section-heading">Version 1.1.1 (December 26th 2022)</h2>
+                            <h5>- Fixed the searcher tab in function scanner trying to display 30k functions at once.</h5>
+                            <h5>- Fixed some focus issues on ImGui windows.</h5>
+                            <h5>- Other preparations for future ImGui backend changes.</h5>
+                        </section>
+
+                        <section class="docs-section" id="item-1-1-0">
+                            <h2 class="section-heading">Version 1.1.0 (December 25th 2022)</h2>
+                            <h5>- Possibly fixed your game freezing if you alt-tabbed while in fullscreen mode (needs testing).</h5>
+                            <h5>- Fixed the auto save replay feature randomly crashing.</h5>
+                            <h5>- Fixed a pathing issue with your replay file if you didn't have any replays saved.</h5>
+                            <h5>- Fixed using selected freeplay map in custom training not working for some people.</h5>
+                            <h5>- Fixed garage preset titles sometimes applying to the wrong players on the scoreboard.</h5>
+                            <h5>- Fixed the anonymizer hiding yourself, such as your name and avatar (it wasn't suppose to do that).</h5>
+                            <h5>- Fixed the changelog window not wrapping text properly.</h5>
+                            <h5>- Set a 32 character limit for player names that you can set for presets.</h5>
+                        </section>
+
+                        <section class="docs-section" id="item-1-0-9">
+                            <h2 class="section-heading">Version 1.0.9 (December 24th 2022)</h2>
+                            <h5>- Possibly fixed your game freezing if you alt-tabbed with an imgui window open while in fullscreen mode (turns out I didn't fix this).</h5>
+                            <h5>- Fixed legacy club colors in 1v1s not being consistent.</h5>
+                            <h5>- Fixed the item shop button on the main menu being hidden when the option was unchecked.</h5>
+                            <h5>- Changed the color of the update notification to bright blue.</h5>
+                            <h5>- Remade the filesystem and path manager component used internally, as a result fixed some possible pathing issues.</h5>
+                            <h5>- Possibly fixed some issues and errors in the launcher when first installing.</h5>
+                        </section>
+
+                        <section class="docs-section" id="item-1-0-8">
+                            <h2 class="section-heading">Version 1.0.8 (December 24th 2022)</h2>
+                            <h5>- When selecting a different preset team in the dashboard, it now changes your in-game loadout to the newly selected team (main menu only).</h5>
+                            <h5>- Fixed a rotator clamping axis issue, also fixed rotator settings having the wrong range (should have been -180, 180).</h5>
+                            <h5>- Fixed the XYZ and PYR ImGui widgets letting you set a value that was out of range.</h5>
+                            <h5>- Fixed the hide player title option in the anonymizer not working properly.</h5>
+                        </section>
+
+                        <section class="docs-section" id="item-1-0-7">
+                            <h2 class="section-heading">Version 1.0.7 (December 23rd 2022)</h2>
+                            <h5>- Updated the mmr rank up/down database from RLStats thanks to Drogings.</h5>
+                            <h5>- Fixed dashboard settings not saving if a "Variables.cr" file was not found/created.</h5>
+                        </section>
+
+                        <section class="docs-section" id="item-1-0-6">
+                            <h2 class="section-heading">Version 1.0.6 (December 23rd 2022)</h2>
+                            <h5>- Added a new version notification, when in-game and a new version of CodeRed is detected a notification will popup in the top left.</h5>
+                            <h5>- Fixed a bug with renaming garage presets saying failed to delete in the console.</h5>
+                            <h5>- Fixed the bindings window saying no actions selected when switching back and forth different types.</h5>
+                            <h5>- Fixed notifications not properly scaling on 4k displays (related to the <code>imgui_global_scale</code> setting).</h5>
+                            <h5>- Fixed ImGui trying to load in the same font multiple times.</h5>
+                        </section>
+
+                        <section class="docs-section" id="item-1-0-5">
+                            <h2 class="section-heading">Version 1.0.5 (December 22nd 2022)</h2>
+                            <h5>- Fixed a bug where the launcher would incorrectly not show as injected.</h5>
+                            <h5>- Fixed an issue with the news tab when trying to open link.</h5>
+                            <h5>- Changed the formatting in the modules changelog window.</h5>
+                        </section>
+
+                        <section class="docs-section" id="item-1-0-4">
+                            <h2 class="section-heading">Version 1.0.4 (December 22nd 2022)</h2>
+                            <h5>- Fixed the module falsely not finding your training folder, if you did not have a training pack installed.</h5>
+                        </section>
+
+                        <section class="docs-section" id="item-1-0-3">
+                            <h2 class="section-heading">Version 1.0.3 (December 22nd 2022)</h2>
+                            <h5>- Fixed the launcher not finding your Rocket League folder if you were on Epic.</h5>
+                        </section>
+
+                        <section class="docs-section" id="item-1-0-2">
+                            <h2 class="section-heading">Version 1.0.2 (December 22nd 2022)</h2>
+                            <h5>- Fixed a file path issue with the launcher.</h5>
+                        </section>
+
+                        <section class="docs-section" id="item-1-0-1">
+                            <h2 class="section-heading">Version 1.0.1 (December 22nd 2022)</h2>
+                            <h5>- This is a test to see if the updator works.</h5>
+                            <h5>- Fixed the launcher not installing subdirectories.</h5>
+                            <h5>- Fixed the module not creating variable files.</h5>
+                        </section>
+
+                        <section class="docs-section" id="item-1-0-0">
+                            <h2 class="section-heading">Version 1.0.0 (December 22nd 2022)</h2>
+                            <h5>- First public alpha pre-release, no changes to provide.</h5>
+                        </section>
+					</section>
+			    </article>
+
+			    <footer class="footer">
+				    <div class="container text-center py-5">
+				        <ul class="social-list list-unstyled pt-4 mb-0">
+							<li class="list-inline-item"><a href="https://twitter.com/CodeRedModding"><i class="fab fa-twitter fa-fw"></i></a></li>
+							<li class="list-inline-item"><a href="https://discord.gg/VenX9kKF5B"><i class="fab fa-discord fa-fw"></i></a></li>
+							<li class="list-inline-item"><a href="https://github.com/CodeRedModding"><i class="fab fa-github fa-fw"></i></a></li>
+				        </ul>
+				    </div>
+			    </footer>
+		    </div> 
+	    </div>
+    </div>
+      
+    <script src="assets/plugins/popper.min.js"></script>
+    <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/plugins/smoothscroll.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/highlight.min.js"></script>
+    <script src="assets/js/highlight-custom.js"></script>
+    <script src="assets/plugins/simplelightbox/simple-lightbox.min.js"></script>
+    <script src="assets/plugins/gumshoe/gumshoe.polyfills.min.js"></script>
+    <script src="assets/js/docs.js"></script>
+</body>
+</html> 
