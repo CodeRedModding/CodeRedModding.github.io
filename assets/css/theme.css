@@ -424,7 +424,7 @@ a.text-link:hover{
 	height:calc(100% - 69px);
 	background:#2A2D31;
 	overflow-y:auto;
-	scrollbar-color:rgba(0,0,0,0.2) #B5BAC0;
+	scrollbar-color:rgba(0,0,0,0.25) #1E1F22;
 	scrollbar-width:thin;
 	transition:-webkit-transform 0.35s ease-in-out;
 	transition:transform 0.35s ease-in-out;
