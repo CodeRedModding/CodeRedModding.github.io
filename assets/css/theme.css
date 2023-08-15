@@ -243,7 +243,13 @@ a.text-link:hover{
 	font-size:1.5rem;
 	font-weight:bold
 }
+.site-logo .logo-text-alt{
+	color:#EF3024;
+	font-size:1.5rem;
+	font-weight:bold
+}
 .site-logo .text-alt{
+    color:#F2F3F5;
 	font-weight:300
 }
 .site-logo .navbar-brand{
@@ -400,7 +406,7 @@ a.text-link:hover{
 }
 .docs-sidebar-toggler span{
 	display:block;
-	background-color:#302525;
+	background-color:#B5BAC0;
 	height:3px;
 	width:24px;
 	margin-top:5px;
