@@ -345,16 +345,16 @@ a.text-link:hover{
 	width:100%
 }
 .search-form .search-input{
-    background:#80848E;
-	border-color:#80848E;
+    background:#1E1F22;
+	border-color:#323338;
+    color:#F2F3F5;
 	font-size:0.875rem;
 	border-radius:1.5rem;
 	padding-right:3rem;
 	padding-left:1.5rem
 }
 .search-form .search-input:focus{
-    background:#80848E;
-	border-color:#80848E
+    background:#1E1F22
 }
 .search-form .search-btn{
 	color:#323338;
