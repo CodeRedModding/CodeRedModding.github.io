@@ -260,7 +260,7 @@
                             <table class="table table-bordered">
                                 <tbody>
                                     <tr>
-                                        <th class="theme-bg-light"><b>imgui_global_scale &lt0.2-4&gt</b></th>
+                                        <th class="theme-bg-light"><b>imgui_global_scale</b></th>
                                         <td>Change the global interface scaling for ImGui.</td>
                                     </tr>
                                     <tr>
@@ -729,7 +729,7 @@
                                         <td>Disable the large boost pills around the stadium in freeplay.</td>
                                     </tr>
                                     <tr>
-                                        <th class="theme-bg-light"><b>freeplay_gravity</b></th>
+                                        <th class="theme-bg-light"><b>freeplay_gravity &lt-1300.0-1300.0&gt</b></th>
                                         <td>Custom gravity force to apply in freeplay.</td>
                                     </tr>
                                     <tr>
@@ -803,6 +803,14 @@
                                     <tr>
                                         <th class="theme-bg-light"><b>freeplay_speed</b></th>
                                         <td>Custom game speed value to apply in freeplay.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>freeplay_goal_speed &lttrue-false&gt</b></th>
+                                        <td>Shows the last goal speed of the ball in chat in freeplay.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>freeplay_goal_precision &lt0-9&gt</b></th>
+                                        <td>The decimal precision used in displaying the goal speed.</td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -1420,6 +1428,10 @@
                                     </tr>
                                     <tr>
                                         <th class="theme-bg-light"><b>scoreboard_skill_precision &lt0-9&gt</b></th>
+                                        <td>The decimal precision used in the win/loss skill ratings on the scoreboard.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>scoreboard_update_precision &lt0-9&gt</b></th>
                                         <td>The decimal precision used in displaying skill ratings on the scoreboard.</td>
                                     </tr>
                                     <tr>
