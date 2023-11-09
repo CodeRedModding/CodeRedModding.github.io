@@ -52,7 +52,8 @@
             </div>
 		    <nav id="docs-nav" class="docs-nav navbar">
 			    <ul class="section-items list-unstyled nav flex-column pb-3">
-                    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-2"><span class="theme-icon-holder me-2"><i class="fas fa-book"></i></span>Module Changelog (Alpha)</a></li>
+                    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-2"><span class="theme-icon-holder me-2"><i class="fas fa-book"></i></span>Changelog (Alpha)</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-2-9-0">Version 1.9.0</a></li>
                     <li class="nav-item"><a class="nav-link scrollto" href="#item-2-8-9">Version 1.8.9</a></li>
                     <li class="nav-item"><a class="nav-link scrollto" href="#item-2-8-8">Version 1.8.8</a></li>
                     <li class="nav-item"><a class="nav-link scrollto" href="#item-2-8-7">Version 1.8.7</a></li>
@@ -181,7 +182,25 @@
 	    <div class="docs-content">
 		    <div class="container">
 			    <article class="docs-article" id="section-2">
-                    <h1 class="docs-heading">Module Changelog (Alpha)</h1>
+                    <h1 class="docs-heading">Changelog (Alpha)</h1>
+
+                        <section class="docs-section" id="item-2-9-0">
+                            <h2 class="section-heading">Version 1.9.0 (November 9th 2023)</h2>
+                            <h5>- Added a new setting <code>freeplay_goal_speed_training</code> which allows logging goal speed in custom training packs.</h5>
+                            <h5>- Added a new setting <code>freeplay_goal_speed_offline</code> which allows logging goal speed in exhibition and lan modes.</h5>
+                            <h5>- Added a new setting <code>freeplay_goal_speed_online</code> which allows logging goal speed in all online game modes.</h5>
+                            <h5>- Added a new setting <code>function_scanner_duplicates &lttrue-false&gt</code> which allows changing the "Hide Duplicates" option in the function scanner off and on.</h5>
+                            <h5>- Added a new command <code>function_scanner_start</code> which lets you start the function scanner through a command or keybind.</h5>
+                            <h5>- Added a new command <code>function_scanner_stop</code> which lets you stop the function scanner through a command or keybind.</h5>
+                            <h5>- Added support for block compression BC7 and all other modern DXT10 formats for texture exporting.</h5>
+                            <h5>- Added support super small legacy packed formats (R8, G8, and UYVY) for texture exporting.</h5>
+                            <h5>- Fixed the block compression BC1 format sometimes exporting "misaligned" image data.</h5>
+                            <h5>- Fixed the thumbnail renderer not collecting garbage properly, resulting in a memory leak when using the automation mode.</h5>
+                            <h5>- Fixed preview images in the texture browser and thumbnail renderer not displaying properly sometimes.</h5>
+                            <h5>- Fixed the <code>freeplay_disable_training</code> setting not instantly updating goal scoring when toggled off and on.</h5>
+                            <h5>- Fixed the <code>freeplay_goal_speed</code> setting sometimes spamming chat when a goal gets scored.</h5>
+                            <h5>- The <code>freeplay_disable_hotkeys</code> setting will now automatically hide the games hotkey overlay if enabled in freeplay.</h5>
+                        </section>
 
                         <section class="docs-section" id="item-2-8-9">
                             <h2 class="section-heading">Version 1.8.9 (November 1st 2023)</h2>

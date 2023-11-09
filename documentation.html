@@ -90,12 +90,12 @@
                     <li class="nav-item"><a class="nav-link scrollto" href="#item-5-10-5">Texture Browser</a></li>
                     <li class="nav-item"><a class="nav-link scrollto" href="#item-5-11">Thumbnail Renderer</a></li>
 				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-6"><span class="theme-icon-holder me-2"><i class="fas fa-lightbulb"></i></span>FAQs</a></li>
-				    <li class="nav-item"><a class="nav-link scrollto" href="#item-6-1">Whats CodeRed</a></li>
-				    <li class="nav-item"><a class="nav-link scrollto" href="#item-6-2">BakkesMod</a></li>
-                    <li class="nav-item"><a class="nav-link scrollto" href="#item-6-3">Bug Reporting</a></li>
-                    <li class="nav-item"><a class="nav-link scrollto" href="#item-6-4">Custom Titles</a></li>
-                    <li class="nav-item"><a class="nav-link scrollto" href="#item-6-5">Open Source</a></li>
-                    <li class="nav-item"><a class="nav-link scrollto" href="#item-6-6">.NET 7.0</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-6-1">What Is CodeRed</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-6-2">Is It bannable</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-6-3">BakkesMod compatibility</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-6-4">Is It Open Source</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-6-5">How To Report Bugs</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-6-6">Do Custom Titles Exist</a></li>
 			    </ul>
 		    </nav>
 	    </div>
@@ -252,6 +252,14 @@
                                         <th class="theme-bg-light"><b>imgui_toggle</b></th>
                                         <td>Toggle opening/closing an ImGui window by its name.</td>
                                     </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>function_scanner_start</b></th>
+                                        <td>Turns the function scanner on if the window is open.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>function_scanner_stop</b></th>
+                                        <td>Turns the function scanner off if the window is open.</td>
+                                    </tr>
                                 </tbody>
                             </table>
                         </div>
@@ -278,6 +286,10 @@
                                     <tr>
                                         <th class="theme-bg-light"><b>imgui_notification_delay &lt1-2560&gt</b></th>
                                         <td>The delay the fade out animation uses after displaying notifications.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>function_scanner_duplicates &lttrue-false&gt</b></th>
+                                        <td>Hide or show duplciate entries in the function scanner window.</td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -811,6 +823,18 @@
                                     <tr>
                                         <th class="theme-bg-light"><b>freeplay_goal_precision &lt0-9&gt</b></th>
                                         <td>The decimal precision used in displaying the goal speed.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>freeplay_goal_speed_training &lttrue-false&gt</b></th>
+                                        <td>Enable the use of showing the goal speed in custom training packs.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>freeplay_goal_speed_offline &lttrue-false&gt</b></th>
+                                        <td>Enable the use of showing goal speed in offline modes such as lan and exhibition.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>freeplay_goal_speed_online &lttrue-false&gt</b></th>
+                                        <td>Enable the use of showing goal speed in all online game modes.</td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -2046,7 +2070,7 @@
                     <section class="docs-section" id="item-5-10-5">
                         <h2 class="section-heading">Texture Browser</h2>
                         <h4>Window Name: <code>textures</code></h4>
-                        <p>The texture browser is an experimental feature that lets you view and export almost any loadded texture in the game. Some formats that use a block compression or legacy formats may not be supported for exporting.</p>	    
+                        <p>The texture browser lets you preview and export almost any currently loadded texture in the game.</p>	    
 
                         <div class="simplelightbox-gallery row mb-3">
                             <div class="col-12 col-md-4 mb-3">
@@ -2076,27 +2100,33 @@
 				    <header class="docs-header">
 					    <h1 class="docs-heading">FAQs</h1>
 				    </header>
-				     <section class="docs-section" id="item-6-1">
+                    <section class="docs-section" id="item-6-1">
 						<h4 class="pt-3"><i class="fas fa-question-circle me-1"></i>What is CodeRed?</h4>
-						<p>CodeRed is a highly customizable and easy to use third party enhancement for Rocket League. CodeRed aims to bring an "all in one" feature packed experience to players with almost zero impact to performance.</p>
+						<p>CodeRed is a highly customizable and easy to use third party enhancement for Rocket League. CodeRed aims to bring a lightweight, all in one, feature packed experience to players with zero impact to performance.</p>
                     </section>
 
                     <section class="docs-section" id="item-6-2">
-						<h4 class="pt-3"><i class="fas fa-question-circle me-1"></i>Can I use CodeRed and BakkesMod at the same time?</h4>
-						<p>Not currently, CodeRed and BakkesMod conflict with each other in a lot of its core features and has indirectly cause crashes when both are used together.</p>
-					</section>
-
-                    <section class="docs-section" id="item-6-5">
-                        <h4 class="pt-3"><i class="fas fa-question-circle me-1"></i>Is CodeRed open source?</h4>
-						<p>The in-game mod itself is not avaible to the public, however the launcher is fully open source under the MIT license; you can view its source code on our <a href="https://github.com/CodeRedModding/CodeRed-Launcher">GitHub here.</a></p>
+						<h4 class="pt-3"><i class="fas fa-question-circle me-1"></i>Can CodeRed get me banned?</h4>
+						<p>CodeRed is not officially approved by Psyonix or Epic Games, however, CodeRed still follows Rocket League's ToU, EULA, and rules regarding third party modding. CodeRed does not provide a competitive advantage in online play, expose unreleased features/content, or abuse Rocket League's services.</p>
+                        <p>Psyonix is aware of CodeRed's existence and has the ability to contact me if they have a problem with anything, or if they want a specific feature to be changed or removed.</p>
                     </section>
 
                     <section class="docs-section" id="item-6-3">
+						<h4 class="pt-3"><i class="fas fa-question-circle me-1"></i>Can I use CodeRed and BakkesMod at the same time?</h4>
+						<p>No, CodeRed and BakkesMod conflict with each other in a lot of its core features and has indirectly cause crashes when both are used together.</p>
+					</section>
+
+                    <section class="docs-section" id="item-6-4">
+                        <h4 class="pt-3"><i class="fas fa-question-circle me-1"></i>Is CodeRed open source?</h4>
+						<p>The in-game mod itself is not available to the public, however the launcher is fully open source under the MIT license; you can view its source code on our <a href="https://github.com/CodeRedModding/CodeRed-Launcher">GitHub here.</a></p>
+                    </section>
+
+                    <section class="docs-section" id="item-6-5">
                         <h4 class="pt-3"><i class="fas fa-question-circle me-1"></i>I found a bug or something doesn't work right.</h4>
 						<p>CodeRed is currently in alpha so expect a lot of bugs and crashes. If you would like to report a bug, crash, or feature that doesn't work as intended, please do so in our Discord server.</p>
                     </section>
 
-                    <section class="docs-section" id="item-6-4">
+                    <section class="docs-section" id="item-6-6">
 						<h4 class="pt-3"><i class="fas fa-question-circle me-1"></i>Can I customize my own title text or colors?</h4>
 						<p>No, you cannot customize or make your own titles with CodeRed at the moment. You are only limited to the preset titles that are provided by the game.</p>
 					</section>
