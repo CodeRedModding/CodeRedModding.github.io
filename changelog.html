@@ -53,6 +53,7 @@
 		    <nav id="docs-nav" class="docs-nav navbar">
 			    <ul class="section-items list-unstyled nav flex-column pb-3">
                     <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-2"><span class="theme-icon-holder me-2"><i class="fas fa-book"></i></span>Changelog (Alpha)</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-2-9-1">Version 1.9.1</a></li>
                     <li class="nav-item"><a class="nav-link scrollto" href="#item-2-9-0">Version 1.9.0</a></li>
                     <li class="nav-item"><a class="nav-link scrollto" href="#item-2-8-9">Version 1.8.9</a></li>
                     <li class="nav-item"><a class="nav-link scrollto" href="#item-2-8-8">Version 1.8.8</a></li>
@@ -146,6 +147,7 @@
                     <li class="nav-item"><a class="nav-link scrollto" href="#item-2-0-1">Version 1.0.1</a></li>
                     <li class="nav-item"><a class="nav-link scrollto" href="#item-2-0-0">Version 1.0.0</a></li>
                     <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-1"><span class="theme-icon-holder me-2"><i class="fas fa-rocket"></i></span>Launcher Changelog</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-2-9">Version 1.2.9</a></li>
                     <li class="nav-item"><a class="nav-link scrollto" href="#item-1-2-8">Version 1.2.8</a></li>
                     <li class="nav-item"><a class="nav-link scrollto" href="#item-1-2-7">Version 1.2.7</a></li>
                     <li class="nav-item"><a class="nav-link scrollto" href="#item-1-2-6">Version 1.2.6</a></li>
@@ -183,6 +185,21 @@
 		    <div class="container">
 			    <article class="docs-article" id="section-2">
                     <h1 class="docs-heading">Changelog (Alpha)</h1>
+
+                        <section class="docs-section" id="item-2-9-1">
+                            <h2 class="section-heading">Version 1.9.1 (November 23rd 2023)</h2>
+                            <h5>- You will no longer be able to use CodeRed if you have less than 4gb of vram or less than 8gb of system ram.</h5>
+                            <h5>- Disabled 3D scene slots in thumbnail renderer for non-nvidia gpus, Intel and AMD stopped working a few months back (thanks for that Psyonix...).</h5>
+                            <h5>- The thumbnail renderer will now be unusable when you're not on the main menu, both the window and terminal commands.</h5>
+                            <h5>- Added a new setting for custom styles called "TableHeaderAngle" under the "Technical" header.</h5>
+                            <h5>- Added preparations for when trading gets removed on December 5th, trading features will get hidden automatically in case I'm late.</h5>
+                            <h5>- Fixed player avatars on Steam not showing their correct profile picture on the scoreboard.</h5>
+                            <h5>- Fixed your selected preset in the garage tab sometimes defaulting to the "Autosave Preset" after injecting.- Fixed the "interface_custom_motd" setting sometimes not applying when you reset your car in freeplay.</h5>
+                            <h5>- Fixed the <code>replay_disable_ads</code> setting not working if you changing the setting while in a replay and tried reloading into the replay.</h5>
+                            <h5>- Possibly fixed the <code>freeplay_clear_overrides</code> setting not working for some people in freeplay (requires testing).</h5>
+                            <h5>- Upgraded the internal ImGui framework to version 1.9.0.</h5>
+                            <h5>- Internal optimizations and stability improvements.</h5>
+                        </section>
 
                         <section class="docs-section" id="item-2-9-0">
                             <h2 class="section-heading">Version 1.9.0 (November 9th 2023)</h2>
@@ -1118,6 +1135,14 @@
 
                 <article class="docs-article" id="section-1">
                     <h1 class="docs-heading">Launcher Changelog</h1>
+
+                    <section class="docs-section" id="item-1-2-9">
+                        <h2 class="section-heading">Version 1.2.9 (November 17th 2023)</h2>
+                        <h5>- Upgraded from .NET 7.0 to .NET 8.0, which will require you to download the new runtime if you only have .NET 7.0 installed.</h5>
+                        <h5>- Added more files and extra logging info for the crash dump exporter.</h5>
+                        <h5>- Fixed not finding a folder path bug on first install, which would require restarting the launcher.</h5>
+                        <h5>- Fixed the manual inject button not working sometimes, as well as it ignoring the "prevent injection when out of date" setting.</h5>
+                    </section>
 
                     <section class="docs-section" id="item-1-2-8">
                         <h2 class="section-heading">Version 1.2.8 (October 25th 2023)</h2>
