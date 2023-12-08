@@ -74,7 +74,7 @@
                     <li class="nav-item"><a class="nav-link scrollto" href="#item-4-10">Title Manager</a></li>
                     <li class="nav-item"><a class="nav-link scrollto" href="#item-4-9-5">Thumbnail Utilities</a></li>
                     <li class="nav-item"><a class="nav-link scrollto" href="#item-4-11">Session Tracker</a></li>
-                    <li class="nav-item"><a class="nav-link scrollto" href="#item-4-12">Trading Utilities</a></li>
+                    <!--<li class="nav-item"><a class="nav-link scrollto" href="#item-4-12">Trading Utilities</a></li>-->
                     <li class="nav-item"><a class="nav-link scrollto" href="#item-4-13">Training Enhancements</a></li>
                     <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-5"><span class="theme-icon-holder me-2"><i class="fas fa-id-card"></i></span>Windows</a></li>
 				    <li class="nav-item"><a class="nav-link scrollto" href="#item-5-1">Changelog</a></li>
@@ -268,8 +268,12 @@
                             <table class="table table-bordered">
                                 <tbody>
                                     <tr>
-                                        <th class="theme-bg-light"><b>imgui_global_scale</b></th>
+                                        <th class="theme-bg-light"><b>imgui_global_scale &lt0.2-4.0&gt</b></th>
                                         <td>Change the global interface scaling for ImGui.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>imgui_notification_corner &lt1-4&gt</b></th>
+                                        <td>The corner where ImGui popup notifications appear in.</td>
                                     </tr>
                                     <tr>
                                         <th class="theme-bg-light"><b>imgui_selected_style &ltarguments&gt</b></th>
@@ -813,7 +817,7 @@
                                         <td>The XYZ linear velocity to apply to your car on respawn in freeplay.</td>
                                     </tr>
                                     <tr>
-                                        <th class="theme-bg-light"><b>freeplay_speed</b></th>
+                                        <th class="theme-bg-light"><b>freeplay_speed &lt0.01-1.0&gt</b></th>
                                         <td>Custom game speed value to apply in freeplay.</td>
                                     </tr>
                                     <tr>
@@ -1626,18 +1630,6 @@
                             <table class="table table-bordered">
                                 <tbody>
                                     <tr>
-                                        <th class="theme-bg-light"><b>textures_refresh_images</b></th>
-                                        <td>Finds and loads all available image file paths from the textures folder.</td>
-                                    </tr>
-                                    <tr>
-                                        <th class="theme-bg-light"><b>textures_refresh_textures</b></th>
-                                        <td>Clears and reloads all custom unreal textures instantly.</td>
-                                    </tr>
-                                    <tr>
-                                        <th class="theme-bg-light"><b>textures_clear_textures</b></th>
-                                        <td>Marks all custom unreal textures to be reloaded.</td>
-                                    </tr>
-                                    <tr>
                                         <th class="theme-bg-light"><b>textures_refresh_tints</b></th>
                                         <td>Marks all custom unreal textures that require a color tint to be reapplied.</td>
                                     </tr>
@@ -1786,46 +1778,6 @@
                                     <tr>
                                         <th class="theme-bg-light"><b>tracker_notify_skill &lttrue-false&gt</b></th>
                                         <td>Display a notification when your skill rating has been updated.</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </section>
-
-                    <section class="docs-section" id="item-4-12">
-                        <h2 class="section-heading">Trading Utilities</h2>
-                        <div class="simplelightbox-gallery row mb-3">
-                            <div class="col-12 col-md-4 mb-3">
-                                <a href="assets/images/modules/trading-1.png"><img class="figure-img img-fluid shadow rounded" src="assets/images/modules/trading-1.png" alt="" title=""/></a>
-                            </div>
-                        </div>
-                    
-                        <h3>Commands</h3>
-                        <div class="table-responsive my-4">
-                            <table class="table table-bordered">
-                                <tbody>
-                                    <tr>
-                                        <th class="theme-bg-light"><b>trade_cancel</b></th>
-                                        <td>Cancels/closes any trade window that is currently open.</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                        <h3>Settings</h3>
-                        <div class="table-responsive my-4">
-                            <table class="table table-bordered">
-                                <tbody>
-                                    <tr>
-                                        <th class="theme-bg-light"><b>trade_guid_format &lt0-5&gt</b></th>
-                                        <td>The format trade guids are exported as when logging trades.</td>
-                                    </tr>
-                                    <tr>
-                                        <th class="theme-bg-light"><b>trade_logging &lttrue-false&gt</b></th>
-                                        <td>Automatically log player to player trades to offline files.</td>
-                                    </tr>
-                                    <tr>
-                                        <th class="theme-bg-light"><b>trade_scam_check &lttrue-false&gt</b></th>
-                                        <td>Automatically search \"TradeDB.net\" with the person you're trading with for scammer reports.</td>
                                     </tr>
                                 </tbody>
                             </table>
