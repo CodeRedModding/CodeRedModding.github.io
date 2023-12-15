@@ -53,6 +53,7 @@
 		    <nav id="docs-nav" class="docs-nav navbar">
 			    <ul class="section-items list-unstyled nav flex-column pb-3">
                     <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-2"><span class="theme-icon-holder me-2"><i class="fas fa-book"></i></span>Changelog (Alpha)</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-2-9-5">Version 1.9.5</a></li>
                     <li class="nav-item"><a class="nav-link scrollto" href="#item-2-9-4">Version 1.9.4</a></li>
                     <li class="nav-item"><a class="nav-link scrollto" href="#item-2-9-3">Version 1.9.3</a></li>
                     <li class="nav-item"><a class="nav-link scrollto" href="#item-2-9-2">Version 1.9.2</a></li>
@@ -150,6 +151,8 @@
                     <li class="nav-item"><a class="nav-link scrollto" href="#item-2-0-1">Version 1.0.1</a></li>
                     <li class="nav-item"><a class="nav-link scrollto" href="#item-2-0-0">Version 1.0.0</a></li>
                     <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-1"><span class="theme-icon-holder me-2"><i class="fas fa-rocket"></i></span>Launcher Changelog</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-3-1">Version 1.3.1</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-3-0">Version 1.3.0</a></li>
                     <li class="nav-item"><a class="nav-link scrollto" href="#item-1-2-9">Version 1.2.9</a></li>
                     <li class="nav-item"><a class="nav-link scrollto" href="#item-1-2-8">Version 1.2.8</a></li>
                     <li class="nav-item"><a class="nav-link scrollto" href="#item-1-2-7">Version 1.2.7</a></li>
@@ -189,6 +192,16 @@
 			    <article class="docs-article" id="section-2">
                     <h1 class="docs-heading">Changelog (Alpha)</h1>
 
+                        <section class="docs-section" id="item-2-9-5">
+                            <h2 class="section-heading">Version 1.9.5 (December 15th 2023)</h2>
+                            <h5>- The function scanner now shows functions that aren't called from ProcessEvent.</h5>
+                            <h5>- Fixed the <code>interface_autoskip_replays</code> setting not working as of the last Rocket League update.</h5>
+                            <h5>- Fixed the "Chaos" playlist on the main menu not displaying your mmr properly, darn you Psyonix!</h5>
+                            <h5>- Fixed a crash related to the preview images in the thumbnail render and texture browser related to alt-tabbing.</h5>
+                            <h5>- Possibly fixed a random crash related to minimizing the game and restoring it in fullscreen mode.</h5>
+                        </section>
+
+                        <section class="docs-section" id="item-2-9-4">
                             <h2 class="section-heading">Version 1.9.4 (December 8th 2023)</h2>
                             <h5>- Remade all the custom example playlist textures to match the games new UI.</h5>
                             <h5>- Remade the matchmaker window to be fully dynamic, you can now search limited time events and rotating competitive playlists that match the games new UI.</h5>
@@ -1172,6 +1185,20 @@
 
                 <article class="docs-article" id="section-1">
                     <h1 class="docs-heading">Launcher Changelog</h1>
+
+                    <section class="docs-section" id="item-1-3-1">
+                        <h2 class="section-heading">Version 1.3.1 (December 14th 2023)</h2>
+                        <h5>- Fixed another bug related to the news article tabs not loading.</h5>
+                        <h5>- Fixed a rare bug that caused checking for an update while actively installing an update.</h5>
+                        <h5>- Internal improvements and logging for downloading files.</h5>
+                    </section>
+
+                    <section class="docs-section" id="item-1-3-0">
+                        <h2 class="section-heading">Version 1.3.0 (December 11th 2023)</h2>
+                        <h5>- Added more detailed logging when downloading and installing updates.</h5>
+                        <h5>- Optimizations for the news tab, if an update is found it will now wait before downloading articles and images until the update is finished.</h5>
+                        <h5>- Fixed a crash that could happen if your download speed was slow or had packet loss and the download stopped momentarily.</h5>
+                    </section>
 
                     <section class="docs-section" id="item-1-2-9">
                         <h2 class="section-heading">Version 1.2.9 (November 17th 2023)</h2>
