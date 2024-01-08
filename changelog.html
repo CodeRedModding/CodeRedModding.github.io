@@ -53,6 +53,7 @@
 		    <nav id="docs-nav" class="docs-nav navbar">
 			    <ul class="section-items list-unstyled nav flex-column pb-3">
                     <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-2"><span class="theme-icon-holder me-2"><i class="fas fa-book"></i></span>Changelog (Alpha)</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-2-9-9">Version 1.9.9</a></li>
                     <li class="nav-item"><a class="nav-link scrollto" href="#item-2-9-8">Version 1.9.8</a></li>
                     <li class="nav-item"><a class="nav-link scrollto" href="#item-2-9-7">Version 1.9.7</a></li>
                     <li class="nav-item"><a class="nav-link scrollto" href="#item-2-9-6">Version 1.9.6</a></li>
@@ -194,6 +195,17 @@
 		    <div class="container">
 			    <article class="docs-article" id="section-2">
                     <h1 class="docs-heading">Changelog (Alpha)</h1>
+
+                        <section class="docs-section" id="item-2-9-9">
+                            <h2 class="section-heading">Version 1.9.9 (January 8th 2024)</h2>
+                            <h5>- Added a new ImGui window called "clock", which displays the current time in the top left of your screen.</h5>
+                            <h5>- Added a new setting <code>imgui_draw_clock</code>, which automatically opens the new "clock" window on injection.</h5>
+                            <h5>- Added a new setting <code>imgui_clock_24</code>, which is true by default. If set to false, timestamps will use a 12 hour AM/PM clock instead of a 24 hour one.</h5>
+                            <h5>- Possibly fixed a random crash that happened if you changed your nickname in the Steam overlay while in a game.</h5>
+                            <h5>- Fixed the game not closing properly if you had the <code>keys_rage_quits</code> setting enabled and used "Alt+F4" to close the game.</h5>
+                            <h5>- Fixed a crash that happened if you left a game before it finished completely, or forfeited early.</h5>
+                            <h5>- Fixed the refresh button in the texture browser window not applying the text in the filter box.</h5>
+                        </section>
 
                         <section class="docs-section" id="item-2-9-8">
                             <h2 class="section-heading">Version 1.9.8 (January 5th 2024)</h2>

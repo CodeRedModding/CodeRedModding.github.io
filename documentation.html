@@ -87,8 +87,9 @@
                     <li class="nav-item"><a class="nav-link scrollto" href="#item-5-8">Style Editor</a></li>
                     <li class="nav-item"><a class="nav-link scrollto" href="#item-5-9">Terminal</a></li>
                     <li class="nav-item"><a class="nav-link scrollto" href="#item-5-10">Playlist Tracker</a></li>
-                    <li class="nav-item"><a class="nav-link scrollto" href="#item-5-10-5">Texture Browser</a></li>
-                    <li class="nav-item"><a class="nav-link scrollto" href="#item-5-11">Thumbnail Renderer</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-5-11">Texture Browser</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-5-12">Thumbnail Renderer</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-5-13">Clock</a></li>
 				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-6"><span class="theme-icon-holder me-2"><i class="fas fa-lightbulb"></i></span>FAQs</a></li>
 				    <li class="nav-item"><a class="nav-link scrollto" href="#item-6-1">What Is CodeRed</a></li>
 				    <li class="nav-item"><a class="nav-link scrollto" href="#item-6-2">Is It bannable</a></li>
@@ -267,6 +268,14 @@
                         <div class="table-responsive my-4">
                             <table class="table table-bordered">
                                 <tbody>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>imgui_clock_24 &lttrue-false&gt</b></th>
+                                        <td>Use a 24 hour clock for timestamps, instead of a 12 hour AM/PM one.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>imgui_draw_clock &lttrue-false&gt</b></th>
+                                        <td>Automatically open the clock window when first injected.</td>
+                                    </tr>
                                     <tr>
                                         <th class="theme-bg-light"><b>imgui_global_scale &lt0.2-4.0&gt</b></th>
                                         <td>Change the global interface scaling for ImGui.</td>
@@ -1949,6 +1958,7 @@
                         <h2 class="section-heading">GameState Debugger</h2>
                         <h4>Window Name: <code>gamestates</code></h4>
                         <p>The gamestate debugger serves one purpose, debuggin which gamestate you are in. It displays your current playlist, active events, and permissions used by CodeRed.</p>	    
+                        <p>Hold ctrl and double right click the window to change its position.</p>
 
                         <div class="simplelightbox-gallery row mb-3">
                             <div class="col-12 col-md-4 mb-3">
@@ -2019,6 +2029,7 @@
                         <h2 class="section-heading">Playlist Tracker</h2>
                         <h4>Window Name: <code>tracker</code></h4>
                         <p>The tracker window is a little overlay that you can pin to one of the corners of your screen, it displays your current mmr, mmr needed to rank up/down, and win/loss streaks.</p>	    
+                        <p>Hold ctrl and double right click the window to change its position.</p>
 
                         <div class="simplelightbox-gallery row mb-3">
                             <div class="col-12 col-md-4 mb-3">
@@ -2027,7 +2038,7 @@
                         </div>
 					</section>
 
-                    <section class="docs-section" id="item-5-10-5">
+                    <section class="docs-section" id="item-5-11">
                         <h2 class="section-heading">Texture Browser</h2>
                         <h4>Window Name: <code>textures</code></h4>
                         <p>The texture browser lets you preview and export almost any currently loadded texture in the game.</p>	    
@@ -2039,7 +2050,7 @@
                         </div>
 					</section>
 
-                    <section class="docs-section" id="item-5-11">
+                    <section class="docs-section" id="item-5-12">
                         <h2 class="section-heading">Thumbnail Renderer</h2>
                         <h4>Window Name: <code>thumbnails</code></h4>
                         <p>The thumbnail render is an experimental tool used to rendering custom 3D scenes of products, it allows you to customize its paints, camera settings, and even export them to an image file.</p>
@@ -2051,6 +2062,19 @@
                             </div>
                             <div class="col-12 col-md-4 mb-3">
                                 <a href="assets/images/windows/thumbnails-2.png"><img class="figure-img img-fluid shadow rounded" src="assets/images/windows/thumbnails-2.png" alt="" title=""/></a>
+                            </div>
+                        </div>
+					</section>
+
+                    <section class="docs-section" id="item-5-13">
+                        <h2 class="section-heading">Clock</h2>
+                        <h4>Window Name: <code>clock</code></h4>
+                        <p>This window simply draws a clock in the top left corner of your screen. You can change the format from 24 hour to 12 hour with the <code>imgui_clock_24</code> setting.</p>
+                        <p>Hold ctrl and double right click the window to change its position.</p>
+
+                        <div class="simplelightbox-gallery row mb-3">
+                            <div class="col-12 col-md-4 mb-3">
+                                <a href="assets/images/windows/clock-1.png"><img class="figure-img img-fluid shadow rounded" src="assets/images/windows/clock-1.png" alt="" title=""/></a>
                             </div>
                         </div>
 					</section>
