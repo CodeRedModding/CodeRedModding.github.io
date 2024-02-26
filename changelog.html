@@ -53,6 +53,7 @@
 		    <nav id="docs-nav" class="docs-nav navbar">
 			    <ul class="section-items list-unstyled nav flex-column pb-3">
                     <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-3"><span class="theme-icon-holder me-2"><i class="fas fa-book"></i></span>Changelog (Beta)</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-3-0-3">Version 2.0.3</a></li>
                     <li class="nav-item"><a class="nav-link scrollto" href="#item-3-0-2">Version 2.0.2</a></li>
                     <li class="nav-item"><a class="nav-link scrollto" href="#item-3-0-1">Version 2.0.1</a></li>
                     <li class="nav-item"><a class="nav-link scrollto" href="#item-3-0-0">Version 2.0.0</a></li>
@@ -201,6 +202,25 @@
 		    <div class="container">
                 <article class="docs-article" id="section-3">
                     <h1 class="docs-heading">Changelog (Beta)</h1>
+
+                        <section class="docs-section" id="item-3-0-3">
+                            <h2 class="section-heading">Version 2.0.3 (February 26th 2024)</h2>
+                            <h5>- Added the ability to customize your entire loadout in the garage tab, with the exception of your cars body. Please report any bugs to the Discord server.</h5>
+                            <h5>- Note that loadouts do not function the exact same as BakkesMod, check out the #announcements channel in the Discord for more info.</h5>
+                            <h5>- Added a new "headlight color" option that lets you change the glow color of your headlights, this feature only works if bloom is enabled.</h5>
+                            <h5>- Fixed some ImGui windows opening themselves on injection even if you closed them, this was caused by using the X button instead of pressing escape to close the window.</h5>
+                            <h5>- Fixed your mouse cursor sometimes getting stuck on the screen, this was also related to using the X button instead of pressing escape to close windows.</h5>
+                            <h5>- Fixed a random crash that could happen on the loading screen for offline game modes, this was related to internal game states being set too early.</h5>
+                            <h5>- Fixed not detecting if you were in an Exhibition match, resulting in some features not working in that mode.</h5>
+                            <h5>- Fixed custom stadium colors not saving their values if you changed them through the freeplay or online tab.</h5>
+                            <h5>- Fixed custom spawn location settings not applying for a few specific people when first loading into freeplay.</h5>
+                            <h5>- Fixed custom car colors also not applying for a few specific people when first loading into freeplay.</h5>
+                            <h5>- Fixed custom stadium primary and accent colors not applying to cars after they were demolished.</h5>
+                            <h5>- Fixed some special titles not showing up in the dashboard for some people who had multiple titles.</h5>
+                            <h5>- Fixed a crash that could happen if you spammed enabling and disabling custom textures really fast.</h5>
+                            <h5>- Fixed a crash that happened when opening drops from your inventory on the main menu.</h5>
+                            <h5>- Upgraded the internal ImGui framework to version 1.9.4.</h5>
+                        </section>
 
                         <section class="docs-section" id="item-3-0-2">
                             <h2 class="section-heading">Version 2.0.2 (February 6th 2024)</h2>
