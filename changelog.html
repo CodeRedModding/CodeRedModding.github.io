@@ -53,6 +53,7 @@
 		    <nav id="docs-nav" class="docs-nav navbar">
 			    <ul class="section-items list-unstyled nav flex-column pb-3">
                     <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-3"><span class="theme-icon-holder me-2"><i class="fas fa-book"></i></span>Changelog (Beta)</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-3-0-4">Version 2.0.4</a></li>
                     <li class="nav-item"><a class="nav-link scrollto" href="#item-3-0-3">Version 2.0.3</a></li>
                     <li class="nav-item"><a class="nav-link scrollto" href="#item-3-0-2">Version 2.0.2</a></li>
                     <li class="nav-item"><a class="nav-link scrollto" href="#item-3-0-1">Version 2.0.1</a></li>
@@ -203,6 +204,15 @@
 		    <div class="container">
                 <article class="docs-article" id="section-3">
                     <h1 class="docs-heading">Changelog (Beta)</h1>
+
+                        <section class="docs-section" id="item-3-0-4">
+                            <h2 class="section-heading">Version 2.0.4 (March 4th 2024)</h2>
+                            <h5>- Added an internal safety system once injected, previously if you injected too early the game would crash. Now CodeRed waits until the main menu screen appears before continuing.</h5>
+                            <h5>- Added a new "High Contrast (Black Blue Yellow)" style for visually impaired people, inspired by the Windows high contrast theme</h5>
+                            <h5>- Fixed a crash that could happen when restoring your loadout if you enabled and disabled presets on the main menu.</h5>
+                            <h5>- Fixed your camera getting stuck when previewing goal explosions in the main menu, and you clicked into your garage or the playlists menu.- Fixed custom headlight colors not applying if you didn't have any other products equipped, as well as some other specific edge cases.- Fixed your real loadouts trail paint not applying in game, it was being overwritten with the default version.</h5>
+                            <h5>- Fixed a rare thread racing issue that could happen on injection related to async commands.</h5>
+                        </section>
 
                         <section class="docs-section" id="item-3-0-3">
                             <h2 class="section-heading">Version 2.0.3 (February 26th 2024)</h2>
