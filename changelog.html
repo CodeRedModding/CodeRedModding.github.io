@@ -53,6 +53,8 @@
 		    <nav id="docs-nav" class="docs-nav navbar">
 			    <ul class="section-items list-unstyled nav flex-column pb-3">
                     <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-3"><span class="theme-icon-holder me-2"><i class="fas fa-book"></i></span>Changelog (Beta)</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-3-1-8">Version 2.1.8</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-3-1-7">Version 2.1.7</a></li>
                     <li class="nav-item"><a class="nav-link scrollto" href="#item-3-1-6">Version 2.1.6</a></li>
                     <li class="nav-item"><a class="nav-link scrollto" href="#item-3-1-5">Version 2.1.5</a></li>
                     <li class="nav-item"><a class="nav-link scrollto" href="#item-3-1-4">Version 2.1.4</a></li>
@@ -218,6 +220,31 @@
                 <article class="docs-article" id="section-3">
                     <h1 class="docs-heading">Changelog (Beta)</h1>
 
+                        <section class="docs-section" id="item-3-1-8">
+                            <h2 class="section-heading">Version 2.1.8 (May 17th 2024)</h2>
+                            <h5>- Added a new experimental setting <code>scoreboard_steam_avatars</code>, which allows Epic Games users to see Steam players avatars on the scoreboard.</h5>
+                            <h5>- Added two new settings for the obs controls window related to the players current map, its file name and its display name.</h5>
+                            <h5>- Added a new censorship system for changing your player name and custom rich presence info, no more naughty words allowed.</h5>
+                            <h5>- Changed the logic for the function scanners blacklist, the blacklist will now be applied to the whitelisted functions if there is one set.</h5>
+                            <h5>- Fixed a crash that could happen when exiting the game, this was caused by improperly destroying DX11 resources.</h5>
+                            <h5>- Fixed a rare bug that could happen on the Epic Games store related to finding globals, which prevented CodeRed from initializing.</h5>
+                            <h5>- Fixed legacy club colors not applying the right colors in 1v1 matches, Psyonix changed how club colors are formatted for some reason.</h5>
+                            <h5>- Fixed a visual bug that caused your car to "jitter" after reaching supersonic, this was related to clearing car colors in freeplay.</h5>
+                            <h5>- Fixed a bug related to custom stadium colors that could cause performance issues on lower end hardware.</h5>
+                            <h5>- Improvements to ImGui and its "ResizeBuffers" hook relating to fullscreen mode.</h5>
+                            <h5>- Internal optimizations and improvements related to gameplay.</h5>
+                            <h5>- Upgraded the internal ImGui framework to version 1.9.6.</h5>
+                        </section>
+
+                        <section class="docs-section" id="item-3-1-7">
+                            <h2 class="section-heading">Version 2.1.7 (May 10th 2024)</h2>
+                            <h5>- Fixed the "ImGui Demo" window not closing properly when pressing escape or using the X button.</h5>
+                            <h5>- Fixed the "G-Force Frenzy" and "April Fools" limited time events not showing up in the matchmaker window.</h5>
+                            <h5>- Fixed custom platform avatars randomly crashing mid-game, also I enabled these settings again finally.</h5>
+                            <h5>- Fixed a loading screen crash that could happen related to reloading custom textures.</h5>
+                            <h5>- Internal improvements and optimizations.</h5>
+                        </section>
+
                         <section class="docs-section" id="item-3-1-6">
                             <h2 class="section-heading">Version 2.1.6 (May 3rd 2024)</h2>
                             <h5>- Fixed a crash that could happen after goal replays in online games.</h5>
@@ -231,10 +258,10 @@
 
                         <section class="docs-section" id="item-3-1-4">
                             <h2 class="section-heading">Version 2.1.4 (May 1st 2024)</h2>
-                            <h5>- Added a new command "freeplay_spawn_ball" which lets you spawn multiple balls in freeplay.</h5>
+                            <h5>- Added a new command <code>freeplay_spawn_ball</code> which lets you spawn multiple balls in freeplay.</h5>
                             <h5>- Added a few more additional checks for the invisible car exploit, as it would appear Psyonix still hasn't fully fixed it. If you encounter someone invisible remember to save the reply!</h5>
                             <h5>- Fixed an audio bug when tabbing back into the game if you had the "mute on unfocused" setting on, the game would think you were still unfocused if an ImGui window was open.</h5>
-                            <h5>- Fixed the "stadium_disable_filters" not detecting you were in the correct map, for example removing the cartoony lighting for the "Fire & Ice" map wasn't working.</h5>
+                            <h5>- Fixed the <code>stadium_disable_filters</code> setting not detecting you were in the correct map, for example removing the cartoony lighting for the "Fire & Ice" map wasn't working.</h5>
                             <h5>- Fixed CodeRed thinking you were in freeplay while playing in workshop maps, I still made the "use default colors" freeplay setting still work however.</h5>
                             <h5>- Fixed a crash that could happen when spamming the open scoreboard button right after joining an online game.</h5>
                             <h5>- Stability improvements and optimizations with custom textures.</h5>
