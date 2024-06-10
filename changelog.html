@@ -53,6 +53,7 @@
 		    <nav id="docs-nav" class="docs-nav navbar">
 			    <ul class="section-items list-unstyled nav flex-column pb-3">
                     <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-3"><span class="theme-icon-holder me-2"><i class="fas fa-book"></i></span>Changelog (Beta)</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-3-2-1">Version 2.2.1</a></li>
                     <li class="nav-item"><a class="nav-link scrollto" href="#item-3-2-0">Version 2.2.0</a></li>
                     <li class="nav-item"><a class="nav-link scrollto" href="#item-3-1-9">Version 2.1.9</a></li>
                     <li class="nav-item"><a class="nav-link scrollto" href="#item-3-1-8">Version 2.1.8</a></li>
@@ -221,6 +222,15 @@
 		    <div class="container">
                 <article class="docs-article" id="section-3">
                     <h1 class="docs-heading">Changelog (Beta)</h1>
+
+                        <section class="docs-section" id="item-3-2-1">
+                            <h2 class="section-heading">Version 2.2.1 (June 10th 2024)</h2>
+                            <h5>- Added a new setting <code>presence_discord_party</code> which enables showing that you're in a party for Discord rich presence.</h5>
+                            <h5>- Fixed a crash that could happen with Discord rich presence if you didn't have Discord open in the background.</h5>
+                            <h5>- Improved various elements to Discord rich presence text and timers.</h5>
+                            <h5>- Improvements to the custom platform avatar system.</h5>
+                            <h5>- Upgraded the internal ImGui framework to version 1.9.8.</h5>
+                        </section>
 
                         <section class="docs-section" id="item-3-2-0">
                             <h2 class="section-heading">Version 2.2.0 (June 4th 2024)</h2>
@@ -500,7 +510,7 @@
                             <h2 class="section-heading">Version 1.9.4 (December 8th 2023)</h2>
                             <h5>- Remade all the custom example playlist textures to match the games new UI.</h5>
                             <h5>- Remade the matchmaker window to be fully dynamic, you can now search limited time events and rotating competitive playlists that match the games new UI.</h5>
-                            <h5>- You can now change where notifications appear with the `imgui_notification_corner` setting. 1 is top right, 2 is top left, 3 is bottom left, and 4 is bottom right.</h5>
+                            <h5>- You can now change where notifications appear with the <code>imgui_notification_corner</code> setting. 1 is top right, 2 is top left, 3 is bottom left, and 4 is bottom right.</h5>
                             <h5>- The gamestate debugger can now be repositioned just like the session tracker, hold ctrl and double right click on the window for options.</h5>
                             <h5>- Fixed garage profiles sometimes not applying fully when first loading into freeplay or custom training packs.</h5>
                             <h5>- Fixed the population stats setting not displaying the correct numbers, it was adding the wrong playlists together that you had selected.</h5>
