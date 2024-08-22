@@ -53,6 +53,7 @@
 		    <nav id="docs-nav" class="docs-nav navbar">
 			    <ul class="section-items list-unstyled nav flex-column pb-3">
                     <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-3"><span class="theme-icon-holder me-2"><i class="fas fa-book"></i></span>Changelog (Beta)</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-3-2-8">Version 2.2.8</a></li>
                     <li class="nav-item"><a class="nav-link scrollto" href="#item-3-2-7">Version 2.2.7</a></li>
                     <li class="nav-item"><a class="nav-link scrollto" href="#item-3-2-6">Version 2.2.6</a></li>
                     <li class="nav-item"><a class="nav-link scrollto" href="#item-3-2-5">Version 2.2.5</a></li>
@@ -228,6 +229,21 @@
 		    <div class="container">
                 <article class="docs-article" id="section-3">
                     <h1 class="docs-heading">Changelog (Beta)</h1>
+
+                        <section class="docs-section" id="item-3-2-8">
+                            <h2 class="section-heading">Version 2.2.8 (August 21st 2024)</h2>
+                            <h5>- Added a new debugging command <code>print_hitbox</code> which will print your cars current hitbox dimensions and offsets to the terminal.</h5>
+                            <h5>- Added a new debugging command <code>print_login_url</code> which will print your players current login url to the terminal.</h5>
+                            <h5>- Improved the <code>garage_hide_loadouts</code> setting to also replace car bodies with all default ones according to their hitbox.</h5>
+                            <h5>- Custom freeplay stadium colors will now be applied during casual intermission matches.</h5>
+                            <h5>- Fixed a crash that could happen when previewing certain product slots on the main menu through CodeRed.</h5>
+                            <h5>- Fixed your CodeRed loadouts not applying in lobby intermissions in casual matches (car colors still don't apply).</h5>
+                            <h5>- Fixed some scenarios where your CodeRed profile was not being applied after you receieved an item drop at the end of a match.</h5>
+                            <h5>- Fixed Discord rich presence not updating your status if you went into a lobby intermission match after a casual game ended.</h5>
+                            <h5>- Fixed the "time remaining" field for Discord rich presence not being very accurate in online games, as well as not displaying if you won or lost a match.</h5>
+                            <h5>- Fixed the <code>garage_remove_elon</code> setting not replacing the Cybertruck body on cars if you also had the <code>garage_hide_loadouts</code> setting enabled.</h5>
+                            <h5>- Internal optimizations and backend improvements.</h5>
+                        </section>
 
                         <section class="docs-section" id="item-3-2-7">
                             <h2 class="section-heading">Version 2.2.7 (August 9th 2024)</h2>
@@ -938,7 +954,7 @@
                         <section class="docs-section" id="item-2-6-0">
                             <h2 class="section-heading">Version 1.6.0 (June 7th 2023)</h2>
                             <h5>- Changed the description of the injection notification to say what the hotkey is to open the dashboard.</h5>
-                            <h5>- Fixed some issues with the thumbnail auto renderer, also added extra console logging for product ids that failed to export.</h5>
+                            <h5>- Fixed some issues with the thumbnail auto renderer, also added extra terminal logging for product ids that failed to export.</h5>
                             <h5>- Fixed a crash that happened when you tried to use the ball hotkeys if you had them disabled with the <code>freeplay_disable_hotkeys</code> setting.</h5>
                             <h5>- Fixed the fps overlay not working as of last update.</h5>
                             <h5>- Updated internal SDK to the latest version of Rocket League.</h5>
@@ -986,7 +1002,7 @@
                             <h5>- Added proper UTF16 to UTF8 encoding for the database dumper when using the "[UTF8]" parameter</h5>
                             <h5>- Fixed a crash that happened when using the chat commands if you had chat disabled in your settings.</h5>
                             <h5>- Fixed playlist populations sometimes showing zero players online when searching.</h5>
-                            <h5>- Fixed some playlist titles showing as "Unknown" in the console when first injecting.</h5>
+                            <h5>- Fixed some playlist titles showing as "Unknown" in the terminal when first injecting.</h5>
                             <h5>- Fixed some inconsistencies with player titles.</h5>
                             <h5>- Internal optimizations and improvements.</h5>
                         </section>
@@ -994,12 +1010,12 @@
                         <section class="docs-section" id="item-2-5-5">
                             <h2 class="section-heading">Version 1.5.5 (May 10th 2023)</h2>
                             <h5>- Added a full colored emoji font, you'll notice some UI elements now use this feature.</h5>
-                            <h5>- Added the command <code>imgui_emoji_debug</code> which prints emojis to the console, this is to test glpyh ranges in the current font.</h5>
+                            <h5>- Added the command <code>imgui_emoji_debug</code> which prints emojis to the terminal, this is to test glpyh ranges in the current font.</h5>
                             <h5>- Switched the font rendering engine to use FreeType in ImGui, so text should be rendered much clearer and scale better.</h5>
                             <h5>- Fixed the <code>interface_auto_claim</code> setting not finding challenges to claim at the end of matches.</h5>
                             <h5>- Fixed a crash that happened when creating or editing custom training packs.</h5>
                             <h5>- Fixed the trade scam checker not working properly as a result of the last update.</h5>
-                            <h5>- Fixed the console being spammed with window messages from WndProc, this was only suppose to happen in debug mode.</h5>
+                            <h5>- Fixed the terminal being spammed with window messages from WndProc, this was only suppose to happen in debug mode.</h5>
                         </section>
 
                         <section class="docs-section" id="item-2-5-4">
@@ -1047,7 +1063,7 @@
                             <h2 class="section-heading">Version 1.5.0 (April 17th 2023)</h2>
                             <h5>- Added a "Supporters" section under the about tab in the dashboard for people who donate (literally just one person).</h5>
                             <h5>- Fixed a certain crash related to avatars that happened at the end of goal replays.</h5>
-                            <h5>- Fixed trying to set custom blog info while playing the game offline, resulting the console being spammed with errors.</h5>
+                            <h5>- Fixed trying to set custom blog info while playing the game offline, resulting the terminal being spammed with errors.</h5>
                             <h5>- The "Reset stadium colors" button on the dashboard for freeplay/online now also resets your hud colors to default.</h5>
                             <h5>- Changed how applying custom car and stadium colors works for performance reasons, there is slight delay when scrubbing through the color picker in ImGui similar to changing colors with banners.</h5>
                             <h5>- Safety improvements with settings and their supported values.</h5>
@@ -1508,7 +1524,7 @@
                         <section class="docs-section" id="item-2-0-6">
                             <h2 class="section-heading">Version 1.0.6 (December 23rd 2022)</h2>
                             <h5>- Added a new version notification, when in-game and a new version of CodeRed is detected a notification will popup in the top left.</h5>
-                            <h5>- Fixed a bug with renaming garage presets saying failed to delete in the console.</h5>
+                            <h5>- Fixed a bug with renaming garage presets saying failed to delete in the terminal.</h5>
                             <h5>- Fixed the bindings window saying no actions selected when switching back and forth different types.</h5>
                             <h5>- Fixed notifications not properly scaling on 4k displays (related to the <code>imgui_global_scale</code> setting).</h5>
                             <h5>- Fixed ImGui trying to load in the same font multiple times.</h5>
