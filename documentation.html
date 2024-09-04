@@ -91,6 +91,7 @@
                     <li class="nav-item"><a class="nav-link scrollto" href="#item-5-12">Thumbnail Renderer</a></li>
                     <li class="nav-item"><a class="nav-link scrollto" href="#item-5-13">Clock</a></li>
                     <li class="nav-item"><a class="nav-link scrollto" href="#item-5-14">OBS Controls</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-5-15">ActorState Debugger</a></li>
 				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-6"><span class="theme-icon-holder me-2"><i class="fas fa-lightbulb"></i></span>FAQs</a></li>
 				    <li class="nav-item"><a class="nav-link scrollto" href="#item-6-1">What Is CodeRed</a></li>
 				    <li class="nav-item"><a class="nav-link scrollto" href="#item-6-2">Is It Bannable</a></li>
@@ -270,12 +271,32 @@
                                         <td>Automatically open the clock window when first injected.</td>
                                     </tr>
                                     <tr>
-                                        <th class="theme-bg-light"><b>imgui_global_scale &lt0.2-4.0&gt</b></th>
-                                        <td>Change the global interface scaling for ImGui.</td>
+                                        <th class="theme-bg-light"><b>imgui_clock_corner &lt1-4&gt</b></th>
+                                        <td>The corner position for the clock window to render in.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>imgui_gamestate_corner &lt1-4&gt</b></th>
+                                        <td>The corner position for the gamestate window to render in.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>imgui_actorstate_corner &lt1-4&gt</b></th>
+                                        <td>The corner position for the actorstate window to render in.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>imgui_tracker_corner &lt1-4&gt</b></th>
+                                        <td>The corner position for the session tracker window to render in.</td>
                                     </tr>
                                     <tr>
                                         <th class="theme-bg-light"><b>imgui_notification_corner &lt1-4&gt</b></th>
                                         <td>The corner where ImGui popup notifications appear in.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>imgui_notification_delay &lt1-2560&gt</b></th>
+                                        <td>The delay the fade out animation uses after displaying notifications.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>imgui_global_scale &lt0.2-4.0&gt</b></th>
+                                        <td>Change the global interface scaling for ImGui.</td>
                                     </tr>
                                     <tr>
                                         <th class="theme-bg-light"><b>imgui_selected_style &ltarguments&gt</b></th>
@@ -288,10 +309,6 @@
                                     <tr>
                                         <th class="theme-bg-light"><b>imgui_terminal_scroll &lttrue-false&gt</b></th>
                                         <td>Auto scroll to the most recently added text in the terminal.</td>
-                                    </tr>
-                                    <tr>
-                                        <th class="theme-bg-light"><b>imgui_notification_delay &lt1-2560&gt</b></th>
-                                        <td>The delay the fade out animation uses after displaying notifications.</td>
                                     </tr>
                                     <tr>
                                         <th class="theme-bg-light"><b>function_scanner_duplicates &lttrue-false&gt</b></th>
@@ -2236,6 +2253,19 @@
                         <div class="simplelightbox-gallery row mb-3">
                             <div class="col-12 col-md-4 mb-3">
                                 <a href="assets/images/windows/obs-1.png"><img class="figure-img img-fluid shadow rounded" src="assets/images/windows/obs-1.png" alt="" title=""/></a>
+                            </div>
+                        </div>
+					</section>
+
+                    <section class="docs-section" id="item-5-15">
+                        <h2 class="section-heading">ActorState Debugger</h2>
+                        <h4>Window Name: <code>actorstates</code></h4>
+                        <p>The actorstate debugger lets you view real time info about your car and the ball, as well as your cars inputs.</p>
+                        <p>Hold ctrl and double right click the window to change its position.</p>
+
+                        <div class="simplelightbox-gallery row mb-3">
+                            <div class="col-12 col-md-4 mb-3">
+                                <a href="assets/images/windows/actorstates-1.png"><img class="figure-img img-fluid shadow rounded" src="assets/images/windows/actorstates-1.png" alt="" title=""/></a>
                             </div>
                         </div>
 					</section>
