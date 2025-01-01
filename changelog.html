@@ -53,6 +53,7 @@
 		    <nav id="docs-nav" class="docs-nav navbar">
 			    <ul class="section-items list-unstyled nav flex-column pb-3">
                     <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-3"><span class="theme-icon-holder me-2"><i class="fas fa-book"></i></span>Module Changelog</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-3-4-6">Version 2.4.6</a></li>
                     <li class="nav-item"><a class="nav-link scrollto" href="#item-3-4-5">Version 2.4.5</a></li>
                     <li class="nav-item"><a class="nav-link scrollto" href="#item-3-4-4">Version 2.4.4</a></li>
                     <li class="nav-item"><a class="nav-link scrollto" href="#item-3-4-3">Version 2.4.3</a></li>
@@ -253,6 +254,18 @@
 		    <div class="container">
                 <article class="docs-article" id="section-3">
                     <h1 class="docs-heading">Changelog</h1>
+
+                        <section class="docs-section" id="item-3-4-6">
+                            <h2 class="section-heading">Version 2.4.6 (January 1st 2025)</h2>
+                            <h5>- Added a new "Unreal Reflector" window for developers, this tool lets you view game objects and their properties in real time.</h5>
+                            <h5>- Added a new database dump arguments for offline products, <code>product_attribute_names</code>, which prints its attribute names if any are found.</h5>
+                            <h5>- Added over 20 new product attribute arguments for the database dumper, check the wiki for a full list of arguments and examples.</h5>
+                            <h5>- Renamed the database argument <code>online_attribute_string</code> to <code>online_attribute_names</code> for consistency reasons</h5>
+                            <h5>- Fixed the database dumper not escaping some specific special characters, turns out Psyonix likes to add random escape characters to strings for no reason.</h5>
+                            <h5>- Fixed the <code>garage_remove_elon</code> setting causing your car to have the "mystery cloth" stuck on it after revealing drops.</h5>
+                            <h5>- Fixed the connections window not displaying account ids as of the last Rocket League update.</h5>
+                            <h5>- Internal bug fixes and lots of code refactoring.</h5>
+                        </section>
 
                         <section class="docs-section" id="item-3-4-5">
                             <h2 class="section-heading">Version 2.4.5 (December 16th 2024)</h2>
@@ -1169,7 +1182,7 @@
                         <section class="docs-section" id="item-2-5-5">
                             <h2 class="section-heading">Version 1.5.5 (May 15th 2023)</h2>
                             <h5>- Slightly adjusted some of the default styles, including the custom terminal themes to be more easily readable.</h5>
-                            <h5>- Added proper UTF16 to UTF8 encoding for the database dumper when using the "[UTF8]" parameter</h5>
+                            <h5>- Added proper UTF16 to UTF8 encoding for the database dumper when using the "[UTF8]" argument</h5>
                             <h5>- Fixed a crash that happened when using the chat commands if you had chat disabled in your settings.</h5>
                             <h5>- Fixed playlist populations sometimes showing zero players online when searching.</h5>
                             <h5>- Fixed some playlist titles showing as "Unknown" in the terminal when first injecting.</h5>

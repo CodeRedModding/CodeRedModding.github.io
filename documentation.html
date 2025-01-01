@@ -84,14 +84,15 @@
                     <li class="nav-item"><a class="nav-link scrollto" href="#item-5-5">GameState Debugger</a></li>
                     <li class="nav-item"><a class="nav-link scrollto" href="#item-5-6">Matchmaker</a></li>
                     <li class="nav-item"><a class="nav-link scrollto" href="#item-5-7">Function Scanner</a></li>
-                    <li class="nav-item"><a class="nav-link scrollto" href="#item-5-8">Style Editor</a></li>
-                    <li class="nav-item"><a class="nav-link scrollto" href="#item-5-9">Terminal</a></li>
-                    <li class="nav-item"><a class="nav-link scrollto" href="#item-5-10">Playlist Tracker</a></li>
-                    <li class="nav-item"><a class="nav-link scrollto" href="#item-5-11">Texture Browser</a></li>
-                    <li class="nav-item"><a class="nav-link scrollto" href="#item-5-12">Thumbnail Renderer</a></li>
-                    <li class="nav-item"><a class="nav-link scrollto" href="#item-5-13">Clock</a></li>
-                    <li class="nav-item"><a class="nav-link scrollto" href="#item-5-14">OBS Controls</a></li>
-                    <li class="nav-item"><a class="nav-link scrollto" href="#item-5-15">ActorState Debugger</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-5-8">Reflection System</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-5-9">Style Editor</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-5-10">Terminal</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-5-11">Playlist Tracker</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-5-12">Texture Browser</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-5-13">Thumbnail Renderer</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-5-14">Clock</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-5-15">OBS Controls</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-5-16">ActorState Debugger</a></li>
 				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-6"><span class="theme-icon-holder me-2"><i class="fas fa-lightbulb"></i></span>FAQs</a></li>
 				    <li class="nav-item"><a class="nav-link scrollto" href="#item-6-1">What Is CodeRed</a></li>
 				    <li class="nav-item"><a class="nav-link scrollto" href="#item-6-2">Is It Bannable</a></li>
@@ -2112,7 +2113,7 @@
                     <section class="docs-section" id="item-5-4">
                         <h2 class="section-heading">Post Process Editor</h2>
                         <h4>Window Name: <code>effects</code></h4>
-                        <p>The post process editor is a powerful tool used for creating real-time visual effects. It has a wide range of features such as blurring, coloring, or lighting overrides, and works in all game modes as well as in replay files. You'll have to play around with the settings on your own and see what you come up with, there are two examples by default that I created; one is a simple black and white filter and the other one is a green night vision thing.</p>	    
+                        <p>The post process editor is a tool that lets you create real-time visual effects; it has a wide range of features such as blurring, coloring, or lighting overrides, and works in all game modes as well as in replay files. You'll have to play around with the settings on your own and see what you come up with, there are two examples by default that I created; one is a simple black and white filter and the other one is a green night vision thing.</p>	    
 
                         <div class="simplelightbox-gallery row mb-3">
                             <div class="col-12 col-md-4 mb-3">
@@ -2171,6 +2172,21 @@
 					</section>
 
                     <section class="docs-section" id="item-5-8">
+                        <h2 class="section-heading">Reflection System</h2>
+                        <h4>Window Name: <code>reflector</code></h4>
+                        <p>The reflector is a powerful tool that lets you search for object instances and view their property values in real time, it lets you see how the games internal reflection system works related to properties and classes. To prevent abuse, this tool is view only and you cannot modify their values or see what addresses the properties are at.</p>	    
+
+                        <div class="simplelightbox-gallery row mb-3">
+                            <div class="col-12 col-md-4 mb-3">
+                                <a href="assets/images/windows/reflector-1.png"><img class="figure-img img-fluid shadow rounded" src="assets/images/windows/reflector-1.png" alt="" title=""/></a>
+                            </div>
+                            <div class="col-12 col-md-4 mb-3">
+                                <a href="assets/images/windows/reflector-2.png"><img class="figure-img img-fluid shadow rounded" src="assets/images/windows/reflector-2.png" alt="" title=""/></a>
+                            </div>
+                        </div>
+					</section>
+
+                    <section class="docs-section" id="item-5-9">
                         <h2 class="section-heading">Style Editor</h2>
                         <h4>Window Name: <code>styles</code></h4>
                         <p>The style editor allows you to fully customize CodeRed's UI, you can change everything from widget rounding, spacing, and custom colors.</p>	    
@@ -2188,7 +2204,7 @@
                         </div>
 					</section>
 
-                    <section class="docs-section" id="item-5-9">
+                    <section class="docs-section" id="item-5-10">
                         <h2 class="section-heading">Terminal</h2>
                         <h4>Window Name: <code>terminal</code></h4>
                         <h4>Default Keybind: <code>F5</code></h4>
@@ -2201,7 +2217,7 @@
                         </div>
 					</section>
 
-                    <section class="docs-section" id="item-5-10">
+                    <section class="docs-section" id="item-5-11">
                         <h2 class="section-heading">Playlist Tracker</h2>
                         <h4>Window Name: <code>tracker</code></h4>
                         <p>The tracker window is a little overlay that you can pin to one of the corners of your screen, it displays your current mmr, mmr needed to rank up/down, and win/loss streaks.</p>	    
@@ -2214,7 +2230,7 @@
                         </div>
 					</section>
 
-                    <section class="docs-section" id="item-5-11">
+                    <section class="docs-section" id="item-5-12">
                         <h2 class="section-heading">Texture Browser</h2>
                         <h4>Window Name: <code>textures</code></h4>
                         <p>The texture browser lets you preview and export almost any currently loadded texture in the game.</p>	    
@@ -2226,7 +2242,7 @@
                         </div>
 					</section>
 
-                    <section class="docs-section" id="item-5-12">
+                    <section class="docs-section" id="item-5-13">
                         <h2 class="section-heading">Thumbnail Renderer</h2>
                         <h4>Window Name: <code>thumbnails</code></h4>
                         <p>The thumbnail render is an experimental tool used to rendering custom 3D scenes of products, it allows you to customize its paints, camera settings, and even export them to an image file.</p>
@@ -2242,7 +2258,7 @@
                         </div>
 					</section>
 
-                    <section class="docs-section" id="item-5-13">
+                    <section class="docs-section" id="item-5-14">
                         <h2 class="section-heading">Clock</h2>
                         <h4>Window Name: <code>clock</code></h4>
                         <p>This window simply draws a clock in the top left corner of your screen. You can change the format from 24 hour to 12 hour with the <code>imgui_clock_24</code> setting.</p>
@@ -2255,7 +2271,7 @@
                         </div>
 					</section>
 
-                    <section class="docs-section" id="item-5-14">
+                    <section class="docs-section" id="item-5-15">
                         <h2 class="section-heading">OBS Controls</h2>
                         <h4>Window Name: <code>obs</code></h4>
                         <p>The OBS window allows for OBS's integration via its text source "read from file" option, you can toggle off an on any specific value listed and it will update in real time.</p>
@@ -2267,7 +2283,7 @@
                         </div>
 					</section>
 
-                    <section class="docs-section" id="item-5-15">
+                    <section class="docs-section" id="item-5-16">
                         <h2 class="section-heading">ActorState Debugger</h2>
                         <h4>Window Name: <code>actorstates</code></h4>
                         <p>The actorstate debugger lets you view real time info about your car and the ball, as well as your cars inputs.</p>
