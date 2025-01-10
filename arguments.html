@@ -55,17 +55,21 @@
                     <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-1"><span class="theme-icon-holder me-2"><i class="fas fa-folder-open"></i></span>Exporting</a></li>
 				    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-1">Export Options</a></li>
 				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-2"><span class="theme-icon-holder me-2"><i class="fas fa-copy"></i></span>Arguments</a></li>
-				    <li class="nav-item"><a class="nav-link scrollto" href="#item-2-1">Product Slots</a></li>
-				    <li class="nav-item"><a class="nav-link scrollto" href="#item-2-2">Offline Products</a></li>
-                    <li class="nav-item"><a class="nav-link scrollto" href="#item-2-3">Online/Inventory Products</a></li>
-                    <li class="nav-item"><a class="nav-link scrollto" href="#item-2-4">Product Attributes</a></li>
-                    <li class="nav-item"><a class="nav-link scrollto" href="#item-2-5">Internal Database</a></li>
-                    <li class="nav-item"><a class="nav-link scrollto" href="#item-2-6">Matchmaking Playlists</a></li>
-                    <li class="nav-item"><a class="nav-link scrollto" href="#item-2-7">Stadium Maps</a></li>
-                    <li class="nav-item"><a class="nav-link scrollto" href="#item-2-8">Esports Events</a></li>
-                    <li class="nav-item"><a class="nav-link scrollto" href="#item-2-9">Player Populations</a></li>
-                    <li class="nav-item"><a class="nav-link scrollto" href="#item-2-10">Auto Tournaments</a></li>
-                    <li class="nav-item"><a class="nav-link scrollto" href="#item-2-11">Game Modes</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-2-0-1">Product Slots</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-2-0-2">Offline Products</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-2-0-3">Inventory Products</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-2-0-4">Product Attributes</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-2-0-5">Paint Database</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-2-0-6">Certified Database</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-2-0-7">Title Database</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-2-0-8">Special Edition Database</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-2-0-9">Team Edition Database</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-2-1-0">Matchmaking Playlists</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-2-1-1">Stadium Maps</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-2-1-2">Esports Events</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-2-1-3">Player Populations</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-2-1-4">Auto Tournaments</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-2-1-5">Game Modes</a></li>
 			    </ul>
 		    </nav>
 	    </div>
@@ -103,9 +107,11 @@
 			    <article class="docs-article" id="section-2">
 				    <header class="docs-header">
 					    <h1 class="docs-heading">Arguments</h1>
+                        <h5>This is a full list of every possible argument for each dump command and an example of what value they might produce.</h5>
 				    </header>
-				     <section class="docs-section" id="item-2-1">
+				     <section class="docs-section" id="item-2-0-1">
                         <h2 class="section-heading">Product Slots</h2>
+                        <h4>Command Name: <code>database_dump_slots</code></h4>
                         <table class="table table-bordered">
                             <tbody>
                                 <tr>
@@ -113,7 +119,7 @@
                                     <td>Body</td>
                                 </tr>
                                 <tr>
-                                    <th class="theme-bg-light"><b>slot_plural_Label</b></th>
+                                    <th class="theme-bg-light"><b>slot_plural_label</b></th>
                                     <td>Bodies</td>
                                 </tr>
                                 <tr>
@@ -163,9 +169,11 @@
                             </tbody>
                         </table>
 					</section>
-                    <section class="docs-section" id="item-2-2">
+                    <section class="docs-section" id="item-2-0-2">
                         <table class="table table-bordered">
                             <h2 class="section-heading">Offline Products</h2>
+                            <h4>Command Name: <code>database_dump_products,</code></h4>
+                            <h5>All arguments product slot and product attribute arguments can be used with this command as well!</h5>
                             <tbody>
                                 <tr>
                                     <th class="theme-bg-light"><b>product_id</b></th>
@@ -318,9 +326,11 @@
                             </tbody>
                         </table>
 					</section>
-                    <section class="docs-section" id="item-2-3">
+                    <section class="docs-section" id="item-2-0-3">
                         <table class="table table-bordered">
-                            <h2 class="section-heading">Online/Inventory Products</h2>
+                            <h2 class="section-heading">Inventory Products</h2>
+                            <h4>Command Name: <code>database_dump_inventory</code></h4>
+                            <h5>All arguments product slot and product attribute arguments can be used with this command as well!</h5>
                             <tbody>
                                 <tr>
                                     <th class="theme-bg-light"><b>online_instance_id</b></th>
@@ -381,9 +391,10 @@
                             </tbody>
                         </table>
 					</section>
-                    <section class="docs-section" id="item-2-4">
+                    <section class="docs-section" id="item-2-0-4">
                         <table class="table table-bordered">
                             <h2 class="section-heading">Product Attributes</h2>
+                            <h4>Command Name: <code>database_dump_products, database_dump_inventory</code></h4>
                             <tbody>
                                 <tr>
                                     <th class="theme-bg-light"><b>attribute_painted_id</b></th>
@@ -549,12 +560,77 @@
                                     <th class="theme-bg-light"><b>attribute_team_override_label</b></th>
                                     <td>Blue</td>
                                 </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>attribute_team_override_asset</b></th>
+                                    <td>None</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>attribute_team_parameter_override_id</b></th>
+                                    <td>0</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>attribute_team_parameter_override_label</b></th>
+                                    <td>Blue</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>attribute_trademark_glyph_id</b></th>
+                                    <td>1</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>attribute_trademark_glyph_label</b></th>
+                                    <td>Registered</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>attribute_tiered_index</b></th>
+                                    <td>3</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>attribute_unlock_method_id</b></th>
+                                    <td>0</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>attribute_unlock_method_label</b></th>
+                                    <td>Default</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>attribute_product_link_id</b></th>
+                                    <td>0</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>attribute_level_value</b></th>
+                                    <td>0</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>attribute_product_slot_id</b></th>
+                                    <td>2</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>attribute_product_slot_label</b></th>
+                                    <td>Boost</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>attribute_expiration_time</b></th>
+                                    <td>1735788526</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>attribute_rental_length</b></th>
+                                    <td>0</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>attribute_indestructible_bool</b></th>
+                                    <td>false</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>attribute_colorable_default_color</b></th>
+                                    <td>#0000EB</td>
+                                </tr>
                             </tbody>
                         </table>
 					</section>
-                    <section class="docs-section" id="item-2-5">
+                    <section class="docs-section" id="item-2-0-5">
                         <table class="table table-bordered">
-                            <h2 class="section-heading">Internal Database</h2>
+                            <h2 class="section-heading">Paint Database</h2>
+                            <h4>Command Name: <code>database_dump_paints</code></h4>
                             <tbody>
                                 <tr>
                                     <th class="theme-bg-light"><b>database_paint_id</b></th>
@@ -580,6 +656,14 @@
                                     <th class="theme-bg-light"><b>database_paint_finish_label</b></th>
                                     <td>Standard</td>
                                 </tr>
+                            </tbody>
+                        </table>
+					</section>
+                    <section class="docs-section" id="item-2-0-6">
+                        <table class="table table-bordered">
+                            <h2 class="section-heading">Certified Database</h2>
+                            <h4>Command Name: <code>database_dump_certifications</code></h4>
+                            <tbody>
                                 <tr>
                                     <th class="theme-bg-light"><b>database_certified_id</b></th>
                                     <td>1</td>
@@ -596,18 +680,14 @@
                                     <th class="theme-bg-light"><b>database_certified_description</b></th>
                                     <td>When equipped in an online match, this item keeps track of how many aerial goals you score.</td>
                                 </tr>
-                                <tr>
-                                    <th class="theme-bg-light"><b>database_special_id</b></th>
-                                    <td>1</td>
-                                </tr>
-                                <tr>
-                                    <th class="theme-bg-light"><b>database_special_name</b></th>
-                                    <td>Edition_Holographic</td>
-                                </tr>
-                                <tr>
-                                    <th class="theme-bg-light"><b>database_special_label</b></th>
-                                    <td>Holographic</td>
-                                </tr>
+                            </tbody>
+                        </table>
+					</section>
+                    <section class="docs-section" id="item-2-0-7">
+                        <table class="table table-bordered">
+                            <h2 class="section-heading">Title Database</h2>
+                            <h4>Command Name: <code>database_dump_titles</code></h4>
+                            <tbody>
                                 <tr>
                                     <th class="theme-bg-light"><b>database_title_id</b></th>
                                     <td>S15_SuperSonic_Legend</td>
@@ -628,6 +708,34 @@
                                     <th class="theme-bg-light"><b>database_title_glowcolor</b></th>
                                     <td>#E8E8E8</td>
                                 </tr>
+                            </tbody>
+                        </table>
+					</section>
+                    <section class="docs-section" id="item-2-0-8">
+                        <table class="table table-bordered">
+                            <h2 class="section-heading">Special Edition Database</h2>
+                            <h4>Command Name: <code>database_dump_specialeditions</code></h4>
+                            <tbody>
+                                <tr>
+                                    <th class="theme-bg-light"><b>database_special_id</b></th>
+                                    <td>1</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>database_special_name</b></th>
+                                    <td>Edition_Holographic</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>database_special_label</b></th>
+                                    <td>Holographic</td>
+                                </tr>
+                            </tbody>
+                        </table>
+					</section>
+                    <section class="docs-section" id="item-2-0-9">
+                        <table class="table table-bordered">
+                            <h2 class="section-heading">Team Eidtion Database</h2>
+                            <h4>Command Name: <code>database_dump_teameditions</code></h4>
+                            <tbody>
                                 <tr>
                                     <th class="theme-bg-light"><b>database_team_id</b></th>
                                     <td>26</td>
@@ -640,20 +748,13 @@
                                     <th class="theme-bg-light"><b>database_team_label</b></th>
                                     <td>NRG Esports</td>
                                 </tr>
-                                <tr>
-                                    <th class="theme-bg-light"><b>database_series_id</b></th>
-                                    <td>8</td>
-                                </tr>
-                                <tr>
-                                    <th class="theme-bg-light"><b>database_series_label</b></th>
-                                    <td>Player's Choice</td>
-                                </tr>
                             </tbody>
                         </table>
 					</section>
-                    <section class="docs-section" id="item-2-6">
+                    <section class="docs-section" id="item-2-1-0">
                         <table class="table table-bordered">
                             <h2 class="section-heading">Matchmaking Playlists</h2>
+                            <h4>Command Name: <code>database_dump_playlists</code></h4>
                             <tbody>
                                 <tr>
                                     <th class="theme-bg-light"><b>playlist_id</b></th>
@@ -814,9 +915,10 @@
                             </tbody>
                         </table>
 					</section>
-                    <section class="docs-section" id="item-2-7">
+                    <section class="docs-section" id="item-2-1-1">
                         <table class="table table-bordered">
                             <h2 class="section-heading">Stadium Maps</h2>
+                            <h4>Command Name: <code>database_dump_maps</code></h4>
                             <tbody>
                                 <tr>
                                     <th class="theme-bg-light"><b>map_weather_variant_id</b></th>
@@ -845,9 +947,10 @@
                             </tbody>
                         </table>
 					</section>
-                    <section class="docs-section" id="item-2-8">
+                    <section class="docs-section" id="item-2-1-2">
                         <table class="table table-bordered">
                             <h2 class="section-heading">Esports Events</h2>
+                            <h4>Command Name: <code>database_dump_esports</code></h4>
                             <tbody>
                                 <tr>
                                     <th class="theme-bg-light"><b>esports_image</b></th>
@@ -884,9 +987,10 @@
                             </tbody>
                         </table>
 					</section>
-                    <section class="docs-section" id="item-2-9">
+                    <section class="docs-section" id="item-2-1-3">
                         <table class="table table-bordered">
                             <h2 class="section-heading">Player Populations</h2>
+                            <h4>Command Name: <code>database_dump_population</code></h4>
                             <tbody>
                                 <tr>
                                     <th class="theme-bg-light"><b>population_total_players</b></th>
@@ -903,9 +1007,10 @@
                             </tbody>
                         </table>
 					</section>
-                    <section class="docs-section" id="item-2-10">
+                    <section class="docs-section" id="item-2-1-4">
                         <table class="table table-bordered">
                             <h2 class="section-heading">Auto Tournaments</h2>
+                            <h4>Command Name: <code>database_dump_tournaments</code></h4>
                             <tbody>
                                 <tr>
                                     <th class="theme-bg-light"><b>tournament_id</b></th>
@@ -1018,9 +1123,10 @@
                             </tbody>
                         </table>
 					</section>
-                    <section class="docs-section" id="item-2-11">
+                    <section class="docs-section" id="item-2-1-5">
                         <table class="table table-bordered">
                             <h2 class="section-heading">Game Modes</h2>
+                            <h4>Command Name: <code>database_dump_gamemodes</code></h4>
                             <tbody>
                                 <tr>
                                     <th class="theme-bg-light"><b>gamemode_index</b></th>
