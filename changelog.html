@@ -27,32 +27,27 @@
 	                <div class="site-logo"><a class="navbar-brand" href="index.html"><span class="logo-text">Code<span class="logo-text-alt">Red<span class="text-alt"> - Changelog</span></span></span></a></div>
                 </div>
 	            <div class="docs-top-utilities d-flex justify-content-end align-items-center">
-	                <div class="top-search-box d-none d-lg-flex">
-		                <form class="search-form">
-				            <input type="text" placeholder="Search the docs..." name="search" class="form-control search-input">
-				            <button type="submit" class="btn search-btn" value="Search"><i class="fas fa-search"></i></button>
-				        </form>
-	                </div>
-					<ul class="social-list list-inline mx-md-3 mx-lg-5 mb-0 d-none d-lg-flex">
+	                <!-- <div class="top-search-box d-none d-lg-flex">
+                        <form class="search-form">
+                            <input type="text" placeholder="Search the docs..." name="search" class="form-control search-input">
+                            <button type="submit" class="btn search-btn" value="Search"><i class="fas fa-search"></i></button>
+                        </form>
+                    </div> -->
+					<ul class="social-list list-inline mx-md-4 mx-lg-4 mb-0 d-none d-lg-flex">
 			            <li class="list-inline-item"><a href="https://discord.gg/NmPd4XXTHT"><i class="fab fa-discord fa-fw"></i></a></li>
 		                <li class="list-inline-item"><a href="https://github.com/CodeRedModding"><i class="fab fa-github fa-fw"></i></a></li>
 		            </ul>
-		           <a href="https://github.com/CodeRedModding/CodeRed-Launcher/releases" class="btn btn-primary d-none d-lg-flex">Download</a>
+		           <a href="https://github.com/CodeRedModding/CodeRed-Launcher/releases/latest/download/CodeRedLauncher.zip" class="btn btn-primary d-none d-lg-flex">Download</a>
 	            </div>
             </div>
         </div>
     </header>
     <div class="docs-wrapper">
 	    <div id="docs-sidebar" class="docs-sidebar">
-		    <div class="top-search-box d-lg-none p-3">
-                <form class="search-form">
-		            <input type="text" placeholder="Search the docs..." name="search" class="form-control search-input">
-		            <button type="submit" class="btn search-btn" value="Search"><i class="fas fa-search"></i></button>
-		        </form>
-            </div>
 		    <nav id="docs-nav" class="docs-nav navbar">
 			    <ul class="section-items list-unstyled nav flex-column pb-3">
                     <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-3"><span class="theme-icon-holder me-2"><i class="fas fa-book"></i></span>Module Changelog</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-3-4-8">Version 2.4.8</a></li>
                     <li class="nav-item"><a class="nav-link scrollto" href="#item-3-4-7">Version 2.4.7</a></li>
                     <li class="nav-item"><a class="nav-link scrollto" href="#item-3-4-6">Version 2.4.6</a></li>
                     <li class="nav-item"><a class="nav-link scrollto" href="#item-3-4-5">Version 2.4.5</a></li>
@@ -255,6 +250,23 @@
 		    <div class="container">
                 <article class="docs-article" id="section-3">
                     <h1 class="docs-heading">Changelog</h1>
+
+                        <section class="docs-section" id="item-3-4-8">
+                            <h2 class="section-heading">Version 2.4.8 (January 17th 2025)</h2>
+                            <h5>- Opened the connections window to the public, this tool lets you search for players linked accounts if any are found.</h5>
+                            <h5>- JSON values exported via the database dumper now use proper null values for arguments.</h5>
+                            <h5>- Renamed the <code>attribute_special_edition_label</code> argument to <code>attribute_custom_edition_label</code> for better clarity.</h5>
+                            <h5>- Removed the encoding arguments for the database dumper, all commands will now be exported in UTF8 with multi-byte support.</h5>
+                            <h5>- Removed the included emoji font, as nothing uses it anymore in favor of "Remix Icon".</h5>
+                            <h5>- Fixed a crash that could happen with the reflector window related to viewing static arrays.</h5>
+                            <h5>- Fixed items not equipping to your loadout on the main menu if you clicked equip via an item drop.</h5>
+                            <h5>- Fixed some rumble pickups, such as spikes, not showing during goal replays when using CodeRed loadouts.</h5>
+                            <h5>- Fixed some instances of your CodeRed loadout not applying during goal replays.</h5>
+                            <h5>- Fixed custom terminal themes for styles causing the terminal font to reset to default.</h5>
+                            <h5>- Fixed title ids not printing their instance number for the database dumper.</h5>
+                            <h5>- Upgraded the internal ImGui framework to version 1.91.7.</h5>
+                            <h5>- Internal code refactoring and bug fixes.</h5>
+                        </section>
 
                         <section class="docs-section" id="item-3-4-7">
                             <h2 class="section-heading">Version 2.4.7 (January 10th 2025)</h2>
@@ -600,7 +612,7 @@
 
                         <section class="docs-section" id="item-3-1-0">
                             <h2 class="section-heading">Version 2.1.0 (April 8th 2024)</h2>
-                            <h5>- Fixed a rare but critical crash that could happen related to incorrectly parsing json data.</h5>
+                            <h5>- Fixed a rare but critical crash that could happen related to incorrectly parsing JSON data.</h5>
                             <h5>- Fixed a bug that could cause CodeRed to think you were playing in offline mode.</h5>
                             <h5>- Minor internal optimizations.</h5>
                         </section>
@@ -1180,7 +1192,7 @@
                             <h5>- Fixed a rare crash that could happen when first injecting if the game was unfocused.</h5>
                             <h5>- Fixed the fps overlay setting sometimes being toggled off and on the wrong way.</h5>
                             <h5>- Fixed title presets not applying to your banner in freeplay when viewing goal replays.</h5>
-                            <h5>- Fixed new lines invalidating the json schema in some of the database dumper commands.</h5>
+                            <h5>- Fixed new lines invalidating the JSON schema in some of the database dumper commands.</h5>
                         </section>
 
                         <section class="docs-section" id="item-2-5-6">
@@ -1224,7 +1236,7 @@
                             <h5>- Fixed some UTF16 characters showing up as question marks in ImGui if your game was in French, Italian, Spanish, etc...</h5>
                             <h5>- Fixed selecting or updating player borders with the garage module causing crashes.</h5>
                             <h5>- Fixed a crash that could happen when loading into an offline match such as freeplay or custom training.</h5>
-                            <h5>- Fixed your custom player name sometimes not saving and parsing properly if you had json characters in them.</h5>
+                            <h5>- Fixed your custom player name sometimes not saving and parsing properly if you had JSON characters in them.</h5>
                             <h5>- Fixed your chat/qickchat thinking you're sending messages too fast sometimes in online games.</h5>
                             <h5>- Fixed your title sometimes not restoring to its original one after disabling garage presets.</h5>
                             <h5>- Internal optimizations and improvements.</h5>
