@@ -47,6 +47,7 @@
 		    <nav id="docs-nav" class="docs-nav navbar">
 			    <ul class="section-items list-unstyled nav flex-column pb-3">
                     <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-3"><span class="theme-icon-holder me-2"><i class="fas fa-book"></i></span>Module Changelog</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-3-5-1">Version 2.5.1</a></li>
                     <li class="nav-item"><a class="nav-link scrollto" href="#item-3-5-0">Version 2.5.0</a></li>
                     <li class="nav-item"><a class="nav-link scrollto" href="#item-3-4-9">Version 2.4.9</a></li>
                     <li class="nav-item"><a class="nav-link scrollto" href="#item-3-4-8">Version 2.4.8</a></li>
@@ -252,6 +253,19 @@
 		    <div class="container">
                 <article class="docs-article" id="section-3">
                     <h1 class="docs-heading">Changelog</h1>
+
+                        <section class="docs-section" id="item-3-5-1">
+                            <h2 class="section-heading">Version 2.5.1 (February 3rd 2025)</h2>
+                            <h5>- Temporarily disabled custom player avatars while I work on a fix for them being destroyed randomly after scoring goals.</h5>
+                            <h5>- Added a new setting <code>garage_patch_invisible</code> which attempts to detect and patch people using invisible loadout hacks. Before this was hardcoded in but it can now be turned on or off.</h5>
+                            <h5>- Fixed some cars in online matches randomly having the stocktane preset applied to them despite not using any anonymizer settings.</h5>
+                            <h5>- Fixed some titles not restoring to their original colors on the scoreboard if you disabled loadouts mid-game.</h5>
+                            <h5>- Fixed a rare thread racing crash that could happen with the reflector window and clearing instances.</h5>
+                            <h5>- Fixed the <code>freeplay_goal_speed</code> setting spamming the balls speed in chat in online matches.</h5>
+                            <h5>- Fixed the matchmaker window missing some limited time events and the new Split Shot modes.</h5>
+                            <h5>- Internal bug fixes and optimizations related to API requests.</h5>
+                            <h5>- Upgraded the internal ImGui framework to version 1.91.8.</h5>
+                        </section>
 
                         <section class="docs-section" id="item-3-5-0">
                             <h2 class="section-heading">Version 2.5.0 (January 28th 2025)</h2>
