@@ -47,6 +47,7 @@
 		    <nav id="docs-nav" class="docs-nav navbar">
 			    <ul class="section-items list-unstyled nav flex-column pb-3">
                     <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-3"><span class="theme-icon-holder me-2"><i class="fas fa-book"></i></span>Module Changelog</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-3-5-3">Version 2.5.3</a></li>
                     <li class="nav-item"><a class="nav-link scrollto" href="#item-3-5-2">Version 2.5.2</a></li>
                     <li class="nav-item"><a class="nav-link scrollto" href="#item-3-5-1">Version 2.5.1</a></li>
                     <li class="nav-item"><a class="nav-link scrollto" href="#item-3-5-0">Version 2.5.0</a></li>
@@ -254,6 +255,20 @@
 		    <div class="container">
                 <article class="docs-article" id="section-3">
                     <h1 class="docs-heading">Changelog</h1>
+
+                        <section class="docs-section" id="item-3-5-3">
+                            <h2 class="section-heading">Version 2.5.3 (February 14th 2025)</h2>
+                            <h5>- Enabled custom avatars again after some bug fixes, custom playlist images are still being worked on.</h5>
+                            <h5>- The maximum allowed size for loading custom player avatars has been reduced from 512x512 to 256x256.</h5>
+                            <h5>- Removed the ability to make layered avatars like you could with banners, this is a limitation of the new avatar system.</h5>
+                            <h5>- Texture formats BC1 through BC5 can now be exported to any extension instead of being limited to ".dds".</h5>
+                            <h5>- Fixed the texture browser window only showing UTexture2D's instead of all possible texture objects.</h5>
+                            <h5>- Fixed overlay windows, such as the session tracker, not properly scaling according to the <code>imgui_global_scale</code> setting.</h5>
+                            <h5>- Fixed a crash with the reflector window related to viewing TArray structs that had byte properties in them.</h5>
+                            <h5>- Fixed your Discord rich presence state saying "Idling" if you were in spectator mode.</h5>
+                            <h5>- Remade the entire internal API endpoint to be more efficient and reliable.</h5>
+                            <h5>- Further improvements to the platform and steam avatar system.</h5>
+                        </section>
 
                         <section class="docs-section" id="item-3-5-2">
                             <h2 class="section-heading">Version 2.5.2 (February 7th 2025)</h2>
