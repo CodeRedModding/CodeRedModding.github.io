@@ -92,11 +92,10 @@
 				    <li class="nav-item"><a class="nav-link scrollto" href="#item-6-0-1">What Is CodeRed</a></li>
 				    <li class="nav-item"><a class="nav-link scrollto" href="#item-6-0-2">Is It Bannable</a></li>
                     <li class="nav-item"><a class="nav-link scrollto" href="#item-6-0-3">BakkesMod Compatibility</a></li>
-                    <li class="nav-item"><a class="nav-link scrollto" href="#item-6-0-4">ReShade  Compatibility</a></li>
-                    <li class="nav-item"><a class="nav-link scrollto" href="#item-6-0-5">Is It Open Source</a></li>
-                    <li class="nav-item"><a class="nav-link scrollto" href="#item-6-0-6">Cabined Accounts</a></li>
-                    <li class="nav-item"><a class="nav-link scrollto" href="#item-6-0-7">Do Custom Ads Exist</a></li>
-                    <li class="nav-item"><a class="nav-link scrollto" href="#item-6-0-8">How To Report Bugs</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-6-0-4">Is It Open Source</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-6-0-5">Cabined Accounts</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-6-0-6">Do Custom Ads Exist</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-6-0-7">How To Report Bugs</a></li>
 			    </ul>
 		    </nav>
 	    </div>
@@ -1635,6 +1634,26 @@
                                         <th class="theme-bg-light"><b>scoreboard_uncensor_names &lttrue-false&gt</b></th>
                                         <td>Display players uncensored usernames on the scoreboard and nameplates.</td>
                                     </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>flip_indicator_enabled &lttrue-false&gt</b></th>
+                                        <td>Draw your cars current flip state on the screen.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>flip_indicator_scale &lt0.5-15&gt</b></th>
+                                        <td>The scale of the text used to display if your car has a flip or not.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>flip_indicator_yes_color &lt#FFFFFF&gt</b></th>
+                                        <td>The color of the text used to display if you have a flip.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>flip_indicator_no_color &lt#FFFFFF&gt</b></th>
+                                        <td>The color of the text used to display if you don't have a flip.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>flip_indicator_position &lt0-3840&gt</b></th>
+                                        <td>The scale of the text used to display if your car has a flip or not.</td>
+                                    </tr>
                                 </tbody>
                             </table>
                         </div>
@@ -2315,26 +2334,21 @@
 					</section>
 
                     <section class="docs-section" id="item-6-0-4">
-						<h4 class="pt-3"><i class="fas fa-question-circle me-1"></i>Can I use CodeRed and ReShade at the same time?</h4>
-						<p>No, ReShade's DirectX hook conflicts with CodeRed and causes issues with Dear ImGui. You can use the built in post process effect editor to replace some of ReShades features.</p>
-					</section>
-
-                    <section class="docs-section" id="item-6-0-5">
                         <h4 class="pt-3"><i class="fas fa-question-circle me-1"></i>Is CodeRed open source?</h4>
 						<p>The in game mod itself is not available to the public, however the launcher is fully open source under the MIT license; you can view its source code on our <a href="https://github.com/CodeRedModding/CodeRed-Launcher">GitHub here.</a></p>
                     </section>
 
-                    <section class="docs-section" id="item-6-0-6">
+                    <section class="docs-section" id="item-6-0-5">
                         <h4 class="pt-3"><i class="fas fa-question-circle me-1"></i> Can I use CodeRed if I have a cabined account?</h4>
 						<p>No, there are too many restrictions that have to be followed that I don't want to implement or keep up with if they change.</a></p>
                     </section>
 
-                    <section class="docs-section" id="item-6-0-7">
+                    <section class="docs-section" id="item-6-0-6">
 						<h4 class="pt-3"><i class="fas fa-question-circle me-1"></i> Can I customize the ads around the stadium?</h4>
 						<p>Also no, I have directly asked Psyonix about this and customizing or overwriting the ads around the stadium is a big no go.</p>
 					</section>
 
-                    <section class="docs-section" id="item-6-0-8">
+                    <section class="docs-section" id="item-6-0-7">
                         <h4 class="pt-3"><i class="fas fa-question-circle me-1"></i>I found a bug or something doesn't work right.</h4>
 						<p>If you would like to report a bug, crash, or feature that doesn't work right, please do so in the Discord server.</p>
                     </section>
