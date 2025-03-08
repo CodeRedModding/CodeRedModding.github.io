@@ -88,14 +88,16 @@
                     <li class="nav-item"><a class="nav-link scrollto" href="#item-5-1-5">Terminal</a></li>
                     <li class="nav-item"><a class="nav-link scrollto" href="#item-5-1-6">Texture Browser</a></li>
                     <li class="nav-item"><a class="nav-link scrollto" href="#item-5-1-7">Thumbnail Renderer</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-5-1-8">Title Customizer</a></li>
 				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-6"><span class="theme-icon-holder me-2"><i class="fas fa-lightbulb"></i></span>FAQs</a></li>
 				    <li class="nav-item"><a class="nav-link scrollto" href="#item-6-0-1">What Is CodeRed</a></li>
-				    <li class="nav-item"><a class="nav-link scrollto" href="#item-6-0-2">Is It Bannable</a></li>
-                    <li class="nav-item"><a class="nav-link scrollto" href="#item-6-0-3">BakkesMod Compatibility</a></li>
-                    <li class="nav-item"><a class="nav-link scrollto" href="#item-6-0-4">Is It Open Source</a></li>
-                    <li class="nav-item"><a class="nav-link scrollto" href="#item-6-0-5">Cabined Accounts</a></li>
-                    <li class="nav-item"><a class="nav-link scrollto" href="#item-6-0-6">Do Custom Ads Exist</a></li>
-                    <li class="nav-item"><a class="nav-link scrollto" href="#item-6-0-7">How To Report Bugs</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-6-0-2">Is CodeRed Free</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-6-0-3">Is It Open Source</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-6-0-4">Is It Bannable</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-6-0-5">BakkesMod Compatibility</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-6-0-6">Cabined Accounts</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-6-0-7">Do Custom Ads Exist</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-6-0-8">How To Report Bugs</a></li>
 			    </ul>
 		    </nav>
 	    </div>
@@ -386,7 +388,11 @@
                                     </tr>
                                     <tr>
                                         <th class="theme-bg-light"><b>collect_garbage</b></th>
-                                        <td>Forces the game to purge all transient and unsed objects.</td>
+                                        <td>Forces the game to purge all objects marked for destroy or pending kill.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>collect_garbage_full</b></th>
+                                        <td>Forces a full purge all objects marked for destroy, pending kill, as well as unreferenced objects.</td>
                                     </tr>
                                     <tr>
                                         <th class="theme-bg-light"><b>inventory_sync</b></th>
@@ -1631,10 +1637,6 @@
                                         <td>The decimal precision used in displaying skill ratings on the scoreboard.</td>
                                     </tr>
                                     <tr>
-                                        <th class="theme-bg-light"><b>scoreboard_uncensor_names &lttrue-false&gt</b></th>
-                                        <td>Display players uncensored usernames on the scoreboard and nameplates.</td>
-                                    </tr>
-                                    <tr>
                                         <th class="theme-bg-light"><b>flip_indicator_enabled &lttrue-false&gt</b></th>
                                         <td>Draw your cars current flip state on the screen.</td>
                                     </tr>
@@ -1959,9 +1961,6 @@
                             <div class="col-12 col-md-4 mb-3">
                                 <a href="assets/images/modules/titles-1.png"><img class="figure-img img-fluid shadow rounded" src="assets/images/modules/titles-1.png" alt="" title=""/></a>
                             </div>
-                            <div class="col-12 col-md-4 mb-3">
-                                <a href="assets/images/modules/titles-2.png"><img class="figure-img img-fluid shadow rounded" src="assets/images/modules/titles-2.png" alt="" title=""/></a>
-                            </div>
                         </div>              
                         <h3>Settings</h3>
                         <div class="table-responsive my-4">
@@ -1977,7 +1976,7 @@
                                     </tr>
                                     <tr>
                                         <th class="theme-bg-light"><b>titles_display_others &lttrue-false&gt</b></th>
-                                        <td>Display other CodeRed users premium titles on the scoreboard (Like server booster and alpha tester).</td>
+                                        <td>Display other CodeRed users special titles on the scoreboard (Like server booster and alpha tester).</td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -2311,44 +2310,66 @@
                             </div>
                         </div>
 					</section>
+
+                    <section class="docs-section" id="item-5-1-8">
+                        <h2 class="section-heading">Title Customizer</h2>
+                        <h4>Window Name: <code>titles</code></h4>
+                        <p>The title customizer lets you create and manage your custom titles, there is also a share code system which works the same way as loadout share codes.</p>
+                        <p>You can also access this window via the dashboard under the player title section, when selecting a title there is a button called "Edit" that opens this window.</p>
+
+                        <div class="simplelightbox-gallery row mb-3">
+                            <div class="col-12 col-md-4 mb-3">
+                                <a href="assets/images/windows/titles-1.png"><img class="figure-img img-fluid shadow rounded" src="assets/images/windows/titles-1.png" alt="" title=""/></a>
+                            </div>
+                            <div class="col-12 col-md-4 mb-3">
+                                <a href="assets/images/windows/titles-2.png"><img class="figure-img img-fluid shadow rounded" src="assets/images/windows/titles-2.png" alt="" title=""/></a>
+                            </div>
+                        </div>
+					</section>
 			    </article>
 			    
 			    <article class="docs-article" id="section-6">
 				    <header class="docs-header">
 					    <h1 class="docs-heading">FAQs</h1>
 				    </header>
+
                     <section class="docs-section" id="item-6-0-1">
 						<h4 class="pt-3"><i class="fas fa-question-circle me-1"></i>What is CodeRed?</h4>
 						<p>CodeRed is a free, highly customizable, and easy to use third party enhancement for Rocket League. CodeRed aims to bring a lightweight, all in one, feature packed experience to players with zero impact to performance.</p>
                     </section>
 
                     <section class="docs-section" id="item-6-0-2">
+						<h4 class="pt-3"><i class="fas fa-question-circle me-1"></i>Is CodeRed Free?</h4>
+						<p>Yes, CodeRed and all of its features are completely free for anyone to use; and always will be free.</p>
+                    </section>
+
+                    <section class="docs-section" id="item-6-0-3">
+                        <h4 class="pt-3"><i class="fas fa-question-circle me-1"></i>Is CodeRed open source?</h4>
+						<p>The in game mod itself is not available to the public, however the launcher is fully open source under the MIT license; you can view its source code on our <a href="https://github.com/CodeRedModding/CodeRed-Launcher">GitHub here.</a></p>
+                    </section>
+
+                    <section class="docs-section" id="item-6-0-4">
 						<h4 class="pt-3"><i class="fas fa-question-circle me-1"></i>Can CodeRed get me banned?</h4>
 						<p>CodeRed is not officially approved by Psyonix or Epic Games, however, CodeRed still follows Rocket League's ToU, EULA, and rules regarding third party modding. CodeRed does not provide a competitive advantage in online play, expose unreleased features/content, or abuse Rocket League's services.</p>
                         <p>Psyonix is aware of CodeRed's existence and has the ability to contact me if they have a problem with anything, or if they want a specific feature to be changed or removed.</p>
                     </section>
 
-                    <section class="docs-section" id="item-6-0-3">
+                    <section class="docs-section" id="item-6-0-5">
 						<h4 class="pt-3"><i class="fas fa-question-circle me-1"></i>Can I use CodeRed and BakkesMod at the same time?</h4>
 						<p>No, CodeRed and BakkesMod conflict with each other in a lot of its core features and has indirectly cause crashes when both are used together.</p>
 					</section>
 
-                    <section class="docs-section" id="item-6-0-4">
-                        <h4 class="pt-3"><i class="fas fa-question-circle me-1"></i>Is CodeRed open source?</h4>
-						<p>The in game mod itself is not available to the public, however the launcher is fully open source under the MIT license; you can view its source code on our <a href="https://github.com/CodeRedModding/CodeRed-Launcher">GitHub here.</a></p>
-                    </section>
-
-                    <section class="docs-section" id="item-6-0-5">
+                    <section class="docs-section" id="item-6-0-6">
                         <h4 class="pt-3"><i class="fas fa-question-circle me-1"></i> Can I use CodeRed if I have a cabined account?</h4>
 						<p>No, there are too many restrictions that have to be followed that I don't want to implement or keep up with if they change.</a></p>
                     </section>
 
-                    <section class="docs-section" id="item-6-0-6">
+                    <section class="docs-section" id="item-6-0-7">
 						<h4 class="pt-3"><i class="fas fa-question-circle me-1"></i> Can I customize the ads around the stadium?</h4>
 						<p>Also no, I have directly asked Psyonix about this and customizing or overwriting the ads around the stadium is a big no go.</p>
 					</section>
 
-                    <section class="docs-section" id="item-6-0-7">
+                    <section class="docs-section" id="item-6-0-8">
                         <h4 class="pt-3"><i class="fas fa-question-circle me-1"></i>I found a bug or something doesn't work right.</h4>
 						<p>If you would like to report a bug, crash, or feature that doesn't work right, please do so in the Discord server.</p>
                     </section>

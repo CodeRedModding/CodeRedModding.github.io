@@ -47,6 +47,7 @@
 		    <nav id="docs-nav" class="docs-nav navbar">
 			    <ul class="section-items list-unstyled nav flex-column pb-3">
                     <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-3"><span class="theme-icon-holder me-2"><i class="fas fa-book"></i></span>Module Changelog</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-3-5-5">Version 2.5.5</a></li>
                     <li class="nav-item"><a class="nav-link scrollto" href="#item-3-5-4">Version 2.5.4</a></li>
                     <li class="nav-item"><a class="nav-link scrollto" href="#item-3-5-3">Version 2.5.3</a></li>
                     <li class="nav-item"><a class="nav-link scrollto" href="#item-3-5-2">Version 2.5.2</a></li>
@@ -206,6 +207,7 @@
                     <li class="nav-item"><a class="nav-link scrollto" href="#item-2-0-0">Version 1.0.0</a></li>
                     -->
                     <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-1"><span class="theme-icon-holder me-2"><i class="fas fa-rocket"></i></span>Launcher Changelog</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-4-2">Version 1.4.2</a></li>
                     <li class="nav-item"><a class="nav-link scrollto" href="#item-1-4-1">Version 1.4.1</a></li>
                     <li class="nav-item"><a class="nav-link scrollto" href="#item-1-4-0">Version 1.4.0</a></li>
                     <li class="nav-item"><a class="nav-link scrollto" href="#item-1-3-9">Version 1.3.9</a></li>
@@ -256,6 +258,22 @@
 		    <div class="container">
                 <article class="docs-article" id="section-3">
                     <h1 class="docs-heading">Changelog</h1>
+
+                        <section class="docs-section" id="item-3-5-5">
+                            <h2 class="section-heading">Version 2.5.5 (March 7th 2025)</h2>
+                            <h5>- Added the ability to make custom titles! The custom title system is free to use for everyone, and can only be seen by you by default just like CodeRed loadouts.</h5>
+                            <h5>- Added a new database dumper command <code>database_dump_psynet</code>, along with five new arguments for it that let you dump info from the RPC services the game uses.</h5>
+                            <h5>- The car body used to replace the Cybertruck, for the <code>garage_remove_elon</code> setting, will now be randomly picked between each game instead of always being the Venom car.</h5>
+                            <h5>- The loadout anonymizer will no longer anonymize goal explosions, as some have special effects that change the gravity; which resulted in rubber banding during goal explosions.</h5>
+                            <h5>- Removed the <code>scoreboard_uncensor_names</code> setting as it no longer works as intended, Psyonix broke their own persona system awhile back.</h5>
+                            <h5>- Changed the primary color picker to be all in one row for the blue and orange team, instead of in separate tabs.</h5>
+                            <h5>- Reorganized the textures tab in the dashboard to be a bit more intuitive.</h5>
+                            <h5>- Significant memory optimizations and improvements related to custom textures in addition to API requests.</h5>
+                            <h5>- Fixed end of game automation features still being called if you joined another game before the delay was finished.</h5>
+                            <h5>- Fixed CodeRed switching to offline mode if an update was released while you were already injected.</h5>
+                            <h5>- Fixed some text cutting cut off in the bindings window in the dashboard for custom sequences.</h5>
+                            <h5>- Fixed trails not working in game for CodeRed loadouts (it's about time).</h5>
+                        </section>
 
                         <section class="docs-section" id="item-3-5-4">
                             <h2 class="section-heading">Version 2.5.4 (February 21st 2025)</h2>
@@ -648,7 +666,7 @@
                         <section class="docs-section" id="item-3-1-6">
                             <h2 class="section-heading">Version 2.1.6 (May 3rd 2024)</h2>
                             <h5>- Fixed a crash that could happen after goal replays in online games.</h5>
-                            <h5>- Changes to the backend api.</h5>
+                            <h5>- Changes to the backend API.</h5>
                         </section>
 
                         <section class="docs-section" id="item-3-1-5">
@@ -1442,7 +1460,7 @@
                             <h5>- Fixed an alt-tabbing issue when in fullscreen mode, both related to resize buffers and the fps limiter.</h5>
                             <h5>- Fixed some issues with editing keybinds and changing arguments via the dashboard.</h5>
                             <h5>- Fixed custom hud colors resetting in freeplay after the player sent a new auth request.</h5>
-                            <h5>- Added extra internal safety protection related to api stuff.</h5>
+                            <h5>- Added extra internal safety protection related to API stuff.</h5>
                         </section>
 
                         <section class="docs-section" id="item-2-3-9">
@@ -1839,6 +1857,12 @@
                 <article class="docs-article" id="section-1">
                     <h1 class="docs-heading">Launcher Changelog</h1>
 
+                    <section class="docs-section" id="item-1-4-2"></section>
+                    <h2 class="section-heading">Version 1.4.2 (February 24th 2025)</h2>
+                        <h5>- Added extra exception handling, and logging for said exception handling.</h5>
+                        <h5>- Changed how news article dates are formatted in the news tab.</h5>
+                    </section>
+
                     <section class="docs-section" id="item-1-4-1"></section>
                     <h2 class="section-heading">Version 1.4.1 (December 13th 2024)</h2>
                         <h5>- Upgraded from `.NET 8.0` to `.NET 9.0`, which will require you to download the new runtime if you only have `.NET 8.0` installed.</h5>
@@ -1988,7 +2012,7 @@
 
                     <section class="docs-section" id="item-1-1-9">
                         <h2 class="section-heading">Version 1.1.9 (June 1st 2023)</h2>
-                        <h5>- Backend changes to support new api endpoint features.</h5>
+                        <h5>- Backend changes to support new API endpoint features.</h5>
                     </section>
 
                     <section class="docs-section" id="item-1-1-8">
@@ -2005,7 +2029,7 @@
 
                     <section class="docs-section" id="item-1-1-6">
                         <h2 class="section-heading">Version 1.1.6 (April 26th 2023)</h2>
-                        <h5>- Changed the backend api for the launcher to use a new endpoint.</h5>
+                        <h5>- Changed the backend API for the launcher to use a new endpoint.</h5>
                         <h5>- Resized the controls for articles in the news tab in the launcher.</h5>
                     </section>
 
