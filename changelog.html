@@ -62,7 +62,7 @@
 		    <nav id="docs-nav" class="docs-nav navbar">
 			    <ul class="section-items list-unstyled nav flex-column pb-3">
                     <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-3"><span class="theme-icon-holder me-2"><i class="fas fa-book"></i></span>Module Changelog</a></li>
-                    <!-- <li class="nav-item"><a class="nav-link scrollto" href="#item-3-5-8">Version 2.5.8</a></li>-->
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-3-5-8">Version 2.5.8</a></li>
                     <li class="nav-item"><a class="nav-link scrollto" href="#item-3-5-7">Version 2.5.7</a></li>
                     <li class="nav-item"><a class="nav-link scrollto" href="#item-3-5-6">Version 2.5.6</a></li>
                     <li class="nav-item"><a class="nav-link scrollto" href="#item-3-5-5">Version 2.5.5</a></li>
@@ -277,11 +277,23 @@
                 <article class="docs-article" id="section-3">
                     <h1 class="docs-heading">Changelog</h1>
 
+                        <section class="docs-section" id="item-3-5-8">
+                            <h2 class="section-heading">Version 2.5.8 (March 25th 2025)</h2>
+                            <h5>- Temporarily disabling custom avatars again, as it seems to be the main cause of random crashes when opening the scoreboard (thanks Psyonix).</h5>
+                            <h5>- Added an "All" option for paints in the thumbnail renderer, which exports all paint variants of the selected product at once.</h5>
+                            <h5>- Added two new commands <code>play_sound</code> and <code>play_sound_async</code>, which plays a ".wav" audio file from the given arguments.</h5>
+                            <h5>- Removed the <code>product_bool_include_se</code> argument from the product dumper as it no longer exists.</h5>
+                            <h5>- Various improvements and bug fixes to the new thumbnail renderer system.</h5>
+                            <h5>- Optimizations related to downloading images and player avatars.</h5>
+                            <h5>- Updated internal SDK to the latest version of Rocket League.</h5>
+                        </section>
+
                         <section class="docs-section" id="item-3-5-7">
                             <h2 class="section-heading">Version 2.5.7 (March 21st 2025)</h2>
                             <h5>- Added a new setting in the misc tab called <code>disable_crossbar_sound</code> which is self explanatory.</h5>
                             <h5>- Enabled custom playlist images again in the textures tab after some bug fixes and improvements.</h5>
                             <h5>- Remade the thumbnail renderer to be all command and setting based, the ImGui window now just calls commands for you.</h5>
+                            <h5>- Fixed the <code>stadium_legacy_clubs</code> setting applying all black colors to both teams in 1v1 matches, which is now my second time fixing this.</h5>
                             <h5>- Fixed a bug that caused CodeRed to say you didn't meet the required specs related to grabbing your ram size.</h5>
                             <h5>- Fixed the <code>freeplay_unlimited_flips</code> setting not working as of the last game update.</h5>
                             <h5>- Upgraded the internal ImGui framework to version 1.91.9.</h5>
