@@ -294,6 +294,10 @@
                                         <td>The corner position for the actorstate window to render in.</td>
                                     </tr>
                                     <tr>
+                                        <th class="theme-bg-light"><b>imgui_notification_injection &lttrue-false&gt</b></th>
+                                        <td>Display a notification when CodeRed is injected and initialized.</td>
+                                    </tr>
+                                    <tr>
                                         <th class="theme-bg-light"><b>imgui_tracker_corner &lt1-4&gt</b></th>
                                         <td>The corner position for the session tracker window to render in.</td>
                                     </tr>
@@ -476,10 +480,6 @@
                                     <tr>
                                         <th class="theme-bg-light"><b>manager_debug_mode &lttrue-false&gt</b></th>
                                         <td>Enable/disable global debugging mode, logs extra info to the terminal.</td>
-                                    </tr>
-                                    <tr>
-                                        <th class="theme-bg-light"><b>manager_display_injection &lttrue-false&gt</b></th>
-                                        <td>Display a notification when CodeRed is first injected and initialized.</td>
                                     </tr>
                                     <tr>
                                         <th class="theme-bg-light"><b>manager_purge_cache &lttrue-false&gt</b></th>
@@ -2157,6 +2157,10 @@
                                         <td>Toggles shuffling shots off and on in custom training</td>
                                     </tr>
                                     <tr>
+                                        <th class="theme-bg-light"><b>training_load_files</b></th>
+                                        <td>Manually loads all favorited training packs in memory.</td>
+                                    </tr>
+                                    <tr>
                                         <th class="theme-bg-light"><b>training_sync_files</b></th>
                                         <td>Manually sync all training files between accounts.</td>
                                     </tr>
@@ -2443,7 +2447,7 @@
 
                     <section class="docs-section" id="item-5-1-6">
                         <h2 class="section-heading">Texture Browser</h2>
-                        <h4>Window Name: <code>textures</code></h4>
+                        <h4>Window Name: <code>texture_browser</code></h4>
                         <p>The texture browser lets you preview and export almost any currently loadded texture in the game.</p>	    
 
                         <div class="simplelightbox-gallery row mb-3">
