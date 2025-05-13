@@ -69,7 +69,7 @@
                     <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-3"><span class="theme-icon-holder me-2"><i class="fas fa-tools"></i></span>Components</a></li>
 				    <li class="nav-item"><a class="nav-link scrollto" href="#item-3-0-1">Dear ImGui</a></li>
 				    <li class="nav-item"><a class="nav-link scrollto" href="#item-3-0-2">Key Bindings</a></li>
-				    <li class="nav-item"><a class="nav-link scrollto" href="#item-3-0-3">Manager & Misc</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-3-0-3">Miscellaneous</a></li>
 				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-4"><span class="theme-icon-holder me-2"><i class="fas fa-box"></i></span>Modules</a></li>
                     <li class="nav-item"><a class="nav-link scrollto" href="#item-4-0-1">Database Manager</a></li>
                     <li class="nav-item"><a class="nav-link scrollto" href="#item-4-0-2">Freeplay Enhancements</a></li>
@@ -343,7 +343,11 @@
                                     </tr>
                                     <tr>
                                         <th class="theme-bg-light"><b>imgui_reflector_no_read &lttrue-false&gt</b></th>
-                                        <td>Don't read property values when loading instances with the reflector window.</td>
+                                        <td>Don't read any property values when loading instances with the reflector window.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>imgui_reflector_no_tarray &lttrue-false&gt</b></th>
+                                        <td>Don't read from TArray properties when loading instances with the reflector window.</td>
                                     </tr>
                                     <tr>
                                         <th class="theme-bg-light"><b>imgui_reflector_object_limit &lt1-256&gt</b></th>
@@ -405,7 +409,7 @@
                         </div>
                     </section>
                     <section class="docs-section" id="item-3-0-3">
-                        <h2 class="section-heading">Manager & Misc</h2>
+                        <h2 class="section-heading">Miscellaneous</h2>
                         <h3>Commands</h3>
                         <div class="table-responsive my-4">
                             <table class="table table-bordered">
@@ -478,19 +482,19 @@
                             <table class="table table-bordered">
                                 <tbody>
                                     <tr>
-                                        <th class="theme-bg-light"><b>manager_debug_mode &lttrue-false&gt</b></th>
-                                        <td>Enable/disable global debugging mode, logs extra info to the terminal.</td>
+                                        <th class="theme-bg-light"><b>debug_mode &lttrue-false&gt</b></th>
+                                        <td>Enable global debugging mode, logs extra info to the terminal.</td>
                                     </tr>
                                     <tr>
-                                        <th class="theme-bg-light"><b>manager_purge_cache &lttrue-false&gt</b></th>
+                                        <th class="theme-bg-light"><b>auto_purge_cache &lttrue-false&gt</b></th>
                                         <td>Automatically deletes old cache files from your web cache folder on game launch.</td>
                                     </tr>
                                     <tr>
-                                        <th class="theme-bg-light"><b>manager_purge_dumps &lttrue-false&gt</b></th>
+                                        <th class="theme-bg-light"><b>auto_purge_dumps &lttrue-false&gt</b></th>
                                         <td>Automatically deletes old crash dump files in your log folder on game launch.</td>
                                     </tr>
                                     <tr>
-                                        <th class="theme-bg-light"><b>manager_purge_logs &lttrue-false&gt</b></th>
+                                        <th class="theme-bg-light"><b>auto_purge_logs &lttrue-false&gt</b></th>
                                         <td>Automatically deletes old "Launch.log" backups in your log folder on game launch.</td>
                                     </tr>
                                     <tr>
