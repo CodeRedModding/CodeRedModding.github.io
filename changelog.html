@@ -62,6 +62,7 @@
 		    <nav id="docs-nav" class="docs-nav navbar">
 			    <ul class="section-items list-unstyled nav flex-column pb-3">
                     <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-3"><span class="theme-icon-holder me-2"><i class="fas fa-book"></i></span>Module Changelog</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-3-6-6">Version 2.6.6</a></li>
                     <li class="nav-item"><a class="nav-link scrollto" href="#item-3-6-5">Version 2.6.5</a></li>
                     <li class="nav-item"><a class="nav-link scrollto" href="#item-3-6-4">Version 2.6.4</a></li>
                     <li class="nav-item"><a class="nav-link scrollto" href="#item-3-6-3">Version 2.6.3</a></li>
@@ -180,6 +181,16 @@
 		    <div class="container">
                 <article class="docs-article" id="section-3">
                     <h1 class="docs-heading">Changelog</h1>
+
+                        <section class="docs-section" id="item-3-6-6">
+                            <h2 class="section-heading">Version 2.6.6 (May 23rd 2025)</h2>
+                            <h5>- Added new context menu strips for properties in the reflector window, which let you copy their name, offset, and value.</h5>
+                            <h5>- Added a new setting <code>flip_indicator_unlimited_color</code> which lets you pick the color of the flip indicator if you have unlimited flips enabled.</h5>
+                            <h5>- Remade the matchmaker window internally to be fully dynamic and update playlists in real time, instead of relying on hardcoded playlist ids and names.</h5>
+                            <h5>- Updated the internal API to accommodate GitHub's new rate limits of only one request per minute, this fix issues with appearing offline due to no API responses.</h5>
+                            <h5>- Fixed the function scanner not splitting strings by commas properly as of the last update.</h5>
+                            <h5>- Internal memory improvements, as well as optimizations to ImGui rendering code.</h5>
+                        </section>
 
                         <section class="docs-section" id="item-3-6-5">
                             <h2 class="section-heading">Version 2.6.5 (May 13th 2025)</h2>
