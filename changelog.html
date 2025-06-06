@@ -62,6 +62,7 @@
 		    <nav id="docs-nav" class="docs-nav navbar">
 			    <ul class="section-items list-unstyled nav flex-column pb-3">
                     <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-3"><span class="theme-icon-holder me-2"><i class="fas fa-book"></i></span>Module Changelog</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-3-6-7">Version 2.6.7</a></li>
                     <li class="nav-item"><a class="nav-link scrollto" href="#item-3-6-6">Version 2.6.6</a></li>
                     <li class="nav-item"><a class="nav-link scrollto" href="#item-3-6-5">Version 2.6.5</a></li>
                     <li class="nav-item"><a class="nav-link scrollto" href="#item-3-6-4">Version 2.6.4</a></li>
@@ -130,6 +131,8 @@
                     <li class="nav-item"><a class="nav-link scrollto" href="#item-3-0-1">Version 2.0.1</a></li>
                     <li class="nav-item"><a class="nav-link scrollto" href="#item-3-0-0">Version 2.0.0</a></li>
                     <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-1"><span class="theme-icon-holder me-2"><i class="fas fa-rocket"></i></span>Launcher Changelog</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-4-4">Version 1.4.4</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-4-3">Version 1.4.3</a></li>
                     <li class="nav-item"><a class="nav-link scrollto" href="#item-1-4-2">Version 1.4.2</a></li>
                     <li class="nav-item"><a class="nav-link scrollto" href="#item-1-4-1">Version 1.4.1</a></li>
                     <li class="nav-item"><a class="nav-link scrollto" href="#item-1-4-0">Version 1.4.0</a></li>
@@ -181,6 +184,16 @@
 		    <div class="container">
                 <article class="docs-article" id="section-3">
                     <h1 class="docs-heading">Changelog</h1>
+
+                        <section class="docs-section" id="item-3-6-7">
+                            <h2 class="section-heading">Version 2.6.7 (June 6th 2025)</h2>
+                            <h5>- Added a new setting <code>imgui_scanner_origin</code>, which lets you see where a function was called from (ProcessEvent, ProcessInternal, or CallFunction).</h5>
+                            <h5>- Remade the function scanner window both visually and internally to be much more optimized, as well as added a new settings tab to it.</h5>
+                            <h5>- Remade the sequence window in the bindings tab to be easier to use, sequences let you bind multiple commands or actions to a single custom command.</h5>
+                            <h5>- Fixed a crash that happened if you used any of the custom chat commands in modes that didn't have a chat, such as freeplay or custom training.</h5>
+                            <h5>- Fixed a rare bug that caused CodeRed to think your account was cabined before you logged into the game.</h5>
+                            <h5>- Additional internal memory optimizations.</h5>
+                        </section>
 
                         <section class="docs-section" id="item-3-6-6">
                             <h2 class="section-heading">Version 2.6.6 (May 23rd 2025)</h2>
@@ -579,7 +592,7 @@
                             <h5>- Custom freeplay stadium colors will now be applied during casual intermission matches.</h5>
                             <h5>- Fixed a crash that could happen when previewing certain product slots on the main menu through CodeRed.</h5>
                             <h5>- Fixed your CodeRed loadouts not applying in lobby intermissions in casual matches (car colors still don't apply).</h5>
-                            <h5>- Fixed some scenarios where your CodeRed profile was not being applied after you receieved an item drop at the end of a match.</h5>
+                            <h5>- Fixed some scenarios where your CodeRed profile was not being applied after you received an item drop at the end of a match.</h5>
                             <h5>- Fixed Discord rich presence not updating your status if you went into a lobby intermission match after a casual game ended.</h5>
                             <h5>- Fixed the "time remaining" field for Discord rich presence not being very accurate in online games, as well as not displaying if you won or lost a match.</h5>
                             <h5>- Fixed the <code>garage_remove_elon</code> setting not replacing the Cybertruck body on cars if you also had the <code>garage_hide_loadouts</code> setting enabled.</h5>
@@ -868,21 +881,34 @@
                 <article class="docs-article" id="section-1">
                     <h1 class="docs-heading">Launcher Changelog</h1>
 
-                    <section class="docs-section" id="item-1-4-2"></section>
-                    <h2 class="section-heading">Version 1.4.2 (February 24th 2025)</h2>
+                    <section class="docs-section" id="item-1-4-4">
+                        <h2 class="section-heading">Version 1.4.4 (June 4th 2025)</h2>
+                        <h5>- Added a custom caching system for web requests due to GitHubs new rate limits, this should fix possible issues with downloading version info.</h5>
+                        <h5>- Remade the internal logging system to have a lot more detail.</h5>
+                        <h5>- Internal code refactoring and memory optimizations.</h5>
+                    </section>
+
+                    <section class="docs-section" id="item-1-4-3">
+                        <h2 class="section-heading">Version 1.4.3 (April 16th 2025)</h2>
+                        <h5>- Added an exception handling check for reading the "Launch.log" file when grabbing version info.</h5>
+                        <h5>- Minor spelling changes throughout the UI.</h5>
+                    </section>
+
+                    <section class="docs-section" id="item-1-4-2">
+                        <h2 class="section-heading">Version 1.4.2 (February 24th 2025)</h2>
                         <h5>- Added extra exception handling, and logging for said exception handling.</h5>
                         <h5>- Changed how news article dates are formatted in the news tab.</h5>
                     </section>
 
-                    <section class="docs-section" id="item-1-4-1"></section>
-                    <h2 class="section-heading">Version 1.4.1 (December 13th 2024)</h2>
+                    <section class="docs-section" id="item-1-4-1">
+                        <h2 class="section-heading">Version 1.4.1 (December 13th 2024)</h2>
                         <h5>- Upgraded from `.NET 8.0` to `.NET 9.0`, which will require you to download the new runtime if you only have `.NET 8.0` installed.</h5>
                         <h5>- Added a new category section in the news tab to indelicate what the news article is about without having to click on it.</h5>
                         <h5>- Changed the default injection time from 20 seconds to 2.5 seconds, which I forgot to do a long time ago.</h5>
                         <h5>- Reduced the memory footprint of the news tab by more than 1/4th related to images and caching.</h5>
                     </section>
 
-                    <section class="docs-section" id="item-1-4-0"></section>
+                    <section class="docs-section" id="item-1-4-0">
                         <h2 class="section-heading">Version 1.4.0 (September 2nd 2024)</h2>
                         <h5>- Added more detailed info to the update window when installing updates.</h5>
                         <h5>- Changed some error messages and logs to provide better info if something is blocking the launchers permissions.</h5>
