@@ -1,0 +1,1239 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <!-- HTML Meta Tags -->
+    <title>CodeRed - Changelog</title>
+    <meta name="description" content="A lightweight, user-friendly enhancement for Rocket League.">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:url" content="https://coderedmodding.github.io/changelog.html">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="CodeRed - Rocket League">
+    <meta property="og:description" content="A lightweight, user-friendly enhancement for Rocket League.">
+    <meta property="og:image" content="https://raw.githubusercontent.com/CodeRedModding/CodeRed-Retrievers/refs/heads/main/Assets/Banners/Wallpaper_Default.png">
+    <meta property="og:image:width" content="2560">
+    <meta property="og:image:height" content="1440">
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="twitter:domain" content="coderedmodding.github.io">
+    <meta property="twitter:url" content="https://coderedmodding.github.io/changelog.html">
+    <meta name="twitter:title" content="CodeRed - Rocket League">
+    <meta name="twitter:description" content="A lightweight, user-friendly enhancement for Rocket League.">
+    <meta name="twitter:image" content="https://raw.githubusercontent.com/CodeRedModding/CodeRed-Retrievers/refs/heads/main/Assets/Banners/Wallpaper_Default.png">
+    
+    <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap" rel="stylesheet">
+    <script defer src="assets/fontawesome/js/all.min.js"></script>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.2/styles/atom-one-dark.min.css">
+    <link rel="stylesheet" href="assets/plugins/simplelightbox/simple-lightbox.min.css">
+    <link id="theme-style" rel="stylesheet" href="assets/css/theme.css">
+</head> 
+<body class="docs">    
+    <header class="header fixed-top">	    
+        <div class="branding docs-branding">
+            <div class="container-fluid position-relative py-2">
+                <div class="docs-logo-wrapper">
+					<button id="docs-sidebar-toggler" class="docs-sidebar-toggler docs-sidebar-visible me-2 d-xl-none" type="button">
+	                    <span></span>
+	                    <span></span>
+	                    <span></span>
+	                </button>
+	                <div class="site-logo"><a class="navbar-brand" href="index.html"><span class="logo-text">Code<span class="logo-text-alt">Red<span class="text-alt"> - Changelog</span></span></span></a></div>
+                </div>
+	            <div class="docs-top-utilities d-flex justify-content-end align-items-center">
+	                <!-- <div class="top-search-box d-none d-lg-flex">
+                        <form class="search-form">
+                            <input type="text" placeholder="Search the docs..." name="search" class="form-control search-input">
+                            <button type="submit" class="btn search-btn" value="Search"><i class="fas fa-search"></i></button>
+                        </form>
+                    </div> -->
+					<ul class="social-list list-inline mx-md-4 mx-lg-4 mb-0 d-none d-lg-flex">
+			            <li class="list-inline-item"><a href="https://discord.gg/t4SjXjEhk3"><i class="fab fa-discord fa-fw"></i></a></li>
+		                <li class="list-inline-item"><a href="https://github.com/CodeRedModding"><i class="fab fa-github fa-fw"></i></a></li>
+		            </ul>
+		           <a href="https://github.com/CodeRedModding/CodeRed-Launcher/releases/latest" class="btn btn-primary d-none d-lg-flex">Download</a>
+	            </div>
+            </div>
+        </div>
+    </header>
+    <div class="docs-wrapper">
+	    <div id="docs-sidebar" class="docs-sidebar">
+		    <nav id="docs-nav" class="docs-nav navbar">
+			    <ul class="section-items list-unstyled nav flex-column pb-3">
+                    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-3"><span class="theme-icon-holder me-2"><i class="fas fa-book"></i></span>Module Changelog</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-3-7-2">Version 2.7.2</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-3-7-1">Version 2.7.1</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-3-7-0">Version 2.7.0</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-3-6-9">Version 2.6.9</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-3-6-8">Version 2.6.8</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-3-6-7">Version 2.6.7</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-3-6-6">Version 2.6.6</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-3-6-5">Version 2.6.5</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-3-6-4">Version 2.6.4</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-3-6-3">Version 2.6.3</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-3-6-2">Version 2.6.2</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-3-6-1">Version 2.6.1</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-3-6-0">Version 2.6.0</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-3-5-9">Version 2.5.9</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-3-5-8">Version 2.5.8</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-3-5-7">Version 2.5.7</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-3-5-6">Version 2.5.6</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-3-5-5">Version 2.5.5</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-3-5-4">Version 2.5.4</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-3-5-3">Version 2.5.3</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-3-5-2">Version 2.5.2</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-3-5-1">Version 2.5.1</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-3-5-0">Version 2.5.0</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-3-4-9">Version 2.4.9</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-3-4-8">Version 2.4.8</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-3-4-7">Version 2.4.7</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-3-4-6">Version 2.4.6</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-3-4-5">Version 2.4.5</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-3-4-4">Version 2.4.4</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-3-4-3">Version 2.4.3</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-3-4-2">Version 2.4.2</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-3-4-1">Version 2.4.1</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-3-4-0">Version 2.4.0</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-3-3-9">Version 2.3.9</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-3-3-8">Version 2.3.8</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-3-3-7">Version 2.3.7</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-3-3-6">Version 2.3.6</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-3-3-5">Version 2.3.5</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-3-3-4">Version 2.3.4</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-3-3-3">Version 2.3.3</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-3-3-2">Version 2.3.2</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-3-3-1">Version 2.3.1</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-3-3-0">Version 2.3.0</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-3-2-9">Version 2.2.9</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-3-2-8">Version 2.2.8</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-3-2-7">Version 2.2.7</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-3-2-6">Version 2.2.6</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-3-2-5">Version 2.2.5</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-3-2-4">Version 2.2.4</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-3-2-3">Version 2.2.3</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-3-2-2">Version 2.2.2</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-3-2-1">Version 2.2.1</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-3-2-0">Version 2.2.0</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-3-1-9">Version 2.1.9</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-3-1-8">Version 2.1.8</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-3-1-7">Version 2.1.7</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-3-1-6">Version 2.1.6</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-3-1-5">Version 2.1.5</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-3-1-4">Version 2.1.4</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-3-1-3">Version 2.1.3</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-3-1-2">Version 2.1.2</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-3-1-1">Version 2.1.1</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-3-1-0">Version 2.1.0</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-3-0-9">Version 2.0.9</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-3-0-8">Version 2.0.8</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-3-0-7">Version 2.0.7</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-3-0-6">Version 2.0.6</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-3-0-5">Version 2.0.5</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-3-0-4">Version 2.0.4</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-3-0-3">Version 2.0.3</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-3-0-2">Version 2.0.2</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-3-0-1">Version 2.0.1</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-3-0-0">Version 2.0.0</a></li>
+                    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-1"><span class="theme-icon-holder me-2"><i class="fas fa-rocket"></i></span>Launcher Changelog</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-4-4">Version 1.4.4</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-4-3">Version 1.4.3</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-4-2">Version 1.4.2</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-4-1">Version 1.4.1</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-4-0">Version 1.4.0</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-3-9">Version 1.3.9</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-3-8">Version 1.3.8</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-3-7">Version 1.3.7</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-3-6">Version 1.3.6</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-3-5">Version 1.3.5</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-3-4">Version 1.3.4</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-3-3">Version 1.3.3</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-3-2">Version 1.3.2</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-3-1">Version 1.3.1</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-3-0">Version 1.3.0</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-2-9">Version 1.2.9</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-2-8">Version 1.2.8</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-2-7">Version 1.2.7</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-2-6">Version 1.2.6</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-2-5">Version 1.2.5</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-2-4">Version 1.2.4</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-2-3">Version 1.2.3</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-2-2">Version 1.2.2</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-2-1">Version 1.2.1</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-2-0">Version 1.2.0</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-1-9">Version 1.1.9</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-1-8">Version 1.1.8</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-1-7">Version 1.1.7</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-1-6">Version 1.1.6</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-1-5">Version 1.1.5</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-1-4">Version 1.1.4</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-1-3">Version 1.1.3</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-1-2">Version 1.1.2</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-1-1">Version 1.1.1</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-1-0">Version 1.1.0</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-0-9">Version 1.0.9</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-0-8">Version 1.0.8</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-0-7">Version 1.0.7</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-0-6">Version 1.0.6</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-0-5">Version 1.0.5</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-0-4">Version 1.0.4</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-0-3">Version 1.0.3</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-0-2">Version 1.0.2</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-0-1">Version 1.0.1</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-0-0">Version 1.0.0</a></li>
+                </ul>
+		    </nav>
+	    </div>
+
+	    <div class="docs-content">
+		    <div class="container">
+                <article class="docs-article" id="section-3">
+                    <h1 class="docs-heading">Changelog</h1>
+
+                        <section class="docs-section" id="item-3-7-2">
+                            <h2 class="section-heading">Version 2.7.2 (July 29th 2025)</h2>
+                            <h5>- Server side custom titles are now available as an exclusive perk to being a server booster in the Discord!</h5>
+                            <h5>- Fixed a bug related to a rare case specific "special" titles where not showing up in the dashboard.</h5>
+                            <h5>- Fixed float and array values not applying properly with the <code>game_settings_import</code> command.</h5>
+                            <h5>- Experimental changes to when custom textures are destroyed between loading screens.</h5>
+                            <h5>- Updated internal SDK to the latest version of Rocket League.</h5>
+                        </section>
+
+                        <section class="docs-section" id="item-3-7-1">
+                            <h2 class="section-heading">Version 2.7.1 (July 11th 2025)</h2>
+                            <h5>- Added five new settings that let you display the balls current speed under the offline tab.</h5>
+                            <h5>- Fixed the primary and accent color popups not working for loadout products in the dashboard.</h5>
+                            <h5>- Fixed some tooltip descriptions for certain settings being wrong in the dashboard.</h5>
+                            <h5>- Resized a lot of the text spacing and widget sizes in the dashboard to be more consistent.</h5>
+                            <h5>- Internal stability improvements and safety measures related to custom textures.</h5>
+                        </section>
+
+                        <section class="docs-section" id="item-3-7-0">
+                            <h2 class="section-heading">Version 2.7.0 (June 27th 2025)</h2>
+                            <h5>- Fixed the blacklist in the function scanner not applying if the whitelist filter was completely empty.</h5>
+                            <h5>- Fixed not being able to paint your car body, which was related to last update to loadout codes.</h5>
+                            <h5>- Miscellaneous fixes and improvements to various ImGui windows.</h5>
+                        </section>
+
+                        <section class="docs-section" id="item-3-6-9">
+                            <h2 class="section-heading">Version 2.6.9 (June 23rd 2025)</h2>
+                            <h5>- Removed the <code>garage_patch_invisible</code> setting as its no longer needed as of the last Rocket League update.</h5>
+                            <h5>- Fixed the <code>interface_auto_limit_fps</code> setting not restoring your original fps on next boot if you closed the game while it was unfocused.</h5>
+                            <h5>- Fixed key binds to custom aliases or sequences not saving after restarting your game.</h5>
+                            <h5>- Fixed a rare bug that caused custom banners to sometimes get recolored by the game.</h5>
+                            <h5>- Minor internal bug fixes and safety improvements related to loadout codes.</h5>
+                        </section>
+
+                        <section class="docs-section" id="item-3-6-8">
+                            <h2 class="section-heading">Version 2.6.8 (June 17th 2025)</h2>
+                            <h5>- For first time users, the dashboard and terminal windows will now automatically be opened upon first injection.</h5>
+                            <h5>- Added the new "DFH Stadium (Anniversary)" map to Discord rich presence integration and the main menu background changer.</h5>
+                            <h5>- Added a new setting <code>imgui_scanner_limit</code>, which lets you pick the limit of how many functions can be displayed in the function scanner at once.</h5>
+                            <h5>- Changed the textbox in the sequence editor window to be a searchable combobox, so you don't have to manually type out commands or settings.</h5>
+                            <h5>- Remade the custom alias and keybind windows both visually and internally, they now function similar to the new sequence window.</h5>
+                            <h5>- Fixed not being able to call an already existing sequence from another custom sequence.</h5>
+                            <h5>- Lots of code refactoring and changes to the internal framework.</h5>
+                            <h5>- Updated internal SDK to the latest version of Rocket League.</h5>
+                        </section>
+
+                        <section class="docs-section" id="item-3-6-7">
+                            <h2 class="section-heading">Version 2.6.7 (June 6th 2025)</h2>
+                            <h5>- Added a new setting <code>imgui_scanner_origin</code>, which lets you see where a function was called from (ProcessEvent, ProcessInternal, or CallFunction).</h5>
+                            <h5>- Remade the function scanner window both visually and internally to be much more optimized, as well as added a new settings tab to it.</h5>
+                            <h5>- Remade the sequence window in the bindings tab to be easier to use, sequences let you bind multiple commands or actions to a single custom command.</h5>
+                            <h5>- Fixed a crash that happened if you used any of the custom chat commands in modes that didn't have a chat, such as freeplay or custom training.</h5>
+                            <h5>- Fixed a rare bug that caused CodeRed to think your account was cabined before you logged into the game.</h5>
+                            <h5>- Additional internal memory optimizations and bug fixes.</h5>
+                        </section>
+
+                        <section class="docs-section" id="item-3-6-6">
+                            <h2 class="section-heading">Version 2.6.6 (May 23rd 2025)</h2>
+                            <h5>- Added new context menu strips for properties in the reflector window, which let you copy their name, offset, and value.</h5>
+                            <h5>- Added a new setting <code>flip_indicator_unlimited_color</code> which lets you pick the color of the flip indicator if you have unlimited flips enabled.</h5>
+                            <h5>- Remade the matchmaker window internally to be fully dynamic and update playlists in real time, instead of relying on hardcoded playlist ids and names.</h5>
+                            <h5>- Updated the internal API to accommodate GitHub's new rate limits of only one request per minute, this fix issues with appearing offline due to no API responses.</h5>
+                            <h5>- Fixed the function scanner not splitting strings by commas properly as of the last update.</h5>
+                            <h5>- Internal memory improvements, as well as optimizations to ImGui rendering code.</h5>
+                        </section>
+
+                        <section class="docs-section" id="item-3-6-5">
+                            <h2 class="section-heading">Version 2.6.5 (May 13th 2025)</h2>
+                            <h5>- Added a new setting <code>imgui_reflector_no_tarray</code>, which disables reading from TArrays completely in the reflector window.</h5>
+                            <h5>- Fixed a crash with the reflector window related to calculating missed offsets for some specific structs.</h5>
+                            <h5>- Fixed the <code>imgui_reflector_no_read</code> setting not working in some scenarios.</h5>
+                            <h5>- Updated internal SDK to the latest version of Rocket League.</h5>
+                        </section>
+
+                        <section class="docs-section" id="item-3-6-4">
+                            <h2 class="section-heading">Version 2.6.4 (May 9th 2025)</h2>
+                            <h5>- Renamed the texture browser window from <code>textures</code> to <code>texture_browser</code>.</h5>
+                            <h5>- Renamed the <code>manager_display_injection</code> setting to <code>imgui_notification_injection</code>.</h5>
+                            <h5>- Fixed a rare bug related to calculating split screen players mmr at the start of games.</h5>
+                            <h5>- Fixed a crash with the thumbnail renderer related to the <code>thumbnail_auto_garbage</code> setting.</h5>
+                            <h5>- Fixed a bug with the session tracker saying casual mmr instead of ranked for certain playlists.</h5>
+                            <h5>- Fixed training pack codes not showing up in the online / automation tab in the dashboard properly.</h5>
+                            <h5>- Fixed CodeRed failing to validate global objects if you had hundreds of thousands of items in your inventory.</h5>
+                            <h5>- Various other bug fixes and improvements related to the thumbnail renderer.</h5>
+                        </section>
+
+                        <section class="docs-section" id="item-3-6-3">
+                            <h2 class="section-heading">Version 2.6.3 (May 2nd 2025)</h2>
+                            <h5>- Added the new "Force Field" map and "Car Wars" playlist to custom Discord Rich Presence info.</h5>
+                            <h5>- Added two new commands, <code>play_random_sound</code> and <code>play_random_sound_async</code>, which pick a random ".wav" file from a given folder and plays it.</h5>
+                            <h5>- Added a widget in the settings tab for the <code>imgui_reflector_array_limit</code> setting, which sets the limit for reading and displaying values from TArrays.</h5>
+                            <h5>- Added a new context menu option for TArrays in the reflector window that let you copy the contents of TArrays to your clipboard.</h5>
+                            <h5>- Fixed the search box in the texture browser window being case sensitive when it shouldn't be.</h5>
+                            <h5>- Fixed the <code>interface_menu_background</code> setting not resetting to default properly.</h5>
+                        </section>
+
+                        <section class="docs-section" id="item-3-6-2">
+                            <h2 class="section-heading">Version 2.6.2 (April 28th 2025)</h2>
+                            <h5>- Fixed a bug causing custom player names to not send a filter request, causing them to never apply.</h5>
+                            <h5>- Internal code refactoring and optimizations related to injection and initializing classes.</h5>
+                        </section>
+
+                        <section class="docs-section" id="item-3-6-1">
+                            <h2 class="section-heading">Version 2.6.1 (April 22nd 2025)</h2>
+                            <h5>- Added custom avatars back as an experimental feature, if you encounter any crashes please report them to the Discord server.</h5>
+                            <h5>- Fixed a crash that happened after closing the game, causing log info to be printed to your clipboard.</h5>
+                            <h5>- Fixed the CodeRed logo in custom Discord Rich Presence sometimes using holiday logos for wrong dates.</h5>
+                            <h5>- Fixed the reflector window not finding instances if you didn't toggle a setting off an on first.</h5>
+                            <h5>- Fixed some quirkiness with custom player names on the main menu.</h5>
+                        </section>
+
+                        <section class="docs-section" id="item-3-6-0">
+                            <h2 class="section-heading">Version 2.6.0 (April 18th 2025)</h2>
+                            <h5>- Added a new command <code>database_dump_content</code>, which converts and dumps the values from ContentMap to usable AES decryption keys.</h5>
+                            <h5>- Added a "Settings" tab in the reflector window and converted all the checkbox options to actual settings, so they retain their value.</h5>
+                            <h5>- Fixed some products rendering with either missing or wrong textures on them with the thumbnail renderer.</h5>
+                            <h5>- Remade the "Discord Blurple" style to match Discords new default color scheme.</h5>
+                            <h5>- Lots of internal code refactoring and bug fixes.</h5>
+                        </section>
+
+                        <section class="docs-section" id="item-3-5-9">
+                            <h2 class="section-heading">Version 2.5.9 (April 4th 2025)</h2>
+                            <h5>- Added two new context menu options for the reflector window, you can now can copy an instances object index or its full name.</h5>
+                            <h5>- Added a new setting `thumbnail_load_delay` which lets you change the delay to wait for loading product assets.</h5>
+                            <h5>- Fixed textures exported as the ".jpg" format being partially corrupt due to the wrong color channels being written.</h5>
+                            <h5>- Fixed a rare crash that could happen after loading to the main menu then quickly entering the garage.</h5>
+                            <h5>- Fixed a crash with texture browser related to UTexture2D objects that had specific LOD Groups set.</h5>
+                            <h5>- Fixed "FScriptDelegate" property values not being read for classes instances in the reflector window.</h5>
+                            <h5>- Fixed ImGui windows not remembering if they were open from the last time you injected CodeRed.</h5>
+                            <h5>- Fixed the `freeplay_unlimited_flips` setting not applying to your dodge time as well.</h5>
+                            <h5>- Fixed custom color headlights not working on the main menu.</h5>
+                            <h5>- Minor bug fixes and improvements to the thumbnail renderer.</h5>
+                            <h5>- Backend changes to the internal API system.</h5>
+                        </section>
+
+                        <section class="docs-section" id="item-3-5-8">
+                            <h2 class="section-heading">Version 2.5.8 (March 25th 2025)</h2>
+                            <h5>- Temporarily disabling custom avatars again, as it seems to be the main cause of random crashes when opening the scoreboard (thanks Psyonix).</h5>
+                            <h5>- Added an "All" option for paints in the thumbnail renderer, which exports all paint variants of the selected product at once.</h5>
+                            <h5>- Added two new commands <code>play_sound</code> and <code>play_sound_async</code>, which plays a ".wav" audio file from the given arguments.</h5>
+                            <h5>- Removed the <code>product_bool_include_se</code> argument from the product dumper as it no longer exists.</h5>
+                            <h5>- Various improvements and bug fixes to the new thumbnail renderer system.</h5>
+                            <h5>- Optimizations related to downloading images and player avatars.</h5>
+                            <h5>- Updated internal SDK to the latest version of Rocket League.</h5>
+                        </section>
+
+                        <section class="docs-section" id="item-3-5-7">
+                            <h2 class="section-heading">Version 2.5.7 (March 21st 2025)</h2>
+                            <h5>- Added a new setting in the misc tab called <code>disable_crossbar_sound</code> which is self explanatory.</h5>
+                            <h5>- Enabled custom playlist images again in the textures tab after some bug fixes and improvements.</h5>
+                            <h5>- Remade the thumbnail renderer to be all command and setting based, the ImGui window now just calls commands for you.</h5>
+                            <h5>- Fixed the <code>stadium_legacy_clubs</code> setting applying all black colors to both teams in 1v1 matches, which is now my second time fixing this.</h5>
+                            <h5>- Fixed a bug that caused CodeRed to say you didn't meet the required specs related to grabbing your ram size.</h5>
+                            <h5>- Fixed the <code>freeplay_unlimited_flips</code> setting not working as of the last game update.</h5>
+                            <h5>- Upgraded the internal ImGui framework to version 1.91.9.</h5>
+                        </section>
+
+                        <section class="docs-section" id="item-3-5-6">
+                            <h2 class="section-heading">Version 2.5.6 (March 14th 2025)</h2>
+                            <h5>- Added seven new boost meter settings for custom training packs, these work exactly like the ones in freeplay but for custom training.</h5>
+                            <h5>- Added the new "Futura Garden (Day)" map to the main menu background changer along with Discord Rich Presence info.</h5>
+                            <h5>- Fixed some issues with displaying player avatars on the games leaderboard or league rankings.</h5>
+                            <h5>- Minor internal bug fixes related to the custom title system.</h5>
+                            <h5>- Updated internal SDK to the latest version of Rocket League.</h5>
+                        </section>
+
+                        <section class="docs-section" id="item-3-5-5">
+                            <h2 class="section-heading">Version 2.5.5 (March 7th 2025)</h2>
+                            <h5>- Added the ability to make custom titles! The custom title system is free to use for everyone, and can only be seen by you by default just like CodeRed loadouts.</h5>
+                            <h5>- Added a new database dumper command <code>database_dump_psynet</code>, along with five new arguments for it that let you dump info from the RPC services the game uses.</h5>
+                            <h5>- The car body used to replace the Cybertruck, for the <code>garage_remove_elon</code> setting, will now be randomly picked between each game instead of always being the Venom car.</h5>
+                            <h5>- The loadout anonymizer will no longer anonymize goal explosions, as some have special effects that change the gravity; which resulted in rubber banding during goal explosions.</h5>
+                            <h5>- Removed the <code>scoreboard_uncensor_names</code> setting as it no longer works as intended, Psyonix broke their own persona system awhile back.</h5>
+                            <h5>- Changed the primary color picker to be all in one row for the blue and orange team, instead of in separate tabs.</h5>
+                            <h5>- Reorganized the textures tab in the dashboard to be a bit more intuitive.</h5>
+                            <h5>- Significant memory optimizations and improvements related to custom textures in addition to API requests.</h5>
+                            <h5>- Fixed end of game automation features still being called if you joined another game before the delay was finished.</h5>
+                            <h5>- Fixed CodeRed switching to offline mode if an update was released while you were already injected.</h5>
+                            <h5>- Fixed some text cutting cut off in the bindings window in the dashboard for custom sequences.</h5>
+                            <h5>- Fixed trails not working in game for CodeRed loadouts (it's about time).</h5>
+                        </section>
+
+                        <section class="docs-section" id="item-3-5-4">
+                            <h2 class="section-heading">Version 2.5.4 (February 21st 2025)</h2>
+                            <h5>- Added new color picker options for garage presets, you can pick between the default RGBA color picker, or use the in game color palettes.</h5>
+                            <h5>- Added three new settings for the username anonymizer, you can now pick the format of names that are applied (Bot Name, Hidden ID, and User Hash).</h5>
+                            <h5>- Added five new flip indicator settings for offline modes, inspired by "MrMythical"'s plugin for BakkesMod.</h5>
+                            <h5>- Fixed the terminals user history being inconsistent when cycling through them with the up and down arrow keys.</h5>
+                            <h5>- Fixed the <code>stadium_legacy_clubs</code> setting applying all black colors to both teams in 1v1 matches.</h5>
+                            <h5>- Fixed CodeRed loadouts not applying on the main menu if you went into your settings and then backed out.</h5>
+                            <h5>- Fixed CodeRed banners not applying custom colors if your actual in game banner didn't support it.</h5>
+                            <h5>- Fixed some quirkiness with custom textures on the main menu related to changing your loadout.</h5>
+                            <h5>- Fixed the anonymizer settings not applying to the correct people in online games.</h5>
+                            <h5>- Internal optimizations and performance improvements.</h5>
+                        </section>
+
+                        <section class="docs-section" id="item-3-5-3">
+                            <h2 class="section-heading">Version 2.5.3 (February 14th 2025)</h2>
+                            <h5>- Enabled custom avatars again after some bug fixes, custom playlist images are still being worked on.</h5>
+                            <h5>- The maximum allowed size for loading custom player avatars has been reduced from 512x512 to 256x256.</h5>
+                            <h5>- Removed the ability to make layered avatars like you could with banners, this is a limitation of the new avatar system.</h5>
+                            <h5>- Texture formats BC1 through BC5 can now be exported to any extension instead of being limited to ".dds".</h5>
+                            <h5>- Fixed the texture browser window only showing UTexture2D's instead of all possible texture objects.</h5>
+                            <h5>- Fixed overlay windows, such as the session tracker, not properly scaling according to the <code>imgui_global_scale</code> setting.</h5>
+                            <h5>- Fixed a crash with the reflector window related to viewing TArray structs that had byte properties in them.</h5>
+                            <h5>- Fixed your Discord rich presence state saying "Idling" if you were in spectator mode.</h5>
+                            <h5>- Remade the entire internal API endpoint to be more efficient and reliable.</h5>
+                            <h5>- Further improvements to the platform and steam avatar system.</h5>
+                        </section>
+
+                        <section class="docs-section" id="item-3-5-2">
+                            <h2 class="section-heading">Version 2.5.2 (February 7th 2025)</h2>
+                            <h5>- Temporarily disabled custom playlist images while I work on a fix, Psyonix did a lot of half-assed things to GFx stuff last update.</h5>
+                            <h5>- Removed the default <code>interface_auto_reset_inputs</code> setting in favor of the two new settings below.</h5>
+                            <h5>- Added a new setting <code>interface_reset_inputs_kickoff</code> that auto resets your input buffer before kickoffs.</h5>
+                            <h5>- Added a new setting <code>interface_reset_inputs_tabbing</code> that auto resets your input buffer when alt tabbing or when the games focus changes.</h5>
+                            <h5>- Added a "Draw" button for texture properties in the reflector window, which draws them on the canvas just like the texture browser.</h5>
+                            <h5>- Fixed special CodeRed titles, such as supporter and alpha tester, not being visible between steam players in online games.</h5>
+                            <h5>- Fixed the connections window not using proper hex escaped characters for strings when searching by epic name.</h5>
+                            <h5>- Fixed the <code>interface_auto_gg</code> setting typing in chat instead of using the actual quick chat message.</h5>
+                            <h5>- Fixed platform avatar textures sometimes showing up as fully black squares randomly in online games.</h5>
+                            <h5>- Fixed the player title combobox being completely empty for some users in the dashboard.</h5>
+                            <h5>- Bug fixes and optimizations to the loadout system related to loading and applying products.</h5>
+                            <h5>- Bug fixes and improvements related to the <code>scoreboard_steam_avatars</code> setting.</h5>
+                            <h5>- Minor improvements and fixes to various ImGui windows.</h5>
+                        </section>
+
+                        <section class="docs-section" id="item-3-5-1">
+                            <h2 class="section-heading">Version 2.5.1 (February 3rd 2025)</h2>
+                            <h5>- Temporarily disabled custom player avatars while I work on a fix for them being destroyed randomly after scoring goals.</h5>
+                            <h5>- Added a new setting <code>garage_patch_invisible</code> which attempts to detect and patch people using invisible loadout hacks. Before this was hardcoded in but it can now be turned on or off.</h5>
+                            <h5>- Fixed some cars in online matches randomly having the stocktane preset applied to them despite not using any anonymizer settings.</h5>
+                            <h5>- Fixed some titles not restoring to their original colors on the scoreboard if you disabled loadouts mid-game.</h5>
+                            <h5>- Fixed a rare thread racing crash that could happen with the reflector window and clearing instances.</h5>
+                            <h5>- Fixed the <code>freeplay_goal_speed</code> setting spamming the balls speed in chat in online matches.</h5>
+                            <h5>- Fixed the matchmaker window missing some limited time events and the new Split Shot modes.</h5>
+                            <h5>- Internal bug fixes and optimizations related to API requests.</h5>
+                            <h5>- Upgraded the internal ImGui framework to version 1.91.8.</h5>
+                        </section>
+
+                        <section class="docs-section" id="item-3-5-0">
+                            <h2 class="section-heading">Version 2.5.0 (January 28th 2025)</h2>
+                            <h5>- Added a notification when using the <code>interface_disable_rendering</code> command, as a reminder you can press "ESC" to re-enable rendering.</h5>
+                            <h5>- Fixed the <code>freeplay_goal_speed</code> setting sometimes falsely logging in the chat after kickoffs.</h5>
+                            <h5>- Updated internal SDK to the latest version of Rocket League.</h5>
+                        </section>
+
+                        <section class="docs-section" id="item-3-4-9">
+                            <h2 class="section-heading">Version 2.4.9 (January 24th 2025)</h2>
+                            <h5>- Fixed your in game title not restoring to its original one on the main menu if you selected a different one via the garage.</h5>
+                            <h5>- Fixed a bug with the reflector not being able to view TArrays if they had struct values in them.</h5>
+                            <h5>- Fixed a random crash that could happen when using the <code>inventory_sync</code> command.</h5>
+                            <h5>- Improvements and optimizations to the loadout system on the main menu.</h5>
+                            <h5>- Further improvements and minor bug fixes with the reflector window.</h5>
+                        </section>
+
+                        <section class="docs-section" id="item-3-4-8">
+                            <h2 class="section-heading">Version 2.4.8 (January 17th 2025)</h2>
+                            <h5>- Opened the connections window to the public, this tool lets you search for players linked accounts if any are found.</h5>
+                            <h5>- JSON values exported via the database dumper now use proper null values for arguments.</h5>
+                            <h5>- Renamed the <code>attribute_special_edition_label</code> argument to <code>attribute_custom_edition_label</code> for better clarity.</h5>
+                            <h5>- Removed the encoding arguments for the database dumper, all commands will now be exported in UTF8 with multi-byte support.</h5>
+                            <h5>- Removed the included emoji font, as nothing uses it anymore in favor of "Remix Icon".</h5>
+                            <h5>- Fixed a crash that could happen with the reflector window related to viewing static arrays.</h5>
+                            <h5>- Fixed items not equipping to your loadout on the main menu if you clicked equip via an item drop.</h5>
+                            <h5>- Fixed some rumble pickups, such as spikes, not showing during goal replays when using CodeRed loadouts.</h5>
+                            <h5>- Fixed some instances of your CodeRed loadout not applying during goal replays.</h5>
+                            <h5>- Fixed custom terminal themes for styles causing the terminal font to reset to default.</h5>
+                            <h5>- Fixed title ids not printing their instance number for the database dumper.</h5>
+                            <h5>- Upgraded the internal ImGui framework to version 1.91.7.</h5>
+                            <h5>- Internal code refactoring and bug fixes.</h5>
+                        </section>
+
+                        <section class="docs-section" id="item-3-4-7">
+                            <h2 class="section-heading">Version 2.4.7 (January 10th 2025)</h2>
+                            <h5>- Added a new "Adobe scaleform" tab to the reflector window, which lets you view the games UI tables, columns, and values.</h5>
+                            <h5>- Added a new "Database" tab to the style editor which acts as an example of different hex colors and how they're displayed.</h5>
+                            <h5>- Added another 16 attribute arguments for the database dumper, check the wiki for a full list of arguments and examples.</h5>
+                            <h5>- Added more internal safety checking and error messages before initializing in case something goes wrong.</h5>
+                            <h5>- Custom special edition labels will now be printed in the CodeRed log file just like normal editions.</h5>
+                            <h5>- Remade how custom styles are parsed and written related to custom terminal themes and accents.</h5>
+                            <h5>- Fixed the connections window sometimes not showing all available linked accounts when searching.</h5>
+                            <h5>- Fixed the "[UTF16]" option not working properly for the database dumper commands.</h5>
+                        </section>
+
+                        <section class="docs-section" id="item-3-4-6">
+                            <h2 class="section-heading">Version 2.4.6 (January 1st 2025)</h2>
+                            <h5>- Added a new "Unreal Reflector" window for developers, this tool lets you view game objects and their properties in real time.</h5>
+                            <h5>- Added a new database dump arguments for offline products, <code>product_attribute_names</code>, which prints its attribute names if any are found.</h5>
+                            <h5>- Added over 20 new product attribute arguments for the database dumper, check the wiki for a full list of arguments and examples.</h5>
+                            <h5>- Renamed the database argument <code>online_attribute_string</code> to <code>online_attribute_names</code> for consistency reasons</h5>
+                            <h5>- Fixed the database dumper not escaping some specific special characters, turns out Psyonix likes to add random escape characters to strings for no reason.</h5>
+                            <h5>- Fixed the <code>garage_remove_elon</code> setting causing your car to have the "mystery cloth" stuck on it after revealing drops.</h5>
+                            <h5>- Fixed the connections window not displaying account ids as of the last Rocket League update.</h5>
+                            <h5>- Internal bug fixes and lots of code refactoring.</h5>
+                        </section>
+
+                        <section class="docs-section" id="item-3-4-5">
+                            <h2 class="section-heading">Version 2.4.5 (December 16th 2024)</h2>
+                            <h5>- Added more detailed info for Discord rich presence while on the main menu.</h5>
+                            <h5>- Fixed players mmr in online freeplay matches showing up as "600", it will now display their casual mmr.</h5>
+                            <h5>- Fixed the <code>garage_remove_elon</code> setting not working on the main menu properly.</h5>
+                            <h5>- Upgraded the internal ImGui framework to version 1.91.6.</h5>
+                            <h5>- Updated internal SDK to the latest version of Rocket League.</h5>
+                        </section>
+
+                        <section class="docs-section" id="item-3-4-4">
+                            <h2 class="section-heading">Version 2.4.4 (December 9th 2024)</h2>
+                            <h5>- Internal version control bug fix.</h5>
+                        </section>
+
+                        <section class="docs-section" id="item-3-4-3">
+                            <h2 class="section-heading">Version 2.4.3 (December 9th 2024)</h2>
+                            <h5>- Added a new setting <code>disable_epic_overlay</code> which disables the new Epic Games overlay, this works for both Steam and Epic.</h5>
+                            <h5>- Added the new "Shokunin" car bodies to the anonymizer setting <code>garage_hide_loadouts</code>.</h5>
+                            <h5>- Changed the "ImGui.ini" file to be stored in "CodeRed\Settings" as opposed to the games directory.</h5>
+                            <h5>- Fixed the <code>garage_hide_loadouts</code> setting not working as of the last game update.</h5>
+                            <h5>- Fixed duplicate spawn particles appearing on your car when applying CodeRed loadouts.</h5>
+                            <h5>- Fixed the disable boost pads settings not working properly as of the last game update</h5>
+                            <h5>- Fixed custom post process effects not working on some main menu backgrounds.</h5>
+                            <h5>- Improvements and bug fixes to ImGui related to hooks and global scaling.</h5>
+                        </section>
+
+                        <section class="docs-section" id="item-3-4-2">
+                            <h2 class="section-heading">Version 2.4.2 (December 3rd 2024)</h2>
+                            <h5>- All custom freeplay car and stadium colors will also work in online freeplay matches.</h5>
+                            <h5>- Added new online freeplay info to the Discord rich presence integration.</h5>
+                            <h5>- Added the new "Neo Tokyo (Arcade)" map to Discord rich presence integration.</h5>
+                            <h5>- Fixed some icons in ImGui not scaling properly with the <code>imgui_global_scale</code> setting.</h5>
+                            <h5>- The disable boost pills or pad settings for freeplay are a little broken, this is a result of Psyonix breaking boost pickups last update.</h5>
+                            <h5>- Updated internal SDK to the latest version of Rocket League.</h5>
+                        </section>
+
+                        <section class="docs-section" id="item-3-4-1">
+                            <h2 class="section-heading">Version 2.4.1 (November 29th 2024)</h2>
+                            <h5>- Added new hitbox visualizer settings for freeplay and offline game modes.</h5>
+                            <h5>- Added the new "Porsche 911 GT3 RS" car body to the anonymizer setting <code>garage_hide_loadouts</code>.</h5>
+                            <h5>- Added two new settings for custom ImGui styles, "TabBarBorderSize" and "TabBarOverlineSize".</h5>
+                            <h5>- Fixed your cars boost being invisible if you had the same boost equipped in game and in CodeRed.</h5>
+                            <h5>- Fixed a white boost cone that appeared on your car when equipping certain boosts with CodeRed.</h5>
+                            <h5>- Fixed the title selector in the CodeRed dashboard sometimes being empty upon injection.</h5>
+                            <h5>- Fixed the "update available" popup not working as of a few updates ago.</h5>
+                            <h5>- Upgraded the internal ImGui framework to version 1.91.5.</h5>
+                            <h5>- Internal code refactoring and minor bug fixes.</h5>
+                        </section>
+
+                        <section class="docs-section" id="item-3-4-0">
+                            <h2 class="section-heading">Version 2.4.0 (November 13th 2024)</h2>
+                            <h5>- Fixed various issues with profile items, such as banners and titles, not applying from last update.</h5>
+                        </section>
+
+                        <section class="docs-section" id="item-3-3-9">
+                            <h2 class="section-heading">Version 2.3.9 (November 11th 2024)</h2>
+                            <h5>- Added the new "1966 Cadillac DeVille" car body to the anonymizer setting <code>garage_hide_loadouts</code>.</h5>
+                            <h5>- Renamed all the manager commands, for example <code>manager_reset_setting</code> has been renamed to just <code>reset_setting</code>.</h5>
+                            <h5>- Online stadium colors will now also be applied in custom lan matches as opposed to freeplay colors.</h5>
+                            <h5>- Fixed the <code>freeplay_pad_cooldown</code> and <code>freeplay_pill_cooldown</code> settings not applying when joining or respawning in freeplay.</h5>
+                            <h5>- Fixed a crash that could happen when changing profile items in game and going back and forth through menus really fast.</h5>
+                            <h5>- Fixed a crash that could happen with the "skill corrected" ImGui notification as of the last update.</h5>
+                            <h5>- Fixed custom paint colors not applying in game for a select few car bodies or being inconsistent.</h5>
+                            <h5>- Fixed certain titles not restoring properly if you disabled CodeRed loadouts mid-game.</h5>
+                            <h5>- Internal optimizations and performance improvements.</h5>
+                        </section>
+
+                        <section class="docs-section" id="item-3-3-8">
+                            <h2 class="section-heading">Version 2.3.8 (October 31st 2024)</h2>
+                            <h5>- The <code>print_hitbox</code> command will now also print your car meshes translation (which is its offset) to the terminal.</h5>
+                            <h5>- Fixed a rare thread racing crash related to ImGui notifications that could happen upon injection.</h5>
+                            <h5>- Fixed some issues with the main menu background changer not working properly or getting stuck.</h5>
+                            <h5>- Internal code refactoring and optimizations for custom RPC requests.</h5>
+                            <h5>- Other bug fixes that are too spooky and scary to talk about.</h5>
+                        </section>
+
+                        <section class="docs-section" id="item-3-3-7">
+                            <h2 class="section-heading">Version 2.3.7 (October 26th 2024)</h2>
+                            <h5>- CodeRed can no longer be used by cabined accounts that require parental consent, I don't want to deal with the restrictions related to that stuff.</h5>
+                            <h5>- Minor bug fixes and improvements to certain ImGui elements.</h5>
+                        </section>
+
+                        <section class="docs-section" id="item-3-3-6">
+                            <h2 class="section-heading">Version 2.3.6 (October 22nd 2024)</h2>
+                            <h5>- Removed the <code>brank_pumpkin_time</code> command which hired a random prisoner near you to come to your house an carve a pumpkin for you.</h5>
+                            <h5>- Fixed a critical bug that happened in online games that caused a consistent fps dip every 1-2 seconds on lower end hardware.</h5>
+                            <h5>- Updated internal SDK to the latest version of Rocket League.</h5>
+                            <h5>- Internal code refactoring and additional optimizations.</h5>
+                        </section>
+
+                        <section class="docs-section" id="item-3-3-5">
+                            <h2 class="section-heading">Version 2.3.5 (October 18th 2024)</h2>
+                            <h5>- Added a new setting <code>freeplay_unlimited_flips</code> which is pretty self explanatory.</h5>
+                            <h5>- Added the new "McLaren Senna" car body to the anonymizer setting <code>garage_hide_loadouts</code>.</h5>
+                            <h5>- Added the new "Drift Woods (Night)" map to Discord rich presence integration and the main menu background changer.</h5>
+                            <h5>- Fixed your preview loadout when opening drops sometimes not showing what item you got after opening them.</h5>
+                            <h5>- Fixed the goal explosion camera when viewing blueprints in your inventory not working properly.</h5>
+                            <h5>- Fixed the <code>interface_april_icons</code> setting sometimes not applying at the end of games.</h5>
+                        </section>
+
+                        <section class="docs-section" id="item-3-3-4">
+                            <h2 class="section-heading">Version 2.3.4 (October 11th 2024)</h2>
+                            <h5>- The <code>garage_remove_elon</code> setting will now also apply to party members on the main menu.</h5>
+                            <h5>- Fixed ImGui not registering mouse clicks right away if you tabbed out of the game, then tabbed back in and clicked an ImGui window.</h5>
+                            <h5>- Fixed some elements in the key bindings window not lining up properly, as well as cutting off text.</h5>
+                            <h5>- Various improvements and code refactoring related to ImGui windows.</h5>
+                            <h5>- Internal backend changes to API requests and responses.</h5>
+                        </section>
+
+                        <section class="docs-section" id="item-3-3-3">
+                            <h2 class="section-heading">Version 2.3.3 (October 5th 2024)</h2>
+                            <h5>- Fixed you CodeRed loadout restoring to its actual loadout if another player joined your party on the main menu.</h5>
+                            <h5>- Fixed the function database in the function scanner window not displaying properly unless you searched for something first.</h5>
+                            <h5>- Fixed a rare edge case bug that could make CodeRed think you were playing in offline mode.</h5>
+                            <h5>- Internal bug fixes and optimizations to how player mmr is requested.</h5>
+                        </section>
+
+                        <section class="docs-section" id="item-3-3-2">
+                            <h2 class="section-heading">Version 2.3.2 (September 24th 2024)</h2>
+                            <h5>- Updated internal SDK to the latest version of Rocket League.</h5>
+                        </section>
+                    
+                        <section class="docs-section" id="item-3-3-1">
+                            <h2 class="section-heading">Version 2.3.1 (September 23rd 2024)</h2>
+                            <h5>- Fixed your CodeRed loadout not reapplying on the main menu when a new auth-ticket is requested by the game.</h5>
+                            <h5>- Fixed a select few key names for the database dumper commands for some arguments.</h5>
+                            <h5>- Fixed an ImGui rendering issue with the post process effects window.</h5>
+                            <h5>- Backend API changes internal bug fixes related to async commands.</h5>
+                        </section>
+
+                        <section class="docs-section" id="item-3-3-0">
+                            <h2 class="section-heading">Version 2.3.0 (September 6th 2024)</h2>
+                            <h5>- Added two new arguments related to node images for the playlist dumper.</h5>
+                            <h5>- Added the new BMW cars to the anonymizer setting <code>garage_hide_loadouts</code>.</h5>
+                            <h5>- Fixed the <code>freeplay_clear_overrides</code> setting not applying if you had loadouts disabled.</h5>
+                            <h5>- Important internal backend changes to the API.</h5>
+                            <h5>- Upgraded the internal ImGui framework to version 1.91.1.</h5>
+                        </section>
+
+                        <section class="docs-section" id="item-3-2-9">
+                            <h2 class="section-heading">Version 2.2.9 (September 3rd 2024)</h2>
+                            <h5>- Added the new "Drift Woods" maps to the main menu background changer.</h5>
+                            <h5>- Added a new "ActorState Debugger" window, which shows the states of your car and current ball.</h5>
+                            <h5>- Fixed a bug that caused your player borders to sometimes not equip.</h5>
+                            <h5>- Fixed a bug caused by Psyonix related to playlists on the main menu sometimes saying "Unavailable".</h5>
+                            <h5>- Updated internal SDK to the latest version of Rocket League.</h5>
+                        </section>
+
+                        <section class="docs-section" id="item-3-2-8">
+                            <h2 class="section-heading">Version 2.2.8 (August 21st 2024)</h2>
+                            <h5>- Added a new debugging command <code>print_hitbox</code> which will print your cars current hitbox dimensions and offsets to the terminal.</h5>
+                            <h5>- Added a new debugging command <code>print_login_url</code> which will print your players current login url to the terminal.</h5>
+                            <h5>- Improved the <code>garage_hide_loadouts</code> setting to also replace car bodies with all default ones according to their hitbox.</h5>
+                            <h5>- Custom freeplay stadium colors will now be applied during casual intermission matches.</h5>
+                            <h5>- Fixed a crash that could happen when previewing certain product slots on the main menu through CodeRed.</h5>
+                            <h5>- Fixed your CodeRed loadouts not applying in lobby intermissions in casual matches (car colors still don't apply).</h5>
+                            <h5>- Fixed some scenarios where your CodeRed profile was not being applied after you received an item drop at the end of a match.</h5>
+                            <h5>- Fixed Discord rich presence not updating your status if you went into a lobby intermission match after a casual game ended.</h5>
+                            <h5>- Fixed the "time remaining" field for Discord rich presence not being very accurate in online games, as well as not displaying if you won or lost a match.</h5>
+                            <h5>- Fixed the <code>garage_remove_elon</code> setting not replacing the Cybertruck body on cars if you also had the <code>garage_hide_loadouts</code> setting enabled.</h5>
+                            <h5>- Internal optimizations and backend improvements.</h5>
+                        </section>
+
+                        <section class="docs-section" id="item-3-2-7">
+                            <h2 class="section-heading">Version 2.2.7 (August 9th 2024)</h2>
+                            <h5>- Added a new setting <code>garage_remove_elon</code> which removes Elon Musk items from players loadouts that you encounter online.</h5>
+                            <h5>- Added a new anonymizer setting <code>garage_hide_loadouts</code> that forces the loadouts of players you encounter online to be stock items.</h5>
+                            <h5>- Added a new color option for styles called "TextLink" that let you change the color of hyperlinks.</h5>
+                            <h5>- Fixed custom primary and accent colors from your loadout not applying for some specific decals in freeplay or workshop maps.</h5>
+                            <h5>- Fixed a bug with ImGui windows sometimes getting stuck to your mouse if you tabbed out and back into the game.</h5>
+                            <h5>- Fixed an issue with hooking DirectX that could effect ImGui when injecting CodeRed into multiple game instances.</h5>
+                            <h5>- Fixed a possible thread racing issue with logging if you injected CodeRed into multiple game instances.</h5>
+                            <h5>- Internal bug fixes and stability improvements.</h5>
+                            <h5>- Upgraded the internal ImGui framework to version 1.91.0</h5>
+                        </section>
+
+                        <section class="docs-section" id="item-3-2-6">
+                            <h2 class="section-heading">Version 2.2.6 (July 23rd 2024)</h2>
+                            <h5>- Added a new default style inspired by "whatyouhide"'s Gotham colorscheme for vim called "Gotham City (Dark Blue Green)".</h5>
+                            <h5>- Added a new command <code></code> which removes the "You can also use this item in Fortnite" popup on products.</h5>
+                            <h5>- Removed the ability to equip any of the Elon Musk items through CodeRed loadouts.</h5>
+                            <h5>- Updated internal SDK to the latest version of Rocket League.</h5>
+                        </section>
+
+                        <section class="docs-section" id="item-3-2-5">
+                            <h2 class="section-heading">Version 2.2.5 (July 19th 2024)</h2>
+                            <h5>- Added two new commands <code>matchmaking_select_id</code> and <code>matchmaking_deselect_id</code> that let you select playlists on the main menu by their id instead of row index.</h5>
+                            <h5>- Fixed the tab colors being wrong in some windows, this was due to me not accounting for some new color ids as of the last ImGui update.</h5>
+                            <h5>- Fixed tournament and private showing up with incorrect info for Discord rich presence, also matches will now show proper team sizes if players leave.</h5>
+                            <h5>- Internal bug fixes and performance improvements.</h5>
+                        </section>
+
+                        <section class="docs-section" id="item-3-2-4">
+                            <h2 class="section-heading">Version 2.2.4 (July 4th 2024)</h2>
+                            <h5>- Fixed a rare crash that could happen upon injection related to a thread racing issue.</h5>
+                            <h5>- Added a few new color options for custom styles related to tabs as per the new ImGui update.</h5>
+                            <h5>- Upgraded the internal ImGui framework to version 1.9.9.</h5>
+                        </section>
+
+                        <section class="docs-section" id="item-3-2-3">
+                            <h2 class="section-heading">Version 2.2.3 (June 25th 2024)</h2>
+                            <h5>- Added support for displaying elapsed time when in overtime mode for Discord rich presence.</h5>
+                            <h5>- Fixed the "manager_purge_logs" setting not purging logs that were generated by switching between the Steam and Epic versions of the game.</h5>
+                            <h5>- Fixed CodeRed sometimes detecting your integrated graphics instead of your gpu if you were on a laptop.</h5>
+                            <h5>- Fixed the wrong primary and accent colors sometimes being applied to your car in freeplay.</h5>
+                            <h5>- Updated internal SDK to the latest version of Rocket League.</h5>
+                            <h5>- Internal code refactoring and improvements.</h5>
+                        </section>
+
+                        <section class="docs-section" id="item-3-2-2">
+                            <h2 class="section-heading">Version 2.2.2 (June 20th 2024)</h2>
+                            <h5>- The <code>stadium_disable_filters</code> setting now also disables color desaturation, turns out some maps do that for some reason.</h5>
+                            <h5>- Possibly fixed a bug that made playlists on the main menu appear disabled, might have been related to waiting on the start menu before the game could auth you in.</h5>
+                            <h5>- Fixed a couple random map images that weren't showing up in in Discord rich presence for some reason.</h5>
+                            <h5>- Internal optimizations and miscellaneous bug fixes.</h5>
+                        </section>
+
+                        <section class="docs-section" id="item-3-2-1">
+                            <h2 class="section-heading">Version 2.2.1 (June 10th 2024)</h2>
+                            <h5>- Added a new setting <code>presence_discord_party</code> which enables showing that you're in a party for Discord rich presence.</h5>
+                            <h5>- Fixed a crash that could happen with Discord rich presence if you didn't have Discord open in the background.</h5>
+                            <h5>- Improved various elements to Discord rich presence text and timers.</h5>
+                            <h5>- Improvements to the custom platform avatar system.</h5>
+                            <h5>- Upgraded the internal ImGui framework to version 1.9.8.</h5>
+                        </section>
+
+                        <section class="docs-section" id="item-3-2-0">
+                            <h2 class="section-heading">Version 2.2.0 (June 4th 2024)</h2>
+                            <h5>- Added the new "Salty Shores (Salty Fest)" map to the main menu background changer.</h5>
+                            <h5>- Added Discord rich presence integration, see the "interface" tab for all the available settings (credit to Segal for creating the dummy dll).</h5>
+                            <h5>- Your CodeRed border and banners will no longer be applied when entering the "profile" menu in the garage, this is to prevent a crash that could occur.</h5>
+                            <h5>- The texture browser window now automatically refresh upon loading screens to prevent trying to export a texture that no longer exists.</h5>
+                            <h5>- Improved displaying mmr on the playlist select menu, sometimes you'd have to go in and out of the menu for it to apply which has been fixed.</h5>
+                            <h5>- Improved the internal safety system for injecting the dll really early, sometimes CodeRed would fail to initialize.</h5>
+                            <h5>- Changed the ImGui notification system to use textures for icons instead of emojis.</h5>
+                            <h5>- Updated the gamestate debugger to include rich presence info.</h5>
+                            <h5>- Updated internal SDK to the latest version of Rocket League.</h5>
+                            <h5>- Upgraded the internal ImGui framework to version 1.9.7.</h5>
+                        </section>
+
+                        <section class="docs-section" id="item-3-1-9">
+                            <h2 class="section-heading">Version 2.1.9 (May 24th 2024)</h2>
+                            <h5>- Added a new setting <code>tracker_log_populations</code> which will track playlist populations in the background for statistics.</h5>
+                            <h5>- Fixed a bug with the show goal speed settings sometimes being spammed in chat.</h5>
+                            <h5>- Internal code refactoring and changes to the CodeRed framework.</h5>
+                            <h5>- Performance improvements related to ImGui windows and WndProc.</h5>
+                        </section>
+
+                        <section class="docs-section" id="item-3-1-8">
+                            <h2 class="section-heading">Version 2.1.8 (May 17th 2024)</h2>
+                            <h5>- Added a new experimental setting <code>scoreboard_steam_avatars</code>, which allows Epic Games users to see Steam players avatars on the scoreboard.</h5>
+                            <h5>- Added two new settings for the obs controls window related to the players current map, its file name and its display name.</h5>
+                            <h5>- Added a new censorship system for changing your player name and custom rich presence info, no more naughty words allowed.</h5>
+                            <h5>- Changed the logic for the function scanners blacklist, the blacklist will now be applied to the whitelisted functions if there is one set.</h5>
+                            <h5>- Fixed a crash that could happen when exiting the game, this was caused by improperly destroying DX11 resources.</h5>
+                            <h5>- Fixed a rare bug that could happen on the Epic Games store related to finding globals, which prevented CodeRed from initializing.</h5>
+                            <h5>- Fixed legacy club colors not applying the right colors in 1v1 matches, Psyonix changed how club colors are formatted for some reason.</h5>
+                            <h5>- Fixed a visual bug that caused your car to "jitter" after reaching supersonic, this was related to clearing car colors in freeplay.</h5>
+                            <h5>- Fixed a bug related to custom stadium colors that could cause performance issues on lower end hardware.</h5>
+                            <h5>- Improvements to ImGui and its "ResizeBuffers" hook relating to fullscreen mode.</h5>
+                            <h5>- Internal optimizations and improvements related to gameplay.</h5>
+                            <h5>- Upgraded the internal ImGui framework to version 1.9.6.</h5>
+                        </section>
+
+                        <section class="docs-section" id="item-3-1-7">
+                            <h2 class="section-heading">Version 2.1.7 (May 10th 2024)</h2>
+                            <h5>- Fixed the "ImGui Demo" window not closing properly when pressing escape or using the X button.</h5>
+                            <h5>- Fixed the "G-Force Frenzy" and "April Fools" limited time events not showing up in the matchmaker window.</h5>
+                            <h5>- Fixed custom platform avatars randomly crashing mid-game, also I enabled these settings again finally.</h5>
+                            <h5>- Fixed a loading screen crash that could happen related to reloading custom textures.</h5>
+                            <h5>- Internal improvements and optimizations.</h5>
+                        </section>
+
+                        <section class="docs-section" id="item-3-1-6">
+                            <h2 class="section-heading">Version 2.1.6 (May 3rd 2024)</h2>
+                            <h5>- Fixed a crash that could happen after goal replays in online games.</h5>
+                            <h5>- Changes to the backend API.</h5>
+                        </section>
+
+                        <section class="docs-section" id="item-3-1-5">
+                            <h2 class="section-heading">Version 2.1.5 (May 2nd 2024)</h2>
+                            <h5>- Updated internal SDK to the latest version of Rocket League.</h5>
+                        </section>
+
+                        <section class="docs-section" id="item-3-1-4">
+                            <h2 class="section-heading">Version 2.1.4 (May 1st 2024)</h2>
+                            <h5>- Added a new command <code>freeplay_spawn_ball</code> which lets you spawn multiple balls in freeplay.</h5>
+                            <h5>- Added a few more additional checks for the invisible car exploit, as it would appear Psyonix still hasn't fully fixed it. If you encounter someone invisible remember to save the reply!</h5>
+                            <h5>- Fixed an audio bug when tabbing back into the game if you had the "mute on unfocused" setting on, the game would think you were still unfocused if an ImGui window was open.</h5>
+                            <h5>- Fixed the <code>stadium_disable_filters</code> setting not detecting you were in the correct map, for example removing the cartoony lighting for the "Fire & Ice" map wasn't working.</h5>
+                            <h5>- Fixed CodeRed thinking you were in freeplay while playing in workshop maps, I still made the "use default colors" freeplay setting still work however.</h5>
+                            <h5>- Fixed a crash that could happen when spamming the open scoreboard button right after joining an online game.</h5>
+                            <h5>- Stability improvements and optimizations with custom textures.</h5>
+                        </section>
+
+                        <section class="docs-section" id="item-3-1-3">
+                            <h2 class="section-heading">Version 2.1.3 (April 26th 2024)</h2>
+                            <h5>- Added "collision scale", "visual scale", and "max speed" settings for both your car and the ball in freeplay.</h5>
+                            <h5>- Added "boost force" and "jump force" settings for your car in freeplay.</h5>
+                            <h5>- Lots of internal code refactoring and improvements.</h5>
+                        </section>
+
+                        <section class="docs-section" id="item-3-1-2">
+                            <h2 class="section-heading">Version 2.1.2 (April 16th 2024)</h2>
+                            <h5>- Fixed a crash that could happen when recoloring your in-game banner or border while having a different one equipped in CodeRed.</h5>
+                            <h5>- Updated internal SDK to the latest version of Rocket League.</h5>
+                        </section>
+
+                        <section class="docs-section" id="item-3-1-1">
+                            <h2 class="section-heading">Version 2.1.1 (April 14th 2024)</h2>
+                            <h5>- Added a patch for the invisible car hack, if you encounter other players using it online the default loadout will be applied to them (along with a clown topper).</h5>
+                            <h5>- Fixed a crash that could happen when using other third party overlays in combination with CodeRed.</h5>
+                            <h5>- Fixed an alt-tab crash that could happen in fullscreen mode with the dashboard window open.</h5>
+                            <h5>- Fixed custom rich presence info sometimes not working or updating properly.</h5>
+                            <h5>- Miscellaneous bug fixes that no one needs to know ever existed.</h5>
+                            <h5>- Upgraded the internal ImGui framework to version 1.9.5.</h5>
+                        </section>
+
+                        <section class="docs-section" id="item-3-1-0">
+                            <h2 class="section-heading">Version 2.1.0 (April 8th 2024)</h2>
+                            <h5>- Fixed a rare but critical crash that could happen related to incorrectly parsing JSON data.</h5>
+                            <h5>- Fixed a bug that could cause CodeRed to think you were playing in offline mode.</h5>
+                            <h5>- Minor internal optimizations.</h5>
+                        </section>
+
+                        <section class="docs-section" id="item-3-0-9">
+                            <h2 class="section-heading">Version 2.0.9 (April 5th 2024)</h2>
+                            <h5>- Added basic OBS integration for its text source "read from file" option, see the new "obs" window for all available options.</h5>
+                            <h5>- Fixed the show playlist populations setting sometimes showing up as zero players online.</h5>
+                            <h5>- Fixed an issue with ImGui not appearing sometimes after alt-tabbing in fullscreen mode.</h5>
+                            <h5>- Fixed your CodeRed profile restoring to their original one after after alt-tabbing in fullscreen mode.</h5>
+                            <h5>- Fixed the <code>matchmaking_select_region</code> command missing the new us central option.</h5>
+                            <h5>- Trying another experimental fix for the random loading screen crash (needs testing).</h5>
+                        </section>
+
+                        <section class="docs-section" id="item-3-0-8">
+                            <h2 class="section-heading">Version 2.0.8 (March 29th 2024)</h2>
+                            <h5>- Fixed your boost resetting to default if you had the same one selected both in CodeRed and in-game.</h5>
+                            <h5>- Fixed titles sometimes not applying if you had certain tournament titles equipped in-game.</h5>
+                            <h5>- Fixed disabling boost pads in freeplay not working if you reset your car or scored a goal.</h5>
+                            <h5>- Fixed a case of mmr not applying to playlist nodes when backing in and out of the playlists menu.</h5>
+                            <h5>- Possibly fixed a random crash that could happen after joining a game (needs more testing).</h5>
+                            <h5>- Internal memory improvements and optimizations.</h5>
+                        </section>
+
+                        <section class="docs-section" id="item-3-0-7">
+                            <h2 class="section-heading">Version 2.0.7 (March 20th 2024)</h2>
+                            <h5>- Added a new setting <code>function_scanner_regex</code>, which allows the use of regular expressions when whitelisting or blacklisting functions.</h5>
+                            <h5>- Added a few missing database dump arguments for playlists and products, check the wiki for a full list of arguments.</h5>
+                            <h5>- Fixed your headlight colors disabling themselves if you dragged your mouse out of bounds in the color picker for ImGui.</h5>
+                            <h5>- Fixed platform avatars not recoloring if you changed your custom stadium colors mid-game.</h5>
+                            <h5>- Updated internal SDK to the latest version of Rocket League.</h5>
+                            <h5>- Internal improvements and bug fixes.</h5>
+                        </section>
+
+                        <section class="docs-section" id="item-3-0-6">
+                            <h2 class="section-heading">Version 2.0.6 (March 11th 2024)</h2>
+                            <h5>- Improved the naming of duplicate products with different editions in the garage tab, as well as in the thumbnail renderer.</h5>
+                            <h5>- Fixed some paints still applying to products even if you clicked "Nothing selected" in the garage tab.</h5>
+                            <h5>- Fixed your real loadouts trail paint not applying in game, I accidentally reverted this fix last update.</h5>
+                            <h5>- Fixed the main menu background not restoring to its original one if you selected "Don't Change Background".</h5>
+                            <h5>- Fixed a rare edge case crash that could happen on the Steam version of the game on injection.</h5>
+                            <h5>- Fixed the main menu background changer not instantly changing upon injection.</h5>
+                            <h5>- Fixed a potential memory leak related to strings over playing the game for a long time.</h5>
+                            <h5>- Internal optimizations and improvements.</h5>
+                        </section>
+
+                        <section class="docs-section" id="item-3-0-5">
+                            <h2 class="section-heading">Version 2.0.5 (March 5th 2024)</h2>
+                            <h5>- Added the new "AquaDome (Salty Shallows)" map to the main menu background changer.</h5>
+                            <h5>- Fixed some esports decals not showing up in the garage tab, this happened because Psyonix thought it was a good idea to give multiple product ids the same exact name.</h5>
+                            <h5>- Fixed an issue with the session tracker window and displaying your current win/lose streak mmr.</h5>
+                            <h5>- Updated internal SDK to the latest version of Rocket League.</h5>
+                        </section>
+
+                        <section class="docs-section" id="item-3-0-4">
+                            <h2 class="section-heading">Version 2.0.4 (March 4th 2024)</h2>
+                            <h5>- Added an internal safety system once injected, previously if you injected too early the game would crash. Now CodeRed waits until the main menu screen appears before continuing.</h5>
+                            <h5>- Added a new "High Contrast (Black Blue Yellow)" style for visually impaired people, inspired by the Windows high contrast theme</h5>
+                            <h5>- Fixed a crash that could happen when restoring your loadout if you enabled and disabled presets on the main menu.</h5>
+                            <h5>- Fixed your camera getting stuck when previewing goal explosions in the main menu, and you clicked into your garage or the playlists menu.</h5>
+                            <h5>- Fixed custom headlight colors not applying if you didn't have any other products equipped, as well as some other specific edge cases.</h5>
+                            <h5>- Fixed your real loadouts trail paint not applying in game, it was being overwritten with the default version.</h5>
+                            <h5>- Fixed a rare thread racing issue that could happen on injection related to async commands.</h5>
+                        </section>
+
+                        <section class="docs-section" id="item-3-0-3">
+                            <h2 class="section-heading">Version 2.0.3 (February 26th 2024)</h2>
+                            <h5>- Added the ability to customize your entire loadout in the garage tab, with the exception of your cars body. Please report any bugs to the Discord server.</h5>
+                            <h5>- Note that loadouts do not function the exact same as BakkesMod, check out the #announcements channel in the Discord for more info.</h5>
+                            <h5>- Added a new "headlight color" option that lets you change the glow color of your headlights, this feature only works if bloom is enabled.</h5>
+                            <h5>- Fixed some ImGui windows opening themselves on injection even if you closed them, this was caused by using the X button instead of pressing escape to close the window.</h5>
+                            <h5>- Fixed your mouse cursor sometimes getting stuck on the screen, this was also related to using the X button instead of pressing escape to close windows.</h5>
+                            <h5>- Fixed a random crash that could happen on the loading screen for offline game modes, this was related to internal game states being set too early.</h5>
+                            <h5>- Fixed not detecting if you were in an Exhibition match, resulting in some features not working in that mode.</h5>
+                            <h5>- Fixed custom stadium colors not saving their values if you changed them through the freeplay or online tab.</h5>
+                            <h5>- Fixed custom spawn location settings not applying for a few specific people when first loading into freeplay.</h5>
+                            <h5>- Fixed custom car colors also not applying for a few specific people when first loading into freeplay.</h5>
+                            <h5>- Fixed custom stadium primary and accent colors not applying to cars after they were demolished.</h5>
+                            <h5>- Fixed some special titles not showing up in the dashboard for some people who had multiple titles.</h5>
+                            <h5>- Fixed a crash that could happen if you spammed enabling and disabling custom textures really fast.</h5>
+                            <h5>- Fixed a crash that happened when opening drops from your inventory on the main menu.</h5>
+                            <h5>- Upgraded the internal ImGui framework to version 1.9.4.</h5>
+                        </section>
+
+                        <section class="docs-section" id="item-3-0-2">
+                            <h2 class="section-heading">Version 2.0.2 (February 6th 2024)</h2>
+                            <h5>- Changed the layout of the garage tab in the dashboard slightly to add icons next to the color pickers.</h5>
+                            <h5>- Fixed a random crash that could happen if you switched between presets back and forth really fast in the garage tab.</h5>
+                            <h5>- Fixed a special case where custom playlist textures were not swapping their blue and red color channels, resulting in an inverted texture.</h5>
+                            <h5>- Fixed some paint colors not showing up properly in comboboxes for the garage tab.</h5>
+                            <h5>- Fixed not being able to close a few specific ImGui Windows by pressing the escape key.</h5>
+                            <h5>- Updated internal SDK to the latest version of Rocket League.</h5>
+                        </section>
+
+                        <section class="docs-section" id="item-3-0-1">
+                            <h2 class="section-heading">Version 2.0.1 (January 22nd 2024)</h2>
+                            <h5>- All ImGui windows will now remember if they were last open or not when you inject CodeRed.</h5>
+                            <h5>- Overlay windows, such as the tracker and clock, will now save their custom corner position if you had one set.</h5>
+                            <h5>- Trying an experimental fix for the <code>freeplay_clear_overrides</code> setting not working for some people.</h5>
+                            <h5>- Fixed a rare crash that could happen when restoring to your original avatar on Steam if you were using a custom one.</h5>
+                            <h5>- Fixed a crash related to restoring avatar and banner textures back to their original one if a product asset failed to load.</h5>
+                            <h5>- Internal code refactoring and improvements.</h5>
+                        </section>
+
+                        <section class="docs-section" id="item-3-0-0">
+                            <h2 class="section-heading">Version 2.0.0 (January 13th 2024)</h2>
+                            <h5>- Added a new "Vantablack (Black Grey)" style, which is an extra dark mode version of the default style.</h5>
+                            <h5>- Refined the color palettes in all the default styles slightly to be more consistent, as well as the special "Duotone" terminal themes.</h5>
+                            <h5>- You can no longer set window backgrounds or text to be fully transparent in custom styles, as Th3Ant tried exactly that and couldn't see any windows anymore (who woulda thought?).</h5>
+                            <h5>- Removed the legacy "Pitch Black" style, as it was a bit of an eye sore and no one used it anyway.</h5>
+                            <h5>- Removed the settings to customize blog info (other than the MotD), as they have been broken for a long time and I don't plan on fixing them.</h5>
+                            <h5>- Fixed the main menu background restoring back its default one when idling on the main menu, if you had a different one selected in CodeRed.</h5>
+                            <h5>- Fixed the <code>interface_hide_seasonrewards</code> setting sometimes not applying after a game ended and your rewards updated.</h5>
+                            <h5>- Fixed yet another loading screen crash related to the matchmaker window grabbing playlist nodes in the background.</h5>
+                            <h5>- Fixed a rare crash that could happen on injection related to not finding global objects or names.</h5>
+                            <h5>- Upgraded the internal ImGui framework to version 1.9.1.</h5>
+                            <h5>- Stability improvements and internal optimizations.</h5>
+                        </section>
+
+                </article>
+
+                <article class="docs-article" id="section-1">
+                    <h1 class="docs-heading">Launcher Changelog</h1>
+
+                    <section class="docs-section" id="item-1-4-4">
+                        <h2 class="section-heading">Version 1.4.4 (June 4th 2025)</h2>
+                        <h5>- Added a custom caching system for web requests due to GitHubs new rate limits, this should fix possible issues with downloading version info.</h5>
+                        <h5>- Remade the internal logging system to have a lot more detail.</h5>
+                        <h5>- Internal code refactoring and memory optimizations.</h5>
+                    </section>
+
+                    <section class="docs-section" id="item-1-4-3">
+                        <h2 class="section-heading">Version 1.4.3 (April 16th 2025)</h2>
+                        <h5>- Added an exception handling check for reading the "Launch.log" file when grabbing version info.</h5>
+                        <h5>- Minor spelling changes throughout the UI.</h5>
+                    </section>
+
+                    <section class="docs-section" id="item-1-4-2">
+                        <h2 class="section-heading">Version 1.4.2 (February 24th 2025)</h2>
+                        <h5>- Added extra exception handling, and logging for said exception handling.</h5>
+                        <h5>- Changed how news article dates are formatted in the news tab.</h5>
+                    </section>
+
+                    <section class="docs-section" id="item-1-4-1">
+                        <h2 class="section-heading">Version 1.4.1 (December 13th 2024)</h2>
+                        <h5>- Upgraded from `.NET 8.0` to `.NET 9.0`, which will require you to download the new runtime if you only have `.NET 8.0` installed.</h5>
+                        <h5>- Added a new category section in the news tab to indelicate what the news article is about without having to click on it.</h5>
+                        <h5>- Changed the default injection time from 20 seconds to 2.5 seconds, which I forgot to do a long time ago.</h5>
+                        <h5>- Reduced the memory footprint of the news tab by more than 1/4th related to images and caching.</h5>
+                    </section>
+
+                    <section class="docs-section" id="item-1-4-0">
+                        <h2 class="section-heading">Version 1.4.0 (September 2nd 2024)</h2>
+                        <h5>- Added more detailed info to the update window when installing updates.</h5>
+                        <h5>- Changed some error messages and logs to provide better info if something is blocking the launchers permissions.</h5>
+                    </section>
+
+                    <section class="docs-section" id="item-1-3-9">
+                        <h2 class="section-heading">Version 1.3.9 (July 28th 2024)</h2>
+                        <h5>- Fixed some High-DPI scaling issues with the UI that made custom elements not resize properly.</h5>
+                    </section>
+
+                    <section class="docs-section" id="item-1-3-8">
+                        <h2 class="section-heading">Version 1.3.8 (July 21st 2024)</h2>
+                        <h5>- Fixed the "Launch Rocket League" button being visible if you were on Epic, this was supposed to be for Steam only.</h5>
+                    </section>
+
+                    <section class="docs-section" id="item-1-3-7">
+                        <h2 class="section-heading">Version 1.3.7 (May 13th 2024)</h2>
+                        <h5>- Added the news tab back in the launcher, with a fallback incase Psyonix keeps blocking the launcher from downloading news.</h5>
+                        <h5>- Fixed the update popup getting stuck open if an error occurred while downloading, now if an error happens it will ask you if you want to try again.</h5>
+                        <h5>- Fixed a crash that could happen when spamming the previous and next buttons in the news back too fast.</h5>
+                    </section>
+
+                    <section class="docs-section" id="item-1-3-6">
+                        <h2 class="section-heading">Version 1.3.6 (April 12th  2024)</h2>
+                        <h5>- Fixed an infinite loop message box that occurred if you tried to run the launcher without having Rocket League installed.</h5>
+                    </section>
+
+                    <section class="docs-section" id="item-1-3-5">
+                        <h2 class="section-heading">Version 1.3.5 (April 3rd 2024)</h2>
+                        <h5>- Hid the news tab temporarily, as Psyonix is now blocking automatic requests to their site.</h5>
+                        <h5>- Internal code improvements, as well as changed some naming standards.</h5>
+                    </section>
+
+                    <section class="docs-section" id="item-1-3-4">
+                        <h2 class="section-heading">Version 1.3.4 (February 28th 2024)</h2>
+                        <h5>- Fixed the author header in the news tab not displaying names correctly, as well as titles being too long.</h5>
+                        <h5>- Fixed a specific case of the news tab not grabbing articles if you were outdated and had the game running.</h5>
+                        <h5>- Internal optimizations and improvements related to file streams and memory.</h5>
+                    </section>
+
+                    <section class="docs-section" id="item-1-3-3">
+                        <h2 class="section-heading">Version 1.3.3 (February 5th 2024)</h2>
+                        <h5>- Fixed the news tab not working, Psyonix changed a lot of stuff so I had to remake parsing article info entirely.</h5>
+                        <h5>- Additional code refactoring and removing unnecessary or unused code.</h5>
+                    </section>
+
+                    <section class="docs-section" id="item-1-3-2">
+                        <h2 class="section-heading">Version 1.3.2 (January 12th 2024)</h2>
+                        <h5>- Added a new loading screen window when changing install paths, as it may take some time to copy and move everything.</h5>
+                        <h5>- Fixed the user being able to change install paths while CodeRed was injected in the game.</h5>
+                        <h5>- Internal code refactoring and improvements.</h5>
+                    </section>
+
+                    <section class="docs-section" id="item-1-3-1">
+                        <h2 class="section-heading">Version 1.3.1 (December 14th 2023)</h2>
+                        <h5>- Fixed another bug related to the news article tabs not loading.</h5>
+                        <h5>- Fixed a rare bug that caused checking for an update while actively installing an update.</h5>
+                        <h5>- Internal improvements and logging for downloading files.</h5>
+                    </section>
+
+                    <section class="docs-section" id="item-1-3-0">
+                        <h2 class="section-heading">Version 1.3.0 (December 11th 2023)</h2>
+                        <h5>- Added more detailed logging when downloading and installing updates.</h5>
+                        <h5>- Optimizations for the news tab, if an update is found it will now wait before downloading articles and images until the update is finished.</h5>
+                        <h5>- Fixed a crash that could happen if your download speed was slow or had packet loss and the download stopped momentarily.</h5>
+                    </section>
+
+                    <section class="docs-section" id="item-1-2-9">
+                        <h2 class="section-heading">Version 1.2.9 (November 17th 2023)</h2>
+                        <h5>- Upgraded from .NET 7.0 to .NET 8.0, which will require you to download the new runtime if you only have .NET 7.0 installed.</h5>
+                        <h5>- Added more files and extra logging info for the crash dump exporter.</h5>
+                        <h5>- Fixed not finding a folder path bug on first install, which would require restarting the launcher.</h5>
+                        <h5>- Fixed the manual inject button not working sometimes, as well as it ignoring the "prevent injection when out of date" setting.</h5>
+                    </section>
+
+                    <section class="docs-section" id="item-1-2-8">
+                        <h2 class="section-heading">Version 1.2.8 (October 25th 2023)</h2>
+                        <h5>- Added a "update in progress" status on the dashboard to indicate a update is being downloaded.</h5>
+                        <h5>- Fixed the injection delay setting not being parsed correctly.</h5>
+                        <h5>- Fixed some popups not being double buffered.</h5>
+                    </section>
+
+                    <section class="docs-section" id="item-1-2-7">
+                        <h2 class="section-heading">Version 1.2.7 (October 20th 2023)</h2>
+                        <h5>- Changed the formatting for settings and labels in the about tab slightly.</h5>
+                        <h5>- Changed the capitalization for all the buttons for consistency reasons.</h5>
+                        <h5>- Fixed the news tab downloading article data and images twice in the background on startup.</h5>
+                    </section>
+
+                    <section class="docs-section" id="item-1-2-6">
+                        <h2 class="section-heading">Version 1.2.6 (September 29th 2023)</h2>
+                        <h5>- Added a new "auto install updates" setting, which will auto download and install updates in the background.</h5>
+                        <h5>- Fixed the windows icon not being the same as the exe icon.</h5>
+                        <h5>- Fixed some capitalization and spelling errors.</h5>
+                    </section>
+
+                    <section class="docs-section" id="item-1-2-5">
+                        <h2 class="section-heading">Version 1.2.5 (September 16th 2023)</h2>
+                        <h5>- Added a "already running" warning if you try to open more than one launcher at once, which asks if you wish to continue or exit.</h5>
+                        <h5>- Made all custom controls double buffered, UI elements should now be a lot smoother.</h5>
+                        <h5>- Changed the font size of the changelog box to be slightly smaller to fit more text.</h5>
+                        <h5>- Fixed some popups being in dark mode despite having the light mode setting enabled.</h5>
+                        <h5>- Fixed the installer popup not having any fancy graphics like all of the other popups.</h5>
+                        <h5>- Fixed the news tab not defaulting to display the very first news article downloaded.</h5>
+                        <h5>- Additional safety improvements regarding reading and writing to file paths.</h5>
+                    </section>
+
+                    <section class="docs-section" id="item-1-2-4">
+                        <h2 class="section-heading">Version 1.2.4 (September 13th 2023)</h2>
+                        <h5>- Renamed the settings file from "Injector.cr" to "Launcher.cr".</h5>
+                        <h5>- Fixed some inconsistencies with capitalizations and text formatting.</h5>
+                        <h5>- Fixed a crash that happened if your settings file was parsed wrong, resulting in settings getting stuck not saving.</h5>
+                    </section>
+
+                    <section class="docs-section" id="item-1-2-3">
+                        <h2 class="section-heading">Version 1.2.3 (September 12th 2023)</h2>
+                        <h5>- Fixed a bug that caused your settings file to be parsed wrong.</h5>
+                    </section>
+
+                    <section class="docs-section" id="item-1-2-2">
+                        <h2 class="section-heading">Version 1.2.2 (September 11th 2023)</h2>
+                        <h5>- Remade the launchers UI with a new color scheme, new icons, and added a light mode.</h5>
+                        <h5>- The "export crash logs" button in the launcher now also adds your variables file from CodeRed to the zip.</h5>
+                        <h5>- Fixed the launcher not loading at all if you tried to run it while not connected to the internet</h5>
+                        <h5>- Fixed the launcher not auto-checking for updates when you enabled it through the checkbox.</h5>
+                        <h5>- Fixed the launchers previous and next buttons in the news tab having the wrong icons.</h5>
+                    </section>
+
+                    <section class="docs-section" id="item-1-2-1">
+                        <h2 class="section-heading">Version 1.2.1 (June 21st 2023)</h2>
+                        <h5>- The launcher no longer is top most above all other windows when updating.</h5>
+                    </section>
+
+                    <section class="docs-section" id="item-1-2-0">
+                        <h2 class="section-heading">Version 1.2.0 (June 7th 2023)</h2>
+                        <h5>- Fixed news articles not being parsed correctly in the launcher as of the last Rocket League update.</h5>
+                    </section>
+
+                    <section class="docs-section" id="item-1-1-9">
+                        <h2 class="section-heading">Version 1.1.9 (June 1st 2023)</h2>
+                        <h5>- Backend changes to support new API endpoint features.</h5>
+                    </section>
+
+                    <section class="docs-section" id="item-1-1-8">
+                        <h2 class="section-heading">Version 1.1.8 (May 15th 2023)</h2>
+                        <h5>- Fixed some news articles parsing wrong in the launcher causing an error message to be displayed.</h5>
+                        <h5>- Fixed injection modes breaking in the launcher if you switched between manual and timeout mode while it was injecting.</h5>
+                    </section>
+
+                    <section class="docs-section" id="item-1-1-7">
+                        <h2 class="section-heading">Version 1.1.7 (May 10th 2023)</h2>
+                        <h5>- Fixed news articles not opening when you clicked them in the launcher.</h5>
+                        <h5>- Other internal optimizations with the launcher.</h5>
+                    </section>
+
+                    <section class="docs-section" id="item-1-1-6">
+                        <h2 class="section-heading">Version 1.1.6 (April 26th 2023)</h2>
+                        <h5>- Changed the backend API for the launcher to use a new endpoint.</h5>
+                        <h5>- Resized the controls for articles in the news tab in the launcher.</h5>
+                    </section>
+
+                    <section class="docs-section" id="item-1-1-5">
+                        <h2 class="section-heading">Version 1.1.5 (April 17th 2023)</h2>
+                        <h5>- Internal backwards compatibility preparations for a future update.</h5>
+                    </section>
+
+                    <section class="docs-section" id="item-1-1-4">
+                        <h2 class="section-heading">Version 1.1.4 (April 15th 2023)</h2>
+                        <h5>- Improved and resized the controls for articles in the news tab in the launcher.</h5>
+                        <h5>- Fixed the tab buttons on the launcher only receiving input on the little image icon in side them, now its the entire tab button.</h5>
+                    </section>
+
+                    <section class="docs-section" id="item-1-1-3">
+                        <h2 class="section-heading">Version 1.1.3 (February 23rd 2023)</h2>
+                        <h5>- Fixed the manual injection mode in the launcher sometimes not appearing.</h5>
+                        <h5>- Fixed scaling issues in the launcher on high dpi displays, also improved some custom controls.</h5>
+                        <h5>- Improved the updater popup in the launcher to indicate an update is in progress.</h5>
+                        <h5>- Improved the news tabs caching system when downloading articles.</h5>
+                    </section>
+
+                    <section class="docs-section" id="item-1-1-2">
+                        <h2 class="section-heading">Version 1.1.2 (January 24th 2023)</h2>
+                        <h5>- Some improvements with scaling the launchers custom controls.</h5>
+                    </section>
+
+                    <section class="docs-section" id="item-1-1-1">
+                        <h2 class="section-heading">Version 1.1.1 (January 13th 2023)</h2>
+                        <h5>- Fixed the start minimized setting not working properly in the launcher.</h5>
+                    </section>
+
+                    <section class="docs-section" id="item-1-1-0">
+                        <h2 class="section-heading">Version 1.1.0 (January 10th 2023)</h2>
+                        <h5>- Fixed several message box and logging errors in the launcher.</h5>
+                        <h5>- Fixed a folder not found issue with the launchers installer if you selected a custom install path.</h5>
+                        <h5>- Added a button that lets you change your install path in the launchers settings, this moves the folder and modifies the registry for you.</h5>
+                    </section>
+
+                    <section class="docs-section" id="item-1-0-9">
+                        <h2 class="section-heading">Version 1.0.9 (January 1st 2023)</h2>
+                        <h5>- Fixed the launcher crashing if you tried to click the links in offline mode.</h5>
+                        <h5>- Fixed the launcher displaying out of date right after updating the module.</h5>
+                        <h5>- Changed the launchers changelog box font size.</h5>
+                    </section>
+
+                    <section class="docs-section" id="item-1-0-8">
+                        <h2 class="section-heading">Version 1.0.8 (December 28th 2022)</h2>
+                        <h5>- Added an extra file path check for the launchers installer.</h5>
+                    </section>
+
+                    <section class="docs-section" id="item-1-0-7">
+                        <h2 class="section-heading">Version 1.0.7 (December 25th 2022)</h2>
+                        <h5>- Fixed the launcher not checking for updates before attempting injection.</h5>
+                        <h5>- Fixed some issues with the launcher retrieving and displaying information.</h5>
+                        <h5>- Increased the ping timeout time for the launchers web-requests.</h5>
+                    </section>
+
+                    <section class="docs-section" id="item-1-0-6">
+                        <h2 class="section-heading">Version 1.0.6 (December 24th 2022)</h2>
+                        <h5>- Possibly fixed some path errors in the launcher when first installing.</h5>
+                    </section>
+
+                    <section class="docs-section" id="item-1-0-5">
+                        <h2 class="section-heading">Version 1.0.5 (December 23rd 2022)</h2>
+                        <h5>- Fixed a bug with the launchers auto updater.</h5>
+                    </section>
+
+                    <section class="docs-section" id="item-1-0-4">
+                        <h2 class="section-heading">Version 1.0.4 (December 23rd 2022)</h2>
+                        <h5>- Fixed a bug where the launcher would incorrectly not show as injected.</h5>
+                        <h5>- Fixed an issue with the launchers news tab when trying to open link.</h5>
+                    </section>
+
+                    <section class="docs-section" id="item-1-0-3">
+                        <h2 class="section-heading">Version 1.0.3 (December 22nd 2022)</h2>
+                        <h5>- Fixed the launcher not finding your Rocket League folder if you were on Epic.</h5>
+                    </section>
+
+                    <section class="docs-section" id="item-1-0-2">
+                        <h2 class="section-heading">Version 1.0.2 (December 22nd 2022)</h2>
+                        <h5>- Fixed a file path issue with the launcher.</h5>
+                    </section>
+
+                    <section class="docs-section" id="item-1-0-1">
+                        <h2 class="section-heading">Version 1.0.1 (December 22nd 2022)</h2>
+                        <h5>- Fixed the launcher not installing subdirectories.</h5>
+                    </section>
+
+                    <section class="docs-section" id="item-1-0-0">
+                        <h2 class="section-heading">Version 1.0.0 (December 22nd 2022)</h2>
+                        <h5>- First public alpha pre-release, no changes to provide.</h5>
+                    </section>
+
+                </article>
+
+			    <footer class="footer">
+				    <div class="container text-center py-5">
+				        <ul class="social-list list-unstyled pt-4 mb-0">
+							<li class="list-inline-item"><a href="https://discord.gg/t4SjXjEhk3"><i class="fab fa-discord fa-fw"></i></a></li>
+							<li class="list-inline-item"><a href="https://github.com/CodeRedModding"><i class="fab fa-github fa-fw"></i></a></li>
+				        </ul>
+                        <h4 class="copyright" style="color:#80848E">CodeRed is a product created and owned by ItsBranK.</h4>
+				    </div>
+			    </footer>
+		    </div> 
+	    </div>
+    </div>
+      
+    <script src="assets/plugins/popper.min.js"></script>
+    <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/plugins/smoothscroll.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/highlight.min.js"></script>
+    <script src="assets/js/highlight-custom.js"></script>
+    <script src="assets/plugins/simplelightbox/simple-lightbox.min.js"></script>
+    <script src="assets/plugins/gumshoe/gumshoe.polyfills.min.js"></script>
+    <script src="assets/js/docs.js"></script>
+</body>
+</html> 

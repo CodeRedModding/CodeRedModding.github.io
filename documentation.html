@@ -1,0 +1,2608 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <!-- HTML Meta Tags -->
+    <title>CodeRed - Documentation</title>
+    <meta name="description" content="A lightweight, user-friendly enhancement for Rocket League.">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:url" content="https://coderedmodding.github.io/documentation.html">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="CodeRed - Rocket League">
+    <meta property="og:description" content="A lightweight, user-friendly enhancement for Rocket League.">
+    <meta property="og:image" content="https://raw.githubusercontent.com/CodeRedModding/CodeRed-Retrievers/refs/heads/main/Assets/Banners/Wallpaper_Default.png">
+    <meta property="og:image:width" content="2560">
+    <meta property="og:image:height" content="1440">
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="twitter:domain" content="coderedmodding.github.io">
+    <meta property="twitter:url" content="https://coderedmodding.github.io/documentation.html">
+    <meta name="twitter:title" content="CodeRed - Rocket League">
+    <meta name="twitter:description" content="A lightweight, user-friendly enhancement for Rocket League.">
+    <meta name="twitter:image" content="https://raw.githubusercontent.com/CodeRedModding/CodeRed-Retrievers/refs/heads/main/Assets/Banners/Wallpaper_Default.png">
+
+    <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap" rel="stylesheet">
+    <script defer src="assets/fontawesome/js/all.min.js"></script>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.2/styles/atom-one-dark.min.css">
+    <link rel="stylesheet" href="assets/plugins/simplelightbox/simple-lightbox.min.css">
+    <link id="theme-style" rel="stylesheet" href="assets/css/theme.css">
+</head> 
+<body class="docs">
+    <header class="header fixed-top">	    
+        <div class="branding docs-branding">
+            <div class="container-fluid position-relative py-2">
+                <div class="docs-logo-wrapper">
+					<button id="docs-sidebar-toggler" class="docs-sidebar-toggler docs-sidebar-visible me-2 d-xl-none" type="button">
+	                    <span></span>
+	                    <span></span>
+	                    <span></span>
+	                </button>
+                    <div class="site-logo"><a class="navbar-brand" href="index.html"><span class="logo-text">Code<span class="logo-text-alt">Red<span class="text-alt"> - Documentation</span></span></span></a></div>   
+                </div>
+	            <div class="docs-top-utilities d-flex justify-content-end align-items-center">
+	                <!-- <div class="top-search-box d-none d-lg-flex">
+                        <form class="search-form">
+                            <input type="text" placeholder="Search the docs..." name="search" class="form-control search-input">
+                            <button type="submit" class="btn search-btn" value="Search"><i class="fas fa-search"></i></button>
+                        </form>
+                    </div> -->
+					<ul class="social-list list-inline mx-md-4 mx-lg-4 mb-0 d-none d-lg-flex">
+			            <li class="list-inline-item"><a href="https://discord.gg/t4SjXjEhk3"><i class="fab fa-discord fa-fw"></i></a></li>
+		                <li class="list-inline-item"><a href="https://github.com/CodeRedModding"><i class="fab fa-github fa-fw"></i></a></li>
+		            </ul>
+		           <a href="https://github.com/CodeRedModding/CodeRed-Launcher/releases/latest" class="btn btn-primary d-none d-lg-flex">Download</a>
+	            </div>
+            </div>
+        </div>
+    </header>
+    <div class="docs-wrapper">
+	    <div id="docs-sidebar" class="docs-sidebar">
+		    <nav id="docs-nav" class="docs-nav navbar">
+			    <ul class="section-items list-unstyled nav flex-column pb-3">
+                    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-1"><span class="theme-icon-holder me-2"><i class="fas fa-image"></i></span>Previews</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-0-1">Menus</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-0-2">Screenshots</a></li>
+				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-2"><span class="theme-icon-holder me-2"><i class="fas fa-download"></i></span>Installing</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-2-0-1">Download</a></li>
+                    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-3"><span class="theme-icon-holder me-2"><i class="fas fa-tools"></i></span>Components</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-3-0-1">Dear ImGui</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-3-0-2">Key Bindings</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-3-0-3">Miscellaneous</a></li>
+				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-4"><span class="theme-icon-holder me-2"><i class="fas fa-box"></i></span>Modules</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-4-0-1">Database Manager</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-4-0-2">Freeplay Enhancements</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-4-0-3">Garage Utilities</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-4-0-4">Interface Enhancements</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-4-0-5">Offline Enhancements</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-4-0-6">Rich Presence Integration</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-4-0-7">Scoreboard Customizer</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-4-0-8">Session Tracker</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-4-0-9">Settings Manager</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-4-1-0">Stadium Customizer</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-4-1-1">Texture Manager</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-4-1-2">Thumbnail Utilities</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-4-1-3">Title Manager</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-4-1-4">Training Enhancements</a></li>
+                    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-5"><span class="theme-icon-holder me-2"><i class="fas fa-id-card"></i></span>Windows</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-5-0-1">ActorState Debugger</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-5-0-2">Changelog</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-5-0-3">Clock</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-5-0-4">Connections</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-5-0-5">Dashboard</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-5-0-6">Function Scanner</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-5-0-7">GameState Debugger</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-5-0-8">ImGui Demo</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-5-0-9">Matchmaker</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-5-1-0">OBS Controls</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-5-1-1">Playlist Tracker</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-5-1-2">Post Process Editor</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-5-1-3">Reflector</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-5-1-4">Style Editor</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-5-1-5">Terminal</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-5-1-6">Texture Browser</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-5-1-7">Thumbnail Renderer</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-5-1-8">Title Customizer</a></li>
+				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-6"><span class="theme-icon-holder me-2"><i class="fas fa-lightbulb"></i></span>FAQs</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-6-0-1">What Is CodeRed</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-6-0-2">Is CodeRed Free</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-6-0-3">Is It Open Source</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-6-0-4">Is It Bannable</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-6-0-5">BakkesMod Compatibility</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-6-0-6">Cabined Accounts</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-6-0-7">Do Custom Ads Exist</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-6-0-8">Restricted Countries</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-6-0-9">How To Report Bugs</a></li>
+			    </ul>
+		    </nav>
+	    </div>
+
+	    <div class="docs-content">
+		    <div class="container">
+			    <article class="docs-article" id="section-1">
+				     <section class="docs-section" id="item-1-0-1">
+						<h2 class="section-heading">Menus</h2>		
+                        <div class="simplelightbox-gallery row mb-3">
+                            <div class="col-12 col-md-4 mb-3">
+                                <a href="assets/images/previews/dashboard-1.png"><img class="figure-img img-fluid shadow rounded" src="assets/images/previews/dashboard-1.png" alt="" title=""/></a>
+                            </div>
+                            <div class="col-12 col-md-4 mb-3">
+                                <a href="assets/images/previews/dashboard-2.png"><img class="figure-img img-fluid shadow rounded" src="assets/images/previews/dashboard-2.png" alt="" title=""/></a>
+                            </div>
+                            <div class="col-12 col-md-4 mb-3">
+                                <a href="assets/images/previews/dashboard-5.png"><img class="figure-img img-fluid shadow rounded" src="assets/images/previews/dashboard-5.png" alt="" title=""/></a>
+                            </div>
+                            <div class="col-12 col-md-4 mb-3">
+                                <a href="assets/images/previews/dashboard-6.png"><img class="figure-img img-fluid shadow rounded" src="assets/images/previews/dashboard-6.png" alt="" title=""/></a>
+                            </div>
+                            <div class="col-12 col-md-4 mb-3">
+                                <a href="assets/images/previews/dashboard-8.png"><img class="figure-img img-fluid shadow rounded" src="assets/images/previews/dashboard-8.png" alt="" title=""/></a>
+                            </div>
+                            <div class="col-12 col-md-4 mb-3">
+                                <a href="assets/images/previews/terminal-1.png"><img class="figure-img img-fluid shadow rounded" src="assets/images/previews/terminal-1.png" alt="" title=""/></a>
+                            </div>
+                        </div>
+					</section>
+					<section class="docs-section" id="item-1-0-2">
+						<h2 class="section-heading">Screenshots</h2>
+                        <div class="simplelightbox-gallery row mb-3">
+                            <div class="col-12 col-md-4 mb-3">
+                                <a href="assets/images/previews/styles-1.png"><img class="figure-img img-fluid shadow rounded" src="assets/images/previews/styles-1.png" alt="" title=""/></a>
+                            </div>
+                            <div class="col-12 col-md-4 mb-3">
+                                <a href="assets/images/previews/styles-2.png"><img class="figure-img img-fluid shadow rounded" src="assets/images/previews/styles-2.png" alt="" title=""/></a>
+                            </div>
+                            <div class="col-12 col-md-4 mb-3">
+                                <a href="assets/images/previews/mmr-1.png"><img class="figure-img img-fluid shadow rounded" src="assets/images/previews/mmr-1.png" alt="" title=""/></a>
+                            </div>
+                            <div class="col-12 col-md-4 mb-3">
+                                <a href="assets/images/previews/mmr-2.png"><img class="figure-img img-fluid shadow rounded" src="assets/images/previews/mmr-2.png" alt="" title=""/></a>
+                            </div>
+                            <div class="col-12 col-md-4 mb-3">
+                                <a href="assets/images/previews/mmr-3.png"><img class="figure-img img-fluid shadow rounded" src="assets/images/previews/mmr-3.png" alt="" title=""/></a>
+                            </div>
+                        </div>
+					</section>
+			    </article>
+			    
+			    <article class="docs-article" id="section-2">
+				    <header class="docs-header">
+					    <h1 class="docs-heading">Installing</h1>
+                        <div class="callout-block callout-block-success">
+                            <div class="content">
+                                <h4 class="callout-title">
+	                                <span class="callout-icon-holder me-1">
+		                                <i class="fas fa-thumbs-up"></i>
+		                            </span>
+	                                Download
+	                            </h4>
+                                <h5>Download the launcher now get started in the top right!</h5>
+                            </div>
+                        </div>
+				    </header>
+				     <section class="docs-section" id="item-2-0-1">
+						<h2 class="section-heading">Download</h2>
+                        <div class="callout-block callout-block-info">
+                            <div class="content">
+                                <h4 class="callout-title">
+                                    <span class="callout-icon-holder me-1">
+                                        <i class="fas fa-info-circle"></i>
+                                    </span>
+                                    Source Code
+                                </h4>
+                                <h5>The launcher is fully open source under the MIT license, you can view its source code on <a href="https://github.com/CodeRedModding/CodeRed-Launcher" style="color:#F2F3F5">GitHub</a>.</h5>
+                            </div>
+                        </div>
+                        <div class="simplelightbox-gallery row mb-3">
+                            <div class="col-12 col-md-4 mb-3">
+                                <a href="assets/images/launcher/dashboard.png"><img class="figure-img img-fluid shadow rounded" src="assets/images/launcher/dashboard.png" alt="" title=""/></a>
+                            </div>
+                            <div class="col-12 col-md-4 mb-3">
+                                <a href="assets/images/launcher/news.png"><img class="figure-img img-fluid shadow rounded" src="assets/images/launcher/news.png" alt="" title=""/></a>
+                            </div>
+                            <div class="col-12 col-md-4 mb-3">
+                                <a href="assets/images/launcher/settings.png"><img class="figure-img img-fluid shadow rounded" src="assets/images/launcher/settings.png" alt="" title=""/></a>
+                            </div>
+                            <div class="col-12 col-md-4 mb-3">
+                                <a href="assets/images/launcher/about.png"><img class="figure-img img-fluid shadow rounded" src="assets/images/launcher/about.png" alt="" title=""/></a>
+                            </div>
+                        </div>
+					</section>
+			    </article>
+			    
+			    <article class="docs-article" id="section-3">
+				    <header class="docs-header">
+					    <h1 class="docs-heading">Components</h1>
+					    <section class="docs-intro">
+                            <div class="callout-block callout-block-info">              
+                                <div class="content">
+                                    <h4 class="callout-title">
+                                        <span class="callout-icon-holder me-1">
+                                            <i class="fas fa-info-circle"></i>
+                                        </span>
+                                        Note
+                                    </h4>
+                                    <h5>Please note that this section is entirely auto-generated by scripts so I don't have to do any work, as a result it is very visually unappealing.</h5>
+                                </div>
+                            </div>
+						</section>
+				    </header>
+                    <section class="docs-section" id="item-3-0-1">
+                        <h2 class="section-heading">Dear ImGui</h2>
+                        <h3>Commands</h3>
+                        <div class="table-responsive my-4">
+                            <table class="table table-bordered">
+                                <tbody>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>imgui_close</b></th>
+                                        <td>Close an ImGui window by its name.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>imgui_font_demo</b></th>
+                                        <td>Print debug text in all colors and font styles to the terminal.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>imgui_update_fonts</b></th>
+                                        <td>Reloads the current ImGui fonts with the games current language extension.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>imgui_delete_style</b></th>
+                                        <td>Deletes a loaded ImGui style by its name.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>imgui_open</b></th>
+                                        <td>Open an ImGui window by its name.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>imgui_toggle</b></th>
+                                        <td>Toggle opening/closing an ImGui window by its name.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>imgui_scanner_start</b></th>
+                                        <td>Turns the function scanner on if the window is open.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>imgui_scanner_stop</b></th>
+                                        <td>Turns the function scanner off if the window is open.</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <h3>Settings</h3>
+                        <div class="table-responsive my-4">
+                            <table class="table table-bordered">
+                                <tbody>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>imgui_clock_24 &lttrue-false&gt</b></th>
+                                        <td>Use a 24 hour clock for timestamps, instead of a 12 hour AM/PM one.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>imgui_draw_clock &lttrue-false&gt</b></th>
+                                        <td>Automatically open the clock window when first injected.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>imgui_clock_corner &lt1-4&gt</b></th>
+                                        <td>The corner position for the clock window to render in.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>imgui_gamestate_corner &lt1-4&gt</b></th>
+                                        <td>The corner position for the gamestate window to render in.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>imgui_actorstate_corner &lt1-4&gt</b></th>
+                                        <td>The corner position for the actorstate window to render in.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>imgui_notification_injection &lttrue-false&gt</b></th>
+                                        <td>Display a notification when CodeRed is injected and initialized.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>imgui_tracker_corner &lt1-4&gt</b></th>
+                                        <td>The corner position for the session tracker window to render in.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>imgui_notification_corner &lt1-4&gt</b></th>
+                                        <td>The corner where ImGui popup notifications appear in.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>imgui_notification_delay &lt1-2560&gt</b></th>
+                                        <td>The delay the fade out animation uses after displaying notifications.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>imgui_global_scale &lt0.2-4.0&gt</b></th>
+                                        <td>Change the global interface scaling for ImGui.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>imgui_selected_style &ltarguments&gt</b></th>
+                                        <td>Selects and applies a loaded ImGui style by its name.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>imgui_terminal_buffer &lt32-1024&gt</b></th>
+                                        <td>Change the max user history size for the terminal.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>imgui_terminal_scroll &lttrue-false&gt</b></th>
+                                        <td>Auto scroll to the most recently added text in the terminal.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>imgui_scanner_duplicates &lttrue-false&gt</b></th>
+                                        <td>Hide or show duplicate entries in the function scanner.</td>
+                                    </tr>
+                                       <tr>
+                                        <th class="theme-bg-light"><b>imgui_scanner_origin &lttrue-false&gt</b></th>
+                                        <td>Hide or show function call origins in the function scanner (ProcessEvent, ProcessInternal, and CallFunction).</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>imgui_scanner_regex &lttrue-false&gt</b></th>
+                                        <td>Enable the use of regular expressions when whitelisting or blacklisting strings in the function scanner.</td>
+                                    </tr>
+                                       <tr>
+                                        <th class="theme-bg-light"><b>imgui_scanner_limit &lt32-8192&gt</b></th>
+                                        <td>The max amount of functions that can be displayed in the function scanner window at once.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>imgui_reflector_archetypes &lttrue-false&gt</b></th>
+                                        <td>Show archetype objects when searching for instances with the reflector window.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>imgui_reflector_defaults &lttrue-false&gt</b></th>
+                                        <td>Show default objects when searching for instances with the reflector window.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>imgui_reflector_no_read &lttrue-false&gt</b></th>
+                                        <td>Don't read any property values when loading instances with the reflector window.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>imgui_reflector_no_tarray &lttrue-false&gt</b></th>
+                                        <td>Don't read from TArray properties when loading instances with the reflector window.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>imgui_reflector_object_limit &lt1-256&gt</b></th>
+                                        <td>The limit of object instances to search for and display with the reflector window.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>imgui_reflector_array_limit &lt1-512&gt</b></th>
+                                        <td>The limit of values to read from and display for TArrays with the reflector window.</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </section>
+                    <section class="docs-section" id="item-3-0-2">
+                        <h2 class="section-heading">Key Bindings</h2>
+                        <h3>Commands</h3>
+                        <div class="table-responsive my-4">
+                            <table class="table table-bordered">
+                                <tbody>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>keys_create_alias</b></th>
+                                        <td>Binds a custom alias to a command with the given arguments.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>keys_create_bind</b></th>
+                                        <td>Bind a key to a custom action.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>keys_create_sequence</b></th>
+                                        <td>Binds a sequence of multiple actions to your own custom command with the given arguments.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>keys_rage_quits</b></th>
+                                        <td>Enable the use of "Alt+F4" to close the game.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>keys_remove_alias</b></th>
+                                        <td>Unbinds a custom alias from a command with the given arguments.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>keys_remove_bind</b></th>
+                                        <td>Unbinds a key from a custom command/action.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>keys_remove_sequence</b></th>
+                                        <td>Unbinds a custom command sequence with the given arguments.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>keys_reset_buffer</b></th>
+                                        <td>Resets the players current input buffer.</td>
+                                    </tr>
+                                    
+                                    <tr>
+                                        <th class="theme-bg-light"><b>keys_save_changes</b></th>
+                                        <td>Saves all changes made to bound keys and aliases.</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </section>
+                    <section class="docs-section" id="item-3-0-3">
+                        <h2 class="section-heading">Miscellaneous</h2>
+                        <h3>Commands</h3>
+                        <div class="table-responsive my-4">
+                            <table class="table table-bordered">
+                                <tbody>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>print_hitbox</b></th>
+                                        <td>Prints your cars current hitbox dimensions and offsets to the terminal for debugging purposes.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>print_login_url</b></th>
+                                        <td>Prints your players current login url for debugging purposes.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>heavy_car_bug_fix</b></th>
+                                        <td>Attempts to patch various pointers directly related to causing the heavy car bug.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>force_relogin</b></th>
+                                        <td>Forcefully grabs the latest battle car config, as well as relogs you into PsyNet.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>collect_garbage</b></th>
+                                        <td>Forces the game to purge all objects marked for destroy or pending kill.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>collect_garbage_full</b></th>
+                                        <td>Forces a full purge all objects marked for destroy, pending kill, as well as unreferenced objects.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>play_sound</b></th>
+                                        <td>Plays a ".wav" file, using its file path as the arguments.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>play_sound_async</b></th>
+                                        <td>Plays a ".wav" file asynchronously, using its file path as the arguments.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>play_random_sound</b></th>
+                                        <td>Randomly picks and plays a ".wav" file, from the folder path given as arguments.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>play_random_sound_async</b></th>
+                                        <td>Randomly picks and plays a ".wav" file asynchronously, from the folder path given as arguments.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>inventory_sync</b></th>
+                                        <td>Syncs your online inventory with Psyonix and Epic Games.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>reset_setting</b></th>
+                                        <td>Reset a setting to its default value.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>toggle_setting</b></th>
+                                        <td>Toggles a boolean setting back and forth to true or false.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>unreal_command</b></th>
+                                        <td>Execute a Unreal Engine command with the given arguments.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>open_folder</b></th>
+                                        <td>Opens a folder on your computer with the given arguments.</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <h3>Settings</h3>
+                        <div class="table-responsive my-4">
+                            <table class="table table-bordered">
+                                <tbody>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>debug_mode &lttrue-false&gt</b></th>
+                                        <td>Enable global debugging mode, logs extra info to the terminal.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>auto_purge_cache &lttrue-false&gt</b></th>
+                                        <td>Automatically deletes old cache files from your web cache folder on game launch.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>auto_purge_dumps &lttrue-false&gt</b></th>
+                                        <td>Automatically deletes old crash dump files in your log folder on game launch.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>auto_purge_logs &lttrue-false&gt</b></th>
+                                        <td>Automatically deletes old "Launch.log" backups in your log folder on game launch.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>disable_epic_overlay &lttrue-false&gt</b></th>
+                                        <td>Disables the Epic Games Overlay from running.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>disable_crossbar_sound &lttrue-false&gt</b></th>
+                                        <td>Disables the crossbar sound effect that's played when the ball touches it.</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </section>
+			    </article>
+
+			    <article class="docs-article" id="section-4">
+				    <header class="docs-header">
+					    <h1 class="docs-heading">Modules</h1>
+					    <section class="docs-intro">
+                            <div class="callout-block callout-block-info">              
+                                <div class="content">
+                                    <h4 class="callout-title">
+                                        <span class="callout-icon-holder me-1">
+                                            <i class="fas fa-info-circle"></i>
+                                        </span>
+                                        Note
+                                    </h4>
+                                    <h5>Please note that this section is entirely auto-generated by scripts so I don't have to do any work, as a result it is very visually unappealing.</h5>
+                                </div>
+                            </div>
+						</section>
+				    </header>
+
+                    <section class="docs-section" id="item-4-0-1">
+                        <h2 class="section-heading">Database Manager</h2>                
+                        <div class="simplelightbox-gallery row mb-3">
+                            <div class="col-12 col-md-4 mb-3">
+                                <a href="assets/images/modules/database-1.png"><img class="figure-img img-fluid shadow rounded" src="assets/images/modules/database-1.png" alt="" title=""/></a>
+                            </div>
+                        </div>
+                        <h3>Arguments</h3>
+                        <div class="table-responsive my-4">
+                            <h5>For a full list of possible arguments and example outputs to use with these commands, please view <a href="arguments.html">this link here</a>.</h5>
+                        </div>                    
+                        <h3>Commands</h3>
+                        <div class="table-responsive my-4">
+                            <table class="table table-bordered">
+                                <tbody>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>database_dump_slots</b></th>
+                                        <td>Dumps all information about product slots with the given arguments.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>database_dump_products</b></th>
+                                        <td>Dumps all information about products with the given arguments.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>database_dump_inventory</b></th>
+                                        <td>Dumps all information about your inventory with the given arguments.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>database_dump_paints</b></th>
+                                        <td>Dumps all information about product paints with the given arguments.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>database_dump_certifications</b></th>
+                                        <td>Dumps all information about certifications with the given arguments.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>database_dump_titles</b></th>
+                                        <td>Dumps all information about titles with the given arguments.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>database_dump_specialeditions</b></th>
+                                        <td>Dumps all information special editions with the given arguments.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>database_dump_teameditions</b></th>
+                                        <td>Dumps all information about team editions with the given arguments.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>database_dump_playlists</b></th>
+                                        <td>Dumps all information about playlists with the given arguments.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>database_dump_maps</b></th>
+                                        <td>Dumps all information about maps/stadiums with the given arguments.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>database_dump_esports</b></th>
+                                        <td>Dumps all information about esports events with the given arguments.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>database_dump_population</b></th>
+                                        <td>Dumps all information about population data with the given arguments.</td>
+                                    </tr>
+                                    <tr> 
+                                        <th class="theme-bg-light"><b>database_dump_tournaments</b></th>
+                                        <td>Dumps all information about tournament schedules with the given arguments.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>database_dump_gamemodes</b></th>
+                                        <td>Dumps all information about game modes with the given arguments.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>database_dump_psynet</b></th>
+                                        <td>Dumps all information about psynet classes with the given arguments.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>database_dump_errors</b></th>
+                                        <td>Dumps all error classes the game uses.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>database_dump_names</b></th>
+                                        <td>Dumps all global name instances.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>database_dump_objects</b></th>
+                                        <td>Dumps all global object instances.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>database_dump_functions</b></th>
+                                        <td>Dumps all unreal engine functions the game uses.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>database_dump_content</b></th>
+                                        <td>Converts and then dumps all AES keys from ContentMap, which are used to decrypt product files</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </section>
+
+                    <section class="docs-section" id="item-4-0-2">
+                        <h2 class="section-heading">Freeplay Enhancements</h2>
+                        <div class="simplelightbox-gallery row mb-3">
+                            <div class="col-12 col-md-4 mb-3">
+                                <a href="assets/images/modules/freeplay-1.png"><img class="figure-img img-fluid shadow rounded" src="assets/images/modules/freeplay-1.png" alt="" title=""/></a>
+                            </div>
+                            <div class="col-12 col-md-4 mb-3">
+                                <a href="assets/images/modules/freeplay-2.png"><img class="figure-img img-fluid shadow rounded" src="assets/images/modules/freeplay-2.png" alt="" title=""/></a>
+                            </div>
+                            <div class="col-12 col-md-4 mb-3">
+                                <a href="assets/images/modules/freeplay-3.png"><img class="figure-img img-fluid shadow rounded" src="assets/images/modules/freeplay-3.png" alt="" title=""/></a>
+                            </div>
+                        </div>
+                        <h3>Commands</h3>
+                        <div class="table-responsive my-4">
+                            <table class="table table-bordered">
+                                <tbody>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>freeplay_ball_add_angular_velocity</b></th>
+                                        <td>Adds to the balls angular velocity with the given arguments in freeplay.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>freeplay_ball_add_linear_velocity</b></th>
+                                        <td>Adds to the balls linear velocity with the given arguments in freeplay.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>freeplay_ball_freeze</b></th>
+                                        <td>Spawns the default ball in freeplay</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>freeplay_spawn_ball</b></th>
+                                        <td>Freezes the ball in place in freeplay.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>freeplay_ball_location</b></th>
+                                        <td>Sets the balls location with the given arguments in freeplay.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>freeplay_ball_rotation</b></th>
+                                        <td>Sets the balls rotation with the given arguments in freeplay.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>freeplay_ball_set_angular_velocity</b></th>
+                                        <td>Sets the balls angular velocity with the given arguments in freeplay.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>freeplay_ball_set_linear_velocity</b></th>
+                                        <td>Sets the balls linear velocity with the given arguments in freeplay.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>freeplay_ball_unfreeze</b></th>
+                                        <td>Unfreezes the ball in freeplay.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>freeplay_car_add_angular_velocity</b></th>
+                                        <td>Adds to your cars angular velocity with the given arguments in freeplay.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>freeplay_car_add_linear_velocity</b></th>
+                                        <td>Adds to your cars linear velocity with the given arguments in freeplay.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>freeplay_car_location</b></th>
+                                        <td>Sets your cars location with the given arguments in freeplay.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>freeplay_car_rotation</b></th>
+                                        <td>Sets your cars rotation with the given arguments in freeplay.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>freeplay_car_set_angular_velocity</b></th>
+                                        <td>Sets your cars angular velocity with the given arguments in freeplay.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>freeplay_car_set_linear_velocity</b></th>
+                                        <td>Sets your cars linear velocity with the given arguments in freeplay.</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <h3>Settings</h3>
+                        <div class="table-responsive my-4">
+                            <table class="table table-bordered">
+                                <tbody>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>freeplay_blue_accent &lt#FFFFFF&gt</b></th>
+                                        <td>The blue accent paint colors to apply to your car in freeplay.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>freeplay_blue_accent_enabled &lttrue-false&gt</b></th>
+                                        <td>Enable using custom accent paint colors on the blue team in freeplay.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>freeplay_blue_enabled &lttrue-false&gt</b></th>
+                                        <td>Enable overriding the blue stadium colors in freeplay.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>freeplay_blue_primary &lt#FFFFFF&gt</b></th>
+                                        <td>The blue primary paint colors to apply to your car in freeplay.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>freeplay_blue_primary_enabled &lttrue-false&gt</b></th>
+                                        <td>Enable using custom primary paint colors on the blue team in freeplay.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>freeplay_blue_stadium &lt#1873FF&gt</b></th>
+                                        <td>The stadium colors to override on the blue team in freeplay.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>freeplay_blue_hud &lt#002DBF&gt</b></th>
+                                        <td>The HUD colors to override on the blue team in freepla</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>freeplay_blue_hud_enabled &lttrue-false&gt</b></th>
+                                        <td>Enable overriding the blue team HUD colors with a custom one in freeplay.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>freeplay_boost_standard &lttrue-false&gt</b></th>
+                                        <td>Use the typical standard boost meter in freeplay.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>freeplay_boost_unlimited &lttrue-false&gt</b></th>
+                                        <td>Use the unlimited boost meter in freeplay.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>freeplay_boost_refill &lttrue-false&gt</b></th>
+                                        <td>Use the auto-refill boost meter in freeplay.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>freeplay_boost_none &lttrue-false&gt</b></th>
+                                        <td>Disable the boost meter in freeplay.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>freeplay_boost_refill_delay &lttrue-false&gt</b></th>
+                                        <td>The delay in seconds on when the auto-refill boost starts to refill in freeplay.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>freeplay_boost_refill_rate &lttrue-false&gt</b></th>
+                                        <td>The rate the auto-refill boost uses when it starts to refill in freeplay.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>freeplay_boost_refill_ground &lttrue-false&gt</b></th>
+                                        <td>Enable refilling boost when you touch the ground only in freeplay.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>freeplay_clear_overrides &lttrue-false&gt</b></th>
+                                        <td>Clear the white car color overrides in freeplay.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>freeplay_custom_ball_location &lttrue-false&gt</b></th>
+                                        <td>Enable custom ball spawn positioning in freeplay.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>freeplay_custom_ball_rotation &lttrue-false&gt</b></th>
+                                        <td>Enable custom ball spawn rotation in freeplay.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>freeplay_custom_ball_velocity &lttrue-false&gt</b></th>
+                                        <td>Enable custom ball spawn velocity in freeplay.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>freeplay_custom_car_location &lttrue-false&gt</b></th>
+                                        <td>Enable custom car spawn positioning in freeplay.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>freeplay_custom_car_rotation &lttrue-false&gt</b></th>
+                                        <td>Enable custom car spawn rotation in freeplay.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>freeplay_custom_car_velocity &lttrue-false&gt</b></th>
+                                        <td>Enable custom car spawn velocity in freeplay.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>freeplay_custom_cooldown &lttrue-false&gt</b></th>
+                                        <td>Override the cooldown for the boost pickups around the stadium in freeplay.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>freeplay_custom_gravity &lttrue-false&gt</b></th>
+                                        <td>Enable overriding the gravity in freeplay.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>freeplay_custom_speed &lttrue-false&gt</b></th>
+                                        <td>Enable overriding the game speed in freeplay.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>freeplay_disable_goals &lttrue-false&gt</b></th>
+                                        <td>Disable goal scoring in freeplay.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>freeplay_disable_training &lttrue-false&gt</b></th>
+                                        <td>Use the games built in training features instead of CodeReds (Goal scoring, game speed, boost type, recharge rate).</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>freeplay_disable_hotkeys &lttrue-false&gt</b></th>
+                                        <td>Disable the in game ball hotkeys in freeplay.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>freeplay_disable_pads &lttrue-false&gt</b></th>
+                                        <td>Disable the mini boost pads around the stadium in freeplay.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>freeplay_disable_pills &lttrue-false&gt</b></th>
+                                        <td>Disable the large boost pills around the stadium in freeplay.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>freeplay_gravity &lt-1300.0-1300.0&gt</b></th>
+                                        <td>Custom gravity force to apply in freeplay.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>freeplay_orange_accent &lt#FFFFFF&gt</b></th>
+                                        <td>The orange accent paint colors to apply to your car in freeplay.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>freeplay_orange_accent_enabled &lttrue-false&gt</b></th>
+                                        <td>Enable using custom accent paint colors on the orange team in freeplay.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>freeplay_orange_enabled &lttrue-false&gt</b></th>
+                                        <td>Override the orange stadium colors in freeplay.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>freeplay_orange_primary &lt#FFFFFF&gt</b></th>
+                                        <td>The orange primary paint colors to apply to your car in freeplay.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>freeplay_orange_primary_enabled &lttrue-false&gt</b></th>
+                                        <td>Enable using custom primary paint colors on the orange team in freeplay.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>freeplay_orange_stadium &lt#C26418&gt</b></th>
+                                        <td>The stadium colors to override on the orange team in freeplay.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>freeplay_orange_hud &lt#B23D00&gt</b></th>
+                                        <td>The HUD colors to override on the orange team in freeplay.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>freeplay_orange_hud_enabled &lttrue-false&gt</b></th>
+                                        <td>Enable overriding the orange team HUD colors with a custom one in freeplay.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>freeplay_pad_cooldown</b></th>
+                                        <td>Custom cooldown time for the mini boost pads around the stadium in freeplay.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>freeplay_pill_cooldown</b></th>
+                                        <td>Custom cooldown time for the large boost pills around the stadium in freeplay.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>freeplay_spawn_ball_freeze &lttrue-false&gt</b></th>
+                                        <td>Enable freezing the ball in place on respawn in freeplay.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>freeplay_spawn_ball_location &lt0.000000-0.000000-100.000000&gt</b></th>
+                                        <td>The XYZ position of where the ball respawns in freeplay.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>freeplay_spawn_ball_rotation &lt0-0-0&gt</b></th>
+                                        <td>The PYR of the ball when it respawns in freeplay.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>freeplay_spawn_ball_velocity &lt0.000000-0.000000-0.000000&gt</b></th>
+                                        <td>The XYZ velocity to apply to the ball on respawn in freeplay.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>freeplay_spawn_car_location &lt0.000000-0.000000-100.000000&gt</b></th>
+                                        <td>The XYZ position of where your car respawns in freeplay.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>freeplay_spawn_car_rotation &lt0-0-0&gt</b></th>
+                                        <td>The PYR of your car when it respawns in freeplay.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>freeplay_spawn_car_velocity &lt0.000000-0.000000-0.000000&gt</b></th>
+                                        <td>The XYZ linear velocity to apply to your car on respawn in freeplay.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>freeplay_car_hitbox_scale &lt0.1-10.0&gt</b></th>
+                                        <td>The scale multiplier of your cars collision hitbox for the ball in freeplay.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>freeplay_car_visual_scale &lt0.1-10.0&gt</b></th>
+                                        <td>The scale multiplier of your cars visual mesh for the ball in freeplay.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>freeplay_car_max_speed &lt0.0-11500.0&gt</b></th>
+                                        <td>The max linear speed your car can go in freeplay in unreal units.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>freeplay_car_boost_force &lt0.0-892500.0&gt</b></th>
+                                        <td>The boost force thats applied to your car in freeplay in unreal units.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>freeplay_car_jump_force &lt0.0-1312500.0&gt</b></th>
+                                        <td>The jump force thats applied to your car in freeplay in unreal units.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>freeplay_ball_hitbox_scale &lt0.0-10.0&gt</b></th>
+                                        <td>The scale multiplier of the collision hitbox for the ball in freeplay.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>freeplay_ball_max_speed &lt0.0-30000.0&gt</b></th>
+                                        <td>The max linear speed the ball can go in freeplay in unreal units.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>freeplay_car_boost_force &lt0.0-892500.0&gt</b></th>
+                                        <td>The boost force thats applied to your car in freeplay in unreal units.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>freeplay_speed &lt0.01-1.0&gt</b></th>
+                                        <td>Custom game speed value to apply in freeplay.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>freeplay_goal_speed &lttrue-false&gt</b></th>
+                                        <td>Shows the last goal speed of the ball in chat in freeplay.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>freeplay_goal_precision &lt0-9&gt</b></th>
+                                        <td>The decimal precision used in displaying the goal speed.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>freeplay_goal_speed_training &lttrue-false&gt</b></th>
+                                        <td>Enable the use of showing the goal speed in custom training packs.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>freeplay_goal_speed_offline &lttrue-false&gt</b></th>
+                                        <td>Enable the use of showing goal speed in offline modes such as lan and exhibition.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>freeplay_goal_speed_online &lttrue-false&gt</b></th>
+                                        <td>Enable the use of showing goal speed in all online game modes.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>freeplay_unlimited_flips &lttrue-false&gt</b></th>
+                                        <td>Allows your car to use unlimited flips without them expiring in freeplay.</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </section>
+
+                    <section class="docs-section" id="item-4-0-3">
+                        <h2 class="section-heading">Garage Utilities</h2>
+                        <div class="simplelightbox-gallery row mb-3">
+                            <div class="callout-block callout-block-info">
+                                <div class="content">
+                                    <h4 class="callout-title">
+                                        <span class="callout-icon-holder me-1">
+                                            <i class="fas fa-info-circle"></i>
+                                        </span>
+                                        Client Side Only
+                                    </h4>
+                                    <h5>All products equipped from the garage tab are client side only, meaning only you can see the changes on your loadout and no one else can.</h5>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-4 mb-3">
+                                <a href="assets/images/modules/garage-1.png"><img class="figure-img img-fluid shadow rounded" src="assets/images/modules/garage-1.png" alt="" title=""/></a>
+                            </div>
+                            <div class="col-12 col-md-4 mb-3">
+                                <a href="assets/images/modules/garage-2.png"><img class="figure-img img-fluid shadow rounded" src="assets/images/modules/garage-2.png" alt="" title=""/></a>
+                            </div>
+                        </div>      
+                        <h3>Commands</h3>
+                        <div class="table-responsive my-4">
+                            <table class="table table-bordered">
+                                <tbody>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>garage_save_presets</b></th>
+                                        <td>Force saves all garage presets to local files.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>garage_copy_preset</b></th>
+                                        <td>Creates a garage preset copy from the given arguments.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>garage_create_preset</b></th>
+                                        <td>Creates a brand new blank garage preset.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>garage_delete_preset</b></th>
+                                        <td>Deletes a preset by its name with the given arguments.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>garage_rename_preset</b></th>
+                                        <td>Renames a garage preset with the given arguments, its old name first followed by its new name.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>garage_update_anthem</b></th>
+                                        <td>Updates the players anthem from the currently selected preset.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>garage_update_banner</b></th>
+                                        <td>Updates the players banner from the currently selected preset.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>garage_update_border</b></th>
+                                        <td>Updates the players border from the currently selected preset.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>garage_update_name</b></th>
+                                        <td>Updates the players username from the currently selected preset.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>garage_update_profile</b></th>
+                                        <td>Updates the players profile from the currently selected preset.</td>
+                                    </tr>
+                                             <tr>
+                                        <th class="theme-bg-light"><b>garage_restore_profile</b></th>
+                                        <td>Restores your profile to its original one.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>garage_update_title</b></th>
+                                        <td>Updates the players title from the currently selected preset.</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <h3>Settings</h3>
+                        <div class="table-responsive my-4">
+                            <table class="table table-bordered">
+                                <tbody>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>garage_apply_both &lttrue-false&gt</b></th>
+                                        <td>Enable applying the same selected loadout to both teams.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>garage_apply_presets &lttrue-false&gt</b></th>
+                                        <td>Enable applying your custom garage presets.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>garage_apply_profile &lttrue-false&gt</b></th>
+                                        <td>Enable applying custom garage profiles.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>garage_apply_loadout &lttrue-false&gt</b></th>
+                                        <td>Enable applying custom garage loadouts.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>garage_selected_preset &ltarguments&gt</b></th>
+                                        <td>The name of the currently selected garage preset.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>garage_selected_team &lt0-1&gt</b></th>
+                                        <td>The current selected team for your garage preset.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>garage_remove_fortnite &lttrue-false&gt</b></th>
+                                        <td>Removes the "You can also use this item in Fortnite" popup on products.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>garage_remove_elon &lttrue-false&gt</b></th>
+                                        <td>Replaces all Elon Musk products on players loadouts that you encounter online with their default counterparts.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>garage_hide_loadouts &lttrue-false&gt</b></th>
+                                        <td>Removes all products from players loadouts that you encounter online that aren't stock products.</td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </section>
+
+                    <section class="docs-section" id="item-4-0-4">
+                        <h2 class="section-heading">Interface Enhancements</h2>
+                        <div class="simplelightbox-gallery row mb-3">
+                            <div class="col-12 col-md-4 mb-3">
+                                <a href="assets/images/modules/interface-1.png"><img class="figure-img img-fluid shadow rounded" src="assets/images/modules/interface-1.png" alt="" title=""/></a>
+                            </div>
+                            <div class="col-12 col-md-4 mb-3">
+                                <a href="assets/images/modules/interface-2.png"><img class="figure-img img-fluid shadow rounded" src="assets/images/modules/interface-2.png" alt="" title=""/></a>
+                            </div>
+                        </div>      
+                        <h3>Commands</h3>
+                        <div class="table-responsive my-4">
+                            <table class="table table-bordered">
+                                <tbody>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>interface_clear_drops</b></th>
+                                        <td>Attempts to close/clear any open item drop notifications on your screen.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>interface_ready_up</b></th>
+                                        <td>Votes to skip the current goal replay.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>interface_close_game</b></th>
+                                        <td>Closes the game, thats it, thats all this command does.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>interface_chat_all</b></th>
+                                        <td>Sends a message to global chat in an online game with the given arguments.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>interface_chat_party</b></th>
+                                        <td>Sends a message to party chat with the given arguments.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>interface_chat_team</b></th>
+                                        <td>Sends a message to team chat in an online game with the given arguments.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>interface_chat_private</b></th>
+                                        <td>Sends a message in the chat that only you can see with the given arguments.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>interface_disable_rendering</b></th>
+                                        <td>Disable all adobe scaleform rendering the game uses, press "ESC" to re-enable.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>interface_enable_rendering</b></th>
+                                        <td>Re-enables adobe scaleform rendering.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>interface_vote_to_foreit</b></th>
+                                        <td>Votes to forfeit in the current online match you are in.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>matchmaking_cancel</b></th>
+                                        <td>Cancel the current matchmaking search.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>matchmaking_deselect_playlist</b></th>
+                                        <td>Deselect a playlist based on its graphical row index.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>matchmaking_deselect_id</b></th>
+                                        <td>Deselect a playlist based on its playlist id.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>matchmaking_deselect_region</b></th>
+                                        <td>Deselect a region based on its graphical row index.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>matchmaking_select_playlist</b></th>
+                                        <td>Select a playlist based on its graphical row index.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>matchmaking_select_id</b></th>
+                                        <td>Select a playlist based on its playlist id.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>matchmaking_select_region</b></th>
+                                        <td>Select a region based on its graphical row index.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>matchmaking_start</b></th>
+                                        <td>Start searching in the current playlists selected by the user.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>matchmaking_start_casual</b></th>
+                                        <td>Start searching in the casual playlists selected by the user.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>matchmaking_start_ranked</b></th>
+                                        <td>Start searching in the ranked playlists selected by the user.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>matchmaking_view_casual</b></th>
+                                        <td>Set the matchmaking view tab to the casual playlists.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>matchmaking_view_ranked</b></th>
+                                        <td>Set the matchmaking view tab to the ranked playlists.</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <h3>Settings</h3>
+                        <div class="table-responsive my-4">
+                            <table class="table table-bordered">
+                                <tbody>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>interface_april_icons &lttrue-false&gt</b></th>
+                                        <td>Enable april fools 2017 vegetable rank icons.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>interface_april_toppers &lttrue-false&gt</b></th>
+                                        <td>Enable april fools 2018 "embiggened mode" toppers.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>interface_april_antennas &lttrue-false&gt</b></th>
+                                        <td>Enable april fools 2018 "embiggened mode" antennas.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>interface_topper_scale &lt0.1-25.0&gt</b></th>
+                                        <td>Value to customize the scale of april fools toppers.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>interface_antenna_scale &lt0.1-25.0&gt</b></th>
+                                        <td>Value to customize the scale of april fools antennas.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>interface_auto_claim &lttrue-false&gt</b></th>
+                                        <td>Automatically claims completed challenges at the end of online matches.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>interface_auto_gg &lttrue-false&gt</b></th>
+                                        <td>Automatically say "gg" in chat at the end of online matches.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>interface_auto_limit_fps &lttrue-false&gt</b></th>
+                                        <td>Automatically limits your fps to the set value when Rocket League is not in focus.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>interface_auto_fps_limit &lt30-144&gt</b></th>
+                                        <td>Value to automatically limit your fps to when not in focus.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>interface_reset_inputs_kickoff &lttrue-false&gt</b></th>
+                                        <td>Automatically reset the player input buffer before kickoffs.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>interface_reset_inputs_tabbing &lttrue-false&gt</b></th>
+                                        <td>Automatically reset the player input buffer when alt-tabbing.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>interface_autoname_replays &lttrue-false&gt</b></th>
+                                        <td>Use custom formatted file names when saving replays.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>interface_autosave_all &lttrue-false&gt</b></th>
+                                        <td>Automatically save replays at the end of all online matches.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>interface_autosave_casual &lttrue-false&gt</b></th>
+                                        <td>Automatically save replays at the end of casual matches.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>interface_autosave_ranked &lttrue-false&gt</b></th>
+                                        <td>Automatically save replays at the end of ranked matches.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>interface_autoskip_replays &lttrue-false&gt</b></th>
+                                        <td>Automatically skip replays in online matches.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>interface_auto_queue &lttrue-false&gt</b></th>
+                                        <td>Automatically queue the last searched playlist(s) at the end of online matches.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>interface_auto_none &lttrue-false&gt</b></th>
+                                        <td>Automatically exit to the main menu at the end of online matches.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>interface_auto_menu &lttrue-false&gt</b></th>
+                                        <td>Don't do any automation at the end of online matches.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>interface_auto_freeplay &lttrue-false&gt</b></th>
+                                        <td>Automatically open a freeplay map at the end of online matches.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>interface_auto_training &lttrue-false&gt</b></th>
+                                        <td>Automatically open a custom training pack at the end of online matches.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>interface_auto_freeplay_map &ltarguments&gt</b></th>
+                                        <td>The freeplay map name to open for the auto freeplay setting.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>interface_auto_training_code &ltarguments&gt</b></th>
+                                        <td>The custom training pack code to open for the auto training setting.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>interface_auto_delay &ltarguments&gt</b></th>
+                                        <td>The automation delay after online matches in seconds.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>interface_gg_delay &ltarguments&gt</b></th>
+                                        <td>The auto gg delay after online matches in seconds.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>interface_blog_motd &ltarguments&gt</b></th>
+                                        <td>The custom message of the day string for the blog.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>interface_custom_blog &lttrue-false&gt</b></th>
+                                        <td>Override the blog information on the main menu.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>interface_custom_motd &lttrue-false&gt</b></th>
+                                        <td>Override the message of the day at the bottom of the screen.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>interface_draw_fps &lttrue-false&gt</b></th>
+                                        <td>Draws an fps counter in the corner of your screen.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>interface_disable_itemshop &lttrue-false&gt</b></th>
+                                        <td>Hide the item shop button on the main menu.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>interface_disable_rocketpass &lttrue-false&gt</b></th>
+                                        <td>Disable rocket pass xp, item, and level progress.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>interface_hide_seasonranks &lttrue-false&gt</b></th>
+                                        <td>Hide your own rank info on the main menu.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>interface_hide_seasonrewards &lttrue-false&gt</b></th>
+                                        <td>Hide your season reward progress on the main menu.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>interface_menu_background &lt-0-24&gt</b></th>
+                                        <td>Override the main menu background, some may be disabled for safety reasons due to Psyonix breaking their own code</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>interface_notify_replay &lttrue-false&gt</b></th>
+                                        <td>Display a notification when a replay has been automatically saved.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>interface_join_focus &lttrue-false&gt</b></th>
+                                        <td>Automatically focuses the window upon joining a game.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>interface_kickoff_focus &lttrue-false&gt</b></th>
+                                        <td>Automatically focuses the window at the start of kickoffs.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>interface_playlist_populations &lttrue-false&gt</b></th>
+                                        <td>Displays population numbers along with the queue time when matchmaking.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>interface_replay_format &ltarguments&gt</b></th>
+                                        <td>Custom formatting name to use when saving replays.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>matchmaking_auto_menu &lttrue-false&gt</b></th>
+                                        <td>Automatically open the matchmaker window after a game ends.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>matchmaking_display_mode &lt0-1&gt</b></th>
+                                        <td>Display either mmr or skill rating on the main menu.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>matchmaking_display_skill &lttrue-false&gt</b></th>
+                                        <td>Enable/disable displaying players skill on the main menu.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>matchmaking_negative_color &lt#F41A2F&gt</b></th>
+                                        <td>The color to use with notifications when displaying a negative skill loss.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>matchmaking_positive_color &lt#2AFD2E&gt</b></th>
+                                        <td>The color to use with notifications when displaying a positive skill gain.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>matchmaking_skill_precision &lt0-9&gt</b></th>
+                                        <td>The decimal precision used in displaying skill ratings on the main menu.</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </section>
+
+                    <section class="docs-section" id="item-4-0-5">
+                        <h2 class="section-heading">Offline Enhancements</h2>
+                        <div class="simplelightbox-gallery row mb-3">
+                            <div class="col-12 col-md-4 mb-3">
+                                <a href="assets/images/modules/offline-1.png"><img class="figure-img img-fluid shadow rounded" src="assets/images/modules/offline-1.png" alt="" title=""/></a>
+                            </div>
+                            <div class="col-12 col-md-4 mb-3">
+                                <a href="assets/images/modules/offline-2.png"><img class="figure-img img-fluid shadow rounded" src="assets/images/modules/offline-2.png" alt="" title=""/></a>
+                            </div>
+                            <div class="col-12 col-md-4 mb-3">
+                                <a href="assets/images/modules/offline-3.png"><img class="figure-img img-fluid shadow rounded" src="assets/images/modules/offline-3.png" alt="" title=""/></a>
+                            </div>
+                        </div>    
+                        <h3>Settings</h3>
+                        <div class="table-responsive my-4">
+                            <table class="table table-bordered">
+                                <tbody>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>ballprediction_apex_color &lt#FFFFFF&gt</b></th>
+                                        <td>The color of the apex marker for ball prediction.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>ballprediction_apex_enabled &lttrue-false&gt</b></th>
+                                        <td>Draw the balls alex during prediction.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>ballprediction_blend_count &lt0.001-20.100gt</b></th>
+                                        <td>How smooth you want the ball prediction line to be.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>ballprediction_enabled &lttrue-false&gt</b></th>
+                                        <td>Draw ball prediction lines.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>ballprediction_line_color &lt#FF0000&gt</b></th>
+                                        <td>The color of the ball prediction line.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>ballprediction_step_count &lt1-4096&gt</b></th>
+                                        <td>How far you want the ball prediction line to draw.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>ballprediction_line_size &lt1-25&gt</b></th>
+                                        <td>The size in width of the ball prediction line.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>ballprediction_apex_size &lt1-25&gt</b></th>
+                                        <td>The size in width of the ball prediction apex square.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>boostcooldown_enabled &lttrue-false&gt</b></th>
+                                        <td>Draw cooldown timers above boost pads.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>boostcooldown_font_color &lt#FFFFFF&gt</b></th>
+                                        <td>Font color of the boost cooldown timer.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>boostcooldown_font_size &lt0.01-5.0&gt</b></th>
+                                        <td>Font size of the boost cooldown timer.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>tracers_ball_color &lt#00FF00&gt</b></th>
+                                        <td>Color of the tracer for the ball.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>tracers_ball_distance &lttrue-false&gt</b></th>
+                                        <td>Draw the distance from you to the ball.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>tracers_ball_enabled &lttrue-false&gt</b></th>
+                                        <td>Draw ball tracers.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>tracers_enemy_color &lt#000000&gt</b></th>
+                                        <td>Color of the tracers for the enemy.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>tracers_enemy_enabled &lttrue-false&gt</b></th>
+                                        <td>Draw drawing enemy player tracers.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>tracers_team_color &lt#FFFFFF&gt</b></th>
+                                        <td>Color of the tracers for your team.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>tracers_team_enabled &lttrue-false&gt</b></th>
+                                        <td>Draw team player tracers.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>tracers_team_specific &lttrue-false&gt</b></th>
+                                        <td>Dynamically change tracer colors based on team color.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>tracers_line_size &lt1-25&gt</b></th>
+                                        <td>The size in width of the lines used by tracers.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>hitbox_car_enabled &lttrue-false&gt</b></th>
+                                        <td>Draw an outline of your cars hitbox boundaries.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>hitbox_car_center &lttrue-false&gt</b></th>
+                                        <td>Draw a point at the center of your cars mass.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>hitbox_car_color &lt#FFFFFF&gt</b></th>
+                                        <td>Color of the lines to use for your cars hitbox.</td>
+                                    </tr>
+                                                                        <tr>
+                                        <th class="theme-bg-light"><b>flip_indicator_enabled &lttrue-false&gt</b></th>
+                                        <td>Draw your cars current flip state on the screen.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>flip_indicator_scale &lt0.5-15&gt</b></th>
+                                        <td>The scale of the text used to display if your car has a flip or not.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>flip_indicator_position &lt0-3840&gt</b></th>
+                                        <td>The position of the text used to display if your car has a flip or not.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>flip_indicator_yes_color &lt#FFFFFF&gt</b></th>
+                                        <td>The color of the text used to display if you have a flip.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>flip_indicator_no_color &lt#FFFFFF&gt</b></th>
+                                        <td>The color of the text used to display if you don't have a flip.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>flip_indicator_unlimited_color &lt#FFFFFF&gt</b></th>
+                                        <td>The color of the text used to display if you have unlimited flips enabled.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>ball_speed_enabled &lttrue-false&gt</b></th>
+                                        <td>Draw the balls current speed on the screen.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>ball_speed_precision &lt0-9&gt</b></th>
+                                        <td>The decimal precision used in displaying the balls current speed.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>ball_speed_scale &lt0.5-15&gt</b></th>
+                                        <td>The scale of the text used to display the balls current speed.</td>
+                                    </tr>
+                                     <tr>
+                                        <th class="theme-bg-light"><b>ball_speed_scale &lt0.5-15&gt</b></th>
+                                        <td>The scale of the text used to display the balls current speed.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>ball_speed_position &lt0-3840&gt</b></th>
+                                        <td>The position of the text used to display the balls current speed.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>ball_speed_color &lt#FFFFFF&gt</b></th>
+                                        <td>The color of the text used to display the balls current speed.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>ball_speed_metric &lttrue-false&gt</b></th>
+                                        <td>Use the metric system or freedom units when displaying the balls speed, also applies to goal scoring.</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </section>
+
+                    <section class="docs-section" id="item-4-0-6">
+                        <h2 class="section-heading">Rich Presence Integration</h2>
+                        <div class="simplelightbox-gallery row mb-3">
+                            <div class="col-12 col-md-4 mb-3">
+                                <a href="assets/images/modules/presence-1.png"><img class="figure-img img-fluid shadow rounded" src="assets/images/modules/presence-1.png" alt="" title=""/></a>
+                            </div>
+                            <div class="col-12 col-md-4 mb-3">
+                                <a href="assets/images/modules/presence-2.png"><img class="figure-img img-fluid shadow rounded" src="assets/images/modules/presence-2.png" alt="" title=""/></a>
+                            </div>
+                            <div class="col-12 col-md-4 mb-3">
+                                <a href="assets/images/modules/presence-3.png"><img class="figure-img img-fluid shadow rounded" src="assets/images/modules/presence-3.png" alt="" title=""/></a>
+                            </div>
+                        </div>
+                        <h3>Settings</h3>
+                        <div class="table-responsive my-4">
+                            <table class="table table-bordered">
+                                <tbody>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>presence_discord_apply &lttrue-false&gt</b></th>
+                                        <td>Enables the use of CodeRed's custom Discord rich presence integration.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>presence_discord_fallback &lttrue-false&gt</b></th>
+                                        <td>Enables showing the CodeRed logo in custom Discord rich presence if no small image is found.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>presence_discord_maps &lttrue-false&gt</b></th>
+                                        <td>Enables showing the current map image that you're on for Discord rich presence.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>presence_discord_menu &lttrue-false&gt</b></th>
+                                        <td>Enables showing extra details about what you're doing on the main menu for Discord rich presence.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>presence_discord_party &lttrue-false&gt</b></th>
+                                        <td>Enables showing that you're in a party, as well as the number of party members for Discord rich presence.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>presence_discord_shots &lttrue-false&gt</b></th>
+                                        <td>Enables showing the current shot you're on in custom training for Discord rich presence.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>presence_discord_ranks &lttrue-false&gt</b></th>
+                                        <td>Enables showing your rank info in competitive playlists for Discord rich presence.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>presence_discord_goals &lttrue-false&gt</b></th>
+                                        <td>Enables showing your teams goals in online games, as well as if you're winning or losing for Discord rich presence.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>interface_custom_group &lttrue-false&gt</b></th>
+                                        <td>Override your friends list group with a custom one.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>interface_custom_status &lttrue-false&gt</b></th>
+                                        <td>Override your friends list status custom one.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>interface_presence_group &lt0-5&gt</b></th>
+                                        <td>Value to override your friends list presence group with.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>interface_presence_status  &ltarguments&gt</b></th>
+                                        <td>Value to override your friends list game data with (for internal use only), press enter to apply changes.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>interface_presence_gamedata &ltarguments&gt</b></th>
+                                        <td>Value to override your friends list game data with (for internal use only), press enter to apply changes..</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <!--
+                        <h3>Commands</h3>
+                        <div class="table-responsive my-4">
+                            <table class="table table-bordered">
+                                <tbody>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>presence_discord_accept &ltarguments&gt</b></th>
+                                        <td>Accepts a party join request with the users Discord id as the given arguments.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>presence_discord_deny &ltarguments&gt</b></th>
+                                        <td>Denies a party join request with the users Discord id as the given arguments.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>presence_discord_ignore &ltarguments&gt</b></th>
+                                        <td>Ignores a party join request with the users Discord id as the given arguments.</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        -->
+                    </section>
+
+                    <section class="docs-section" id="item-4-0-7">
+                        <h2 class="section-heading">Scoreboard Customizer</h2>
+                        <div class="simplelightbox-gallery row mb-3">
+                            <div class="col-12 col-md-4 mb-3">
+                                <a href="assets/images/modules/scoreboard-1.png"><img class="figure-img img-fluid shadow rounded" src="assets/images/modules/scoreboard-1.png" alt="" title=""/></a>
+                            </div>
+                            <div class="col-12 col-md-4 mb-3">
+                                <a href="assets/images/modules/scoreboard-2.png"><img class="figure-img img-fluid shadow rounded" src="assets/images/modules/scoreboard-2.png" alt="" title=""/></a>
+                            </div>
+                        </div>          
+                        <h3>Settings</h3>
+                        <div class="table-responsive my-4">
+                            <table class="table table-bordered">
+                                <tbody>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>scoreboard_display_mode &lt0-1&gt</b></th>
+                                        <td>Display on the scoreboard either mmr or skill rating.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>scoreboard_display_nameplates &lttrue-false&gt</b></th>
+                                        <td>Display players skill ratings on their cars nameplates.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>scoreboard_display_skill &lttrue-false&gt</b></th>
+                                        <td>Display players skill ratings on the scoreboard.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>scoreboard_display_team &lttrue-false&gt</b></th>
+                                        <td>Display teams skill rating average on the scoreboard.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>scoreboard_platform_clubs &lttrue-false&gt</b></th>
+                                        <td>Display players platform names in place of club tags on the scoreboard.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>scoreboard_platform_avatars &lttrue-false&gt</b></th>
+                                        <td>Display unique custom platform avatars for players on the scoreboard.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>scoreboard_psynet_avatars &lttrue-false&gt</b></th>
+                                        <td>Display the old "PsyNet" avatar for console players on the scoreboard.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>scoreboard_normal_avatars &lttrue-false&gt</b></th>
+                                        <td>Don't change any avatars on the scoreboard.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>scoreboard_steam_avatars &lttrue-false&gt</b></th>
+                                        <td>Enables viewing Steam avatars on the scoreboard if you're on the Epic Games Store.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>scoreboard_hide_avatars &lttrue-false&gt</b></th>
+                                        <td>Hide all player avatars on the scoreboard during matches.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>scoreboard_hide_clubs &lttrue-false&gt</b></th>
+                                        <td>Hide team club names and tags on the scoreboard</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>scoreboard_hide_nameplates &lttrue-false&gt</b></th>
+                                        <td>Replaces player names with random bot names on cars nameplates.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>scoreboard_hide_names &lttrue-false&gt</b></th>
+                                        <td>Replaces player names with random bot names on the scoreboard.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>scoreboard_hide_platforms &lttrue-false&gt</b></th>
+                                        <td>Hide which platform players belong to on the scoreboard.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>scoreboard_hide_platforms &lttrue-false&gt</b></th>
+                                        <td>Hide which platform players belong to on the scoreboard.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>scoreboard_hide_everyone &lttrue-false&gt</b></th>
+                                        <td>Hide everyone with the anonymizer (besides yourself).</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>scoreboard_hide_opponents &lttrue-false&gt</b></th>
+                                        <td>Hide only your opponents with the anonymizer (besides yourself).</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>scoreboard_hide_nonparty &lttrue-false&gt</b></th>
+                                        <td>Hide everyone that's not in your party with the anonymizer (besides yourself).</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>scoreboard_hide_privates &lttrue-false&gt</b></th>
+                                        <td>Allows the use of the anonymizer in private matches.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>scoreboard_hide_statistics &lttrue-false&gt</b></th>
+                                        <td>Hide all players statistics on the scoreboard.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>scoreboard_hide_titles &lttrue-false&gt</b></th>
+                                        <td>Hide player titles on the scoreboard in online matches.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>scoreboard_skill_precision &lt0-9&gt</b></th>
+                                        <td>The decimal precision used in the win/loss skill ratings on the scoreboard.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>scoreboard_update_precision &lt0-9&gt</b></th>
+                                        <td>The decimal precision used in displaying skill ratings on the scoreboard.</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </section>
+
+                    <section class="docs-section" id="item-4-0-8">
+                        <h2 class="section-heading">Session Tracker</h2>
+                        <div class="simplelightbox-gallery row mb-3">
+                            <div class="col-12 col-md-4 mb-3">
+                                <a href="assets/images/modules/tracker-1.png"><img class="figure-img img-fluid shadow rounded" src="assets/images/modules/tracker-1.png" alt="" title=""/></a>
+                            </div>
+                            <div class="col-12 col-md-4 mb-3">
+                                <a href="assets/images/modules/tracker-2.png"><img class="figure-img img-fluid shadow rounded" src="assets/images/modules/tracker-2.png" alt="" title=""/></a>
+                            </div>
+                        </div>      
+                        <h3>Settings</h3>
+                        <div class="table-responsive my-4">
+                            <table class="table table-bordered">
+                                <tbody>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>tracker_log_sessions &lttrue-false&gt</b></th>
+                                        <td>Track and log match statistics to offline files.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>tracker_log_time &lttrue-false&gt</b></th>
+                                        <td>Track and log seconds spent in different game states to offline files.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>tracker_log_populations &lttrue-false&gt</b></th>
+                                        <td>Track and log playlist populations to offline files.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>tracker_notify_skill &lttrue-false&gt</b></th>
+                                        <td>Display a notification when your skill rating has been updated.</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </section>
+
+                    <section class="docs-section" id="item-4-0-9">
+                        <h2 class="section-heading">Settings Manager</h2>
+                        <div class="simplelightbox-gallery row mb-3">
+                            <div class="col-12 col-md-4 mb-3">
+                                <a href="assets/images/modules/settings-1.png"><img class="figure-img img-fluid shadow rounded" src="assets/images/modules/settings-1.png" alt="" title=""/></a>
+                            </div>
+                            <div class="col-12 col-md-4 mb-3">
+                                <a href="assets/images/modules/settings-2.png"><img class="figure-img img-fluid shadow rounded" src="assets/images/modules/settings-2.png" alt="" title=""/></a>
+                            </div>
+                        </div>
+                        <h3>Commands</h3>
+                        <div class="table-responsive my-4">
+                            <table class="table table-bordered">
+                                <tbody>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>game_settings_change</b></th>
+                                        <td>Changes a user setting value in Rocket League by its name and given arguments.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>game_settings_export</b></th>
+                                        <td>Exports all of Rocket Leagues current settings to a file, with the files name being the provided arguments.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>game_settings_import</b></th>
+                                        <td>Imports and applies all of Rocket League settings from a file, with the files name being the provided arguments.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>game_settings_print</b></th>
+                                        <td>Prints all user settings to the terminal by their name, label, and current value.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>game_settings_refresh</b></th>
+                                        <td>Refreshes the currently loaded user settings for ImGui arguments.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>game_settings_reset</b></th>
+                                        <td>Resets a user setting to default in Rocket League by its name.</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </section>
+
+                    <section class="docs-section" id="item-4-1-0">
+                        <h2 class="section-heading">Stadium Customizer</h2>
+                        <div class="simplelightbox-gallery row mb-3">
+                            <div class="col-12 col-md-4 mb-3">
+                                <a href="assets/images/modules/online-4.png"><img class="figure-img img-fluid shadow rounded" src="assets/images/modules/online-4.png" alt="" title=""/></a>
+                            </div>
+                            <div class="col-12 col-md-4 mb-3">
+                                <a href="assets/images/modules/scoreboard-1.png"><img class="figure-img img-fluid shadow rounded" src="assets/images/modules/scoreboard-1.png" alt="" title=""/></a>
+                            </div>
+                        </div>         
+                        <h3>Commands</h3>
+                        <div class="table-responsive my-4">
+                            <table class="table table-bordered">
+                                <tbody>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>stadium_update_colors</b></th>
+                                        <td>Force updates the current stadium colors to any set custom colors.</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <h3>Settings</h3>
+                        <div class="table-responsive my-4">
+                            <table class="table table-bordered">
+                                <tbody>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>stadium_disable_filters &lttrue-false&gt</b></th>
+                                        <td>Disable screen filters used in certain stadiums in game (like Neo Tokyo Comic and Fire & Ice).</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>stadium_blue_accent &lt#FFFFFF&gt</b></th>
+                                        <td>The blue accent paint colors to apply to your car in online matches.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>stadium_blue_accent_enabled &lttrue-false&gt</b></th>
+                                        <td>Enable using custom accent paint colors on the blue team in online matches.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>stadium_blue_enabled &lttrue-false&gt</b></th>
+                                        <td>Override the blue stadium colors in online matches.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>stadium_blue_primary &lt#FFFFFF&gt</b></th>
+                                        <td>The blue primary paint colors to apply to your car in online matches.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>stadium_blue_primary_enabled &lttrue-false&gt</b></th>
+                                        <td>Enable using custom primary paint colors on the blue team in online matches.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>stadium_blue_stadium &lt#1873FF&gt</b></th>
+                                        <td>The stadium colors to override on the blue team in online matches.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>stadium_blue_hud &lt#002DBF&gt</b></th>
+                                        <td>The HUD colors to override on the blue team in online matches.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>stadium_blue_hud_enabled &lttrue-false&gt</b></th>
+                                        <td>Enable overriding the blue team HUD colors with a custom one in online matches</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>stadium_exclude_clubs &lttrue-false&gt</b></th>
+                                        <td>Exclude club match colors from being overwritten by custom ones.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>stadium_legacy_clubs &lttrue-false&gt</b></th>
+                                        <td>Bring back showing club colors in 1v1 matches like in the old days.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>stadium_orange_accent &lt#FFFFFF&gt</b></th>
+                                        <td>The orange accent paint colors to apply to your car in online matches.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>stadium_orange_accent_enabled &lttrue-false&gt</b></th>
+                                        <td>Enable using custom accent paint colors on the orange team in online matches.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>stadium_orange_enabled &lttrue-false&gt</b></th>
+                                        <td>Override the orange stadium colors in online matches.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>stadium_orange_primary &lt#FFFFFF&gt</b></th>
+                                        <td>The orange primary paint colors to apply to your car in online matches.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>stadium_orange_primary_enabled &lttrue-false&gt</b></th>
+                                        <td>Enable using custom primary paint colors on the orange team in online matches.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>stadium_orange_stadium &lt#C26418&gt</b></th>
+                                        <td>The stadium colors to override on the orange team in online matches.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>stadium_orange_hud &lt#B23D00&gt</b></th>
+                                        <td>Enable overriding the orange team HUD colors with a custom one in online matches.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>stadium_orange_hud_enabled &lttrue-false&gt</b></th>
+                                        <td>The stadium colors to override on the orange team in online matches.</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </section>
+
+                    <section class="docs-section" id="item-4-1-1">
+                        <h2 class="section-heading">Texture Manager</h2>
+                        <div class="simplelightbox-gallery row mb-3">
+                            <div class="col-12 col-md-4 mb-3">
+                                <a href="assets/images/modules/textures-1.png"><img class="figure-img img-fluid shadow rounded" src="assets/images/modules/textures-1.png" alt="" title=""/></a>
+                            </div>
+                            <div class="col-12 col-md-4 mb-3">
+                                <a href="assets/images/modules/textures-2.png"><img class="figure-img img-fluid shadow rounded" src="assets/images/modules/textures-2.png" alt="" title=""/></a>
+                            </div>
+                        </div>
+                        <h3>Commands</h3>
+                        <div class="table-responsive my-4">
+                            <table class="table table-bordered">
+                                <tbody>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>textures_refresh_tints</b></th>
+                                        <td>Marks all custom unreal textures that require a color tint to be reapplied.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>textures_update_vanities</b></th>
+                                        <td>Updates all current custom avatars, banners, and borders.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>textures_update_avatar</b></th>
+                                        <td>Updates the current custom avatar.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>textures_update_border</b></th>
+                                        <td>Updates the current custom border.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>textures_update_banner</b></th>
+                                        <td>Updates the current custom banner.</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <h3>Settings</h3>
+                        <div class="table-responsive my-4">
+                            <table class="table table-bordered">
+                                <tbody>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>textures_custom_avatars &lttrue-false&gt</b></th>
+                                        <td>Enable the use of custom avatar textures.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>textures_custom_banners &lttrue-false&gt</b></th>
+                                        <td>Enable the use of custom banner textures.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>textures_custom_borders &lttrue-false&gt</b></th>
+                                        <td>Enable the use of custom border textures.</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </section>
+
+                    <section class="docs-section" id="item-4-1-2">
+                        <h2 class="section-heading">Thumbnail Utilities</h2>
+                        <div class="simplelightbox-gallery row mb-3">
+                            <div class="col-12 col-md-4 mb-3">
+                                <a href="assets/images/windows/thumbnails-1.png"><img class="figure-img img-fluid shadow rounded" src="assets/images/windows/thumbnails-1.png" alt="" title=""/></a>
+                            </div>
+                            <div class="col-12 col-md-4 mb-3">
+                                <a href="assets/images/windows/thumbnails-2.png"><img class="figure-img img-fluid shadow rounded" src="assets/images/windows/thumbnails-2.png" alt="" title=""/></a>
+                            </div>
+                        </div>
+                        <h3>Commands</h3>
+                        <div class="table-responsive my-4">
+                            <table class="table table-bordered">
+                                <tbody>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>thumbnail_clear_queue</b></th>
+                                        <td>Clears any active thumbnail queue or render.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>thumbnail_load_product</b></th>
+                                        <td>Loads a product in memory based on the currently selected product id.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>thumbnail_render_product</b></th>
+                                        <td>Renders the currently selected product thumbnail.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>thumbnail_render_slot</b></th>
+                                        <td>Renders every product thumbnail from the selected slot, if automation mode is enabled.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>thumbnail_save_product</b></th>
+                                        <td>Saves the currently rendered thumbnail image to file.</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <h3>Settings</h3>
+                        <div class="table-responsive my-4">
+                            <table class="table table-bordered">
+                                <tbody>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>thumbnail_automation_mode &lttrue-false&gt</b></th>
+                                        <td>Enable automation mode for the thumbnail renderer.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>thumbnail_slot_index &ltarguments&gt</b></th>
+                                        <td>The slot index to pick products from for the thumbnail render.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>thumbnail_product_id &ltarguments&gt</b></th>
+                                        <td>The product id to render for the thumbnail render.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>thumbnail_paint_id &ltarguments&gt</b></th>
+                                        <td>The paint id to apply to products for the thumbnail render.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>thumbnail_camera_preset &ltarguments&gt</b></th>
+                                        <td>The name of the preset camera settings to apply to the thumbnail render.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>thumbnail_scene_width &lt32-4096&gt</b></th>
+                                        <td>The width in pixels to render and export product thumbnails at.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>thumbnail_scene_height &lt32-4096&gt</b></th>
+                                        <td>The height in pixels to render and export product thumbnails at.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>thumbnail_scene_background &lt#000000&gt</b></th>
+                                        <td>The color of the backtround to render thumbnails on.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>thumbnail_scene_mips &lt0-19&gt</b></th>
+                                        <td>The mipmap settings to use for the texture of the thumbnail.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>thumbnail_scene_lod &lt0-255&gt</b></th>
+                                        <td>The level of detail to use for the render scene of thumbnails.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>thumbnail_scene_no_lighting &lttrue-false&gt</b></th>
+                                        <td>Disable additional lighting for the render scene of thumbnails.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>thumbnail_scene_no_compression &lttrue-false&gt</b></th>
+                                        <td>Disable image compression for the render scene of thumbnails.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>thumbnail_export_format &ltarguments&gt</b></th>
+                                        <td>The file format for the thumbnail image data to be exported as.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>thumbnail_export_skip_existing &lttrue-false&gt</b></th>
+                                        <td>Skip existing thumbnail files if they've already been previously rendered.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>thumbnail_export_skip_viewport &lttrue-false&gt</b></th>
+                                        <td>Skip rendering a preview of the thumbnail to the ImGui window to save on resources and memory.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>thumbnail_export_delay &lt10-10000&gt</b></th>
+                                        <td>The delay in milliseconds used to wait for rendering product thumbnails.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>thumbnail_load_delay &lt10-10000&gt</b></th>
+                                        <td>The delay in milliseconds used to wait for loading product packages.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>thumbnail_auto_garbage &lt2-32&gt</b></th>
+                                        <td>The maximum amount of products that can be loaded before auto calling collect garbage to clear already used assets.</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </section>
+
+                    <section class="docs-section" id="item-4-1-3">
+                        <h2 class="section-heading">Title Manager</h2>
+                        <div class="simplelightbox-gallery row mb-3">
+                            <div class="col-12 col-md-4 mb-3">
+                                <a href="assets/images/modules/titles-1.png"><img class="figure-img img-fluid shadow rounded" src="assets/images/modules/titles-1.png" alt="" title=""/></a>
+                            </div>
+                        </div>              
+                        <h3>Settings</h3>
+                        <div class="table-responsive my-4">
+                            <table class="table table-bordered">
+                                <tbody>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>titles_display_game &lttrue-false&gt</b></th>
+                                        <td>Display your loadouts selected title on the scoreboard.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>titles_display_menu &lttrue-false&gt</b></th>
+                                        <td>Display your loadouts selected title on the main menu.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>titles_display_others &lttrue-false&gt</b></th>
+                                        <td>Display other CodeRed users special titles on the scoreboard (Like server booster and alpha tester).</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </section>
+
+                    <section class="docs-section" id="item-4-1-4">
+                        <h2 class="section-heading">Training Enhancements</h2>
+                        <div class="simplelightbox-gallery row mb-3">
+                            <div class="col-12 col-md-4 mb-3">
+                                <a href="assets/images/modules/offline-1.png"><img class="figure-img img-fluid shadow rounded" src="assets/images/modules/offline-1.png" alt="" title=""/></a>
+                            </div>
+                        </div>
+                        <h3>Commands</h3>
+                        <div class="table-responsive my-4">
+                            <table class="table table-bordered">
+                                <tbody>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>training_mirror_shot</b></th>
+                                        <td>Mirrors the curren shot in custom training</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>training_next_shot</b></th>
+                                        <td>Switches to the next shot in custom training</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>training_open_freeplay</b></th>
+                                        <td>Enter a freeplay game in a specific map with the given arguments.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>training_open_pack</b></th>
+                                        <td>Enter a custom training pack by its code with the given arguments.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>training_open_workshop</b></th>
+                                        <td>Enter a workshop map by its file path with the given arguments.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>training_previous_shot</b></th>
+                                        <td>Switches to the previous shot in custom training</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>training_reset_shot</b></th>
+                                        <td>Resets the current shot in custom training</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>training_shuffle_shots</b></th>
+                                        <td>Toggles shuffling shots off and on in custom training</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>training_load_files</b></th>
+                                        <td>Manually loads all favorited training packs in memory.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>training_sync_files</b></th>
+                                        <td>Manually sync all training files between accounts.</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <h3>Settings</h3>
+                        <div class="table-responsive my-4">
+                            <table class="table table-bordered">
+                                <tbody>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>training_auto_sync_files &lttrue-false&gt</b></th>
+                                        <td>Enable/disable automatically syncing training files between different accounts.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>training_freeplay_map &lttrue-false&gt</b></th>
+                                        <td>Use your selected freeplay map for custom training packs.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>training_random_map &lttrue-false&gt</b></th>
+                                        <td>Use randomly selecting a map for custom training packs.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>training_no_map &lttrue-false&gt</b></th>
+                                        <td>Don't do any changes to maps for custom training packs.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>training_boost_standard &lttrue-false&gt</b></th>
+                                        <td>Use the typical standard boost meter in custom training.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>training_boost_unlimited &lttrue-false&gt</b></th>
+                                        <td>Use the unlimited boost meter in custom training.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>training_boost_refill &lttrue-false&gt</b></th>
+                                        <td>Use the auto-refill boost meter in custom training.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>training_boost_none &lttrue-false&gt</b></th>
+                                        <td>Disable the boost meter in custom training.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>training_boost_refill_delay &lttrue-false&gt</b></th>
+                                        <td>The delay in seconds on when the auto-refill boost starts to refill in custom training.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>training_boost_refill_rate &lttrue-false&gt</b></th>
+                                        <td>The rate the auto-refill boost uses when it starts to refill in custom training.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>training_boost_refill_ground &lttrue-false&gt</b></th>
+                                        <td>Enable refilling boost when you touch the ground only in custom training.</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </section>
+			    </article>
+
+                <article class="docs-article" id="section-5">
+				    <header class="docs-header">
+					    <h1 class="docs-heading">Windows</h1>
+					    <section class="docs-intro">
+						    <p>CodeRed has a few built in windows that you can access via the terminal, with either <code>imgui_open &ltwindow-name&gt</code> or <code>imgui_toggle &ltwindow-name&gt</code>.</p>
+						</section>
+				    </header>
+
+                    <section class="docs-section" id="item-5-0-1">
+                        <h2 class="section-heading">ActorState Debugger</h2>
+                        <h4>Window Name: <code>actorstates</code></h4>
+                        <p>The actorstate debugger lets you view real time info about your car and the ball, as well as your cars inputs.</p>
+                        <p>Hold ctrl and double right click the window to change its position.</p>
+
+                        <div class="simplelightbox-gallery row mb-3">
+                            <div class="col-12 col-md-4 mb-3">
+                                <a href="assets/images/windows/actorstates-1.png"><img class="figure-img img-fluid shadow rounded" src="assets/images/windows/actorstates-1.png" alt="" title=""/></a>
+                            </div>
+                        </div>
+					</section>
+
+                    <section class="docs-section" id="item-5-0-2">
+                        <h2 class="section-heading">Changelog</h2>
+                        <h4>Window Name: <code>changelog</code></h4>
+                        <p>The changelog window stores a hardcoded copy of every update that CodeRed has received, this window also automatically opens after an update is released.</p>	    
+
+                        <div class="simplelightbox-gallery row mb-3">
+                            <div class="col-12 col-md-4 mb-3">
+                                <a href="assets/images/windows/changelog-1.png"><img class="figure-img img-fluid shadow rounded" src="assets/images/windows/changelog-1.png" alt="" title=""/></a>
+                            </div>
+                        </div>
+					</section>
+
+                    <section class="docs-section" id="item-5-0-3">
+                        <h2 class="section-heading">Clock</h2>
+                        <h4>Window Name: <code>clock</code></h4>
+                        <p>This window simply draws a clock in the top left corner of your screen. You can change the format from 24 hour to 12 hour with the <code>imgui_clock_24</code> setting.</p>
+                        <p>Hold ctrl and double right click the window to change its position.</p>
+
+                        <div class="simplelightbox-gallery row mb-3">
+                            <div class="col-12 col-md-4 mb-3">
+                                <a href="assets/images/windows/clock-1.png"><img class="figure-img img-fluid shadow rounded" src="assets/images/windows/clock-1.png" alt="" title=""/></a>
+                            </div>
+                        </div>
+					</section>
+
+                    <section class="docs-section" id="item-5-0-4">
+                        <h2 class="section-heading">Connections</h2>
+                        <h4>Window Name: <code>connections</code></h4>
+                        <p>The connections window lets you search for peoples connected accounts from either a username or player id, useful in finding peoples console accounts from steam, or vice versa. This tool uses the Epic Games API to accomplish this using your own auth ticket generated by the game.</p>
+
+                        <div class="simplelightbox-gallery row mb-3">
+                            <div class="col-12 col-md-4 mb-3">
+                                <a href="assets/images/windows/connections-1.png"><img class="figure-img img-fluid shadow rounded" src="assets/images/windows/connections-1.png" alt="" title=""/></a>
+                            </div>
+                        </div>
+					</section>
+
+                    <section class="docs-section" id="item-5-0-5">
+                        <h2 class="section-heading">Dashboard</h2>
+                        <h4>Window Name: <code>dashboard</code></h4>
+                        <h4>Default Keybind: <code>F1</code></h4>
+                        <p>The dashboard is the main interface used to control CodeRed, comparable to BakkesMod's settings window, it hosts most of the settings and commands available to the user.</p>	    
+
+                        <div class="simplelightbox-gallery row mb-3">
+                            <div class="col-12 col-md-4 mb-3">
+                                <a href="assets/images/windows/dashboard-1.png"><img class="figure-img img-fluid shadow rounded" src="assets/images/windows/dashboard-1.png" alt="" title=""/></a>
+                            </div>
+                            <div class="col-12 col-md-4 mb-3">
+                                <a href="assets/images/previews/dashboard_2.png"><img class="figure-img img-fluid shadow rounded" src="assets/images/previews/dashboard_2.png" alt="" title=""/></a>
+                            </div>
+                            <div class="col-12 col-md-4 mb-3">
+                                <a href="assets/images/previews/dashboard_7.png"><img class="figure-img img-fluid shadow rounded" src="assets/images/previews/dashboard_7.png" alt="" title=""/></a>
+                            </div>
+                        </div>
+					</section>
+
+                    <section class="docs-section" id="item-5-0-6">
+                        <h2 class="section-heading">Function Scanner</h2>
+                        <h4>Window Name: <code>scanner</code></h4>
+                        <p>The function scanner is a useful tool for developers and debugging purposes, it lets you monitor when unreal functions are called in real time. You have the option to filter for certain keywords, as well as blacklist them. You can also browse a full list of all known functions in the game and dump them to a file.</p>	    
+
+                        <div class="simplelightbox-gallery row mb-3">
+                            <div class="col-12 col-md-4 mb-3">
+                                <a href="assets/images/windows/scanner-1.png"><img class="figure-img img-fluid shadow rounded" src="assets/images/windows/scanner-1.png" alt="" title=""/></a>
+                            </div>
+                            <div class="col-12 col-md-4 mb-3">
+                                <a href="assets/images/windows/scanner-2.png"><img class="figure-img img-fluid shadow rounded" src="assets/images/windows/scanner-2.png" alt="" title=""/></a>
+                            </div>
+                        </div>
+					</section>
+
+                    <section class="docs-section" id="item-5-0-7">
+                        <h2 class="section-heading">GameState Debugger</h2>
+                        <h4>Window Name: <code>gamestates</code></h4>
+                        <p>The gamestate debugger serves one purpose, debuggin which gamestate you are in. It displays your current playlist, active events, and permissions used by CodeRed.</p>	    
+                        <p>Hold ctrl and double right click the window to change its position.</p>
+
+                        <div class="simplelightbox-gallery row mb-3">
+                            <div class="col-12 col-md-4 mb-3">
+                                <a href="assets/images/windows/gamestates-1.png"><img class="figure-img img-fluid shadow rounded" src="assets/images/windows/gamestates-1.png" alt="" title=""/></a>
+                            </div>
+                        </div>
+					</section>
+
+                    <section class="docs-section" id="item-5-0-8">
+                        <h2 class="section-heading">ImGui Demo</h2>
+                        <h4>Window Name: <code>demo</code></h4>
+                        <p>This window is the default Dear ImGui demo window, used for debugging purposes, it showcases examples of every possible ImGui widget; especially useful when creating custom systles.</p>	    
+
+                        <div class="simplelightbox-gallery row mb-3">
+                            <div class="col-12 col-md-4 mb-3">
+                                <a href="assets/images/windows/demo-1.png"><img class="figure-img img-fluid shadow rounded" src="assets/images/windows/demo-1.png" alt="" title=""/></a>
+                            </div>
+                        </div>
+					</section>
+
+                    <section class="docs-section" id="item-5-0-9">
+                        <h2 class="section-heading">Matchmaker</h2>
+                        <h4>Window Name: <code>matchmaker</code></h4>
+                        <p>The matchmaker window is a helpful little tool that allows you to quickly queue in different game modes at the end of matches.</p>	    
+
+                        <div class="simplelightbox-gallery row mb-3">
+                            <div class="col-12 col-md-4 mb-3">
+                                <a href="assets/images/windows/matchmaker-1.png"><img class="figure-img img-fluid shadow rounded" src="assets/images/windows/matchmaker-1.png" alt="" title=""/></a>
+                            </div>
+                        </div>
+					</section>
+
+                    <section class="docs-section" id="item-5-1-0">
+                        <h2 class="section-heading">OBS Controls</h2>
+                        <h4>Window Name: <code>obs</code></h4>
+                        <p>The OBS window allows for OBS's integration via its text source "read from file" option, you can toggle off an on any specific value listed and it will update in real time.</p>
+
+                        <div class="simplelightbox-gallery row mb-3">
+                            <div class="col-12 col-md-4 mb-3">
+                                <a href="assets/images/windows/obs-1.png"><img class="figure-img img-fluid shadow rounded" src="assets/images/windows/obs-1.png" alt="" title=""/></a>
+                            </div>
+                        </div>
+					</section>
+
+                    <section class="docs-section" id="item-5-1-1">
+                        <h2 class="section-heading">Playlist Tracker</h2>
+                        <h4>Window Name: <code>tracker</code></h4>
+                        <p>The tracker window is a little overlay that you can pin to one of the corners of your screen, it displays your current mmr, mmr needed to rank up/down, and win/loss streaks.</p>	    
+                        <p>Hold ctrl and double right click the window to change its position.</p>
+
+                        <div class="simplelightbox-gallery row mb-3">
+                            <div class="col-12 col-md-4 mb-3">
+                                <a href="assets/images/windows/tracker-1.png"><img class="figure-img img-fluid shadow rounded" src="assets/images/windows/tracker-1.png" alt="" title=""/></a>
+                            </div>
+                        </div>
+					</section>
+
+                    <section class="docs-section" id="item-5-1-2">
+                        <h2 class="section-heading">Post Process Editor</h2>
+                        <h4>Window Name: <code>effects</code></h4>
+                        <p>The post process editor is a tool that lets you create real-time visual effects; it has a wide range of features such as blurring, coloring, or lighting overrides, and works in all game modes as well as in replay files. You'll have to play around with the settings on your own and see what you come up with, there are two examples by default that I created; one is a simple black and white filter and the other one is a green night vision thing.</p>	    
+
+                        <div class="simplelightbox-gallery row mb-3">
+                            <div class="col-12 col-md-4 mb-3">
+                                <a href="assets/images/windows/effects-1.png"><img class="figure-img img-fluid shadow rounded" src="assets/images/windows/effects-1.png" alt="" title=""/></a>
+                            </div>
+                            <div class="col-12 col-md-4 mb-3">
+                                <a href="assets/images/windows/effects-2.png"><img class="figure-img img-fluid shadow rounded" src="assets/images/windows/effects-2.png" alt="" title=""/></a>
+                            </div>
+                            <div class="col-12 col-md-4 mb-3">
+                                <a href="assets/images/previews/effects-1.png"><img class="figure-img img-fluid shadow rounded" src="assets/images/previews/effects-1.png" alt="" title=""/></a>
+                            </div>
+                            <div class="col-12 col-md-4 mb-3">
+                                <a href="assets/images/previews/effects-2.png"><img class="figure-img img-fluid shadow rounded" src="assets/images/previews/effects-2.png" alt="" title=""/></a>
+                            </div>
+                        </div>
+					</section>
+
+                    <section class="docs-section" id="item-5-1-3">
+                        <h2 class="section-heading">Reflector</h2>
+                        <h4>Window Name: <code>reflector</code></h4>
+                        <p>The reflector is a powerful tool that lets you search for object instances and view their property values in real time, it lets you see how the games internal reflection system works related to properties and classes. To prevent abuse, this tool is view only and you cannot modify their values or see what addresses the properties are at.</p>	    
+
+                        <div class="simplelightbox-gallery row mb-3">
+                            <div class="col-12 col-md-4 mb-3">
+                                <a href="assets/images/windows/reflector-1.png"><img class="figure-img img-fluid shadow rounded" src="assets/images/windows/reflector-1.png" alt="" title=""/></a>
+                            </div>
+                            <div class="col-12 col-md-4 mb-3">
+                                <a href="assets/images/windows/reflector-2.png"><img class="figure-img img-fluid shadow rounded" src="assets/images/windows/reflector-2.png" alt="" title=""/></a>
+                            </div>
+                            <div class="col-12 col-md-4 mb-3">
+                                <a href="assets/images/windows/reflector-3.png"><img class="figure-img img-fluid shadow rounded" src="assets/images/windows/reflector-3.png" alt="" title=""/></a>
+                            </div>
+                        </div>
+					</section>
+
+                    <section class="docs-section" id="item-5-1-4">
+                        <h2 class="section-heading">Style Editor</h2>
+                        <h4>Window Name: <code>styles</code></h4>
+                        <p>The style editor allows you to fully customize CodeRed's UI, you can change everything from widget rounding, spacing, and custom colors.</p>	    
+
+                        <div class="simplelightbox-gallery row mb-3">
+                            <div class="col-12 col-md-4 mb-3">
+                                <a href="assets/images/windows/styles-1.png"><img class="figure-img img-fluid shadow rounded" src="assets/images/windows/styles-1.png" alt="" title=""/></a>
+                            </div>
+                            <div class="col-12 col-md-4 mb-3">
+                                <a href="assets/images/windows/styles-2.png"><img class="figure-img img-fluid shadow rounded" src="assets/images/windows/styles-2.png" alt="" title=""/></a>
+                            </div>
+                            <div class="col-12 col-md-4 mb-3">
+                                <a href="assets/images/windows/styles-3.png"><img class="figure-img img-fluid shadow rounded" src="assets/images/windows/styles-3.png" alt="" title=""/></a>
+                            </div>
+                        </div>
+					</section>
+
+                    <section class="docs-section" id="item-5-1-5">
+                        <h2 class="section-heading">Terminal</h2>
+                        <h4>Window Name: <code>terminal</code></h4>
+                        <h4>Default Keybind: <code>F5</code></h4>
+                        <p>The terminal window allows you to fully customize CodeRed via changing settings or executing commands, it also displays useful information for debugging purposes.</p>	    
+
+                        <div class="simplelightbox-gallery row mb-3">
+                            <div class="col-12 col-md-4 mb-3">
+                                <a href="assets/images/windows/terminal-1.png"><img class="figure-img img-fluid shadow rounded" src="assets/images/windows/terminal-1.png" alt="" title=""/></a>
+                            </div>
+                        </div>
+					</section>
+
+                    <section class="docs-section" id="item-5-1-6">
+                        <h2 class="section-heading">Texture Browser</h2>
+                        <h4>Window Name: <code>texture_browser</code></h4>
+                        <p>The texture browser lets you preview and export almost any currently loadded texture in the game.</p>	    
+
+                        <div class="simplelightbox-gallery row mb-3">
+                            <div class="col-12 col-md-4 mb-3">
+                                <a href="assets/images/windows/textures-1.png"><img class="figure-img img-fluid shadow rounded" src="assets/images/windows/textures-1.png" alt="" title=""/></a>
+                            </div>
+                        </div>
+					</section>
+
+                    <section class="docs-section" id="item-5-1-7">
+                        <h2 class="section-heading">Thumbnail Renderer</h2>
+                        <h4>Window Name: <code>thumbnails</code></h4>
+                        <p>The thumbnail render is a tool used to rendering custom 3D scenes of products, it allows you to customize its paints, camera settings, and even export them to an image file.</p>
+                        <p>There are two types of scenes, 3D scenes, and 2D scenes. 3D scenes use a camera and load in product modals, you can customize the camera location as well as the location and rotation of the modals. 2D scenes cannot be customized, they are baked into upk files and can only be read from.</p>	    
+
+                        <div class="simplelightbox-gallery row mb-3">
+                            <div class="col-12 col-md-4 mb-3">
+                                <a href="assets/images/windows/thumbnails-1.png"><img class="figure-img img-fluid shadow rounded" src="assets/images/windows/thumbnails-1.png" alt="" title=""/></a>
+                            </div>
+                            <div class="col-12 col-md-4 mb-3">
+                                <a href="assets/images/windows/thumbnails-2.png"><img class="figure-img img-fluid shadow rounded" src="assets/images/windows/thumbnails-2.png" alt="" title=""/></a>
+                            </div>
+                        </div>
+					</section>
+
+                    <section class="docs-section" id="item-5-1-8">
+                        <h2 class="section-heading">Title Customizer</h2>
+                        <h4>Window Name: <code>titles</code></h4>
+                        <p>The title customizer lets you create and manage your custom titles, there is also a share code system which works the same way as loadout share codes.</p>
+                        <p>You can also access this window via the dashboard under the player title section, when selecting a title there is a button called "Edit" that opens this window.</p>
+
+                        <div class="simplelightbox-gallery row mb-3">
+                            <div class="col-12 col-md-4 mb-3">
+                                <a href="assets/images/windows/titles-1.png"><img class="figure-img img-fluid shadow rounded" src="assets/images/windows/titles-1.png" alt="" title=""/></a>
+                            </div>
+                            <div class="col-12 col-md-4 mb-3">
+                                <a href="assets/images/windows/titles-2.png"><img class="figure-img img-fluid shadow rounded" src="assets/images/windows/titles-2.png" alt="" title=""/></a>
+                            </div>
+                        </div>
+					</section>
+			    </article>
+			    
+			    <article class="docs-article" id="section-6">
+				    <header class="docs-header">
+					    <h1 class="docs-heading">FAQs</h1>
+				    </header>
+
+                    <section class="docs-section" id="item-6-0-1">
+						<h4 class="pt-3"><i class="fas fa-question-circle me-1"></i>What is CodeRed?</h4>
+						<p>CodeRed is a free, highly customizable, and easy to use third party enhancement for Rocket League. CodeRed aims to bring a lightweight, all in one, feature packed experience to players with zero impact to performance.</p>
+                    </section>
+
+                    <section class="docs-section" id="item-6-0-2">
+						<h4 class="pt-3"><i class="fas fa-question-circle me-1"></i>Is CodeRed Free?</h4>
+						<p>Yes, CodeRed and all of its features are completely free for anyone to use; and always will be free.</p>
+                    </section>
+
+                    <section class="docs-section" id="item-6-0-3">
+                        <h4 class="pt-3"><i class="fas fa-question-circle me-1"></i>Is CodeRed open source?</h4>
+						<p>The in game mod itself is not available to the public, however the launcher is fully open source under the MIT license; you can view its source code on our <a href="https://github.com/CodeRedModding/CodeRed-Launcher">GitHub here.</a></p>
+                    </section>
+
+                    <section class="docs-section" id="item-6-0-4">
+						<h4 class="pt-3"><i class="fas fa-question-circle me-1"></i>Can CodeRed get me banned?</h4>
+						<p>CodeRed is not officially approved by Psyonix or Epic Games, however, CodeRed still follows Rocket League's ToU, EULA, and rules regarding third party modding. CodeRed does not provide a competitive advantage in online play, expose unreleased features/content, or abuse Rocket League's services.</p>
+                        <p>Psyonix is aware of CodeRed's existence and has the ability to contact me if they have a problem with anything, or if they want a specific feature to be changed or removed.</p>
+                    </section>
+
+                    <section class="docs-section" id="item-6-0-5">
+						<h4 class="pt-3"><i class="fas fa-question-circle me-1"></i>Can I use CodeRed and BakkesMod at the same time?</h4>
+						<p>No, CodeRed and BakkesMod conflict with each other in a lot of its core features and has indirectly cause crashes when both are used together.</p>
+					</section>
+
+                    <section class="docs-section" id="item-6-0-6">
+                        <h4 class="pt-3"><i class="fas fa-question-circle me-1"></i> Can I use CodeRed if I have a cabined account?</h4>
+						<p>No, there are too many restrictions that have to be followed that I don't want to implement or keep up with if they change.</a></p>
+                    </section>
+
+                    <section class="docs-section" id="item-6-0-7">
+						<h4 class="pt-3"><i class="fas fa-question-circle me-1"></i> Can I customize the ads around the stadium?</h4>
+						<p>Also no, I have directly asked Psyonix about this and customizing or overwriting the ads around the stadium is a big no go.</p>
+					</section>
+
+                    <section class="docs-section" id="item-6-0-8">
+                        <h4 class="pt-3"><i class="fas fa-question-circle me-1"></i>Are there any restricted countries?</h4>
+						<p>Because of government restrictions banning access to websites that CodeRed relies on, such as Github or Discord, you may have to use a VPN if you live in any of the following countries to use CodeRed: China, Russia, Turkey, Oman, United Arab Emirates, Egypt, and Iran.</p>
+                    </section>
+
+                    <section class="docs-section" id="item-6-0-9">
+                        <h4 class="pt-3"><i class="fas fa-question-circle me-1"></i>I found a bug or something doesn't work right.</h4>
+						<p>If you would like to report a bug, crash, or feature that doesn't work right, please do so in the Discord server.</p>
+                    </section>
+			    </article>
+
+			    <footer class="footer">
+				    <div class="container text-center py-5">
+				        <ul class="social-list list-unstyled pt-4 mb-0">
+							<li class="list-inline-item"><a href="https://discord.gg/t4SjXjEhk3"><i class="fab fa-discord fa-fw"></i></a></li>
+							<li class="list-inline-item"><a href="https://github.com/CodeRedModding"><i class="fab fa-github fa-fw"></i></a></li>
+				        </ul>
+                        <h4 class="copyright" style="color:#80848E">CodeRed is a product created and owned by ItsBranK.</h4>
+				    </div>
+			    </footer>
+		    </div> 
+	    </div>
+    </div>
+      
+    <script src="assets/plugins/popper.min.js"></script>
+    <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/plugins/smoothscroll.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/highlight.min.js"></script>
+    <script src="assets/js/highlight-custom.js"></script>
+    <script src="assets/plugins/simplelightbox/simple-lightbox.min.js"></script>
+    <script src="assets/plugins/gumshoe/gumshoe.polyfills.min.js"></script>
+    <script src="assets/js/docs.js"></script>
+</body>
+</html> 

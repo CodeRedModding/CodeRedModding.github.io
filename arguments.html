@@ -1,0 +1,1240 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <!-- HTML Meta Tags -->
+    <title>CodeRed - Arguments</title>
+    <meta name="description" content="A lightweight, user-friendly enhancement for Rocket League.">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:url" content="https://coderedmodding.github.io/arguments.html">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="CodeRed - Rocket League">
+    <meta property="og:description" content="A lightweight, user-friendly enhancement for Rocket League.">
+    <meta property="og:image" content="https://raw.githubusercontent.com/CodeRedModding/CodeRed-Retrievers/refs/heads/main/Assets/Banners/Wallpaper_Default.png">
+    <meta property="og:image:width" content="2560">
+    <meta property="og:image:height" content="1440">
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="twitter:domain" content="coderedmodding.github.io">
+    <meta property="twitter:url" content="https://coderedmodding.github.io/arguments.html">
+    <meta name="twitter:title" content="CodeRed - Rocket League">
+    <meta name="twitter:description" content="A lightweight, user-friendly enhancement for Rocket League.">
+    <meta name="twitter:image" content="https://raw.githubusercontent.com/CodeRedModding/CodeRed-Retrievers/refs/heads/main/Assets/Banners/Wallpaper_Default.png">
+
+    <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap" rel="stylesheet">
+    <script defer src="assets/fontawesome/js/all.min.js"></script>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.2/styles/atom-one-dark.min.css">
+    <link rel="stylesheet" href="assets/plugins/simplelightbox/simple-lightbox.min.css">
+    <link id="theme-style" rel="stylesheet" href="assets/css/theme.css">
+</head> 
+<body class="docs">
+    <header class="header fixed-top">	    
+        <div class="branding docs-branding">
+            <div class="container-fluid position-relative py-2">
+                <div class="docs-logo-wrapper">
+					<button id="docs-sidebar-toggler" class="docs-sidebar-toggler docs-sidebar-visible me-2 d-xl-none" type="button">
+	                    <span></span>
+	                    <span></span>
+	                    <span></span>
+	                </button>
+	                <div class="site-logo"><a class="navbar-brand" href="index.html"><span class="logo-text">Code<span class="logo-text-alt">Red<span class="text-alt"> - Arguments</span></span></span></a></div>
+                </div>
+	            <div class="docs-top-utilities d-flex justify-content-end align-items-center">
+	                <!-- <div class="top-search-box d-none d-lg-flex">
+                        <form class="search-form">
+                            <input type="text" placeholder="Search the docs..." name="search" class="form-control search-input">
+                            <button type="submit" class="btn search-btn" value="Search"><i class="fas fa-search"></i></button>
+                        </form>
+                    </div> -->
+					<ul class="social-list list-inline mx-md-4 mx-lg-4 mb-0 d-none d-lg-flex">
+			            <li class="list-inline-item"><a href="https://discord.gg/t4SjXjEhk3"><i class="fab fa-discord fa-fw"></i></a></li>
+		                <li class="list-inline-item"><a href="https://github.com/CodeRedModding"><i class="fab fa-github fa-fw"></i></a></li>
+		            </ul>
+		           <a href="https://github.com/CodeRedModding/CodeRed-Launcher/releases/latest" class="btn btn-primary d-none d-lg-flex">Download</a>
+	            </div>
+            </div>
+        </div>
+    </header>
+    <div class="docs-wrapper">
+	    <div id="docs-sidebar" class="docs-sidebar">
+		    <nav id="docs-nav" class="docs-nav navbar">
+			    <ul class="section-items list-unstyled nav flex-column pb-3">
+                    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-1"><span class="theme-icon-holder me-2"><i class="fas fa-folder-open"></i></span>Exporting</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-1">Export Options</a></li>
+				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-2"><span class="theme-icon-holder me-2"><i class="fas fa-copy"></i></span>Arguments</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-2-0-1">Product Slots</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-2-0-2">Offline Products</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-2-0-3">Inventory Products</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-2-0-4">Product Attributes</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-2-0-5">Paint Database</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-2-0-6">Certified Database</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-2-0-7">Title Database</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-2-0-8">Special Edition Database</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-2-0-9">Team Edition Database</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-2-1-0">Matchmaking Playlists</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-2-1-1">Stadium Maps</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-2-1-2">Esports Events</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-2-1-3">Player Populations</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-2-1-4">Auto Tournaments</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-2-1-5">Game Modes</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-2-1-6">Psyonix Networking</a></li>
+			    </ul>
+		    </nav>
+	    </div>
+
+	    <div class="docs-content">
+		    <div class="container">
+			    <article class="docs-article" id="section-1">
+                    <header class="docs-header">
+					    <h1 class="docs-heading">Export Options</h1>
+                        <h5>Add these at the end of your command to specify how your file is exported.</h5>
+				    </header>
+				     <section class="docs-section" id="item-1-1">
+                        <table class="table table-bordered">
+                            <tbody>
+                                <tr>
+                                    <th class="theme-bg-light"><b>[CSV]</b></th>
+                                    <td>Dumps the command you're using in CSV format.</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>[JSON]</b></th>
+                                    <td>Dumps the command you're using in JSON format.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+					</section>
+			    </article>
+			    
+			    <article class="docs-article" id="section-2">
+				    <header class="docs-header">
+					    <h1 class="docs-heading">Arguments</h1>
+                        <h5>This is a full list of every possible argument for each dump command and an example of what value they might produce.</h5>
+				    </header>
+				     <section class="docs-section" id="item-2-0-1">
+                        <h2 class="section-heading">Product Slots</h2>
+                        <h4>Command Name: <code>database_dump_slots</code></h4>
+                        <table class="table table-bordered">
+                            <tbody>
+                                <tr>
+                                    <th class="theme-bg-light"><b>slot_label</b></th>
+                                    <td>Body</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>slot_plural_label</b></th>
+                                    <td>Bodies</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>slot_description</b></th>
+                                    <td>Completely change your vehicle's style with a new body!</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>slot_online_label</b></th>
+                                    <td>Body</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>slot_index</b></th>
+                                    <td>0</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>slot_bool_replicated</b></th>
+                                    <td>true</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>slot_bool_always_cooked</b></th>
+                                    <td>false</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>slot_bool_server_relevant</b></th>
+                                    <td>true</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>slot_bool_always_loaded</b></th>
+                                    <td>true</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>slot_bool_default_always_loaded</b></th>
+                                    <td>false</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>slot_bool_allow_license_equip</b></th>
+                                    <td>true</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>slot_drop_weight</b></th>
+                                    <td>30.000000</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>slot_default_product_id</b></th>
+                                    <td>23</td>
+                                </tr>
+                            </tbody>
+                        </table>
+					</section>
+
+                    <section class="docs-section" id="item-2-0-2">
+                        <table class="table table-bordered">
+                            <h2 class="section-heading">Offline Products</h2>
+                            <h4>Command Name: <code>database_dump_products</code></h4>
+                            <h5>All product slot and product attribute arguments can be used with this command as well!</h5>
+                            <tbody>
+                                <tr>
+                                    <th class="theme-bg-light"><b>product_id</b></th>
+                                    <td>1300</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>product_unlock_method_id</b></th>
+                                    <td>1</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>product_unlock_method_label</b></th>
+                                    <td>Online</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>product_quality_id</b></th>
+                                    <td>8</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>product_quality_label</b></th>
+                                    <td>Limited</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>product_attribute_names</b></th>
+                                    <td>ProductAttribute_SpecialEditionLabel_TA, ProductAttribute_PaintSettingsUpload_TA</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>product_bool_whitelist_all</b></th>
+                                    <td>false</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>product_bool_localized</b></th>
+                                    <td>false</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>product_bool_auto_generated_dlc</b></th>
+                                    <td>false</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>product_bool_licensed</b></th>
+                                    <td>false</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>product_bool_can_be_archived</b></th>
+                                    <td>false</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>product_bool_paintable</b></th>
+                                    <td>false</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>product_bool_currency</b></th>
+                                    <td>false</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>product_bool_blueprint</b></th>
+                                    <td>false</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>product_bool_schematic</b></th>
+                                    <td>false</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>product_bool_decryptor</b></th>
+                                    <td>false</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>product_bool_platform_exclusive</b></th>
+                                    <td>true</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>product_bool_replaced</b></th>
+                                    <td>false</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>product_bool_pack</b></th>
+                                    <td>false</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>product_base_xe_status</b></th>
+                                    <td>Pending</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>product_xe_label_key</b></th>
+                                    <td>GenericXELabel</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>product_platform_exclusives</b></th>
+                                    <td>PS4</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>product_trade_restrictions</b></th>
+                                    <td>None, P2P, TradeIn</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>product_asset_package</b></th>
+                                    <td>skin_octane_esports</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>product_asset_path</b></th>
+                                    <td>skin_octane_esports.skin_octane_esports</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>product_label</b></th>
+                                    <td>RLCS</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>product_ascii_label</b></th>
+                                    <td>Octane: RLCS</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>product_long_label</b></th>
+                                    <td>Octane: RLCS</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>product_short_ascii_label</b></th>
+                                    <td>RLCS</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>product_short_sort_label</b></th>
+                                    <td>RLCS</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>product_sort_label</b></th>
+                                    <td>Octane: RLCS</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>product_thumbnail_path</b></th>
+                                    <td>Skin_Octane_Esports_T.Skin_Octane_Esports_T</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>product_thumbnail_package</b></th>
+                                    <td>Skin_Octane_Esports_T</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>product_thumbnail_asset</b></th>
+                                    <td>Skin_Octane_Esports_T</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>product_trademark_label</b></th>
+                                    <td>RLCS</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>product_sort_priority</b></th>
+                                    <td>0</td>
+                                </tr>
+                            </tbody>
+                        </table>
+					</section>
+
+                    <section class="docs-section" id="item-2-0-3">
+                        <table class="table table-bordered">
+                            <h2 class="section-heading">Inventory Products</h2>
+                            <h4>Command Name: <code>database_dump_inventory</code></h4>
+                            <h5>All product slot and product attribute arguments can be used with this command as well!</h5>
+                            <tbody>
+                                <tr>
+                                    <th class="theme-bg-light"><b>online_instance_id</b></th>
+                                    <td>2039203868</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>online_instance_id_128</b></th>
+                                    <td>8683029302, 2039203868</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>online_series_id</b></th>
+                                    <td>20</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>online_bool_tradable</b></th>
+                                    <td>false</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>online_trade_hold</b></th>
+                                    <td>None, All, P2P</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>online_added_timestamp</b></th>
+                                    <td>1509241699</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>online_cached_sort_label</b></th>
+                                    <td>Vampire Bat CertifiedTurtle0102039203868</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>online_cached_short_sort_label</b></th>
+                                    <td>None</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>online_cached_hash_id</b></th>
+                                    <td>60729611</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>online_attribute_names</b></th>
+                                    <td>Blueprint, BlueprintCost, Painted</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>online_blueprint_series_id</b></th>
+                                    <td>48</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>online_blueprint_series_label</b></th>
+                                    <td>Revival</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>online_blueprint_type_id</b></th>
+                                    <td>1</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>online_blueprint_type_label</b></th>
+                                    <td>Revealed</td>
+                                </tr>
+                            </tbody>
+                        </table>
+					</section>
+
+                    <section class="docs-section" id="item-2-0-4">
+                        <table class="table table-bordered">
+                            <h2 class="section-heading">Product Attributes</h2>
+                            <h4>Command Name(s): <code>database_dump_products, database_dump_inventory</code></h4>
+                            <tbody>
+                                <tr>
+                                    <th class="theme-bg-light"><b>attribute_painted_id</b></th>
+                                    <td>12</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>attribute_painted_name</b></th>
+                                    <td>White_00</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>attribute_painted_label</b></th>
+                                    <td>Titanium White</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>attribute_certified_id</b></th>
+                                    <td>14</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>attribute_certified_name</b></th>
+                                    <td>TurtleGoals</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>attribute_certified_label</b></th>
+                                    <td>Turtle</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>attribute_certified_value</b></th>
+                                    <td>1</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>attribute_certified_description</b></th>
+                                    <td>When equipped in an online match, this item keeps track of how many upside down goals you score.</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>attribute_title_id</b></th>
+                                    <td>S15_SuperSonic_Legend</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>attribute_title_category</b></th>
+                                    <td>SZN_1_White</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>attribute_title_text</b></th>
+                                    <td>S1 Supersonic Legend</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>attribute_title_color</b></th>
+                                    <td>#E8E8E8</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>attribute_title_glowcolor</b></th>
+                                    <td>#E8E8E8</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>attribute_special_id</b></th>
+                                    <td>2</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>attribute_special_name</b></th>
+                                    <td>Edition_Infinite</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>attribute_special_label</b></th>
+                                    <td>Infinite</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>attribute_team_id</b></th>
+                                    <td>26</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>attribute_team_name</b></th>
+                                    <td>NRG_Season8</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>attribute_team_label</b></th>
+                                    <td>NRG Esports</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>attribute_blueprint_cost</b></th>
+                                    <td>2000</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>attribute_blueprint_id</b></th>
+                                    <td>5584</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>attribute_animated_skin_label</b></th>
+                                    <td>Animated Decal</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>attribute_compatible_products</b></th>
+                                    <td>403, 4770</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>attribute_container_bool_unlocked</b></th>
+                                    <td>false</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>attribute_container_bool_skip_roulette</b></th>
+                                    <td>false</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>attribute_container_bool_gift_box</b></th>
+                                    <td>false</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>attribute_key_bool_magic</b></th>
+                                    <td>false</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>attribute_currency_id</b></th>
+                                    <td>13</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>attribute_license_group_id</b></th>
+                                    <td>0</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>attribute_license_group_label</b></th>
+                                    <td>Default</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>attribute_license_bool_body</b></th>
+                                    <td>false</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>attribute_platform_exclusive_consoles</b></th>
+                                    <td>PC, PS4, Dingo</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>attribute_platform_exclusive_replacement</b></th>
+                                    <td>63</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>attribute_quality_id</b></th>
+                                    <td>0</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>attribute_quality_label</b></th>
+                                    <td>Common</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>attribute_reactive_label</b></th>
+                                    <td>PostMatchReactiveLabel</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>attribute_reactive_bool_has_preview</b></th>
+                                    <td>true</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>attribute_requires_product_id</b></th>
+                                    <td>2269</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>attribute_custom_edition_label</b></th>
+                                    <td>Scorched</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>attribute_team_override_id</b></th>
+                                    <td>0</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>attribute_team_override_label</b></th>
+                                    <td>Blue</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>attribute_team_override_asset</b></th>
+                                    <td>None</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>attribute_team_parameter_override_id</b></th>
+                                    <td>0</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>attribute_team_parameter_override_label</b></th>
+                                    <td>Blue</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>attribute_trademark_glyph_id</b></th>
+                                    <td>1</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>attribute_trademark_glyph_label</b></th>
+                                    <td>Registered</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>attribute_tiered_index</b></th>
+                                    <td>3</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>attribute_unlock_method_id</b></th>
+                                    <td>0</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>attribute_unlock_method_label</b></th>
+                                    <td>Default</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>attribute_product_link_id</b></th>
+                                    <td>0</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>attribute_level_value</b></th>
+                                    <td>0</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>attribute_product_slot_id</b></th>
+                                    <td>2</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>attribute_product_slot_label</b></th>
+                                    <td>Boost</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>attribute_expiration_time</b></th>
+                                    <td>1735788526</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>attribute_rental_length</b></th>
+                                    <td>0</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>attribute_indestructible_bool</b></th>
+                                    <td>false</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>attribute_colorable_default_color</b></th>
+                                    <td>#0000EB</td>
+                                </tr>
+                            </tbody>
+                        </table>
+					</section>
+
+                    <section class="docs-section" id="item-2-0-5">
+                        <table class="table table-bordered">
+                            <h2 class="section-heading">Paint Database</h2>
+                            <h4>Command Name: <code>database_dump_paints</code></h4>
+                            <tbody>
+                                <tr>
+                                    <th class="theme-bg-light"><b>database_paint_id</b></th>
+                                    <td>1</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>database_paint_name</b></th>
+                                    <td>Red_00</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>database_paint_label</b></th>
+                                    <td>Crimson</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>database_paint_colors</b></th>
+                                    <td>#990000, #FF0B0B, #720000, #FF0000</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>database_paint_finish_id</b></th>
+                                    <td>0</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>database_paint_finish_label</b></th>
+                                    <td>Standard</td>
+                                </tr>
+                            </tbody>
+                        </table>
+					</section>
+
+                    <section class="docs-section" id="item-2-0-6">
+                        <table class="table table-bordered">
+                            <h2 class="section-heading">Certified Database</h2>
+                            <h4>Command Name: <code>database_dump_certifications</code></h4>
+                            <tbody>
+                                <tr>
+                                    <th class="theme-bg-light"><b>database_certified_id</b></th>
+                                    <td>1</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>database_certified_name</b></th>
+                                    <td>AerialGoals</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>database_certified_label</b></th>
+                                    <td>Aviator</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>database_certified_description</b></th>
+                                    <td>When equipped in an online match, this item keeps track of how many aerial goals you score.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+					</section>
+
+                    <section class="docs-section" id="item-2-0-7">
+                        <table class="table table-bordered">
+                            <h2 class="section-heading">Title Database</h2>
+                            <h4>Command Name: <code>database_dump_titles</code></h4>
+                            <tbody>
+                                <tr>
+                                    <th class="theme-bg-light"><b>database_title_id</b></th>
+                                    <td>S15_SuperSonic_Legend</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>database_title_category</b></th>
+                                    <td>SZN_1_White</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>database_title_text</b></th>
+                                    <td>S1 Supersonic Legend</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>database_title_color</b></th>
+                                    <td>#E8E8E8</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>database_title_glowcolor</b></th>
+                                    <td>#E8E8E8</td>
+                                </tr>
+                            </tbody>
+                        </table>
+					</section>
+
+                    <section class="docs-section" id="item-2-0-8">
+                        <table class="table table-bordered">
+                            <h2 class="section-heading">Special Edition Database</h2>
+                            <h4>Command Name: <code>database_dump_specialeditions</code></h4>
+                            <tbody>
+                                <tr>
+                                    <th class="theme-bg-light"><b>database_special_id</b></th>
+                                    <td>1</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>database_special_name</b></th>
+                                    <td>Edition_Holographic</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>database_special_label</b></th>
+                                    <td>Holographic</td>
+                                </tr>
+                            </tbody>
+                        </table>
+					</section>
+
+                    <section class="docs-section" id="item-2-0-9">
+                        <table class="table table-bordered">
+                            <h2 class="section-heading">Team Eidtion Database</h2>
+                            <h4>Command Name: <code>database_dump_teameditions</code></h4>
+                            <tbody>
+                                <tr>
+                                    <th class="theme-bg-light"><b>database_team_id</b></th>
+                                    <td>26</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>database_team_name</b></th>
+                                    <td>NRG_Season8</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>database_team_label</b></th>
+                                    <td>NRG Esports</td>
+                                </tr>
+                            </tbody>
+                        </table>
+					</section>
+
+                    <section class="docs-section" id="item-2-1-0">
+                        <table class="table table-bordered">
+                            <h2 class="section-heading">Matchmaking Playlists</h2>
+                            <h4>Command Name: <code>database_dump_playlists</code></h4>
+                            <tbody>
+                                <tr>
+                                    <th class="theme-bg-light"><b>playlist_id</b></th>
+                                    <td>3</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>playlist_name</b></th>
+                                    <td>UGCTrainingEditor</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>playlist_title</b></th>
+                                    <td>Standard</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>playlist_description</b></th>
+                                    <td>Ranked play with a team</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>playlist_badge_title</b></th>
+                                    <td>None</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>playlist_player_count</b></th>
+                                    <td>6</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>playlist_bool_standard</b></th>
+                                    <td>true</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>playlist_bool_ranked</b></th>
+                                    <td>false</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>playlist_bool_solo</b></th>
+                                    <td>false</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>playlist_bool_extramode</b></th>
+                                    <td>false</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>playlist_bool_private</b></th>
+                                    <td>false</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>playlist_bool_tournament</b></th>
+                                    <td>false</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>playlist_bool_applyquitpenalty</b></th>
+                                    <td>true</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>playlist_bool_allowforfiet</b></th>
+                                    <td>false</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>playlist_bool_disablereconnect</b></th>
+                                    <td>false</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>playlist_bool_ignoreassignteams</b></th>
+                                    <td>false</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>playlist_bool_allowbotfills</b></th>
+                                    <td>true</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>playlist_bool_kickonmigrate</b></th>
+                                    <td>false</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>playlist_bool_checkmatchreservations</b></th>
+                                    <td>false</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>playlist_bool_broadcastcancellations</b></th>
+                                    <td>true</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>playlist_bool_skipmodeverification</b></th>
+                                    <td>false</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>playlist_bool_checkreservation</b></th>
+                                    <td>false</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>playlist_bool_ismicroevent</b></th>
+                                    <td>false</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>playlist_bool_hasvariableplayercount</b></th>
+                                    <td>false</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>playlist_bool_new</b></th>
+                                    <td>false</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>playlist_bool_allowclubs</b></th>
+                                    <td>true</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>playlist_bool_allowstayasparty</b></th>
+                                    <td>true</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>playlist_bool_nobackfill</b></th>
+                                    <td>true</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>playlist_bool_nosavereplays</b></th>
+                                    <td>false</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>playlist_image_url</b></th>
+                                    <td>https://rl-cdn.psyonix.com/Playlists/Images/rl_event_mode_bg_heatseeker.jpg</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>playlist_image_texture</b></th>
+                                    <td>None</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>playlist_icon_active_url</b></th>
+                                    <td>https://rl-cdn.psyonix.com/Playlists/Images/rl_mode_heatseeker_1.png</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>playlist_icon_inactive_url</b></th>
+                                    <td>https://rl-cdn.psyonix.com/Playlists/Images/rl_mode_heatseeker_2.png</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>playlist_node_thumbnail_url</b></th>
+                                    <td>https://rl-cdn.psyonix.com/Playlists/Images/Finals/playlist_ltm_hauntedheatseeker_asdfjkh.png</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>playlist_node_thumbnail_package</b></th>
+                                    <td>UI_PlayMenuV4_LTM.playlist_ltm_hauntedheatseeker</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>playlist_map_name</b></th>
+                                    <td>throwbackhockey_p</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>playlist_server_command</b></th>
+                                    <td>Game=TAGame.GameInfo_GodBall_TA?playtest?listen?Public?GameTags=BotsNone</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>playlist_mapset_name</b></th>
+                                    <td>SoccarStandard</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>playlist_population_buckets</b></th>
+                                    <td>1, 15000, 35000</td>
+                                </tr>
+                            </tbody>
+                        </table>
+					</section>
+
+                    <section class="docs-section" id="item-2-1-1">
+                        <table class="table table-bordered">
+                            <h2 class="section-heading">Stadium Maps</h2>
+                            <h4>Command Name: <code>database_dump_maps</code></h4>
+                            <tbody>
+                                <tr>
+                                    <th class="theme-bg-light"><b>map_weather_variant_id</b></th>
+                                    <td>2</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>map_weather_variant_name</b></th>
+                                    <td>Day</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>map_random_weight</b></th>
+                                    <td>1.300000</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>map_variant_name</b></th>
+                                    <td>Day</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>map_base_name</b></th>
+                                    <td>DFH Stadium</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>map_file_name</b></th>
+                                    <td>stadium_day_p</td>
+                                </tr>
+                            </tbody>
+                        </table>
+					</section>
+
+                    <section class="docs-section" id="item-2-1-2">
+                        <table class="table table-bordered">
+                            <h2 class="section-heading">Esports Events</h2>
+                            <h4>Command Name: <code>database_dump_esports</code></h4>
+                            <tbody>
+                                <tr>
+                                    <th class="theme-bg-light"><b>esports_image</b></th>
+                                    <td>https://rl-cdn.psyonix.com/EsportsIcons/EsportsButtonIcon_FT1.png</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>esports_title</b></th>
+                                    <td>FT</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>esports_description</b></th>
+                                    <td>FT Show</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>esports_url</b></th>
+                                    <td>https://www.twitch.tv/rocketleague</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>esports_utc_start_time</b></th>
+                                    <td>2021-10-12 18:50:00</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>esports_utc_end_time</b></th>
+                                    <td>2021-10-12 20:30:00</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>esports_epoch_start_time</b></th>
+                                    <td>1634064600</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>esports_epoch_end_time</b></th>
+                                    <td>1634070600</td>
+                                </tr>
+                            </tbody>
+                        </table>
+					</section>
+
+                    <section class="docs-section" id="item-2-1-3">
+                        <table class="table table-bordered">
+                            <h2 class="section-heading">Player Populations</h2>
+                            <h4>Command Name: <code>database_dump_population</code></h4>
+                            <tbody>
+                                <tr>
+                                    <th class="theme-bg-light"><b>population_total_players</b></th>
+                                    <td>309815</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>population_playlist_id</b></th>
+                                    <td>1</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>population_playlist_players</b></th>
+                                    <td>4702</td>
+                                </tr>
+                            </tbody>
+                        </table>
+					</section>
+
+                    <section class="docs-section" id="item-2-1-4">
+                        <table class="table table-bordered">
+                            <h2 class="section-heading">Auto Tournaments</h2>
+                            <h4>Command Name: <code>database_dump_tournaments</code></h4>
+                            <tbody>
+                                <tr>
+                                    <th class="theme-bg-light"><b>tournament_id</b></th>
+                                    <td>24610827</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>tournament_schedule_id</b></th>
+                                    <td>11361</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>tournament_title</b></th>
+                                    <td>2v2 Hoops</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>tournament_creator_name</b></th>
+                                    <td>Psyonix</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>tournament_creator_id</b></th>
+                                    <td>Unknown|0|0</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>tournament_epoch_start_time</b></th>
+                                    <td>1660248000</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>tournament_epoch_bracket_time</b></th>
+                                    <td>0</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>tournament_max_bracket_size</b></th>
+                                    <td>32</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>tournament_teams_registered</b></th>
+                                    <td>0</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>tournament_rank_minimum</b></th>
+                                    <td>0</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>tournament_rank_maximum</b></th>
+                                    <td>22</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>tournament_region_label</b></th>
+                                    <td>USE</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>tournament_region_name</b></th>
+                                    <td>None</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>tournament_game_tags</b></th>
+                                    <td>None</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>tournament_game_mode</b></th>
+                                    <td>1</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>tournament_tie_breaker_id</b></th>
+                                    <td>0</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>tournament_tie_breaker_label</b></th>
+                                    <td>FirstScore</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>tournament_seeding_type_id</b></th>
+                                    <td>2</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>tournament_seeding_type_label</b></th>
+                                    <td>None</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>tournament_team_size</b></th>
+                                    <td>2</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>tournament_disabled_maps</b></th>
+                                    <td>None</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>tournament_series_round_lengths</b></th>
+                                    <td>0</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>tournament_series_length</b></th>
+                                    <td>1</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>tournament_bool_public</b></th>
+                                    <td>false</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>tournament_minumum_players</b></th>
+                                    <td>0</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>tournament_epoch_expire_time</b></th>
+                                    <td>0</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>tournament_platforms</b></th>
+                                    <td>None</td>
+                                </tr>
+                            </tbody>
+                        </table>
+					</section>
+
+                    <section class="docs-section" id="item-2-1-5">
+                        <table class="table table-bordered">
+                            <h2 class="section-heading">Game Modes</h2>
+                            <h4>Command Name: <code>database_dump_gamemodes</code></h4>
+                            <tbody>
+                                <tr>
+                                    <th class="theme-bg-light"><b>gamemode_index</b></th>
+                                    <td>1</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>gamemode_map_set</b></th>
+                                    <td>Exhibition</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>gamemode_freeplay_mapset</b></th>
+                                    <td>RumbleFreeplay</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>gamemode_standard_mapset</b></th>
+                                    <td>Standard</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>gamemode_disallowed_mutators</b></th>
+                                    <td>BallType, BallMaxSpeed, Items</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>gamemode_bool_enabled</b></th>
+                                    <td>true</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>gamemode_bool_private_match_only</b></th>
+                                    <td>false</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>gamemode_gameinfo_class</b></th>
+                                    <td>GameInfo_GodBall_TA</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>gamemode_gameinfo_path</b></th>
+                                    <td>GameInfo_GodBall.GameInfo.GameInfo_GodBall</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>gamemode_name</b></th>
+                                    <td>Heatseeker</td>
+                                </tr>
+                            </tbody>
+                        </table>
+					</section>
+
+                    <section class="docs-section" id="item-2-1-6">
+                        <table class="table table-bordered">
+                            <h2 class="section-heading">Psyonix Networking</h2>
+                            <h4>Command Name: <code>database_dump_psynet</code></h4>
+                            <tbody>
+                                <tr>
+                                    <th class="theme-bg-light"><b>psynet_class</b></th>
+                                    <td>RPC_AdsGet_TA</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>psynet_service</b></th>
+                                    <td>Ads/GetAds</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>psynet_version</b></th>
+                                    <td>1</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>psynet_bool_allow_batching</b></th>
+                                    <td>true</td>
+                                </tr>
+                                <tr>
+                                    <th class="theme-bg-light"><b>psynet_bool_requires_auth</b></th>
+                                    <td>true</td>
+                                </tr>
+                            </tbody>
+                        </table>
+					</section>
+			    </article>
+
+			    <footer class="footer">
+				    <div class="container text-center py-5">
+				        <ul class="social-list list-unstyled pt-4 mb-0">
+							<li class="list-inline-item"><a href="https://discord.gg/t4SjXjEhk3"><i class="fab fa-discord fa-fw"></i></a></li>
+							<li class="list-inline-item"><a href="https://github.com/CodeRedModding"><i class="fab fa-github fa-fw"></i></a></li>
+				        </ul>
+                        <h4 class="copyright" style="color:#80848E">CodeRed is a product created and owned by ItsBranK.</h4>
+				    </div>
+			    </footer>
+		    </div> 
+	    </div>
+    </div>
+      
+    <script src="assets/plugins/popper.min.js"></script>
+    <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/plugins/smoothscroll.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/highlight.min.js"></script>
+    <script src="assets/js/highlight-custom.js"></script>
+    <script src="assets/plugins/simplelightbox/simple-lightbox.min.js"></script>
+    <script src="assets/plugins/gumshoe/gumshoe.polyfills.min.js"></script>
+    <script src="assets/js/docs.js"></script>
+</body>
+</html> 
