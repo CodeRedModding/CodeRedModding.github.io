@@ -62,6 +62,7 @@
 		    <nav id="docs-nav" class="docs-nav navbar">
 			    <ul class="section-items list-unstyled nav flex-column pb-3">
                     <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-3"><span class="theme-icon-holder me-2"><i class="fas fa-book"></i></span>Module Changelog</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-3-8-3">Version 2.8.3</a></li>
                     <li class="nav-item"><a class="nav-link scrollto" href="#item-3-8-2">Version 2.8.2</a></li>
                     <li class="nav-item"><a class="nav-link scrollto" href="#item-3-8-1">Version 2.8.1</a></li>
                     <li class="nav-item"><a class="nav-link scrollto" href="#item-3-8-0">Version 2.8.0</a></li>
@@ -200,6 +201,17 @@
                 <article class="docs-article" id="section-3">
                     <h1 class="docs-heading">Changelog</h1>
 
+                        <section class="docs-section" id="item-3-8-3">
+                            <h2 class="section-heading">Version 2.8.3 (October 29th 2025)</h2>
+                            <h5>- Added a new setting <code>imgui_scanner_flags</code>, which will include function flags when copying to your clipboard or saving to a file.</h5>
+                            <h5>- Added a new integer argument for the <code>database_dump_titles</code> command, <code>database_title_sort_priority</code>.</h5>
+                            <h5>- Added a new "Database" tab in the custom title window, which has presets of the default title colors in game.</h5>
+                            <h5>- The <code>auto_purge_dumps</code> setting now also removes crash dumps in "AppData\Local\CrashDumps\" in addition to "TAGame\Logs".</h5>
+                            <h5>- Remade the ImGui image system internally, also added an auto cleanup system that removes leftover over icons.</h5>
+                            <h5>- Fixed your title not restoring to its original one after deleting a custom one through the custom title window.</h5>
+                            <h5>- Fixed the function table in the "Searcher" tab in the function scanner window not being scrollable.</h5>
+                        </section>
+
                         <section class="docs-section" id="item-3-8-2">
                             <h2 class="section-heading">Version 2.8.2 (October 24th 2025)</h2>
                             <h5>- Added a new setting <code>imgui_terminal_cout</code> which will also write all terminal text to "std::cout".</h5>
@@ -236,7 +248,7 @@
                         <section class="docs-section" id="item-3-7-7">
                             <h2 class="section-heading">Version 2.7.7 (September 29th 2025)</h2>
                             <h5>- Added two new default themes, "Pink Bubblegum", and "Blueberry Lavender".</h5>
-                            <h5>- Added customization support for the new "Ranked Quads" playlist in the textures tab.</h5>
+                            <h5>- Added customization support for the new "Ranked Quads" playlist in the "Textures" tab.</h5>
                             <h5>- Added a new setting <code>imgui_terminal_history</code> which lets you change the max user history for the terminal.</h5>
                             <h5>- Renamed the <code>imgui_terminal_buffer</code> setting to <code>imgui_terminal_lines</code>.</h5>
                             <h5>- Fixed Discord rich presence being stuck saying if you won or lost from the previous match if you entered an intermission game.</h5>
@@ -263,7 +275,7 @@
                         <section class="docs-section" id="item-3-7-4">
                             <h2 class="section-heading">Version 2.7.4 (August 31st 2025)</h2>
                             <h5>- Added a proper Terms Of Use and Privacy Policy to the mod, which will popup if you haven't agreed to it upon injection.</h5>
-                            <h5>- Added a new "Main Menu" tab to the dashboard and moved the main menu related settings from the interface tab to here, this is to make room for future features.</h5>
+                            <h5>- Added a new "Main Menu" tab to the dashboard and moved the main menu related settings from the "Interface" tab to here, this is to make room for future features.</h5>
                             <h5>- Added an option for custom styles that change how color pickers are displayed, you can now pick between a hue bar or hue wheel.</h5>
                             <h5>- Fixed the CodeRed version number being wrong as of the last update.</h5>
                             <h5>- Other minor internal bug fixes and changes to the DirectX hook.</h5>
@@ -289,7 +301,7 @@
 
                         <section class="docs-section" id="item-3-7-1">
                             <h2 class="section-heading">Version 2.7.1 (July 11th 2025)</h2>
-                            <h5>- Added five new settings that let you display the balls current speed under the offline tab.</h5>
+                            <h5>- Added five new settings that let you display the balls current speed under the "Offline" tab.</h5>
                             <h5>- Fixed the primary and accent color popups not working for loadout products in the dashboard.</h5>
                             <h5>- Fixed some tooltip descriptions for certain settings being wrong in the dashboard.</h5>
                             <h5>- Resized a lot of the text spacing and widget sizes in the dashboard to be more consistent.</h5>
@@ -327,8 +339,8 @@
                         <section class="docs-section" id="item-3-6-7">
                             <h2 class="section-heading">Version 2.6.7 (June 6th 2025)</h2>
                             <h5>- Added a new setting <code>imgui_scanner_origin</code>, which lets you see where a function was called from (ProcessEvent, ProcessInternal, or CallFunction).</h5>
-                            <h5>- Remade the function scanner window both visually and internally to be much more optimized, as well as added a new settings tab to it.</h5>
-                            <h5>- Remade the sequence window in the bindings tab to be easier to use, sequences let you bind multiple commands or actions to a single custom command.</h5>
+                            <h5>- Remade the function scanner window both visually and internally to be much more optimized, as well as added a new "Settings" tab to it.</h5>
+                            <h5>- Remade the sequence window in the "Bindings" tab to be easier to use, sequences let you bind multiple commands or actions to a single custom command.</h5>
                             <h5>- Fixed a crash that happened if you used any of the custom chat commands in modes that didn't have a chat, such as freeplay or custom training.</h5>
                             <h5>- Fixed a rare bug that caused CodeRed to think your account was cabined before you logged into the game.</h5>
                             <h5>- Additional internal memory optimizations and bug fixes.</h5>
@@ -359,7 +371,7 @@
                             <h5>- Fixed a rare bug related to calculating split screen players mmr at the start of games.</h5>
                             <h5>- Fixed a crash with the thumbnail renderer related to the <code>thumbnail_auto_garbage</code> setting.</h5>
                             <h5>- Fixed a bug with the session tracker saying casual mmr instead of ranked for certain playlists.</h5>
-                            <h5>- Fixed training pack codes not showing up in the online / automation tab in the dashboard properly.</h5>
+                            <h5>- Fixed training pack codes not showing up in the "Automation" tab in the dashboard properly.</h5>
                             <h5>- Fixed CodeRed failing to validate global objects if you had hundreds of thousands of items in your inventory.</h5>
                             <h5>- Various other bug fixes and improvements related to the thumbnail renderer.</h5>
                         </section>
@@ -368,7 +380,7 @@
                             <h2 class="section-heading">Version 2.6.3 (May 2nd 2025)</h2>
                             <h5>- Added the new "Force Field" map and "Car Wars" playlist to custom Discord Rich Presence info.</h5>
                             <h5>- Added two new commands, <code>play_random_sound</code> and <code>play_random_sound_async</code>, which pick a random ".wav" file from a given folder and plays it.</h5>
-                            <h5>- Added a widget in the settings tab for the <code>imgui_reflector_array_limit</code> setting, which sets the limit for reading and displaying values from TArrays.</h5>
+                            <h5>- Added a widget in the "Settings" tab for the <code>imgui_reflector_array_limit</code> setting, which sets the limit for reading and displaying values from TArrays.</h5>
                             <h5>- Added a new context menu option for TArrays in the reflector window that let you copy the contents of TArrays to your clipboard.</h5>
                             <h5>- Fixed the search box in the texture browser window being case sensitive when it shouldn't be.</h5>
                             <h5>- Fixed the <code>interface_menu_background</code> setting not resetting to default properly.</h5>
@@ -426,8 +438,8 @@
 
                         <section class="docs-section" id="item-3-5-7">
                             <h2 class="section-heading">Version 2.5.7 (March 21st 2025)</h2>
-                            <h5>- Added a new setting in the misc tab called <code>disable_crossbar_sound</code> which is self explanatory.</h5>
-                            <h5>- Enabled custom playlist images again in the textures tab after some bug fixes and improvements.</h5>
+                            <h5>- Added a new setting in the "Misc" tab called <code>disable_crossbar_sound</code> which is self explanatory.</h5>
+                            <h5>- Enabled custom playlist images again in the "Textures" tab after some bug fixes and improvements.</h5>
                             <h5>- Remade the thumbnail renderer to be all command and setting based, the ImGui window now just calls commands for you.</h5>
                             <h5>- Fixed the <code>stadium_legacy_clubs</code> setting applying all black colors to both teams in 1v1 matches, which is now my second time fixing this.</h5>
                             <h5>- Fixed a bug that caused CodeRed to say you didn't meet the required specs related to grabbing your ram size.</h5>
@@ -452,7 +464,7 @@
                             <h5>- The loadout anonymizer will no longer anonymize goal explosions, as some have special effects that change the gravity; which resulted in rubber banding during goal explosions.</h5>
                             <h5>- Removed the <code>scoreboard_uncensor_names</code> setting as it no longer works as intended, Psyonix broke their own persona system awhile back.</h5>
                             <h5>- Changed the primary color picker to be all in one row for the blue and orange team, instead of in separate tabs.</h5>
-                            <h5>- Reorganized the textures tab in the dashboard to be a bit more intuitive.</h5>
+                            <h5>- Reorganized the "Textures" tab in the dashboard to be a bit more intuitive.</h5>
                             <h5>- Significant memory optimizations and improvements related to custom textures in addition to API requests.</h5>
                             <h5>- Fixed end of game automation features still being called if you joined another game before the delay was finished.</h5>
                             <h5>- Fixed CodeRed switching to offline mode if an update was released while you were already injected.</h5>
@@ -493,7 +505,7 @@
                             <h5>- Temporarily disabled custom playlist images while I work on a fix, Psyonix did a lot of half-assed things to GFx stuff last update.</h5>
                             <h5>- Removed the default <code>interface_auto_reset_inputs</code> setting in favor of the two new settings below.</h5>
                             <h5>- Added a new setting <code>interface_reset_inputs_kickoff</code> that auto resets your input buffer before kickoffs.</h5>
-                            <h5>- Added a new setting <code>interface_reset_inputs_tabbing</code> that auto resets your input buffer when alt tabbing or when the games focus changes.</h5>
+                            <h5>- Added a new setting <code>interface_reset_inputs_tabbing</code> that auto resets your input buffer when alt-tabbing or when the games focus changes.</h5>
                             <h5>- Added a "Draw" button for texture properties in the reflector window, which draws them on the canvas just like the texture browser.</h5>
                             <h5>- Fixed special CodeRed titles, such as supporter and alpha tester, not being visible between steam players in online games.</h5>
                             <h5>- Fixed the connections window not using proper hex escaped characters for strings when searching by epic name.</h5>
@@ -804,7 +816,7 @@
                         <section class="docs-section" id="item-3-2-0">
                             <h2 class="section-heading">Version 2.2.0 (June 4th 2024)</h2>
                             <h5>- Added the new "Salty Shores (Salty Fest)" map to the main menu background changer.</h5>
-                            <h5>- Added Discord rich presence integration, see the "interface" tab for all the available settings (credit to Segal for creating the dummy dll).</h5>
+                            <h5>- Added Discord rich presence integration, see the "Interface" tab for all the available settings (credit to Segal for creating the dummy dll).</h5>
                             <h5>- Your CodeRed border and banners will no longer be applied when entering the "profile" menu in the garage, this is to prevent a crash that could occur.</h5>
                             <h5>- The texture browser window now automatically refresh upon loading screens to prevent trying to export a texture that no longer exists.</h5>
                             <h5>- Improved displaying mmr on the playlist select menu, sometimes you'd have to go in and out of the menu for it to apply which has been fixed.</h5>
@@ -932,8 +944,8 @@
 
                         <section class="docs-section" id="item-3-0-6">
                             <h2 class="section-heading">Version 2.0.6 (March 11th 2024)</h2>
-                            <h5>- Improved the naming of duplicate products with different editions in the garage tab, as well as in the thumbnail renderer.</h5>
-                            <h5>- Fixed some paints still applying to products even if you clicked "Nothing selected" in the garage tab.</h5>
+                            <h5>- Improved the naming of duplicate products with different editions in the "Garage" tab, as well as in the thumbnail renderer.</h5>
+                            <h5>- Fixed some paints still applying to products even if you clicked "Nothing selected" in the "Garage" tab.</h5>
                             <h5>- Fixed your real loadouts trail paint not applying in game, I accidentally reverted this fix last update.</h5>
                             <h5>- Fixed the main menu background not restoring to its original one if you selected "Don't Change Background".</h5>
                             <h5>- Fixed a rare edge case crash that could happen on the Steam version of the game on injection.</h5>
@@ -945,7 +957,7 @@
                         <section class="docs-section" id="item-3-0-5">
                             <h2 class="section-heading">Version 2.0.5 (March 5th 2024)</h2>
                             <h5>- Added the new "AquaDome (Salty Shallows)" map to the main menu background changer.</h5>
-                            <h5>- Fixed some esports decals not showing up in the garage tab, this happened because Psyonix thought it was a good idea to give multiple product ids the same exact name.</h5>
+                            <h5>- Fixed some esports decals not showing up in the "Garage" tab, this happened because Psyonix thought it was a good idea to give multiple product ids the same exact name.</h5>
                             <h5>- Fixed an issue with the session tracker window and displaying your current win/lose streak mmr.</h5>
                             <h5>- Updated the internal SDK to the latest version of Rocket League.</h5>
                         </section>
@@ -963,14 +975,14 @@
 
                         <section class="docs-section" id="item-3-0-3">
                             <h2 class="section-heading">Version 2.0.3 (February 26th 2024)</h2>
-                            <h5>- Added the ability to customize your entire loadout in the garage tab, with the exception of your cars body. Please report any bugs to the Discord server.</h5>
+                            <h5>- Added the ability to customize your entire loadout in the "Garage" tab, with the exception of your cars body. Please report any bugs to the Discord server.</h5>
                             <h5>- Note that loadouts do not function the exact same as BakkesMod, check out the #announcements channel in the Discord for more info.</h5>
                             <h5>- Added a new "headlight color" option that lets you change the glow color of your headlights, this feature only works if bloom is enabled.</h5>
                             <h5>- Fixed some ImGui windows opening themselves on injection even if you closed them, this was caused by using the X button instead of pressing escape to close the window.</h5>
                             <h5>- Fixed your mouse cursor sometimes getting stuck on the screen, this was also related to using the X button instead of pressing escape to close windows.</h5>
                             <h5>- Fixed a random crash that could happen on the loading screen for offline game modes, this was related to internal game states being set too early.</h5>
                             <h5>- Fixed not detecting if you were in an Exhibition match, resulting in some features not working in that mode.</h5>
-                            <h5>- Fixed custom stadium colors not saving their values if you changed them through the freeplay or online tab.</h5>
+                            <h5>- Fixed custom stadium colors not saving their values if you changed them through the "Freeplay" or "Online" tab.</h5>
                             <h5>- Fixed custom spawn location settings not applying for a few specific people when first loading into freeplay.</h5>
                             <h5>- Fixed custom car colors also not applying for a few specific people when first loading into freeplay.</h5>
                             <h5>- Fixed custom stadium primary and accent colors not applying to cars after they were demolished.</h5>
@@ -982,10 +994,10 @@
 
                         <section class="docs-section" id="item-3-0-2">
                             <h2 class="section-heading">Version 2.0.2 (February 6th 2024)</h2>
-                            <h5>- Changed the layout of the garage tab in the dashboard slightly to add icons next to the color pickers.</h5>
-                            <h5>- Fixed a random crash that could happen if you switched between presets back and forth really fast in the garage tab.</h5>
+                            <h5>- Changed the layout of the "Garage" tab in the dashboard slightly to add icons next to the color pickers.</h5>
+                            <h5>- Fixed a random crash that could happen if you switched between presets back and forth really fast in the "Garage" tab.</h5>
                             <h5>- Fixed a special case where custom playlist textures were not swapping their blue and red color channels, resulting in an inverted texture.</h5>
-                            <h5>- Fixed some paint colors not showing up properly in comboboxes for the garage tab.</h5>
+                            <h5>- Fixed some paint colors not showing up properly in comboboxes for the "Garage" tab.</h5>
                             <h5>- Fixed not being able to close a few specific ImGui Windows by pressing the escape key.</h5>
                             <h5>- Updated the internal SDK to the latest version of Rocket League.</h5>
                         </section>
