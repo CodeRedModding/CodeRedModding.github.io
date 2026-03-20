@@ -62,6 +62,7 @@
 		    <nav id="docs-nav" class="docs-nav navbar">
 			    <ul class="section-items list-unstyled nav flex-column pb-3">
                     <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-3"><span class="theme-icon-holder me-2"><i class="fas fa-book"></i></span>Module Changelog</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-3-9-8">Version 2.9.8</a></li>
                     <li class="nav-item"><a class="nav-link scrollto" href="#item-3-9-7">Version 2.9.7</a></li>
                     <li class="nav-item"><a class="nav-link scrollto" href="#item-3-9-6">Version 2.9.6</a></li>
                     <li class="nav-item"><a class="nav-link scrollto" href="#item-3-9-5">Version 2.9.5</a></li>
@@ -216,11 +217,24 @@
                 <article class="docs-article" id="section-3">
                     <h1 class="docs-heading">Changelog</h1>
 
+                        <section class="docs-section" id="item-3-9-8">
+                        <h2 class="section-heading">Version 2.9.8 (March 20th 2026)</h2>                  
+                            <h5>- Added a new setting <code>interface_disable_playlist_mmr</code>, which disables the new built in mmr on the playlist selection screen.</h5>
+                            <h5>- The decal dropdown box in the garage tab now only shows decals that can be equipped to your current car, as opposed to every decal in the game.</h5>
+                            <h5>- Removed the <code>imgui_draw_clock</code> setting, if you want to use the clock just manually open the window yourself.</h5>
+                            <h5>- Fixed nested TArrays in the reflector window not showing how many elements are in the array in their name.</h5>
+                            <h5>- Fixed a rare crash that could happen upon injection related to parsing your actual loadout to a CodeRed one.</h5>
+                            <h5>- Fixed the new built in mmr on playlists being all out of whack on the main menu.</h5>
+                            <h5>- Fixed custom car primary and accent colors not applying on the main menu.</h5>
+                            <h5>- Fixed custom main menu stadium primary and accent colors not applying if you had loadouts disabled.</h5>
+                            <h5>- Optimizations and improvements to custom ImGui widgets and windows.</h5>
+                        </section>
+
                         <section class="docs-section" id="item-3-9-7">
                         <h2 class="section-heading">Version 2.9.7 (March 11th 2026)</h2>
                             <h5>- Added a new context menu option for the reflector window that lets you copy objects in json format, also the settings tab has been reorganized.</h5>
                             <h5>- Added a new command <code>database_dump_flash</code>, which dumps all shockwave movies currently loaded in game to readable ".swf" files.</h5>
-                            <h5>- Added two new parameters for the <code>database_dump_playlists</code> command, <code>playlist_enforce_eac</code> and <code>playlist_allow_eac_terminations</code> which are booleans.</h5>
+                            <h5>- Added two new parameters for the <code>database_dump_playlists</code> command, <code>playlist_bool_enforce_eac</code> and <code>playlist_bool_allow_eac_terminations</code> which are booleans.</h5>
                             <h5>- Fixed Discord rich presence integration not knowing what map you were in if you injected CodeRed while in an active game.</h5>
                             <h5>- Fixed some loadout products resetting to "Nothing Selected" if you injected offline, as a result of trying to validate products before they were decrypted.</h5>
                             <h5>- Fixed the post process editor window having a duplicate widget in the motion blur tab.</h5>
@@ -1039,7 +1053,7 @@
 
                         <section class="docs-section" id="item-3-1-2">
                             <h2 class="section-heading">Version 2.1.2 (April 16th 2024)</h2>
-                            <h5>- Fixed a crash that could happen when recoloring your in-game banner or border while having a different one equipped in CodeRed.</h5>
+                            <h5>- Fixed a crash that could happen when recoloring your in game banner or border while having a different one equipped in CodeRed.</h5>
                             <h5>- Updated the internal SDK to the latest version of Rocket League.</h5>
                         </section>
 
@@ -1072,8 +1086,8 @@
 
                         <section class="docs-section" id="item-3-0-8">
                             <h2 class="section-heading">Version 2.0.8 (March 29th 2024)</h2>
-                            <h5>- Fixed your boost resetting to default if you had the same one selected both in CodeRed and in-game.</h5>
-                            <h5>- Fixed titles sometimes not applying if you had certain tournament titles equipped in-game.</h5>
+                            <h5>- Fixed your boost resetting to default if you had the same one selected both in CodeRed and in game.</h5>
+                            <h5>- Fixed titles sometimes not applying if you had certain tournament titles equipped in game.</h5>
                             <h5>- Fixed disabling boost pads in freeplay not working if you reset your car or scored a goal.</h5>
                             <h5>- Fixed a case of mmr not applying to playlist nodes when backing in and out of the playlists menu.</h5>
                             <h5>- Possibly fixed a random crash that could happen after joining a game (needs more testing).</h5>
