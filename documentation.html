@@ -278,6 +278,10 @@
                                         <td>Use a 24 hour clock for timestamps, instead of a 12 hour AM/PM one.</td>
                                     </tr>
                                     <tr>
+                                        <th class="theme-bg-light"><b>imgui_clock_weekday &lttrue-false&gt</b></th>
+                                        <td>Display the current weekday in the clock overlay.</td>
+                                    </tr>
+                                    <tr>
                                         <th class="theme-bg-light"><b>imgui_clock_corner &lt1-4&gt</b></th>
                                         <td>The corner position for the clock window to render in.</td>
                                     </tr>
@@ -1116,7 +1120,7 @@
                                     </tr>
                                     <tr>
                                         <th class="theme-bg-light"><b>garage_remove_elon &lttrue-false&gt</b></th>
-                                        <td>Replaces all Elon Musk products on players loadouts that you encounter online with their default counterparts.</td>
+                                        <td>Replaces all Elon Musk products on players loadouts that you encounter online with their default counterparts, does not apply to yourself</td>
                                     </tr>
                                     <tr>
                                         <th class="theme-bg-light"><b>garage_hide_loadouts &lttrue-false&gt</b></th>
@@ -2392,7 +2396,7 @@
                     <section class="docs-section" id="item-5-0-3">
                         <h2 class="section-heading">Clock</h2>
                         <h4>Window Name: <code>clock</code></h4>
-                        <p>This window simply draws a clock in the top left corner of your screen. You can change the format from 24 hour to 12 hour with the <code>imgui_clock_24</code> setting.</p>
+                        <p>This window simply draws a clock in the top left corner of your screen. You can change the format from 24 hour to 12 hour with the <code>imgui_clock_24</code> setting, and <code>imgui_clock_weekday</code> to show the weekday.</p>
                         <p>Hold ctrl and double right click the window to change its position.</p>
 
                         <div class="simplelightbox-gallery row mb-3">
