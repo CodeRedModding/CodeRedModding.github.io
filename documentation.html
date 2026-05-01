@@ -376,6 +376,18 @@
                                         <th class="theme-bg-light"><b>imgui_reflector_array_limit &lt1-512&gt</b></th>
                                         <td>The limit of values to read from and display for TArrays with the reflector window.</td>
                                     </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>imgui_reflector_property_hide &lttrue-false&gt</b></th>
+                                        <td>Hide property location info in the reflector window.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>imgui_reflector_property_offset &lttrue-false&gt</b></th>
+                                        <td>Show property location info as their offset in the reflector window.</td>
+                                    </tr>
+                                                                        <tr>
+                                        <th class="theme-bg-light"><b>imgui_reflector_property_address &lttrue-false&gt</b></th>
+                                        <td>Show property location info as their address in the reflector window.</td>
+                                    </tr>
                                 </tbody>
                             </table>
                         </div>
@@ -1282,7 +1294,11 @@
                                     </tr>
                                     <tr>
                                         <th class="theme-bg-light"><b>interface_reset_inputs_tabbing &lttrue-false&gt</b></th>
-                                        <td>Automatically reset the player input buffer when alt-tabbing.</td>
+                                        <td>Automatically reset the player input buffer after alt-tabbing.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>interface_reset_inputs_resize &lttrue-false&gt</b></th>
+                                        <td>Automatically reset the player input buffer after "IDXGISwapChain::ResizeBuffers" is called.</td>
                                     </tr>
                                     <tr>
                                         <th class="theme-bg-light"><b>interface_autoname_replays &lttrue-false&gt</b></th>

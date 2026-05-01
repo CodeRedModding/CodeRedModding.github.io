@@ -53,6 +53,7 @@
 		    <nav id="docs-nav" class="docs-nav navbar">
 			    <ul class="section-items list-unstyled nav flex-column pb-3">
                     <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-3"><span class="theme-icon-holder me-2"><i class="fas fa-book"></i></span>Module Changelog</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-4-0-1">Version 3.0.1</a></li>
                     <li class="nav-item"><a class="nav-link scrollto" href="#item-4-0-0">Version 3.0.0</a></li>
                     <li class="nav-item"><a class="nav-link scrollto" href="#item-3-9-9">Version 2.9.9</a></li>
                     <li class="nav-item"><a class="nav-link scrollto" href="#item-3-9-8">Version 2.9.8</a></li>
@@ -210,7 +211,18 @@
                 <article class="docs-article" id="section-3">
                     <h1 class="docs-heading">Changelog</h1>
 
-                        <section class="docs-section" id="item-4.0.0">
+                        <section class="docs-section" id="item-4-0-1">
+                        <h2 class="section-heading">Version 3.0.1 (May 1st 2026)</h2>     
+                            <h5>- Added support for the new "USQWordProperty" class in the reflector window.</h5>
+                            <h5>- Added a new setting <code>interface_reset_inputs_resize</code>, which auto resets your input buffer after "IDXGISwapChain::ResizeBuffers" is called.</h5>
+                            <h5>- Added three new settings in the reflector window that let you pick between displaying offsets, addresses, or nothing, for properties.</h5>
+                            <h5>- Fixed a bug that caused the game to freeze until you alt-tabbed if you changed resolutions back and forth in fullscreen mode.</h5>
+                            <h5>- Fixed custom stadium colors not working as of the last Rocket League update, which also resulted in a lag spike that happened when respawning.</h5>
+                            <h5>- Fixed custom car primary and accent colors not working in freeplay, this was also a result of the last Rocket League update.</h5>
+                            <h5>- Fixed custom boost meter options not applying when your car reset in custom training packs.</h5>
+                        </section>
+
+                        <section class="docs-section" id="item-4-0-0">
                         <h2 class="section-heading">Version 3.0.0 (April 28th 2026)</h2>                  
                             <h5>- Easy Anti-Cheat has been added, CodeRed will only work with the "-noeac" option from here on out.</h5>
                             <h5>- Increased the max limit of the <code>imgui_reflector_object_limit</code> setting from "256" to "1024" because why not.</h5>
