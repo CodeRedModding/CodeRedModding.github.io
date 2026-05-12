@@ -53,6 +53,7 @@
 		    <nav id="docs-nav" class="docs-nav navbar">
 			    <ul class="section-items list-unstyled nav flex-column pb-3">
                     <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-3"><span class="theme-icon-holder me-2"><i class="fas fa-book"></i></span>Module Changelog</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-4-0-2">Version 3.0.2</a></li>
                     <li class="nav-item"><a class="nav-link scrollto" href="#item-4-0-1">Version 3.0.1</a></li>
                     <li class="nav-item"><a class="nav-link scrollto" href="#item-4-0-0">Version 3.0.0</a></li>
                     <li class="nav-item"><a class="nav-link scrollto" href="#item-3-9-9">Version 2.9.9</a></li>
@@ -211,8 +212,15 @@
                 <article class="docs-article" id="section-3">
                     <h1 class="docs-heading">Changelog</h1>
 
+                        <section class="docs-section" id="item-4-0-2">
+                        <h2 class="section-heading">Version 3.0.2 (May 12th 2026)</h2>
+                            <h5>- The display ball speed settings now work in replay files and workshop maps.</h5>
+                            <h5>- The flip reset indicator settings now work in custom training packs and workshop maps.</h5>
+                            <h5>- Fixed the <code>interface_draw_fps</code> setting not automatically displaying fps after enabling it and restarting your game.- Updated the internal SDK to the latest version of Rocket League.</h5>
+                        </section>
+
                         <section class="docs-section" id="item-4-0-1">
-                        <h2 class="section-heading">Version 3.0.1 (May 1st 2026)</h2>     
+                        <h2 class="section-heading">Version 3.0.1 (May 1st 2026)</h2>
                             <h5>- Added support for the new "USQWordProperty" class in the reflector window.</h5>
                             <h5>- Added a new setting <code>interface_reset_inputs_resize</code>, which auto resets your input buffer after "IDXGISwapChain::ResizeBuffers" is called.</h5>
                             <h5>- Added three new settings in the reflector window that let you pick between displaying offsets, addresses, or nothing, for properties.</h5>
@@ -223,7 +231,7 @@
                         </section>
 
                         <section class="docs-section" id="item-4-0-0">
-                        <h2 class="section-heading">Version 3.0.0 (April 28th 2026)</h2>                  
+                        <h2 class="section-heading">Version 3.0.0 (April 28th 2026)</h2>
                             <h5>- Easy Anti-Cheat has been added, CodeRed will only work with the "-noeac" option from here on out.</h5>
                             <h5>- Increased the max limit of the <code>imgui_reflector_object_limit</code> setting from "256" to "1024" because why not.</h5>
                             <h5>- Added a "property filter" box in the reflector window that lets you filter the properties in classes by either their name or value.</h5>
@@ -235,14 +243,14 @@
                         </section>
 
                         <section class="docs-section" id="item-3-9-9">
-                        <h2 class="section-heading">Version 2.9.9 (March 23rd 2026)</h2>                  
+                        <h2 class="section-heading">Version 2.9.9 (March 23rd 2026)</h2>
                             <h5>- Added a new setting <code>imgui_clock_weekday</code>, which will also show what day it is in the clock overlay window.</h5>
                             <h5>- Fixed the clock at midnight displaying "00:00 AM" instead of "12:00 AM" if you had the <code>imgui_clock_24</code> setting set to false.</h5>
                             <h5>- Updated the internal SDK to the latest version of Rocket League.</h5>
                         </section>
 
                         <section class="docs-section" id="item-3-9-8">
-                        <h2 class="section-heading">Version 2.9.8 (March 20th 2026)</h2>                  
+                        <h2 class="section-heading">Version 2.9.8 (March 20th 2026)</h2>
                             <h5>- Added a new setting <code>interface_disable_playlist_mmr</code>, which disables the new built in mmr on the playlist selection screen.</h5>
                             <h5>- The decal dropdown box in the garage tab now only shows decals that can be equipped to your current car, as opposed to every decal in the game.</h5>
                             <h5>- Removed the <code>imgui_draw_clock</code> setting, if you want to use the clock just manually open the window yourself.</h5>
