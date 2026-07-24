@@ -53,6 +53,7 @@
 		    <nav id="docs-nav" class="docs-nav navbar">
 			    <ul class="section-items list-unstyled nav flex-column pb-3">
                     <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-3"><span class="theme-icon-holder me-2"><i class="fas fa-book"></i></span>Module Changelog</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-4-0-6">Version 3.0.6</a></li>
                     <li class="nav-item"><a class="nav-link scrollto" href="#item-4-0-5">Version 3.0.5</a></li>
                     <li class="nav-item"><a class="nav-link scrollto" href="#item-4-0-4">Version 3.0.4</a></li>
                     <li class="nav-item"><a class="nav-link scrollto" href="#item-4-0-3">Version 3.0.3</a></li>
@@ -215,6 +216,13 @@
 		    <div class="container">
                 <article class="docs-article" id="section-3">
                     <h1 class="docs-heading">Changelog</h1>
+
+                        <section class="docs-section" id="item-4-0-6">
+                        <h2 class="section-heading">Version 3.0.6 (July 24th 2026)</h2>
+                            <h5>- Rewrote the ImGui notifications internally, they also now have a fancy lerp animation when moving.</h5>
+                            <h5>- Fixed the <code>psyonix_generate_services</code> command printing the RLSDK version of certain structs instead of their "networking" version (FUniqueNetId, FGuid, etc...).</h5>
+                            <h5>- Fixed any feature that converted unreal objects to json putting an extra comma in the array if it only had one property.</h5>
+                        </section>
 
                         <section class="docs-section" id="item-4-0-5">
                         <h2 class="section-heading">Version 3.0.5 (June 23rd 2026)</h2>
