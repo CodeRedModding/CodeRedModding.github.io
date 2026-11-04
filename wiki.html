@@ -7,7 +7,7 @@
     <meta name="description" content="A lightweight, user-friendly enhancement for Rocket League.">
     <title>CodeRed | Wiki</title>
     <!-- Open Graph Meta Tags -->
-    <meta property="og:url" content="https://coderedmodding.github.io/documentation.html">
+    <meta property="og:url" content="https://coderedmodding.github.io/wiki.html">
     <meta property="og:type" content="website">
     <meta property="og:title" content="CodeRed | Wiki">
     <meta property="og:description" content="A lightweight, user-friendly enhancement for Rocket League.">
@@ -17,7 +17,7 @@
     <!-- Twitter Meta Tags -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:domain" content="coderedmodding.github.io">
-    <meta name="twitter:url" content="https://coderedmodding.github.io/documentation.html">
+    <meta name="twitter:url" content="https://coderedmodding.github.io/wiki.html">
     <meta name="twitter:title" content="CodeRed | Wiki">
     <meta name="twitter:description" content="A lightweight, user-friendly enhancement for Rocket League.">
     <meta name="twitter:image" content="https://coderedmodding.github.io/assets/images/Wallpaper_Default_Mini.png">
@@ -104,13 +104,11 @@
 				    <li class="nav-item"><a class="nav-link scrollto" href="#item-6-0-4">Is It Bannable</a></li>
                     <li class="nav-item"><a class="nav-link scrollto" href="#item-6-0-5">BakkesMod Compatibility</a></li>
                     <li class="nav-item"><a class="nav-link scrollto" href="#item-6-0-6">Cabined Accounts</a></li>
-                    <li class="nav-item"><a class="nav-link scrollto" href="#item-6-0-7">Do Custom Ads Exist</a></li>
-                    <li class="nav-item"><a class="nav-link scrollto" href="#item-6-0-8">Restricted Countries</a></li>
-                    <li class="nav-item"><a class="nav-link scrollto" href="#item-6-0-9">How To Report Bugs</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-6-0-7">Restricted Countries</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-6-0-8">How To Report Bugs</a></li>
 			    </ul>
 		    </nav>
 	    </div>
-
 	    <div class="docs-content">
 		    <div class="container">
 			    <article class="docs-article" id="section-1">
@@ -160,8 +158,7 @@
                             </div>
                         </div>
 					</section>
-			    </article>
-			    
+			    </article>	    
 			    <article class="docs-article" id="section-2">
 				    <header class="docs-header">
 					    <h1 class="docs-heading">Installing</h1>
@@ -205,8 +202,7 @@
                             </div>
                         </div>
 					</section>
-			    </article>
-			    
+			    </article>	    
 			    <article class="docs-article" id="section-3">
 				    <header class="docs-header">
 					    <h1 class="docs-heading">Components</h1>
@@ -334,7 +330,15 @@
                                         <td>Hide or show duplicate entries in the function scanner.</td>
                                     </tr>
                                     <tr>
-                                        <th class="theme-bg-light"><b>imgui_scanner_flags &lttrue-false&gt</b></th>
+                                        <th class="theme-bg-light"><b>imgui_scanner_copy_origin &lttrue-false&gt</b></th>
+                                        <td>Include the function call origin in string format when copying to your clipboard.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>imgui_scanner_copy_calls &lttrue-false&gt</b></th>
+                                        <td>Include the function call amount in string format when copying to your clipboard.</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>imgui_scanner_copy_flags &lttrue-false&gt</b></th>
                                         <td>Include function flags in string format when copying to your clipboard or saving to a file.</td>
                                     </tr>
                                     <tr>
@@ -670,7 +674,7 @@
                                     </tr>
                                     <tr>
                                         <th class="theme-bg-light"><b>database_dump_content</b></th>
-                                        <td>Converts and then dumps all AES keys from ContentMap, which are used to decrypt product files</td>
+                                        <td>Converts and then dumps all AES keys from ContentMap, which are used to decrypt product files.</td>
                                     </tr>
                                      <tr>
                                         <th class="theme-bg-light"><b>database_dump_flash</b></th>
@@ -982,7 +986,7 @@
                                         <td>The scale multiplier of the collision hitbox for the ball in freeplay.</td>
                                     </tr>
                                     <tr>
-                                        <th class="theme-bg-light"><b>freeplay_ball_max_speed &lt0.0-30000.0&gt</b></th>
+                                        <th class="theme-bg-light"><b>freeplay_ball_max_speed &lt0.0-60000.0&gt</b></th>
                                         <td>The max linear speed the ball can go in freeplay in unreal units.</td>
                                     </tr>
                                     <tr>
@@ -2373,6 +2377,10 @@
                                         <th class="theme-bg-light"><b>training_boost_refill_ground &lttrue-false&gt</b></th>
                                         <td>Enable refilling boost when you touch the ground only in custom training.</td>
                                     </tr>
+                                    <tr>
+                                        <th class="theme-bg-light"><b>training_ball_max_speed &lt0.0-60000.0&gt</b></th>
+                                        <td>The max linear speed the ball can go in custom training packs in unreal units.</td>
+                                    </tr>
                                 </tbody>
                             </table>
                         </div>
@@ -2589,7 +2597,6 @@
                             </div>
                         </div>
 					</section>
-
                     <section class="docs-section" id="item-5-1-5">
                         <h2 class="section-heading">Terminal</h2>
                         <h4>Window Name: <code>terminal</code></h4>
@@ -2602,7 +2609,6 @@
                             </div>
                         </div>
 					</section>
-
                     <section class="docs-section" id="item-5-1-6">
                         <h2 class="section-heading">Texture Browser</h2>
                         <h4>Window Name: <code>texture_browser</code></h4>
@@ -2614,7 +2620,6 @@
                             </div>
                         </div>
 					</section>
-
                     <section class="docs-section" id="item-5-1-7">
                         <h2 class="section-heading">Thumbnail Renderer</h2>
                         <h4>Window Name: <code>thumbnails</code></h4>
@@ -2630,13 +2635,11 @@
                             </div>
                         </div>
 					</section>
-
                     <section class="docs-section" id="item-5-1-8">
                         <h2 class="section-heading">Title Customizer</h2>
                         <h4>Window Name: <code>titles</code></h4>
                         <p>The title customizer lets you create and manage your custom titles, there is also a share code system which works the same way as loadout share codes.</p>
                         <p>You can also access this window via the dashboard under the player title section, when selecting a title there is a button called "Edit" that opens this window.</p>
-
                         <div class="simplelightbox-gallery row mb-3">
                             <div class="col-12 col-md-4 mb-3">
                                 <a href="assets/images/windows/titles-1.png"><img class="figure-img img-fluid shadow rounded" src="assets/images/windows/titles-1.png" alt="" title=""/></a>
@@ -2646,73 +2649,53 @@
                             </div>
                         </div>
 					</section>
-			    </article>
-			    
+			    </article>		    
 			    <article class="docs-article" id="section-6">
 				    <header class="docs-header">
 					    <h1 class="docs-heading">FAQs</h1>
 				    </header>
-
                     <section class="docs-section" id="item-6-0-1">
 						<h4 class="pt-3"><i class="fas fa-question-circle me-1"></i>What is CodeRed?</h4>
-						<p>CodeRed is a free, highly customizable, and easy to use third party enhancement for Rocket League. CodeRed aims to bring a lightweight, all in one, feature packed experience to players with zero impact to performance.</p>
+						<p>CodeRed is a free, highly customizable, and easy to use third party enhancement for Rocket League. CodeRed aims to have everything you need already built in, with no need to worry about plugins or them going unmaintained.</p>
                     </section>
-
                     <section class="docs-section" id="item-6-0-2">
 						<h4 class="pt-3"><i class="fas fa-question-circle me-1"></i>Is CodeRed Free?</h4>
 						<p>Yes, CodeRed and its features are completely free for anyone to use; and always will be free.</p>
                     </section>
-
                     <section class="docs-section" id="item-6-0-3">
                         <h4 class="pt-3"><i class="fas fa-question-circle me-1"></i>Is CodeRed open source?</h4>
 						<p>The in game mod itself is not available to the public, however the launcher is fully open source under the MIT license; you can view its source code on our <a href="https://github.com/CodeRedModding/CodeRed-Launcher">GitHub here.</a></p>
                     </section>
-
                     <section class="docs-section" id="item-6-0-4">
 						<h4 class="pt-3"><i class="fas fa-question-circle me-1"></i>Can CodeRed get me banned?</h4>
 						<p>CodeRed is not officially approved by Psyonix or Epic Games, however, CodeRed still follows Rocket League's ToU, EULA, and rules regarding third party modding. CodeRed does not provide a competitive advantage in online play, expose unreleased features/content, or abuse Rocket League's services.</p>
                         <p>Psyonix is aware of CodeRed's existence and has the ability to contact me if they have a problem with anything, or if they want a specific feature to be changed or removed.</p>
                     </section>
-
                     <section class="docs-section" id="item-6-0-5">
 						<h4 class="pt-3"><i class="fas fa-question-circle me-1"></i>Can I use CodeRed and BakkesMod at the same time?</h4>
 						<p>No, CodeRed and BakkesMod conflict with each other in a lot of its core features and has indirectly cause crashes when both are used together.</p>
 					</section>
-
                     <section class="docs-section" id="item-6-0-6">
                         <h4 class="pt-3"><i class="fas fa-question-circle me-1"></i> Can I use CodeRed if I have a cabined account?</h4>
 						<p>No, there are too many restrictions that have to be followed that I don't want to implement or keep up with if they change.</p>
                     </section>
-
                     <section class="docs-section" id="item-6-0-7">
-						<h4 class="pt-3"><i class="fas fa-question-circle me-1"></i> Can I customize the ads around the stadium?</h4>
-						<p>Also no, I have directly asked Psyonix about this and customizing or overwriting the ads around the stadium is a big no go.</p>
-					</section>
-
-                    <section class="docs-section" id="item-6-0-8">
                         <h4 class="pt-3"><i class="fas fa-question-circle me-1"></i>Are there any restricted countries?</h4>
 						<p>Because of government restrictions banning access to websites that CodeRed relies on, such as Github or Discord, you may have to use a VPN if you live in any of the following countries to use CodeRed: China, Russia, Turkey, Oman, United Arab Emirates, Egypt, and Iran.</p>
                     </section>
-
-                    <section class="docs-section" id="item-6-0-9">
+                    <section class="docs-section" id="item-6-0-8">
                         <h4 class="pt-3"><i class="fas fa-question-circle me-1"></i>I found a bug or something doesn't work right.</h4>
 						<p>If you would like to report a bug, crash, or feature that doesn't work right, please do so in the Discord server.</p>
                     </section>
 			    </article>
-
                 <footer class="footer">
                     <div class="footer-bottom text-center py-5">
-                        <ul class="social-list list-unstyled pb-4 mb-0">
-                            <li class="list-inline-item"><a href="https://discord.gg/FzEc7mFwjz"><i class="fab fa-discord fa-fw"></i></a></li>
-                            <li class="list-inline-item"><a href="https://github.com/CodeRedModding"><i class="fab fa-github fa-fw"></i></a></li>
-                        </ul>
-                        <h4 class="copyright" style="color:#80848E">CodeRed is a product created and owned by ItsBrank, CodeRed is not affiliated with, endorsed by, or supported by Psyonix LLC or Epic Games, Inc.</h4>
+                        <p class="copyright" style="color:#80848E">CodeRed is a product created and owned by ItsBrank, CodeRed is not affiliated with, endorsed by, or supported by Psyonix LLC or Epic Games, Inc.</p>
                     </div>
                 </footer>
 		    </div> 
 	    </div>
-    </div>
-      
+    </div>     
     <script src="assets/plugins/popper.min.js"></script>
     <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/plugins/smoothscroll.min.js"></script>
